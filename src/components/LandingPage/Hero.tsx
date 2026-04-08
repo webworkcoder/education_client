@@ -12,7 +12,7 @@ const Hero = () => {
         <img
           src="/heroimg.jpg" 
           alt="hero"
-          className="w-full h-full sm:object-cover object-center"
+          className="w-full h-full object-cover object-center"
         />
         {/* DARK OVERLAY */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0b1f4d]/90 to-transparent"></div>

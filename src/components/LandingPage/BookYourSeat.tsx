@@ -14,6 +14,8 @@ const choosen = [
   "Comprehensive Solutions",
 ];
 
+const options = ["MBBS In Georgia", "MBBS in Russia", "MBBS in Kazakhstan"];
+
 const fadeUp = {
   initial: { y: 60, opacity: 0 },
   whileInView: { y: 0, opacity: 1 },
@@ -34,7 +36,9 @@ const BookYourSeat = () => {
   });
   const [file, setFile] = useState<File | null>(null);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
+  ) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
@@ -151,7 +155,10 @@ const BookYourSeat = () => {
                   </div>
 
                   {/* FORM */}
-                  <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-4 text-sm">
+                  <form
+                    onSubmit={handleSubmit}
+                    className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm"
+                  >
                     {/* FULL NAME */}
                     <div>
                       <label className="block mb-1 text-gray-700">
@@ -200,15 +207,18 @@ const BookYourSeat = () => {
                         Preferred Country{" "}
                         <span className="text-red-500">*</span>
                       </label>
+
                       <select
                         name="preferredCountry"
                         value={form.preferredCountry}
                         onChange={handleChange}
                         className="w-full border border-gray-300 p-2.5 bg-white outline-none focus:border-blue-500"
                       >
-                        <option>MBBS In Georgia</option>
-                        <option>MBBS in Russia</option>
-                        <option>MBBS in Kazakhstan</option>
+                        {options.map((item, index) => (
+                          <option key={index} value={item}>
+                            {item}
+                          </option>
+                        ))}
                       </select>
                     </div>
 
@@ -243,7 +253,10 @@ const BookYourSeat = () => {
                     </div>
 
                     {/* SUBMIT BUTTON */}
-                    <button type="submit" className="col-span-2 w-full mt-1 bg-[#5b6fa6] hover:bg-[#4d5f8f] text-white py-3 font-semibold">
+                    <button
+                      type="submit"
+                      className="col-span-2 w-full mt-1 bg-[#5b6fa6] hover:bg-[#4d5f8f] text-white py-3 font-semibold"
+                    >
                       Submit Now
                     </button>
                   </form>

@@ -1,8 +1,9 @@
 "use client";
 
+import React from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+
 import { useState, useRef } from "react";
 
 import {
@@ -10,15 +11,16 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { FaUserDoctor } from "react-icons/fa6";
 
-const menuData: Record<string, { label: string; href: string }[]> = {
-  Courses: [{ label: "MBBS Abroad", href: "#/courses" }],
+const menuData: Record<string, { label: string; href: string; icon?: React.ReactNode }[]> = {
+  Courses: [{ label: "MBBS", href: "#mbbs", icon: <FaUserDoctor /> }],
   Countries: [
-    { label: "Russia", href: "/countries/russia" },
-    { label: "China", href: "/countries/china" },
+    { label: "Russia", href: "/countries/russia",icon: <FaUserDoctor /> },
+    { label: "China", href: "/countries/china",icon: <FaUserDoctor /> },
   ],
   Universities: [
-    { label: "Moscow State University", href: "/universities/msu" },
+    { label: "Moscow State University", href: "/universities/msu",icon: <FaUserDoctor /> },
   ],
 };
 
@@ -30,7 +32,6 @@ const navLinks = [
   { name: "Universities", href: "#", hasMenu: true },
   { name: "Contact Us", href: "/contact" },
 ];
-
 
 function HoverPopover({ label, href }: any) {
   const [open, setOpen] = useState(false);
@@ -45,7 +46,7 @@ function HoverPopover({ label, href }: any) {
             setOpen(true);
           }}
           onMouseLeave={() => {
-            timer.current = setTimeout(() => setOpen(false), 100);
+            timer.current = setTimeout(() => setOpen(false), 150);
           }}
           className="list-none"
         >
@@ -57,12 +58,19 @@ function HoverPopover({ label, href }: any) {
       </PopoverTrigger>
 
       <PopoverContent
-        onMouseEnter={() => setOpen(true)}
-        onMouseLeave={() => setOpen(false)}
+        onMouseEnter={() => {
+          if (timer.current) clearTimeout(timer.current);
+          setOpen(true);
+        }}
+        onMouseLeave={() => {
+          timer.current = setTimeout(() => setOpen(false), 150);
+        }}
         className="w-48 p-0"
+        sideOffset={4}
       >
         {menuData[label]?.map((item) => (
-          <Link key={item.href} href={item.href} className="block px-4 py-2">
+          <Link key={item.href} href={item.href} className="flex items-center gap-2 px-4 py-2 hover:bg-gray-50">
+            {item.icon && <span className="text-blue-600">{item.icon}</span>}
             {item.label}
           </Link>
         ))}
@@ -75,14 +83,14 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-
   return (
     <header className="bg-white shadow-sm">
       {/* TOP ROW */}
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
         {/* LOGO */}
         <Link href="/">
-          <img src="/logo.png" className="h-8" />
+          {/* <img src="/logo.png" className="h-8" /> */}
+          <p className="font-bold text-blue-700">Doctor Study Web.</p>
         </Link>
 
         {/* DESKTOP MENU */}
