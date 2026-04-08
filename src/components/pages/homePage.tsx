@@ -10,8 +10,7 @@ import AbroadLocations from "../LandingPage/AbroadLocations";
 const HomePage = () => {
   return (
     <>
-      <Topbar/>
-      <Navbar />
+   
       <Hero/>
       <AboutAtlasMentor/>
       <OurMission/>

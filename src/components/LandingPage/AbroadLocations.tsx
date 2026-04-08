@@ -46,7 +46,7 @@ const AbroadLocations = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {abroadLocations.map((item, index) => (
           <AbroadCard
             key={index}
@@ -58,7 +58,7 @@ const AbroadLocations = () => {
         ))}
       </div>
 
-      <div className="grid md:grid-cols-4 gap-6 mt-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
         {abroadLocations2.map((item, index) => (
           <AbroadCard
             key={index}

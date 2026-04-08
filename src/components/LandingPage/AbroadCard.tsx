@@ -27,7 +27,7 @@ const AbroadCard: React.FC<AbroadCardProps> = ({
       className="bg-white shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition"
     >
       {/* Top Title Bar */}
-      <div className="bg-gradient-to-r from-blue-700 to-blue-500 text-white text-center py-6 font-bold text-2xl">
+      <div className="bg-linear-to-r from-blue-700 to-blue-500 text-white text-center py-6 font-bold text-2xl">
         {title}
       </div>
 

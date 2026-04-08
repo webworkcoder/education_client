@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
-import { div } from "motion/react-client";
 import Link from "next/link";
 
 const AboutAtlasMentor = () => {

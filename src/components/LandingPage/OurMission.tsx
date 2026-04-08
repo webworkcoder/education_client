@@ -30,7 +30,7 @@ const OurMission = () => {
             key={index}
             className={`relative border px-6 pb-8 pt-0 ${
               item.dark
-                ? "bg-gradient-to-r from-[#4b66a1] to-[#1e3a8a] text-white"
+                ? "bg-linear-to-r from-[#4b66a1] to-[#1e3a8a] text-white"
                 : "bg-white text-gray-700"
             }`}
           >
