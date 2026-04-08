@@ -5,6 +5,7 @@ import AboutAtlasMentor from "../LandingPage/AboutAtlasMentor";
 import Topbar from "@/layout/topbar";
 import OurMission from "../LandingPage/OurMission";
 import BookYourSeat from "../LandingPage/BookYourSeat";
+import AbroadLocations from "../LandingPage/AbroadLocations";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <AboutAtlasMentor/>
       <OurMission/>
       <BookYourSeat/>
+      <AbroadLocations/>
       
     </>
   );
