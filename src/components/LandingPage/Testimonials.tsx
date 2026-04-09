@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { videoData } from "@/data/videodata";
-import VideoCards from "./VideoCards";
+import VideoCards from "../common/VideoCards";
 
 
 const Testimonials = () => {

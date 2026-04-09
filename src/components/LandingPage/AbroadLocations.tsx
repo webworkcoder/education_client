@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import AbroadCard from "./AbroadCard";
+import AbroadCard from "../common/AbroadCard";
 import { abroadLocations, abroadLocations2 } from "@/data/abroadData";
 
 const AbroadLocations = () => {
