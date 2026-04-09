@@ -13,21 +13,24 @@ const AboutAtlasMentor = () => {
     "Personalized Support",
     "Comprehensive Solutions",
   ];
+
   return (
-    <section className="bg-[#f5f7fb] py-16 px-6 md:px-10 overflow-hidden  ">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center mb-10">
-        {/* LEFT IMAGE SECTION */}
+    <section className="bg-[#f5f7fb] py-16 px-6 md:px-8 lg:px-10 overflow-hidden">
+      {/* 🔥 IMPORTANT CHANGE HERE */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-10">
+        
+        {/* IMAGE SECTION */}
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="relative pb-16 md:pb-0 order-2 md:order-1"
+          className="relative pb-16 lg:pb-0 order-2 lg:order-1"
         >
           <img
             src="/class-room.jpg"
             alt="Atlas Mentor"
-            className=" shadow-lg w-full"
+            className="shadow-lg w-full"
           />
 
           {/* FLOATING CARD */}
@@ -36,7 +39,16 @@ const AboutAtlasMentor = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="absolute -bottom-10 -right-3 border-t-blue-500 border-t-5 bg-white p-6 shadow-xl w-[70%] md:w-[40%]"
+            className="
+              absolute 
+              -bottom-10 right-2 
+              md:right-4 
+              lg:-right-3 
+              border-t-[5px] border-t-blue-500 
+              bg-white p-5 md:p-6 
+              shadow-xl 
+              w-[85%] sm:w-[70%] md:w-[60%] lg:w-[40%]
+            "
           >
             <h3 className="text-lg font-semibold mb-2">
               Atlas Mentor <br /> Gateway to a Global Medical Career
@@ -48,9 +60,10 @@ const AboutAtlasMentor = () => {
           </motion.div>
         </motion.div>
 
-        {/* RIGHT TEXT SECTION */}
-        <div className="order-1 md:order-2">
-          {/* SMALL LABEL */}
+        {/* TEXT SECTION */}
+        <div className="order-1 lg:order-2">
+          
+          {/* LABEL */}
           <motion.p
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -67,7 +80,7 @@ const AboutAtlasMentor = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold mb-4"
+            className="text-3xl md:text-3xl lg:text-4xl font-bold mb-4"
           >
             Start Your MBBS Dream With Atlas Mentor
           </motion.h2>
@@ -81,7 +94,7 @@ const AboutAtlasMentor = () => {
           </p>
 
           {/* FEATURES */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2">
             {dream.map((item, index) => (
               <div key={index} className="py-2 flex items-center gap-2">
                 <Check className="w-5 h-5 text-[#667cb0]" />
@@ -91,7 +104,10 @@ const AboutAtlasMentor = () => {
           </div>
 
           {/* BUTTON */}
-          <Link href="#apply" className="bg-[#2c4a9e] mt-5 text-white px-6 py-2.5 hover:bg-[#1e3a8a] transition">
+          <Link
+            href="#apply"
+            className="inline-block bg-[#2c4a9e] mt-5 text-white px-6 py-2.5 hover:bg-[#1e3a8a] transition"
+          >
             Apply Now
           </Link>
         </div>

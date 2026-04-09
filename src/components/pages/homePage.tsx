@@ -6,6 +6,9 @@ import AbroadLocations from "../LandingPage/AbroadLocations";
 import Testimonials from "../LandingPage/Testimonials";
 import AtlasMentor from "../LandingPage/AtlasMentor";
 import WhyChooseUs from "../LandingPage/WhyChooseUs";
+import TeamSection from "../LandingPage/TeamSection";
+import SomeFromStudents from "../LandingPage/SomeFromStudents";
+import FAQSection from "../LandingPage/FAQSection";
 
 const HomePage = () => {
   return (
@@ -18,6 +21,9 @@ const HomePage = () => {
       <Testimonials />
       <AtlasMentor />
       <WhyChooseUs />
+      <TeamSection/>
+      <SomeFromStudents/>
+      <FAQSection/>
     </>
   );
 };

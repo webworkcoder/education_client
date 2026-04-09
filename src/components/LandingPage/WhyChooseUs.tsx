@@ -77,7 +77,7 @@ const WhyChooseUs = () => {
   };
 
   return (
-    <section className="bg-gradient-to-r from-[#3f5fa3] to-[#5b76b3] py-24 px-4 overflow-hidden">
+    <section id="whyus" className="bg-gradient-to-r from-[#3f5fa3] to-[#5b76b3] py-24 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto text-center text-white">
 
         {/* TOP TAG */}
@@ -119,7 +119,7 @@ const WhyChooseUs = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid md:grid-cols-3 gap-6"
+          className="grid sm:grid-cols-2 md:grid-cols-3 gap-6"
         >
           {features.map((item, index) => (
             <motion.div

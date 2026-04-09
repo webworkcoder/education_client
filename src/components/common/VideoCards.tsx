@@ -1,8 +1,5 @@
 "use client";
 
-import React, { useState } from "react";
-import { Play } from "lucide-react";
-
 type VideoProps = {
   data: {
     videoUrl: string;
