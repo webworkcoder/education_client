@@ -6,6 +6,7 @@ import Topbar from "@/layout/topbar";
 import OurMission from "../LandingPage/OurMission";
 import BookYourSeat from "../LandingPage/BookYourSeat";
 import AbroadLocations from "../LandingPage/AbroadLocations";
+import Testimonials from "../LandingPage/Testimonials";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <OurMission/>
       <BookYourSeat/>
       <AbroadLocations/>
+      <Testimonials/>
       
     </>
   );

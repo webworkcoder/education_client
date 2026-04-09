@@ -64,7 +64,7 @@ const BookYourSeat = () => {
   return (
     <section id="apply" className="bg-gray-200 py-10 px-4">
       <div className="max-w-8xl mx-auto">
-        <div className="relative overflow-hidden p-4">
+        <div className="relative overflow-hidden p-2 md:p-4">
           {/* BACKGROUND IMAGE */}
           <div
             className="absolute inset-0 bg-cover bg-center z-0"
@@ -76,7 +76,7 @@ const BookYourSeat = () => {
           <div className="absolute inset-0 bg-[#0b2a5b]/70 z-0" />
 
           <div className="relative z-10 border border-white">
-            <div className="py-20 px-6 md:px-4 text-white">
+            <div className="py-20 px-2 md:px-4 text-white">
               <div className="grid md:grid-cols-2 gap-10 items-center">
                 {/* LEFT SIDE */}
                 <div className="space-y-6">
@@ -157,11 +157,11 @@ const BookYourSeat = () => {
                   {/* FORM */}
                   <form
                     onSubmit={handleSubmit}
-                    className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm"
+                    className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-sm"
                   >
                     {/* FULL NAME */}
-                    <div>
-                      <label className="block mb-1 text-gray-700">
+                    <div className="flex flex-col">
+                      <label className="mb-1 text-gray-700">
                         Full Name <span className="text-red-500">*</span>
                       </label>
                       <input
@@ -169,13 +169,13 @@ const BookYourSeat = () => {
                         value={form.fullName}
                         onChange={handleChange}
                         placeholder="Full Name"
-                        className="w-full border border-gray-300 p-2.5 bg-white outline-none focus:border-blue-500"
+                        className="w-full border border-gray-300 p-3 rounded-md bg-white outline-none focus:border-blue-500"
                       />
                     </div>
 
                     {/* MOBILE */}
-                    <div>
-                      <label className="block mb-1 text-gray-700">
+                    <div className="flex flex-col">
+                      <label className="mb-1 text-gray-700">
                         Mobile Number <span className="text-red-500">*</span>
                       </label>
                       <input
@@ -183,13 +183,13 @@ const BookYourSeat = () => {
                         value={form.mobileNumber}
                         onChange={handleChange}
                         placeholder="Mobile Number"
-                        className="w-full border border-gray-300 p-2.5 bg-white outline-none focus:border-blue-500"
+                        className="w-full border border-gray-300 p-3 rounded-md bg-white outline-none focus:border-blue-500"
                       />
                     </div>
 
                     {/* EMAIL */}
-                    <div>
-                      <label className="block mb-1 text-gray-700">
+                    <div className="flex flex-col">
+                      <label className="mb-1 text-gray-700">
                         Email Address <span className="text-red-500">*</span>
                       </label>
                       <input
@@ -197,13 +197,13 @@ const BookYourSeat = () => {
                         value={form.emailAddress}
                         onChange={handleChange}
                         placeholder="Email Address"
-                        className="w-full border border-gray-300 p-2.5 bg-white outline-none focus:border-blue-500"
+                        className="w-full border border-gray-300 p-3 rounded-md bg-white outline-none focus:border-blue-500"
                       />
                     </div>
 
                     {/* COUNTRY */}
-                    <div>
-                      <label className="block mb-1 text-gray-700">
+                    <div className="flex flex-col">
+                      <label className="mb-1 text-gray-700">
                         Preferred Country{" "}
                         <span className="text-red-500">*</span>
                       </label>
@@ -212,7 +212,7 @@ const BookYourSeat = () => {
                         name="preferredCountry"
                         value={form.preferredCountry}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 p-2.5 bg-white outline-none focus:border-blue-500"
+                        className="w-full border border-gray-300 p-3 rounded-md bg-white outline-none focus:border-blue-500"
                       >
                         {options.map((item, index) => (
                           <option key={index} value={item}>
@@ -223,8 +223,8 @@ const BookYourSeat = () => {
                     </div>
 
                     {/* UNIVERSITY */}
-                    <div className="col-span-2">
-                      <label className="block mb-1 text-gray-700">
+                    <div className="md:col-span-2 flex flex-col">
+                      <label className="mb-1 text-gray-700">
                         Preferred University
                       </label>
                       <input
@@ -232,33 +232,39 @@ const BookYourSeat = () => {
                         value={form.preferredUniversity}
                         onChange={handleChange}
                         placeholder="Preferred University"
-                        className="w-full border border-gray-300 p-2.5 bg-white outline-none focus:border-blue-500"
+                        className="w-full border border-gray-300 p-3 rounded-md bg-white outline-none focus:border-blue-500"
                       />
                     </div>
 
                     {/* FILE UPLOAD */}
-                    <div className="col-span-2">
-                      <label className="block mb-1 text-gray-700">
-                        Upload Passport ,10th ,12th , Neet Marksheet
+                    <div className="md:col-span-2 flex flex-col">
+                      <label className="mb-1 text-gray-700">
+                        Upload Passport, 10th, 12th, NEET Marksheet
                       </label>
+
                       <input
                         type="file"
                         accept=".pdf,application/pdf"
                         onChange={handleFileChange}
-                        className={`w-full border p-2 bg-white text-xs ${fileError ? "border-red-500" : "border-gray-300"}`}
+                        className={`w-full border p-2.5 rounded-md bg-white text-xs ${
+                          fileError ? "border-red-500" : "border-gray-300"
+                        }`}
                       />
+
                       {fileError && (
                         <p className="text-red-500 text-xs mt-1">{fileError}</p>
                       )}
                     </div>
 
                     {/* SUBMIT BUTTON */}
-                    <button
-                      type="submit"
-                      className="col-span-2 w-full mt-1 bg-[#5b6fa6] hover:bg-[#4d5f8f] text-white py-3 font-semibold"
-                    >
-                      Submit Now
-                    </button>
+                    <div className="md:col-span-2">
+                      <button
+                        type="submit"
+                        className="w-full mt-2 bg-[#5b6fa6] hover:bg-[#4d5f8f] text-white py-3 rounded-md font-semibold transition"
+                      >
+                        Submit Now
+                      </button>
+                    </div>
                   </form>
 
                   {/* PAY NOW BUTTON */}
