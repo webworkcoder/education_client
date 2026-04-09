@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 
 import { videoData } from "@/data/videodata";
@@ -9,7 +8,7 @@ import VideoCards from "../common/VideoCards";
 
 const Testimonials = () => {
   return (
-    <section className="py-16 px-4 md:px-10 bg-gray-100">
+    <section className="py-16 px-4 md:px-10 bg-gray-100 overflow-x-hidden">
       
       <motion.div
         initial={{ opacity: 0, y: 60 }}
@@ -34,7 +33,7 @@ const Testimonials = () => {
         </p>
 
         {/* VIDEO GRID */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-10">
           {videoData.map((video) => (
             <VideoCards key={video.id} data={video} />
           ))}

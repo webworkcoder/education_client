@@ -119,7 +119,7 @@ const WhyChooseUs = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid md:grid-cols-3 gap-6"
+          className="grid sm:grid-cols-2 md:grid-cols-3 gap-6"
         >
           {features.map((item, index) => (
             <motion.div

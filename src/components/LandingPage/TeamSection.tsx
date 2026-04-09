@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import { team } from "@/data/teamdata";
 
@@ -15,7 +14,7 @@ const TeamSection = () => {
     role: string;
   }) => (
     <div className="bg-white p-2 shadow-md overflow-hidden text-center flex-1">
-      <img src={image} alt={name} className="w-full h-[420px] object-cover" />
+      <img src={image} alt={name} className="w-full h-52 sm:h-72 md:h-105 object-cover" />
       <div className="p-4">
         <h3 className="font-semibold text-lg text-gray-900">{name}</h3>
         <p className="text-sm text-blue-600">{role}</p>

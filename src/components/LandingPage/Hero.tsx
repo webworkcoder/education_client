@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="relative h-[90vh] flex items-center">
+    <section className="relative h-[90vh] flex items-center overflow-x-hidden">
 
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0">
@@ -15,7 +15,7 @@ const Hero = () => {
           className="w-full h-full object-cover object-center"
         />
         {/* DARK OVERLAY */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0b1f4d]/90 to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-[#0b1f4d]/90 to-transparent"></div>
       </div>
 
       {/* CONTENT */}
