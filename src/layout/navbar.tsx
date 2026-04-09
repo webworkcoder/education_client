@@ -17,7 +17,7 @@ const menuData: Record<
   string,
   { label: string; href: string; icon?: React.ReactNode }[]
 > = {
-  Courses: [{ label: "MBBS", href: "#mbbs", icon: <FaUserDoctor /> }],
+  Courses: [{ label: "MBBS", href: "/#mbbs", icon: <FaUserDoctor /> }],
   Countries: [
     { label: "Russia", href: "/countries/russia", icon: <FaUserDoctor /> },
     { label: "China", href: "/countries/china", icon: <FaUserDoctor /> },
@@ -39,7 +39,7 @@ const popoverWidths: Record<string, string> = {
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "#about" },
+  { name: "About", href: "/#about" },
   { name: "Courses", href: "#", hasMenu: true },
   { name: "Countries", href: "#", hasMenu: true },
   { name: "Universities", href: "#", hasMenu: true },
@@ -137,7 +137,7 @@ export const Navbar = () => {
 
           {/* BUTTON */}
           <Link
-            href="#apply"
+            href="/#apply"
             className="bg-[#405b9c] text-white px-4 py-2 rounded-md text-sm"
           >
             Register Now
