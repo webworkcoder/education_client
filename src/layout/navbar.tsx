@@ -13,20 +13,33 @@ import {
 } from "@/components/ui/popover";
 import { FaUserDoctor } from "react-icons/fa6";
 
-const menuData: Record<string, { label: string; href: string; icon?: React.ReactNode }[]> = {
+const menuData: Record<
+  string,
+  { label: string; href: string; icon?: React.ReactNode }[]
+> = {
   Courses: [{ label: "MBBS", href: "#mbbs", icon: <FaUserDoctor /> }],
   Countries: [
-    { label: "Russia", href: "/countries/russia",icon: <FaUserDoctor /> },
-    { label: "China", href: "/countries/china",icon: <FaUserDoctor /> },
+    { label: "Russia", href: "/countries/russia", icon: <FaUserDoctor /> },
+    { label: "China", href: "/countries/china", icon: <FaUserDoctor /> },
   ],
   Universities: [
-    { label: "Moscow State University", href: "/universities/msu",icon: <FaUserDoctor /> },
+    {
+      label: "Moscow State University",
+      href: "/universities/msu",
+      icon: <FaUserDoctor />,
+    },
   ],
+};
+
+const popoverWidths: Record<string, string> = {
+  Courses: "w-40",
+  Countries: "w-56",
+  Universities: "w-72",
 };
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
+  { name: "About", href: "#about" },
   { name: "Courses", href: "#", hasMenu: true },
   { name: "Countries", href: "#", hasMenu: true },
   { name: "Universities", href: "#", hasMenu: true },
@@ -65,11 +78,17 @@ function HoverPopover({ label, href }: any) {
         onMouseLeave={() => {
           timer.current = setTimeout(() => setOpen(false), 150);
         }}
-        className="w-48 p-0"
-        sideOffset={4}
+        className={`${popoverWidths[label] || "w-48"} p-0 rounded-none`}
+        side="bottom" 
+        align="start" 
+        sideOffset={6}
       >
         {menuData[label]?.map((item) => (
-          <Link key={item.href} href={item.href} className="flex items-center gap-2 px-4 py-2 hover:bg-gray-50">
+          <Link
+            key={item.href}
+            href={item.href}
+            className="flex items-center gap-2 px-4 py-2  "
+          >
             {item.icon && <span className="text-blue-600">{item.icon}</span>}
             {item.label}
           </Link>
@@ -118,7 +137,7 @@ export const Navbar = () => {
 
           {/* BUTTON */}
           <Link
-            href="/register"
+            href="#apply"
             className="bg-[#405b9c] text-white px-4 py-2 rounded-md text-sm"
           >
             Register Now
