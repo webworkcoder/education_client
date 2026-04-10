@@ -14,8 +14,8 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="bg-gray-100 py-16 px-4 md:px-10 overflow-x-hidden">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-[1.2fr_2.5fr] gap-12 items-start">
+    <section className="bg-gray-100 py-10 lg:py-16 px-4 lg:px-10 overflow-x-hidden">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.2fr_2.5fr] gap-6 lg:gap-12 items-start">
         {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, y: 80 }}
@@ -27,11 +27,11 @@ const FAQSection = () => {
             F. A. Q
           </span>
 
-          <h2 className="text-3xl md:text-4xl font-bold mt-4 text-gray-900">
-            Frequently Asked <br /> Questions
+          <h2 className="text-3xl lg:text-4xl font-bold mt-4 text-gray-900">
+            Frequently Asked <br className="hidden lg:block" /> Questions
           </h2>
 
-          <p className="text-gray-600 mt-4 max-w-md">
+          <p className="text-gray-600 mt-4 text-sm lg:text-base w-full lg:max-w-md">
             Frequently Asked Questions (FAQs) provide valuable insights into
             Atlas Mentor’s comprehensive MBBS advisory services. Here, we
             address common queries about our personalized guidance, university
@@ -40,7 +40,7 @@ const FAQSection = () => {
             medicine abroad.
           </p>
 
-          <div className="w-12 h-1 bg-orange-500 mt-6"></div>
+          <div className="w-12 h-1 bg-orange-500 mt-4 lg:mt-6"></div>
         </motion.div>
 
         {/* RIGHT SIDE */}

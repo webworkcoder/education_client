@@ -35,8 +35,8 @@ const features = [
 
 const AtlasMentor = () => {
   return (
-    <section id="about" className="py-12 md:py-16 px-4 sm:px-6 md:px-10 overflow-hidden">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-10 lg:gap-16 items-center">
+    <section id="about" className="py-12 lg:py-16 px-4 sm:px-6 lg:px-10 overflow-hidden">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-10 lg:gap-16 items-center">
 
         {/* LEFT CONTENT */}
         <motion.div
@@ -49,11 +49,11 @@ const AtlasMentor = () => {
             ATLAS MENTOR FOR MBBS JOURNEY
           </p>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
             Discover the Benefits of Partnering with Atlas Mentor
           </h2>
 
-          <p className="text-gray-600 mt-4 text-sm md:text-base max-w-2xl">
+          <p className="text-gray-600 mt-4 text-sm lg:text-base max-w-2xl">
             Choosing the right partner for your MBBS journey is crucial to
             achieving your dreams. Discover the benefits of partnering with
             Atlas Mentor and embark on your path to a rewarding medical career
@@ -61,7 +61,7 @@ const AtlasMentor = () => {
           </p>
 
           {/* FEATURES */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-8 mt-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-8 mt-8">
             {features.map((item, index) => (
               <FeatureItem
                 key={index}
@@ -83,7 +83,7 @@ const AtlasMentor = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="relative mt-10 md:mt-0"
+          className="relative mt-10 lg:mt-0"
         >
           <div className="overflow-hidden shadow-lg">
             <Image
@@ -91,12 +91,12 @@ const AtlasMentor = () => {
               alt="Doctor"
               width={500}
               height={600}
-              className="object-cover w-full h-70 sm:h-90 md:h-105"
+              className="object-cover w-full h-70 lg:h-105"
             />
           </div>
 
           {/* QUOTE CARD */}
-          <div className="relative md:absolute md:-left-2 md:bottom-0 bg-white p-4 shadow-md w-full md:max-w-xs border-l-4 border-blue-600 mt-4 md:mt-0">
+          <div className="relative lg:absolute lg:-left-2 lg:bottom-0 bg-white p-4 shadow-md w-full lg:max-w-xs border-l-4 border-blue-600 mt-4 lg:mt-0">
             <p className="text-sm sm:text-base text-gray-600">
               Empowering dreams, shaping futures – Atlas Mentor guides your
               journey.

@@ -34,10 +34,10 @@ const TeamSection = () => {
   };
 
   return (
-    <section className="bg-[#f5f5f5] py-16 px-4 md:px-10">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-[1fr_2.5fr] gap-10 md:gap-16 items-start">
+    <section className="bg-[#f5f5f5] py-16 px-4 lg:px-10">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-[1fr_2.5fr] gap-10 lg:gap-16 items-start">
         {/* LEFT */}
-        <div className="text-center md:text-left">
+        <div className="text-center lg:text-left">
           <span className="inline-block text-xs font-semibold tracking-widest border border-gray-400 px-3 py-1 text-gray-600">
             OUR TEAM
           </span>
@@ -52,9 +52,9 @@ const TeamSection = () => {
             Meet Atlas Mentor <br /> Dedicated Team
           </motion.h2>
 
-          <div className="w-12 h-1 bg-blue-600 mt-4 mx-auto md:mx-0" />
+          <div className="w-12 h-1 bg-blue-600 mt-4 mx-auto lg:mx-0" />
 
-          <p className="text-gray-600 mt-4 text-sm md:text-base leading-relaxed max-w-sm mx-auto md:mx-0">
+          <p className="text-gray-600 mt-4 text-sm lg:text-base leading-relaxed max-w-sm mx-auto lg:mx-0">
             Meet the dedicated team behind AtlasMentor (Elitestudy Abroad Pvt.
             Ltd.)! Led by{" "}
             <span className="font-bold">Dr. Jitesh & Pramod Kumar</span>, the
@@ -73,7 +73,7 @@ const TeamSection = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="flex flex-col sm:flex-row gap-6"
+          className="flex flex-col lg:flex-row gap-6"
         >
           {team.map((member, index) => (
             <TeamCard

@@ -24,7 +24,7 @@ const SomeFromStudents = () => {
     <section className="w-full bg-gray-100 py-10 px-4 md:px-10 overflow-x-hidden">
       <div className="max-w-7xl mx-auto relative">
         {/* LEFT SECTION */}
-        <div className="max-w-5xl relative bg-[#486ea3]/40 min-h-100 overflow-hidden">
+        <div className="lg:max-w-5xl relative bg-[#486ea3]/40 min-h-100 overflow-hidden">
           {/* BG IMAGE */}
           <img
             src="/doctors.jpg"
@@ -73,8 +73,7 @@ const SomeFromStudents = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className=" bg-white shadow-xl p-6 md:p-10 max-w-lg relative md:absolute right-0 md:right-0
-  top-auto md:top-1/2 translate-y-0 md:-translate-y-1/2 mt-6 md:mt-0 border-b-4 border-blue-950"
+          className="bg-white shadow-xl p-6 lg:p-10 w-full lg:max-w-lg lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 mt-6 lg:mt-0 border-b-4 border-blue-950"
         >
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             Hear from Atlas Mentor Satisfied Students
