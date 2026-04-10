@@ -9,6 +9,7 @@ import WhyChooseUs from "../LandingPage/WhyChooseUs";
 import TeamSection from "../LandingPage/TeamSection";
 import SomeFromStudents from "../LandingPage/SomeFromStudents";
 import FAQSection from "../LandingPage/FAQSection";
+import Startjourny from "../LandingPage/Startjourny";
 
 const HomePage = () => {
   return (
@@ -24,6 +25,7 @@ const HomePage = () => {
       <TeamSection/>
       <SomeFromStudents/>
       <FAQSection/>
+      <Startjourny/>
     </>
   );
 };

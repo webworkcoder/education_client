@@ -113,7 +113,7 @@ export const Navbar = () => {
         </Link>
 
         {/* DESKTOP MENU */}
-        <ul className="hidden md:flex gap-8">
+        <ul className="hidden sm:flex flex-wrap gap-3 md:gap-5 lg:gap-8 text-xs md:text-sm lg:text-base">
           {navLinks.map((link) =>
             link.hasMenu ? (
               <HoverPopover key={link.name} label={link.name} href="#" />
@@ -130,7 +130,7 @@ export const Navbar = () => {
           {/* MOBILE MENU BUTTON */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden bg-gray-100 border rounded-md p-2"
+            className="sm:hidden bg-gray-100 border rounded-md p-2"
           >
             {menuOpen ? <X /> : <Menu />}
           </button>

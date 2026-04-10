@@ -7,7 +7,7 @@ import { abroadLocations, abroadLocations2 } from "@/data/abroadData";
 const AbroadLocations = () => {
   return (
     <section id="mbbs" className="bg-gray-50 py-12 px-4 md:px-10 overflow-hidden">
-      
+      <div className="max-w-7xl mx-auto">
       {/* Header */}
       <div className="grid md:grid-cols-2 gap-6 mb-10 items-center">
 
@@ -68,6 +68,7 @@ const AbroadLocations = () => {
             description={item.description}
           />
         ))}
+      </div>
       </div>
     </section>
   );

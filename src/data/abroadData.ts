@@ -60,23 +60,3 @@ export const abroadLocations2: AbroadItem[] = [
 ];
 
 
-
-// ─── Data ────────────────────────────────────────────────────────────────────
-
-export const ATLAS_LINKS = [
-  "About",
-  "MBBS Countries",
-  "MBBS Universities",
-  "Why Atlas Mentor?",
-  "FAQ's On Atlas Mentor",
-  "Benefits of Atlas Mentor",
-];
-
-export const COUNTRIES = [
-  "Russia",
-  "Georgia",
-  "Moldova",
-  "Uzbekistan",
-  "Kyrgyzstan",
-  "Kazakhstan",
-];

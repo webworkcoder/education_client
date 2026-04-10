@@ -1,69 +1,81 @@
+"use client";
+
 import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full">
+    <footer className="w-full bg-black">
 
       {/* TOP CALLBACK SECTION */}
-      <div className="bg-gradient-to-r from-blue-700 to-blue-900 text-white px-6 md:px-16 py-10">
-        <div className="grid md:grid-cols-2 gap-6 items-center">
+      <div className="relative -mt-20 z-10">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          
+          <div className="bg-gradient-to-r from-blue-800 to-blue-900 text-white px-6 md:px-12 py-8 rounded-md shadow-lg">
+            
+            <div className="grid md:grid-cols-2 gap-6 items-center">
 
-          {/* LEFT TEXT */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-2">
-              Request a Callback Today!
-            </h2>
-            <p className="text-sm text-gray-200 leading-relaxed">
-              Need personalized guidance for your MBBS journey abroad? Request a
-              callback from Atlas Mentor’s expert advisors. We’re here to answer
-              your questions and assist you in achieving your academic goals with
-              confidence.
-            </p>
-          </div>
+              {/* LEFT TEXT */}
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold mb-2">
+                  Request a Callback Today!
+                </h2>
 
-          {/* RIGHT FORM */}
-          <div className="flex flex-col md:flex-row gap-3">
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="w-full md:w-1/2 px-4 py-2 rounded bg-gray-200 text-black outline-none"
-            />
-            <input
-              type="tel"
-              placeholder="Mobile Number"
-              className="w-full md:w-1/2 px-4 py-2 rounded bg-gray-200 text-black outline-none"
-            />
-            <button
-              type="button"
-              className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded text-white font-medium transition"
-            >
-              Request Callback
-            </button>
+                <p className="text-sm md:text-base text-gray-200 leading-relaxed max-w-xl">
+                  Need personalized guidance for your MBBS journey abroad?
+                  Request a callback from Atlas Mentor’s expert advisors.
+                  We’re here to answer your questions and assist you in achieving
+                  your academic goals with confidence.
+                </p>
+              </div>
+
+              {/* RIGHT FORM */}
+              <div className="w-full">
+                
+                {/* INPUTS */}
+                <div className="flex flex-col md:flex-row gap-3 mb-4">
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    className="w-full md:w-1/2 px-4 py-3 bg-gray-200 text-black rounded-sm outline-none"
+                  />
+                  <input
+                    type="tel"
+                    placeholder="Mobile Number"
+                    className="w-full md:w-1/2 px-4 py-3 bg-gray-200 text-black rounded-sm outline-none"
+                  />
+                </div>
+
+                {/* BUTTON */}
+                <button className="w-full bg-blue-600 hover:bg-blue-700 py-3 rounded-sm font-semibold transition">
+                  Request Callback
+                </button>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       {/* MAIN FOOTER */}
-      <div className="bg-black text-gray-300 px-6 md:px-16 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+      <div className="px-6 md:px-16 py-16 text-gray-300">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
 
           {/* LOGO + DESC */}
           <div>
             <h2 className="text-white text-xl font-bold mb-3">
               Atlas Mentor
             </h2>
-            <p className="text-sm leading-relaxed text-gray-400">
-              Atlas Mentor, a beacon of guidance for aspiring medical
-              professionals, offers expert assistance in pursuing MBBS abroad.
-              With personalized support and comprehensive solutions, our
-              seasoned team ensures students find their place in esteemed
-              medical universities worldwide.
+            <p className="text-sm text-gray-400 leading-relaxed">
+              Atlas Mentor offers expert guidance for MBBS abroad with
+              personalized support and global university access.
             </p>
           </div>
 
-          {/* ATLAS LINKS */}
+          {/* LINKS */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Atlas Mentor</h3>
+            <h3 className="text-white font-semibold mb-4">
+              Atlas Mentor
+            </h3>
             <ul className="space-y-2 text-sm">
               {[
                 "About",
@@ -72,7 +84,7 @@ const Footer: React.FC = () => {
                 "Why Atlas Mentor?",
                 "FAQ's On Atlas Mentor",
                 "Benefits of Atlas Mentor",
-              ].map((item: string) => (
+              ].map((item) => (
                 <li
                   key={item}
                   className="hover:text-white cursor-pointer transition"
@@ -96,7 +108,7 @@ const Footer: React.FC = () => {
                 "Uzbekistan",
                 "Kyrgyzstan",
                 "Kazakhstan",
-              ].map((country: string) => (
+              ].map((country) => (
                 <li key={country}>{country}</li>
               ))}
             </ul>
@@ -104,7 +116,9 @@ const Footer: React.FC = () => {
 
           {/* CONTACT */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Academics</h3>
+            <h3 className="text-white font-semibold mb-4">
+              Academics
+            </h3>
             <ul className="space-y-3 text-sm text-gray-400">
               <li>📍 Delhi, Chhattisgarh, Jaipur, Chandigarh, Patna</li>
               <li>✉️ info@atlasmentor.com</li>
@@ -117,23 +131,22 @@ const Footer: React.FC = () => {
 
         </div>
 
-        {/* BOTTOM BAR */}
+        {/* BOTTOM */}
         <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p>
-            Copyright © 2024 Atlas Mentor (Operated by ELITESTUDY ABROAD PVT LTD.).
-            All rights reserved.
+            Copyright © 2024 Atlas Mentor. All rights reserved.
           </p>
 
           <div className="flex gap-6 mt-4 md:mt-0">
             {["Terms of Service", "Privacy Policy", "Cookie Policy"].map(
-              (item: string) => (
+              (item) => (
                 <span
                   key={item}
                   className="hover:text-white cursor-pointer transition"
                 >
                   {item}
                 </span>
-              )
+              ),
             )}
           </div>
         </div>
