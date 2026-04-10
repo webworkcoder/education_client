@@ -63,7 +63,7 @@ const BookYourSeat = () => {
 
   return (
     <section id="apply" className="bg-gray-200 py-10 px-4">
-      <div className="max-w-8xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="relative overflow-hidden p-2 md:p-4">
           {/* BACKGROUND IMAGE */}
           <div

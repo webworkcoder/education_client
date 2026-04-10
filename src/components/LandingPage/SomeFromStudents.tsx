@@ -22,7 +22,7 @@ const SomeFromStudents = () => {
 
   return (
     <section className="w-full bg-gray-100 py-10 px-4 md:px-10 overflow-x-hidden">
-      <div className="mx-auto relative">
+      <div className="max-w-7xl mx-auto relative">
         {/* LEFT SECTION */}
         <div className="max-w-5xl relative bg-[#486ea3]/40 min-h-100 overflow-hidden">
           {/* BG IMAGE */}

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="relative h-[90vh] flex items-center overflow-x-hidden">
+    <section className="relative h-[90vh] lg:h-[25vh] flex items-center overflow-x-hidden">
 
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0">
@@ -19,7 +19,7 @@ const Hero = () => {
       </div>
 
       {/* CONTENT */}
-      <div className="relative px-5 sm:px-15 text-white">
+      <div className="relative max-w-7xl mx-auto w-full px-5 sm:px-15 text-white">
         
         {/* SMALL TAG */}
         <motion.p
