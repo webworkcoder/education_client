@@ -5,6 +5,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
 
 import { useState, useRef } from "react";
+import { usePathname } from "next/navigation";
 
 import {
   Popover,
@@ -19,14 +20,27 @@ const menuData: Record<
 > = {
   Courses: [{ label: "MBBS", href: "/#mbbs", icon: <FaUserDoctor /> }],
   Countries: [
-    { label: "Russia", href: "/countries/russia", icon: <FaUserDoctor /> },
-    { label: "China", href: "/countries/china", icon: <FaUserDoctor /> },
+    {
+      label: "Russia",
+      href: "/countries/russia",
+      icon: <img src="/russialogo.png" alt="Russia" className="w-6 h-6 object-contain border rounded-full" />,
+    },
+    {
+      label: "China",
+      href: "/countries/china",
+      icon: <img src="/chinalogo.png" alt="China" className="w-6 h-6 object-contain border rounded-full" />,
+    },
+    {
+      label: "Uzbekistan",
+      href: "/countries/uzbekistan",
+      icon: <img src="/Uzbekistanlogo.png" alt="Uzbekistan" className="w-6 h-6 object-contain border rounded-full" />,
+    },
   ],
   Universities: [
     {
-      label: "Moscow State University",
-      href: "/universities/msu",
-      icon: <FaUserDoctor />,
+      label: "MBBS University in Russia",
+      href: "/universities/russiauniversities",
+      icon: <img src="/russialogo.png" alt="MBBS University in Russia" className="w-6 h-6 object-cover  border rounded-full" />,
     },
   ],
 };
@@ -49,6 +63,7 @@ const navLinks = [
 function HoverPopover({ label, href }: any) {
   const [open, setOpen] = useState(false);
   const timer = useRef<any>(null);
+  const pathname = usePathname();
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -78,21 +93,26 @@ function HoverPopover({ label, href }: any) {
         onMouseLeave={() => {
           timer.current = setTimeout(() => setOpen(false), 150);
         }}
-        className={`${popoverWidths[label] || "w-48"} p-0 rounded-none`}
+        className={`${popoverWidths[label] || "w-48"} p-0 gap-0 rounded-none`}
         side="bottom" 
         align="start" 
         sideOffset={6}
       >
-        {menuData[label]?.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className="flex items-center gap-2 px-4 py-2  "
-          >
-            {item.icon && <span className="text-blue-600">{item.icon}</span>}
-            {item.label}
-          </Link>
-        ))}
+        {menuData[label]?.map((item) => {
+          const isActive = pathname === item.href;
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`flex items-center px-4 gap-2 py-1.5 hover:bg-[#667cb0] hover:text-white ${
+                isActive ? "bg-[#667cb0] text-white font-semibold" : ""
+              }`}
+            >
+              {item.icon && <span>{item.icon}</span>}
+              {item.label}
+            </Link>
+          );
+        })}
       </PopoverContent>
     </Popover>
   );
