@@ -1,9 +1,7 @@
-import React from 'react'
+import UzbekistanPage from "@/components/pages/countries/UzbekistanPage";
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+const Uzbekistan = () => {
+  return <UzbekistanPage />;
+};
 
-export default page
+export default Uzbekistan;

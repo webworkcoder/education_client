@@ -9,6 +9,7 @@ import UniversitiesSection from "@/components/common/countries/UniversitiesSecti
 import InfoCards from "@/components/common/InfoCards";
 import FAQSection from "@/components/LandingPage/FAQSection";
 import { faqs } from "@/data/faqs";
+import { describe } from "node:test";
 
 const tableData = [
   { label: "Population", value: "144,444,359 (as of May 2021)" },
@@ -136,48 +137,51 @@ const safetyData = {
     "By following basic safety precautions and carrying necessary ID documents, students can have a comfortable and secure stay.",
 };
 
-const advantagesData = [
-  {
-    title: "Affordable Education",
-    desc: "Tuition fees are much lower than private medical colleges in India.",
-  },
-  {
-    title: "High-Quality Education",
-    desc: "Universities offer modern facilities, advanced medical technology, and practical training.",
-  },
-  {
-    title: "No Donation or Entrance Exam",
-    desc: "Admission is based on NEET qualification, with no extra charges.",
-  },
-  {
-    title: "English Medium Courses",
-    desc: "Many universities teach in English, making it easier for Indian students.",
-  },
-  {
-    title: "Globally Recognized Degree",
-    desc: "MBBS degrees are approved by WHO, NMC, ECFMG, and other medical bodies.",
-  },
-  {
-    title: "Part-Time Work Opportunities",
-    desc: "Students can work while studying to gain experience.",
-  },
-  {
-    title: "Indian Food Availability",
-    desc: "Many universities have Indian mess facilities for students.",
-  },
-  {
-    title: "Safe and Friendly Environment",
-    desc: "Russia is a secure country with a welcoming atmosphere for Indian students.",
-  },
-  {
-    title: "International Career Opportunities",
-    desc: "Graduates can work in India, Russia, or other countries after clearing required exams.",
-  },
-  {
-    title: "NMC Screening Test Training",
-    desc: "Indian students get coaching for FMGE/NExT while studying.",
-  },
-];
+const advantagesData = {
+  description:"Russia is one of the best destinations for Indian students to pursue MBBS due to its affordable fees, high-quality education, and globally recognized degree. With modern facilities, practical training, and a safe environment, Russia provides an excellent opportunity for students to fulfill their dream of becoming a doctor.",
+  points: [
+    {
+      title: "Affordable Education",
+      desc: "Tuition fees are much lower than private medical colleges in India.",
+    },
+    {
+      title: "High-Quality Education",
+      desc: "Universities offer modern facilities, advanced medical technology, and practical training.",
+    },
+    {
+      title: "No Donation or Entrance Exam",
+      desc: "Admission is based on NEET qualification, with no extra charges.",
+    },
+    {
+      title: "English Medium Courses",
+      desc: "Many universities teach in English, making it easier for Indian students.",
+    },
+    {
+      title: "Globally Recognized Degree",
+      desc: "MBBS degrees are approved by WHO, NMC, ECFMG, and other medical bodies.",
+    },
+    {
+      title: "Part-Time Work Opportunities",
+      desc: "Students can work while studying to gain experience.",
+    },
+    {
+      title: "Indian Food Availability",
+      desc: "Many universities have Indian mess facilities for students.",
+    },
+    {
+      title: "Safe and Friendly Environment",
+      desc: "Russia is a secure country with a welcoming atmosphere for Indian students.",
+    },
+    {
+      title: "International Career Opportunities",
+      desc: "Graduates can work in India, Russia, or other countries after clearing required exams.",
+    },
+    {
+      title: "NMC Screening Test Training",
+      desc: "Indian students get coaching for FMGE/NExT while studying.",
+    },
+  ],
+};
 
 const loanData = {
   description:
@@ -240,8 +244,8 @@ const RussiaPage = () => {
       />
       <AdvantagesSection
         country="Russia"
-        description="Russia is one of the best destinations for Indian students to pursue MBBS due to its affordable fees, high-quality education, and globally recognized degree. With modern facilities, practical training, and a safe environment, Russia provides an excellent opportunity for students to fulfill their dream of becoming a doctor."
-        data={advantagesData}
+        description={advantagesData.description}
+        data={advantagesData.points}
       />
       <LoanSection
         country="Russia"

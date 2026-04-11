@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 type Props = {
   name: string;
   image: string;
   location: string;
+  desc?: string; 
   country?: string;
 };
 
@@ -13,10 +15,17 @@ const UniversityCard = ({
   name,
   image,
   location,
+  desc,
   country = "Russia",
 }: Props) => {
+  const pathname = usePathname();
+
+
+  const isUniversityPage = pathname.startsWith("/universities");
+
   return (
-    <div className="bg-white  overflow-hidden shadow-sm hover:shadow-lg transition duration-300">
+    <div className="bg-white overflow-hidden shadow-sm hover:shadow-lg transition duration-300">
+      
       {/* IMAGE */}
       <div className="relative">
         <Image
@@ -32,23 +41,28 @@ const UniversityCard = ({
           {country.toUpperCase()}
         </span>
 
-        {/* LOGO OVERLAP */}
+        {/* LOGO */}
         <div className="absolute -bottom-6 left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md border">
           <Image
-            src="/logo.png" 
+            src="/logo.png"
             alt="logo"
             width={30}
             height={30}
-            className="object-contain"
           />
         </div>
       </div>
 
       {/* CONTENT */}
       <div className="p-5 pt-8">
-        <h3 className="text-base font-semibold text-gray-900 mb-3 leading-snug">
+        <h3 className="text-base font-semibold text-gray-900 mb-2 leading-snug">
           {name}
         </h3>
+
+        {isUniversityPage && desc && (
+          <p className="text-sm text-gray-600 mb-3 line-clamp-3">
+            {desc}
+          </p>
+        )}
 
         <button className="text-xs font-semibold text-black hover:underline">
           READ MORE »
