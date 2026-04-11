@@ -10,6 +10,7 @@ import TeamSection from "../LandingPage/TeamSection";
 import SomeFromStudents from "../LandingPage/SomeFromStudents";
 import FAQSection from "../LandingPage/FAQSection";
 import Startjourny from "../LandingPage/Startjourny";
+import { faqs } from "@/data/faqs";
 
 const HomePage = () => {
   return (
@@ -22,10 +23,14 @@ const HomePage = () => {
       <Testimonials />
       <AtlasMentor />
       <WhyChooseUs />
-      <TeamSection/>
-      <SomeFromStudents/>
-      <FAQSection/>
-      <Startjourny/>
+      <TeamSection />
+      <SomeFromStudents />
+      <FAQSection
+        title="FAQs About MBBS in Russia"
+        description="Get answers to common questions about studying MBBS abroad."
+        data={faqs}
+      />
+      <Startjourny />
     </>
   );
 };
