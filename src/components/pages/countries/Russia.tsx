@@ -123,7 +123,7 @@ const eligibilityData = [
   },
 ];
 
-const universities = [
+export const universities = [
   {
     id: "uni-1",
     slug: "kuban-state-medical-university",
