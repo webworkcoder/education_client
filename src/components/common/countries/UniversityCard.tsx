@@ -1,14 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 type Props = {
   name: string;
   image: string;
   location: string;
-  desc?: string; 
+  desc?: string;
   country?: string;
+  slug: string;
 };
 
 const UniversityCard = ({
@@ -16,16 +18,15 @@ const UniversityCard = ({
   image,
   location,
   desc,
+  slug,
   country = "Russia",
 }: Props) => {
   const pathname = usePathname();
-
 
   const isUniversityPage = pathname.startsWith("/universities");
 
   return (
     <div className="bg-white overflow-hidden shadow-sm hover:shadow-lg transition duration-300">
-      
       {/* IMAGE */}
       <div className="relative">
         <Image
@@ -43,12 +44,7 @@ const UniversityCard = ({
 
         {/* LOGO */}
         <div className="absolute -bottom-6 left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md border">
-          <Image
-            src="/logo.png"
-            alt="logo"
-            width={30}
-            height={30}
-          />
+          <Image src="/logo.png" alt="logo" width={30} height={30} />
         </div>
       </div>
 
@@ -59,14 +55,15 @@ const UniversityCard = ({
         </h3>
 
         {isUniversityPage && desc && (
-          <p className="text-sm text-gray-600 mb-3 line-clamp-3">
-            {desc}
-          </p>
+          <p className="text-sm text-gray-600 mb-3 line-clamp-3">{desc}</p>
         )}
 
-        <button className="text-xs font-semibold text-black hover:underline">
+        <Link
+          href={`/universities/${slug}`}
+          className="text-xs font-semibold text-black hover:underline inline-block"
+        >
           READ MORE »
-        </button>
+        </Link>
       </div>
     </div>
   );
