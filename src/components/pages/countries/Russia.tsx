@@ -228,7 +228,7 @@ const RussiaPage = () => {
       <InfoTable data={tableData} />;
       <InfoCards
         data={data}
-        sectionClass="w-full bg-white py-12 px-6 md:px-16"
+        sectionClass="w-full bg-white py-12 px-6 md:px-16 overflow-hidden"
       />
       <EligibilitySection country="Russia" data={eligibilityData} />
       <UniversitiesSection country="Russia" data={universities} />
@@ -252,7 +252,7 @@ const RussiaPage = () => {
         title="FAQs About MBBS in Russia"
         description="Get answers to common questions about studying MBBS abroad."
         data={faqs}
-        faqClass="w-full bg-white py-12 px-6 md:px-16"
+        faqClass="w-full bg-white py-12 px-6 md:px-16 overflow-hidden"
       />
     </section>
   );
