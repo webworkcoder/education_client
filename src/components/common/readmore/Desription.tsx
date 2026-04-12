@@ -5,6 +5,7 @@ import { Header, Paragraph, Points, SubHeading } from "./AllTags";
 import BannerImage from "./BannerImage";
 import { useParams } from "next/navigation";
 import { universities } from "@/data/universities";
+import InfoTable from "../countries/InfoTable";
 
 const Description = () => {
   const params = useParams();
@@ -35,6 +36,8 @@ const Description = () => {
       {content.alumni.paragraphs.map((para, i) => (
         <Paragraph key={i} para={para} />
       ))}
+      <Header title={university.tableheder} />
+      <InfoTable data={university.tableData} />
 
       {/* Loan */}
       <Header title={content.loan.title} />
