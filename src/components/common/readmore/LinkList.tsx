@@ -13,19 +13,19 @@ type Props = {
 };
 
 const LinkList = ({ title = "Explore", items }: Props) => {
-    console.log("ITEMS:", items);
   return (
     <div className="w-full p-5">
       {/* TITLE */}
       <h4 className="font-semibold text-lg mb-3">{title}</h4>
 
       {/* LIST */}
-      <ul className="space-y-2">
+      {/* <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2"> */}
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-x-6 gap-y-2">
         {items?.map((item, index) => (
           <li key={index} className="pb-2">
             <Link
               href={`/country/${item.slug}`}
-              className="flex items-center gap-2 text-base font-bold text-black hover:text-blue-600 hover:underline transition"
+              className="flex items-start text-base font-bold text-black hover:text-blue-600 hover:underline transition"
             >
               {item.label}
             </Link>

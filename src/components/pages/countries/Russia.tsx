@@ -125,7 +125,6 @@ const eligibilityData = [
 ];
 
 
-
 const safetyData = {
   description:
     "Yes, Russia is safe and student-friendly for Indian medical students. With thousands of Indian students already studying there, the country provides a secure and welcoming environment.",
