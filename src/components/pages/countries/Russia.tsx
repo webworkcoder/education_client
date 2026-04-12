@@ -9,6 +9,7 @@ import UniversitiesSection from "@/components/common/countries/UniversitiesSecti
 import InfoCards from "@/components/common/InfoCards";
 import FAQSection from "@/components/LandingPage/FAQSection";
 import { faqs } from "@/data/faqs";
+import { universities } from "@/data/universities";
 import { describe } from "node:test";
 
 const tableData = [
@@ -123,50 +124,7 @@ const eligibilityData = [
   },
 ];
 
-export const universities = [
-  {
-    id: "uni-1",
-    slug: "kuban-state-medical-university",
-    name: "Kuban State Medical University (KSMU), Russia",
-    location: "Russia",
-    image: "/russia.jpg",
-  },
-  {
-    id: "uni-2",
-    slug: "bashkir-state-medical-university",
-    name: "Bashkir State Medical University, Russia",
-    location: "Russia",
-    image: "/russia.jpg",
-  },
-  {
-    id: "uni-3",
-    slug: "kazan-federal-university",
-    name: "Kazan Federal University (KFU), Russia",
-    location: "Russia",
-    image: "/russia.jpg",
-  },
-  {
-    id: "uni-4",
-    slug: "kursk-state-medical-university",
-    name: "Kursk State Medical University (KSMU), Russia",
-    location: "Russia",
-    image: "/russia.jpg",
-  },
-  {
-    id: "uni-5",
-    slug: "mari-state-university",
-    name: "Mari State University (MarSU), Russia",
-    location: "Russia",
-    image: "/russia.jpg",
-  },
-  {
-    id: "uni-6",
-    slug: "orenburg-state-medical-university",
-    name: "Orenburg State Medical University (OSMU), Russia",
-    location: "Russia",
-    image: "/russia.jpg",
-  },
-];
+
 
 const safetyData = {
   description:
