@@ -51,7 +51,7 @@ const ContactPage = () => {
     <section className="pb-20">
       {/* HERO */}
       <div className="w-full h-70 md:h-80 relative overflow-hidden bg-[#3b4578]">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-40 z-0">
           <Mail
             className="absolute right-10 top-1/2 -translate-y-1/2 text-white/20"
             size={200}
