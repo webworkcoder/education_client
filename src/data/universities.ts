@@ -138,7 +138,68 @@ export const universities = [
                 title: "FAQs on Kuban State Medical University (KSMU), Russia",
                 text: "Grab your medical Career..."
             }
-        }
+        },
+        tableheder: "Quick Highlights About Kuban State Medical University (KSMU), Russia",
+        tableData: [
+            {
+                id: 1,
+                slug: "population",
+                label: "Population",
+                value: "144,444,359 (as of May 2021)",
+            },
+            {
+                id: 2,
+                slug: "exchange-rate",
+                label: "Exchange Rate",
+                value: "1 Ruble = 0.011 USD (May 2024)",
+            },
+            { id: 3, slug: "climate", label: "Climate", value: "Continental" },
+            { id: 4, slug: "location", label: "Location", value: "Europe, Asia" },
+            { id: 5, slug: "capital", label: "Capital", value: "Moscow" },
+            { id: 6, slug: "currency", label: "Currency", value: "Ruble" },
+            {
+                id: 7,
+                slug: "travel-time",
+                label: "Travel time from Delhi",
+                value: "6 hours and 30 minutes",
+            },
+            {
+                id: 8,
+                slug: "time-difference",
+                label: "Time Difference",
+                value: "+2.5 hours IST",
+            },
+            {
+                id: 9,
+                slug: "student-count",
+                label: "Number of International Students",
+                value: "2,35,000 in 2022",
+            },
+            {
+                id: 10,
+                slug: "origin-countries",
+                label: "Students studying in Russia from different countries",
+                value: ["Uzbekistan", "Kazakhstan", "India", "Belarus", "China"],
+            },
+            {
+                id: 11,
+                slug: "languages",
+                label: "Language Spoken",
+                value: "English, Russian, Tatar, Bashkir, and Ukrainian",
+            },
+            {
+                id: 12,
+                slug: "academic-year",
+                label: "Academic Year",
+                value: "September – June",
+            },
+            {
+                id: 13,
+                slug: "course-duration",
+                label: "Duration of the Course",
+                value: "6 years (5 years + 1 year internship)",
+            },
+        ],
     },
     {
         id: "uni-2",

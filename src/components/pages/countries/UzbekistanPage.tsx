@@ -91,18 +91,21 @@ const eligibilityData = [
 const universities = [
   {
     name: "Andijan State Medical Institute Ranking, Uzbekistan",
-    location: "Russia",
+    location: "Uzbekistan",
     image: "/russia.jpg",
+    slug: "andijan-state-medical-institute",
   },
   {
     name: "Fergana Medical Institute of Public Health, Uzbekistan",
-    location: "Russia",
+    location: "Uzbekistan",
     image: "/russia.jpg",
+    slug: "fergana-medical-institute",
   },
   {
     name: "Samarkand State Medical Institute, Uzbekistan",
-    location: "Russia",
+    location: "Uzbekistan",
     image: "/russia.jpg",
+    slug: "samarkand-state-medical-institute",
   },
 ];
 
