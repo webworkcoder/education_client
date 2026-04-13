@@ -136,7 +136,7 @@ const BookYourSeat = () => {
                 {/* RIGHT FORM */}
                 <motion.div
                   {...fadeUp}
-                  className="bg-white text-gray-800 rounded-xl p-6 shadow-2xl"
+                  className="bg-white text-gray-800 rounded-lg p-4 sm:p-6 shadow-2xl"
                 >
                   {/* HEADER */}
                   <div className="text-center mb-6">
@@ -169,7 +169,7 @@ const BookYourSeat = () => {
                         value={form.fullName}
                         onChange={handleChange}
                         placeholder="Full Name"
-                        className="w-full border border-gray-300 p-3 rounded-md bg-white outline-none focus:border-blue-500"
+                        className="w-full rounded-full border border-l-2 border-l-[#111B32] p-3 bg-white outline-none"
                       />
                     </div>
 
@@ -183,7 +183,7 @@ const BookYourSeat = () => {
                         value={form.mobileNumber}
                         onChange={handleChange}
                         placeholder="Mobile Number"
-                        className="w-full border border-gray-300 p-3 rounded-md bg-white outline-none focus:border-blue-500"
+                        className="w-full rounded-full border border-l-2 border-l-[#111B32] p-3 bg-white outline-none"
                       />
                     </div>
 
@@ -197,22 +197,17 @@ const BookYourSeat = () => {
                         value={form.emailAddress}
                         onChange={handleChange}
                         placeholder="Email Address"
-                        className="w-full border border-gray-300 p-3 rounded-md bg-white outline-none focus:border-blue-500"
+                        className="w-full rounded-full border border-l-2 border-l-[#111B32] p-3 bg-white outline-none"
                       />
                     </div>
 
                     {/* COUNTRY */}
-                    <div className="flex flex-col">
-                      <label className="mb-1 text-gray-700">
-                        Preferred Country{" "}
-                        <span className="text-red-500">*</span>
-                      </label>
-
+                    <div className="relative w-full">
                       <select
                         name="preferredCountry"
                         value={form.preferredCountry}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 p-3 rounded-md bg-white outline-none focus:border-blue-500"
+                        className="w-full rounded-full border border-l-2 border-l-[#111B32] p-3 px-5 bg-white outline-none appearance-none cursor-pointer pr-10"
                       >
                         {options.map((item, index) => (
                           <option key={index} value={item}>
@@ -220,6 +215,23 @@ const BookYourSeat = () => {
                           </option>
                         ))}
                       </select>
+
+                      {/* Custom Arrow Icon */}
+                      <div className="absolute top-[23%] right-4 flex items-center pointer-events-none">
+                        <svg
+                          className="w-4 h-4 text-gray-500"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </div>
                     </div>
 
                     {/* UNIVERSITY */}
@@ -232,7 +244,7 @@ const BookYourSeat = () => {
                         value={form.preferredUniversity}
                         onChange={handleChange}
                         placeholder="Preferred University"
-                        className="w-full border border-gray-300 p-3 rounded-md bg-white outline-none focus:border-blue-500"
+                        className="w-full rounded-full border border-l-2 border-l-[#111B32] p-3 bg-white outline-none"
                       />
                     </div>
 
@@ -246,7 +258,7 @@ const BookYourSeat = () => {
                         type="file"
                         accept=".pdf,application/pdf"
                         onChange={handleFileChange}
-                        className={`w-full border p-2.5 rounded-md bg-white text-xs ${
+                        className={`w-full border p-3.5 rounded-full  bg-white text-xs ${
                           fileError ? "border-red-500" : "border-gray-300"
                         }`}
                       />
@@ -260,7 +272,7 @@ const BookYourSeat = () => {
                     <div className="md:col-span-2">
                       <button
                         type="submit"
-                        className="w-full mt-2 bg-[#5b6fa6] hover:bg-[#4d5f8f] text-white py-3 rounded-md font-semibold transition"
+                        className="w-full mt-2 bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] cursor-pointer text-white py-3 rounded-full font-semibold transition"
                       >
                         Submit Now
                       </button>
@@ -268,8 +280,8 @@ const BookYourSeat = () => {
                   </form>
 
                   {/* PAY NOW BUTTON */}
-                  <div className="mt-4">
-                    <button className="bg-[#0f2a56] text-white px-4 py-2 text-sm flex items-center gap-2">
+                  <div className="mt-4 flex justify-center ">
+                    <button className="bg-[#0f2a56] w-full sm:w-fit text-white px-4 py-2 text-sm flex items-center justify-center rounded-full gap-2">
                       <span className="font-bold text-lg">1</span>
                       <div className="text-left leading-tight">
                         <p className="text-xs font-semibold">Pay Now</p>
