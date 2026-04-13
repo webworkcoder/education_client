@@ -10,19 +10,23 @@ const Topbar = () => {
   const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP || "9220582597";
 
   return (
-    <section className="bg-gradient-to-r from-[#405b9c] to-[#133585] text-white text-xs md:text-sm py-2 border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
+    <section className="bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] text-white text-xs md:text-sm py-2 border-b border-white/10">
+      <div className="max-w-7xl mx-auto sm:px-6 flex justify-between items-center">
         {/* LEFT SIDE */}
         <div className="flex w-full md:w-auto items-center">
-            {/* mobile */}
-          <div className="flex md:hidden w-full justify-center p-3 items-center gap-2 text-center">
-            <Phone className="w-3 h-3" />
-            <span>{phone}</span>
+          {/* mobile */}
+          <div className="flex md:hidden w-full justify-between sm:justify-center p-3 items-center gap-2 text-center">
+            <div className="flex items-center gap-2">
+              <Phone className="w-3 h-3" />
+              <span>{phone}</span>
+            </div>
 
-            <span className="opacity-70">|</span>
+            <span className="opacity-70 hidden sm:flex">|</span>
 
-            <Phone className="w-3 h-3" />
-            <span>{phone2}</span>
+            <div className="flex items-center gap-2">
+              <Phone className="w-3 h-3" />
+              <span>{phone2}</span>
+            </div>
           </div>
 
           {/*  DESKTOP  FULL INFO */}

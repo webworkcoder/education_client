@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React from "react";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChartNoAxesGantt, ChevronDown, Menu, Send, X } from "lucide-react";
 import Link from "next/link";
 
 import { useState, useRef } from "react";
@@ -23,24 +25,48 @@ const menuData: Record<
     {
       label: "Russia",
       href: "/countries/russia",
-      icon: <img src="/russialogo.png" alt="Russia" className="w-6 h-6 object-contain border rounded-full" />,
+      icon: (
+        <img
+          src="/russialogo.png"
+          alt="Russia"
+          className="w-6 h-6 object-contain border rounded-full"
+        />
+      ),
     },
     {
       label: "China",
       href: "/countries/china",
-      icon: <img src="/chinalogo.png" alt="China" className="w-6 h-6 object-contain border rounded-full" />,
+      icon: (
+        <img
+          src="/chinalogo.png"
+          alt="China"
+          className="w-6 h-6 object-contain border rounded-full"
+        />
+      ),
     },
     {
       label: "Uzbekistan",
       href: "/countries/uzbekistan",
-      icon: <img src="/Uzbekistanlogo.png" alt="Uzbekistan" className="w-6 h-6 object-contain border rounded-full" />,
+      icon: (
+        <img
+          src="/Uzbekistanlogo.png"
+          alt="Uzbekistan"
+          className="w-6 h-6 object-contain border rounded-full"
+        />
+      ),
     },
   ],
   Universities: [
     {
       label: "MBBS University in Russia",
       href: "/universities/russiauniversities",
-      icon: <img src="/russialogo.png" alt="MBBS University in Russia" className="w-6 h-6 object-cover  border rounded-full" />,
+      icon: (
+        <img
+          src="/russialogo.png"
+          alt="MBBS University in Russia"
+          className="w-6 h-6 object-cover  border rounded-full"
+        />
+      ),
     },
   ],
 };
@@ -94,8 +120,8 @@ function HoverPopover({ label, href }: any) {
           timer.current = setTimeout(() => setOpen(false), 150);
         }}
         className={`${popoverWidths[label] || "w-48"} p-0 gap-0 rounded-none`}
-        side="bottom" 
-        align="start" 
+        side="bottom"
+        align="start"
         sideOffset={6}
       >
         {menuData[label]?.map((item) => {
@@ -104,8 +130,10 @@ function HoverPopover({ label, href }: any) {
             <Link
               key={item.href}
               href={item.href}
-              className={`flex items-center px-4 gap-2 py-1.5 hover:bg-[#667cb0] hover:text-white ${
-                isActive ? "bg-[#667cb0] text-white font-semibold" : ""
+              className={`flex items-center px-4 gap-2 py-1.5 hover:bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] hover:text-white ${
+                isActive
+                  ? "bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] text-white font-semibold"
+                  : ""
               }`}
             >
               {item.icon && <span>{item.icon}</span>}
@@ -127,9 +155,12 @@ export const Navbar = () => {
       {/* TOP ROW */}
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
         {/* LOGO */}
-        <Link href="/">
-          {/* <img src="/logo.png" className="h-8" /> */}
-          <p className="font-bold text-blue-700">Doctor Study Web.</p>
+        <Link href="/" className="flex-shrink-0 flex items-center group">
+          <img
+            src="/Elogo.png"
+            alt="Topson Education"
+            className="h-9 w-auto sm:h-10 md:h-12 lg:h-14 transition-all duration-300 object-contain group-hover:scale-105"
+          />
         </Link>
 
         {/* DESKTOP MENU */}
@@ -148,19 +179,17 @@ export const Navbar = () => {
         {/* RIGHT SIDE */}
         <div className="flex items-center gap-3">
           {/* MOBILE MENU BUTTON */}
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="sm:hidden bg-gray-100 border rounded-md p-2"
-          >
-            {menuOpen ? <X /> : <Menu />}
+          <button onClick={() => setMenuOpen(!menuOpen)} className="sm:hidden">
+            {menuOpen ? <X /> : <ChartNoAxesGantt />}
           </button>
 
           {/* BUTTON */}
           <Link
             href="/#apply"
-            className="bg-[#405b9c] text-white px-4 py-2 rounded-md text-sm"
+            className="hidden sm:flex items-center gap-2 bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] text-white px-7 py-2.5 rounded-full font-bold text-sm shadow-md hover:shadow-[#1e4e96]/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all"
           >
             Register Now
+            <Send size={14} className="rotate-45" />
           </Link>
         </div>
       </div>
