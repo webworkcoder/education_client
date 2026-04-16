@@ -1,9 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check } from "lucide-react";
+import {
+  Check,
+  ShieldCheck,
+  FileUp,
+  ArrowRight,
+  GraduationCap,
+} from "lucide-react";
 import { useState } from "react";
-import { FaUserDoctor } from "react-icons/fa6";
 
 const choosen = [
   "Top Universities",
@@ -16,11 +21,18 @@ const choosen = [
 
 const options = ["MBBS In Georgia", "MBBS in Russia", "MBBS in Kazakhstan"];
 
-const fadeUp = {
-  initial: { y: 60, opacity: 0 },
-  whileInView: { y: 0, opacity: 1 },
-  transition: { duration: 0.6 },
-  viewport: { once: true },
+// Unique Staggered Animation
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1, delayChildren: 0.2 },
+  },
+};
+
+const itemVariants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
 };
 
 const MAX_FILE_SIZE_MB = 5;
@@ -57,241 +69,224 @@ const BookYourSeat = () => {
 
   const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (fileError) return;
     console.log("Form Data:", { ...form, file });
   };
 
   return (
-    <section id="apply" className="bg-gray-200 py-10 px-4">
+    <section id="apply" className="bg-[#f4f7fa] py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="relative overflow-hidden p-2 md:p-4">
-          {/* BACKGROUND IMAGE */}
-          <div
-            className="absolute inset-0 bg-cover bg-center z-0"
-            style={{
-              backgroundImage: "url('/class-room.jpg')",
-            }}
-          />
+        <div className="relative overflow-hidden rounded-[2rem] shadow-xl bg-[#0b2a5b]">
+          {/* Background Elements */}
+          <div className="absolute inset-0 opacity-20 z-0">
+            <div className="absolute top-[-10%] left-[-5%] w-72 h-72 bg-blue-400 rounded-full blur-[120px]" />
+            <div className="absolute bottom-[-10%] right-[-5%] w-96 h-96 bg-gradient-to-br from-[#1e4e96] to-[#2d68b3] rounded-full blur-[150px]" />
+          </div>
 
-          <div className="absolute inset-0 bg-[#0b2a5b]/70 z-0" />
+          <div className="relative z-10 grid lg:grid-cols-12 gap-0">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="lg:col-span-5 p-8 md:p-12 lg:p-16 text-white"
+            >
+              <motion.div
+                variants={itemVariants}
+                className="flex items-center gap-3 mb-6"
+              >
+                <div className="p-3 bg-gradient-to-br from-[#1e4e96] to-[#2d68b3] rounded-xl shadow-lg shadow-[#1e4e96]">
+                  <GraduationCap className="w-8 h-8 text-white" />
+                </div>
+                <span className="font-bold tracking-[0.2em] text-orange-400 text-sm">
+                  TOPSON EDUCATION
+                </span>
+              </motion.div>
 
-          <div className="relative z-10 border border-white">
-            <div className="py-20 px-2 md:px-4 text-white">
-              <div className="grid md:grid-cols-2 gap-10 items-center">
-                {/* LEFT SIDE */}
-                <div className="space-y-6">
-                  <motion.div {...fadeUp}>
-                    <FaUserDoctor className="w-10 h-10 text-orange-400" />
-                  </motion.div>
+              <motion.h2
+                variants={itemVariants}
+                className="text-4xl md:text-5xl font-extrabold leading-[1.1] mb-6"
+              >
+                Empowering <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-500">
+                  Future Doctors
+                </span>
+              </motion.h2>
 
-                  <motion.div
-                    {...fadeUp}
-                    className="text-xs font-semibold border border-[#7784a1] inline-block px-3 py-1 tracking-widest"
-                  >
-                    PREMIER STUDY ABROAD ADVISORS
-                  </motion.div>
+              <motion.p
+                variants={itemVariants}
+                className="text-blue-100/80 text-lg mb-8 leading-relaxed"
+              >
+                Start your journey towards a bright medical future now. Our
+                expert team provides personalized support tailored to your
+                unique needs.
+              </motion.p>
 
-                  <motion.h2
-                    {...fadeUp}
-                    className="text-3xl md:text-4xl font-bold leading-tight max-w-md"
-                  >
-                    Personalized Consultation with Specialist Advisors!
-                  </motion.h2>
+              <motion.div
+                variants={itemVariants}
+                className="grid grid-cols-1 gap-4 mb-10"
+              >
+                {choosen.map((text, i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
+                      <Check className="w-3 h-3 text-green-400" />
+                    </div>
+                    <span className="text-sm text-blue-50/90 font-medium">
+                      {text}
+                    </span>
+                  </div>
+                ))}
+              </motion.div>
 
-                  <motion.p {...fadeUp} className="text-sm">
-                    Ready to pursue your MBBS dream?
-                  </motion.p>
-                  <motion.p {...fadeUp} className="text-base max-w-xl">
-                    Join hands with Atlas Mentor and let us guide you to
-                    success. Our expert team is here to provide personalized
-                    support and comprehensive solutions tailored to your unique
-                    needs. Don’t wait—start your journey towards a bright
-                    medical future now. Apply today and secure your place in a
-                    prestigious medical university abroad!
-                  </motion.p>
+              <motion.button
+                variants={itemVariants}
+                className="group flex items-center gap-2 text-white font-semibold border-b-2 border-[#1e4e96] pb-1 hover:text-orange-400 transition-all cursor-pointer"
+              >
+                Learn about our process
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </motion.button>
+            </motion.div>
 
-                  <ul className="grid grid-cols-2 gap-3 text-sm">
-                    {choosen.map((text, i) => (
-                      <motion.li
-                        key={i}
-                        {...fadeUp}
-                        className="flex items-center gap-2"
-                      >
-                        <span className="w-5 h-5 bg-orange-400/60 rounded-full flex items-center justify-center">
-                          <Check className="w-3 h-3 text-white" />
-                        </span>
-                        {text}
-                      </motion.li>
-                    ))}
-                  </ul>
-
-                  <motion.button
-                    {...fadeUp}
-                    className="bg-white text-blue-900 px-7 py-2 text-base font-semibold hover:bg-gray-200 transition"
-                  >
-                    Why Atlas Mentor?
-                  </motion.button>
+            {/* RIGHT SIDE: Form (7 Columns) */}
+            <div className="lg:col-span-7 bg-white/95 backdrop-blur-md p-8 md:p-12 lg:p-16">
+              <div className="max-w-lg mx-auto">
+                <div className="mb-10">
+                  <h3 className="text-2xl font-bold text-slate-800 mb-2">
+                    Book Your Counseling Seat
+                  </h3>
+                  <div className="w-20 h-1.5 bg-gradient-to-br from-[#1e4e96] to-[#2d68b3] rounded-full" />
                 </div>
 
-                {/* RIGHT FORM */}
-                <motion.div
-                  {...fadeUp}
-                  className="bg-white text-gray-800 rounded-lg p-4 sm:p-6 shadow-2xl"
-                >
-                  {/* HEADER */}
-                  <div className="text-center mb-6">
-                    <span className="text-[11px] tracking-widest border border-gray-400 px-4 py-1 inline-block">
-                      BOOK YOUR SEAT NOW
-                    </span>
-
-                    <h3 className="text-2xl font-bold mt-4 text-[#2c3e50]">
-                      Do You Want To Be A Doctor?
-                    </h3>
-
-                    <p className="text-sm text-gray-500 mt-3 leading-relaxed">
-                      Help us to know you better. Fill in the details and our
-                      team will contact you in the next 24 hours.
-                    </p>
-                  </div>
-
-                  {/* FORM */}
-                  <form
-                    onSubmit={handleSubmit}
-                    className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-sm"
-                  >
-                    {/* FULL NAME */}
-                    <div className="flex flex-col">
-                      <label className="mb-1 text-gray-700">
-                        Full Name <span className="text-red-500">*</span>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-xs font-bold text-black uppercase tracking-wider">
+                        Full Name *
                       </label>
                       <input
                         name="fullName"
-                        value={form.fullName}
                         onChange={handleChange}
-                        placeholder="Full Name"
-                        className="w-full rounded-full border border-l-2 border-l-[#111B32] p-3 bg-white outline-none"
+                        className="w-full border-b-2 border-slate-200 py-2 outline-none focus:border-[#0b2a5b] transition-colors text-slate-800 placeholder:text-slate-300"
+                        placeholder="Enter your full name"
                       />
                     </div>
-
-                    {/* MOBILE */}
-                    <div className="flex flex-col">
-                      <label className="mb-1 text-gray-700">
-                        Mobile Number <span className="text-red-500">*</span>
+                    <div className="space-y-2">
+                      <label className="text-xs font-bold text-black uppercase tracking-wider">
+                        Mobile Number *
                       </label>
                       <input
                         name="mobileNumber"
-                        value={form.mobileNumber}
                         onChange={handleChange}
-                        placeholder="Mobile Number"
-                        className="w-full rounded-full border border-l-2 border-l-[#111B32] p-3 bg-white outline-none"
+                        className="w-full border-b-2 border-slate-200 py-2 outline-none focus:border-[#0b2a5b] transition-colors text-slate-800"
+                        placeholder="Enter your mobile number"
                       />
                     </div>
+                  </div>
 
-                    {/* EMAIL */}
-                    <div className="flex flex-col">
-                      <label className="mb-1 text-gray-700">
-                        Email Address <span className="text-red-500">*</span>
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold text-black uppercase tracking-wider">
+                      Email Address *
+                    </label>
+                    <input
+                      name="emailAddress"
+                      onChange={handleChange}
+                      className="w-full border-b-2 border-slate-200 py-2 outline-none focus:border-[#0b2a5b] transition-colors text-slate-800"
+                      placeholder="Enter your email address"
+                    />
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-xs font-bold text-black uppercase tracking-wider">
+                        Preferred Country
                       </label>
-                      <input
-                        name="emailAddress"
-                        value={form.emailAddress}
-                        onChange={handleChange}
-                        placeholder="Email Address"
-                        className="w-full rounded-full border border-l-2 border-l-[#111B32] p-3 bg-white outline-none"
-                      />
-                    </div>
-
-                    {/* COUNTRY */}
-                    <div className="relative w-full">
-                      <select
-                        name="preferredCountry"
-                        value={form.preferredCountry}
-                        onChange={handleChange}
-                        className="w-full rounded-full border border-l-2 border-l-[#111B32] p-3 px-5 bg-white outline-none appearance-none cursor-pointer pr-10"
-                      >
-                        {options.map((item, index) => (
-                          <option key={index} value={item}>
-                            {item}
-                          </option>
-                        ))}
-                      </select>
-
-                      {/* Custom Arrow Icon */}
-                      <div className="absolute top-[23%] right-4 flex items-center pointer-events-none">
-                        <svg
-                          className="w-4 h-4 text-gray-500"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
+                      <div className="relative">
+                        <select
+                          name="preferredCountry"
+                          onChange={handleChange}
+                          className="w-full border-b-2 border-slate-200 py-2 outline-none focus:border-[#0b2a5b] transition-colors text-slate-800 appearance-none bg-transparent"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
+                          {options.map((opt) => (
+                            <option key={opt} value={opt}>
+                              {opt}
+                            </option>
+                          ))}
+                        </select>
+                        <div className="absolute right-0 bottom-3 pointer-events-none">
+                          <svg
+                            className="w-4 h-4 text-slate-400"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </div>
                       </div>
                     </div>
-
-                    {/* UNIVERSITY */}
-                    <div className="md:col-span-2 flex flex-col">
-                      <label className="mb-1 text-gray-700">
-                        Preferred University
+                    <div className="space-y-2">
+                      <label className="text-xs font-bold text-black uppercase tracking-wider">
+                        University
                       </label>
                       <input
                         name="preferredUniversity"
-                        value={form.preferredUniversity}
                         onChange={handleChange}
-                        placeholder="Preferred University"
-                        className="w-full rounded-full border border-l-2 border-l-[#111B32] p-3 bg-white outline-none"
+                        className="w-full border-b-2 border-slate-200 py-2 outline-none focus:border-[#0b2a5b] transition-colors text-slate-800"
+                        placeholder="If any..."
                       />
                     </div>
+                  </div>
 
-                    {/* FILE UPLOAD */}
-                    <div className="md:col-span-2 flex flex-col">
-                      <label className="mb-1 text-gray-700">
-                        Upload Passport, 10th, 12th, NEET Marksheet
-                      </label>
-
-                      <input
-                        type="file"
-                        accept=".pdf,application/pdf"
-                        onChange={handleFileChange}
-                        className={`w-full border p-3.5 rounded-full  bg-white text-xs ${
-                          fileError ? "border-red-500" : "border-gray-300"
-                        }`}
-                      />
-
-                      {fileError && (
-                        <p className="text-red-500 text-xs mt-1">{fileError}</p>
-                      )}
-                    </div>
-
-                    {/* SUBMIT BUTTON */}
-                    <div className="md:col-span-2">
-                      <button
-                        type="submit"
-                        className="w-full mt-2 bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] cursor-pointer text-white py-3 rounded-full font-semibold transition"
-                      >
-                        Submit Now
-                      </button>
-                    </div>
-                  </form>
-
-                  {/* PAY NOW BUTTON */}
-                  <div className="mt-4 flex justify-center ">
-                    <button className="bg-[#0f2a56] w-full sm:w-fit text-white px-4 py-2 text-sm flex items-center justify-center rounded-full gap-2">
-                      <span className="font-bold text-lg">1</span>
-                      <div className="text-left leading-tight">
-                        <p className="text-xs font-semibold">Pay Now</p>
-                        <p className="text-[10px] opacity-80">
-                          Secured by Razorpay
-                        </p>
+                  <div className="bg-slate-50 p-4 rounded-xl border border-dashed border-slate-300 cursor-pointer">
+                    <div className="flex items-center gap-4">
+                      <div className="p-2 bg-white rounded-lg shadow-sm">
+                        <FileUp className="w-6 h-6 text-slate-400" />
                       </div>
+                      <div className="flex-1">
+                        <p className="text-[11px] font-bold text-black uppercase mb-1">
+                          Upload Marksheets / Passport
+                        </p>
+                        <input
+                          type="file"
+                          accept=".pdf"
+                          onChange={handleFileChange}
+                          className="text-xs text-slate-400 file:hidden cursor-pointer"
+                        />
+                      </div>
+                    </div>
+                    {fileError && (
+                      <p className="text-red-500 text-[10px] mt-2 font-bold">
+                        {fileError}
+                      </p>
+                    )}
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="w-full cursor-pointer bg-gradient-to-br from-[#1e4e96] to-[#2d68b3] text-white py-3 rounded-full font-bold  transition-all  hover:shadow-[#1e4e96]/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
+                  >
+                    Send Application
+                  </button>
+
+                  <div className="flex items-center justify-between pt-4">
+                    <div className="flex items-center gap-2">
+                      <ShieldCheck className="w-5 h-5 text-green-500" />
+                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
+                        Verified by Razorpay
+                      </span>
+                    </div>
+                    <button className="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 px-4 py-2 rounded-lg transition-colors">
+                      <div className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
+                      <span className="text-xs font-bold text-[#0b2a5b]">
+                        Registration Fee via Razorpay
+                      </span>
                     </button>
                   </div>
-                </motion.div>
+                </form>
               </div>
             </div>
           </div>
