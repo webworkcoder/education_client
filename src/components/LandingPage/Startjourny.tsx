@@ -2,54 +2,103 @@
 
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+import { Send, Sparkles } from "lucide-react";
 
-const Startjourny = () => {
+const StartJourney = () => {
   return (
-    <section className="relative w-full md:h-125 flex items-center py-25 md:py-0">
-      {/* Background Image */}
+    <section className="relative w-full py-20  overflow-hidden bg-[#0b2a5b]">
+      {/* Background Image with Parallax-like Overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center bg-fixed scale-110"
         style={{
-          backgroundImage: "url(‘/doctors.jpg’)",
+          backgroundImage: "url('/doctors.jpg')",
         }}
       />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-blue-900/70"></div>
+      {/* Premium Multi-layered Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0b2a5b] via-[#0b2a5b]/90 to-[#1e4e96]/60"></div>
+
+      {/* Animated Decorative Shapes */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-400/20 rounded-full blur-[120px] -mr-48 -mt-48 animate-pulse" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-sky-400/10 rounded-full blur-[120px] -ml-48 -mb-48" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto w-full px-6 md:px-10 text-white">
-        <div className="max-w-2xl">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">
-            Start Your MBBS Journey Today!
-          </h1>
-
-          <p className="text-lg mb-4">
-            Ready to pursue your dream of studying MBBS abroad?
-          </p>
-
-          <p className="text-sm md:text-base leading-relaxed mb-4">
-            <span className="font-bold">Atlas Mentor</span> is here to help you
-            every step of the way. From expert guidance on university selection
-            to comprehensive support with applications and visa processes, we
-            ensure a seamless transition to your chosen destination.
-          </p>
-
-          <p className="text-sm md:text-base mb-6">
-            Don’t wait any longer—apply now and let us help you achieve your
-            aspirations in the field of medicine.
-          </p>
-
-          <Link
-            href="#apply"
-            className="bg-white/30 hover:bg-white/50 text-white text-base px-6 py-3 transition inline-block"
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 text-white">
+        <div className="max-w-3xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-8"
           >
-            Apply Now !
-          </Link>
+            <Sparkles size={14} className="text-sky-300" />
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-sky-100">
+              Limited Seats for 2026 Batch
+            </span>
+          </motion.div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="text-4xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tighter"
+          >
+            Start Your{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-white">
+              MBBS Journey
+            </span>{" "}
+            Today!
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-lg md:text-xl text-slate-200 mb-8 leading-relaxed font-medium"
+          >
+            Ready to pursue your dream of studying MBBS abroad?{" "}
+            <span className="text-white font-bold">Topson Education</span> is
+            here to guide you through every milestone, from university selection
+            to your first day on campus.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="flex flex-wrap gap-6 items-center mb-10"
+          >
+            <Link
+              href="#apply"
+              className="group relative bg-white text-[#0b2a5b] text-base font-black px-8 py-2.5 rounded-full transition-all hover:scale-105 active:scale-95 shadow-[0_20px_50px_rgba(255,255,255,0.1)] flex items-center gap-3 overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-sky-100 to-white opacity-0 group-hover:opacity-100 transition-opacity" />
+              <span className="relative z-10 uppercase tracking-wider">
+                Apply Now
+              </span>
+              <Send
+                size={20}
+                className="relative z-10 group-hover:translate-x-2 group-hover:-translate-y-1 transition-transform duration-300"
+              />
+            </Link>
+
+            <div className="flex items-center gap-4 text-white/80 group cursor-pointer">
+              <div className="w-6 h-6 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white/10 transition-colors">
+                <div className="w-2 h-2 bg-sky-400 rounded-full animate-ping" />
+              </div>
+              <p className="text-sm font-bold uppercase tracking-widest">
+                Free Consultation Open
+              </p>
+            </div>
+          </motion.div>
         </div>
       </div>
+
+      {/* Floating Bottom Bar (Desktop Only) */}
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-sky-400/50 to-transparent" />
     </section>
   );
 };
 
-export default Startjourny;
+export default StartJourney;
