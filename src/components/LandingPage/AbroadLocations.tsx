@@ -5,70 +5,56 @@ import AbroadCard from "../common/AbroadCard";
 import { abroadLocations, abroadLocations2 } from "@/data/abroadData";
 
 const AbroadLocations = () => {
+  const allLocations = [...abroadLocations, ...abroadLocations2];
+
   return (
-    <section id="mbbs" className="bg-gray-50 py-12 px-4 md:px-10 overflow-hidden">
+    <section
+      id="mbbs"
+      className="bg-[#f8fafc] py-20 px-4 md:px-10 overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto">
-      {/* Header */}
-      <div className="grid md:grid-cols-2 gap-6 mb-10 items-center">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            className="max-w-2xl"
+          >
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] font-bold tracking-[0.3em] text-xs uppercase mb-3 block">
+              Global Opportunities
+            </span>
+            <h2 className="text-3xl md:text-5xl font-black text-[#0b2a5b] leading-tight">
+              Explore MBBS Worldwide <br />
+              <span className="text-slate-400 italic font-light">
+                With Atlas Mentor
+              </span>
+            </h2>
+          </motion.div>
 
-        {/* LEFT → BOTTOM TO TOP */}
-        <motion.div
-          initial={{ y: 60, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <p className="text-sm tracking-widest font-medium uppercase border border-black px-2 py-1 inline-block">
-            MBBS Study Abroad Locations
-          </p>
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            className="md:text-right"
+          >
+            <p className="text-slate-500 text-base max-w-sm md:ml-auto leading-relaxed">
+              Find the ideal medical pathway with personalized guidance tailored
+              for future doctors.
+            </p>
+            <div className="w-20 h-1.5 bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] mt-4 md:ml-auto rounded-full" />
+          </motion.div>
+        </div>
 
-          <h2 className="text-2xl md:text-4xl font-bold mt-4 text-gray-800">
-            Explore MBBS Opportunities Worldwide With Atlas Mentor
-          </h2>
-        </motion.div>
-
-        {/* RIGHT → RIGHT TO LEFT */}
-        <motion.div
-          initial={{ x: 80, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-          <p className="text-base text-gray-600 leading-relaxed">
-            Embark on your MBBS journey across diverse destinations with Atlas
-            Mentor. Atlas Mentor is your guide to navigating these diverse
-            options and finding the ideal pathway to your medical career abroad.
-          </p>
-
-          <div className="w-12 h-1 bg-orange-500 mt-4"></div>
-        </motion.div>
-
-      </div>
-
-      {/* Cards */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {abroadLocations.map((item, index) => (
-          <AbroadCard
-            key={index}
-            title={item.title}
-            image={item.image}
-            country={item.country}
-            description={item.description}
-          />
-        ))}
-      </div>
-
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
-        {abroadLocations2.map((item, index) => (
-          <AbroadCard
-            key={index}
-            title={item.title}
-            image={item.image}
-            country={item.country}
-            description={item.description}
-          />
-        ))}
-      </div>
+        {/* Responsive Grid Layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+          {allLocations.map((item, index) => (
+            <AbroadCard
+              key={index}
+              title={item.title}
+              image={item.image}
+              country={item.country}
+              description={item.description}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

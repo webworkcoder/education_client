@@ -123,7 +123,7 @@ const AboutTopson = () => {
           <div className="flex flex-wrap gap-4">
             <Link
               href="#apply"
-              className="group flex items-center gap-2 bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] text-white px-8 py-4 hover:shadow-[#1e4e96]/30 hover:shadow-xl hover:-translate-y-0.5  font-bold shadow-lg shadow-blue-900/20  transition-all"
+              className="group flex items-center gap-2 bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] text-white px-8 py-4 hover:shadow-[#1e4e96]/30 hover:shadow-xl hover:-translate-y-0.5  font-bold shadow-lg shadow-blue-900/20  transition-all w-full sm:w-fit justify-center"
             >
               Start Your Application
               <ArrowRight
@@ -134,7 +134,7 @@ const AboutTopson = () => {
 
             <Link
               href="/about"
-              className="flex items-center gap-2 bg-slate-50 text-slate-700 px-8 py-4 hover:shadow-[#1e4e96]/30 hover:shadow-xl hover:-translate-y-0.5 font-bold border border-slate-200 hover:bg-white hover:border-blue-300 transition-all"
+              className="flex items-center gap-2 bg-slate-50 text-slate-700 px-8 py-4 hover:shadow-[#1e4e96]/30 hover:shadow-xl hover:-translate-y-0.5 font-bold border border-slate-200 hover:bg-white hover:border-blue-300 transition-all w-full sm:w-fit justify-center"
             >
               Learn More
             </Link>
