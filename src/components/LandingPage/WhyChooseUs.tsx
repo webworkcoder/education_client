@@ -5,138 +5,108 @@ import {
   DollarSign,
   FileText,
   Globe,
-  Phone,
-  BookOpen,
+  PhoneCall,
+  BookOpenCheck,
+  Sparkles,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import WhyUsCard from "../common/WhyCard";
 
+const features = [
+  {
+    icon: <User className="w-7 h-7" />,
+    title: "One-On-One Counseling",
+    desc: "Receive personalized guidance from experienced mentors to ensure your application stands out.",
+  },
+  {
+    icon: <DollarSign className="w-7 h-7" />,
+    title: "Financial Aid Resources",
+    desc: "Access comprehensive resources and support to secure financial aid for your medical studies.",
+  },
+  {
+    icon: <FileText className="w-7 h-7" />,
+    title: "Application & Visa",
+    desc: "Expert assistance with your application process and visa requirements for a smooth journey.",
+  },
+  {
+    icon: <Globe className="w-7 h-7" />,
+    title: "Travel & Logistics",
+    desc: "We arrange your travel and accommodation, making your transition seamless and comfortable.",
+  },
+  {
+    icon: <PhoneCall className="w-7 h-7" />,
+    title: "Transitions Support",
+    desc: "Get 360° support before departure and after arrival including settling assistance.",
+  },
+  {
+    icon: <BookOpenCheck className="w-7 h-7" />,
+    title: "Exam Prep Support",
+    desc: "Prepare for essential medical licensing exams using our elite online and offline resources.",
+  },
+];
+
+const container = {
+  hidden: {},
+  show: {
+    transition: { staggerChildren: 0.1, delayChildren: 0.1 },
+  },
+};
+
 const WhyChooseUs = () => {
-  const features = [
-    {
-      icon: <User className="w-8 h-8 text-white" />,
-      title: "One-On-One Counseling",
-      desc: "Receive personalized guidance from our experienced mentors to ensure your application stands out.",
-    },
-    {
-      icon: <DollarSign className="w-8 h-8 text-white" />,
-      title: "Financial Aid Resources",
-      desc: "Access comprehensive resources and support to secure financial aid for your medical studies abroad.",
-    },
-    {
-      icon: <FileText className="w-8 h-8 text-white" />,
-      title: "Application & Visa Assistance",
-      desc: "Benefit from expert assistance with your application process and visa requirements, ensuring a smooth journey.",
-    },
-    {
-      icon: <Globe className="w-8 h-8 text-white" />,
-      title: "Travel & Accommodation",
-      desc: "We help in arranging your travel and accommodation, making your transition seamless and comfortable.",
-    },
-    {
-      icon: <Phone className="w-8 h-8 text-white" />,
-      title: "Transitions Support",
-      desc: "Get support before departure and after arrival including settling assistance.",
-    },
-    {
-      icon: <BookOpen className="w-8 h-8 text-white" />,
-      title: "Exam Preparation Support",
-      desc: "Prepare using online and offline resources for essential exams.",
-    },
-  ];
-
-  // Parent animation
-  const container = {
-    hidden: {},
-    show: {
-      transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  // Child animation (premium feel)
-  const fadeUp = {
-    hidden: {
-      opacity: 0,
-      y: 50,
-      scale: 0.95,
-      filter: "blur(6px)",
-    },
-    show: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      filter: "blur(0px)",
-      transition: {
-        duration: 0.6,
-        ease: [0.22, 1, 0.36, 1] as const,
-      },
-    },
-  };
-
   return (
-    <section id="whyus" className="bg-gradient-to-r from-[#3f5fa3] to-[#5b76b3] py-24 px-4 overflow-hidden">
-      <div className="max-w-7xl mx-auto text-center text-white">
+    <section
+      id="whyus"
+      className="bg-[#f8fafc] py-20 px-4 overflow-hidden relative"
+    >
+      {/* Decorative background elements */}
+      <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-blue-50/50 to-transparent" />
 
-        {/* TOP TAG */}
-        <motion.p
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="text-sm font-bold bg-white text-[#344978] tracking-widest border inline-block px-3 py-1 mb-4"
-        >
-          WHY CHOOSE US
-        </motion.p>
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 mb-6"
+          >
+            <Sparkles size={14} className="text-[#1e4e96]" />
+            <span className="text-[10px] font-bold text-[#1e4e96] uppercase tracking-[0.2em]">
+              Our Excellence
+            </span>
+          </motion.div>
 
-        {/* TITLE */}
-        <motion.p
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold mb-4"
-        >
-          Why choose Atlas Mentor?
-        </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl md:text-5xl font-black text-[#0b2a5b] mb-6 tracking-tight"
+          >
+            Why Choose <span className="text-[#1e4e96]">Topson Education?</span>
+          </motion.h2>
 
-        {/* DESCRIPTION */}
-        <motion.p
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          viewport={{ once: true }}
-          className="text-sm md:text-base max-w-2xl mx-auto mb-12 text-gray-200"
-        >
-          We provide personalized support to help you achieve your MBBS dreams abroad.
-        </motion.p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            className="text-slate-500 text-lg max-w-2xl mx-auto"
+          >
+            We don&#39;t just guide; we partner in your journey to becoming a global
+            medical professional.
+          </motion.p>
+        </div>
 
-        {/* GRID */}
         <motion.div
           variants={container}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid sm:grid-cols-2 md:grid-cols-3 gap-6"
+          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
         >
           {features.map((item, index) => (
-            <motion.div
+            <WhyUsCard
               key={index}
-              variants={fadeUp}
-              whileHover={{
-                scale: 1.05,
-                y: -5,
-                transition: { duration: 0.3 },
-              }}
-            >
-              <WhyUsCard
-                icon={item.icon}
-                title={item.title}
-                desc={item.desc}
-              />
-            </motion.div>
+              icon={item.icon}
+              title={item.title}
+              desc={item.desc}
+            />
           ))}
         </motion.div>
       </div>
