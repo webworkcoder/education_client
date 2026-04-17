@@ -13,7 +13,7 @@ type Props = {
   title?: string;
   description?: string;
   data: FAQ[];
-  faqClass?: string; 
+  faqClass?: string;
 };
 
 const FAQSection = ({
@@ -32,12 +32,10 @@ const FAQSection = ({
   return (
     <section
       className={
-        faqClass ||
-        "bg-gray-100 py-10 lg:py-16 px-4 lg:px-10 overflow-x-hidden"
+        faqClass || "bg-gray-100 py-10 lg:py-16 px-4 lg:px-10 overflow-x-hidden"
       }
     >
       <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.2fr_2.5fr] gap-6 lg:gap-12 items-start">
-        
         {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, y: 80 }}
@@ -45,7 +43,7 @@ const FAQSection = ({
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <span className="border px-3 py-1 text-base tracking-widest text-gray-600 border-gray-400">
+          <span className="border px-3 py-1 text-base tracking-widest text-gray-600 border-[#1e4e96]">
             {tag}
           </span>
 
@@ -59,14 +57,13 @@ const FAQSection = ({
             </p>
           )}
 
-          <div className="w-12 h-1 bg-orange-500 mt-4 lg:mt-6"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#1e4e96] to-transparent rounded-full mt-4 lg:mt-6"></div>
         </motion.div>
 
         {/* RIGHT SIDE */}
         <div className="flex flex-col gap-4">
           {data.map((faq, index) => (
             <div key={index}>
-              
               {/* QUESTION */}
               <motion.div
                 initial={{ x: 80, opacity: 0 }}
@@ -74,7 +71,7 @@ const FAQSection = ({
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true }}
                 onClick={() => toggleFAQ(index)}
-                className={`bg-white border border-gray-300 px-5 py-4 font-bold text-lg cursor-pointer flex justify-between items-center ${
+                className={`bg-white border border-gray-300 border-l-2 border-l-[#1e4e96] px-5 py-4 font-bold text-lg cursor-pointer flex justify-between items-center ${
                   activeIndex === index ? "text-[#667bb3]" : "text-gray-800"
                 }`}
               >
@@ -92,13 +89,10 @@ const FAQSection = ({
                     transition={{ duration: 0.3 }}
                     className="bg-white border border-t-0 border-gray-300 px-5 overflow-hidden"
                   >
-                    <p className="py-4 text-gray-600 text-base">
-                      {faq.ans}
-                    </p>
+                    <p className="py-4 text-gray-600 text-base">{faq.ans}</p>
                   </motion.div>
                 )}
               </AnimatePresence>
-
             </div>
           ))}
         </div>

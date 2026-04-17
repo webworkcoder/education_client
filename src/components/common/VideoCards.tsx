@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Play, Pause } from "lucide-react"; // Icons for premium feel
+import { Play, Pause } from "lucide-react";
 
 type VideoProps = {
   data: {
