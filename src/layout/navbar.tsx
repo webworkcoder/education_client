@@ -15,6 +15,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { FaUserDoctor } from "react-icons/fa6";
+import { RiMenu2Fill } from "react-icons/ri";
 
 const menuData: Record<
   string,
@@ -180,7 +181,7 @@ export const Navbar = () => {
         <div className="flex items-center gap-3">
           {/* MOBILE MENU BUTTON */}
           <button onClick={() => setMenuOpen(!menuOpen)} className="sm:hidden">
-            {menuOpen ? <X /> : <ChartNoAxesGantt />}
+            {menuOpen ? <X /> : <RiMenu2Fill  size={20}/>}
           </button>
 
           {/* BUTTON */}
