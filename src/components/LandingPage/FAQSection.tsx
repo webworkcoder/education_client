@@ -32,10 +32,10 @@ const FAQSection = ({
   return (
     <section
       className={
-        faqClass || "bg-gray-100 py-10 lg:py-16 px-4 lg:px-10 overflow-x-hidden"
+        faqClass || "bg-gray-100 py-10 lg:py-16 px-6 lg:px-8 overflow-x-hidden"
       }
     >
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.2fr_2.5fr] gap-6 lg:gap-12 items-start">
+      <div className="max-w-7xl grid lg:grid-cols-[1.2fr_2.5fr] gap-6 lg:gap-12 items-start">
         {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, y: 80 }}
@@ -43,7 +43,7 @@ const FAQSection = ({
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <span className="border px-3 py-1 text-base tracking-widest text-gray-600 border-[#1e4e96]">
+          <span className="border rounded-full px-3 py-1 text-base tracking-widest text-gray-600 border-[#1e4e96]">
             {tag}
           </span>
 

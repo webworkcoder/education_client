@@ -16,7 +16,7 @@ type Props = {
 
 const UniversitiesSection = ({ country, data }: Props) => {
   return (
-    <section className="w-full bg-[#6a7fb0] py-12 px-6 md:px-16">
+    <section className="w-full bg-[#0b1f4d] py-12 px-6 md:px-8">
       {/* TITLE */}
       <h2 className="text-center text-white text-2xl md:text-3xl font-bold mb-10">
         Universities For MBBS in {country}

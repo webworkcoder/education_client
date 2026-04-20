@@ -38,12 +38,12 @@ const UniversityCard = ({
         />
 
         {/* COUNTRY BADGE */}
-        <span className="absolute top-3 right-3 bg-gray-700 text-white text-[11px] px-3 py-1 rounded-full">
+        <span className="absolute top-3 left-3 bg-gray-700 text-white text-[11px] px-3 py-1 rounded-full">
           {country.toUpperCase()}
         </span>
 
         {/* LOGO */}
-        <div className="absolute -bottom-6 left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md border">
+        <div className="absolute -bottom-6 right-4 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md border">
           <Image src="/logo.png" alt="logo" width={30} height={30} />
         </div>
       </div>
