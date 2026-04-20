@@ -1,27 +1,35 @@
 /* eslint-disable @next/next/no-img-element */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import React from "react";
-import { ChartNoAxesGantt, ChevronDown, Menu, Send, X } from "lucide-react";
+import React, { useState, useRef, useCallback } from "react";
+import { ChevronDown, Send, X } from "lucide-react";
 import Link from "next/link";
-
-import { useState, useRef } from "react";
 import { usePathname } from "next/navigation";
+import { FaUserDoctor } from "react-icons/fa6";
+import { RiMenu2Fill } from "react-icons/ri";
 
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { FaUserDoctor } from "react-icons/fa6";
-import { RiMenu2Fill } from "react-icons/ri";
 
-const menuData: Record<
-  string,
-  { label: string; href: string; icon?: React.ReactNode }[]
-> = {
-  Courses: [{ label: "MBBS", href: "/#mbbs", icon: <FaUserDoctor /> }],
+// Types
+type MenuItem = {
+  label: string;
+  href: string;
+  icon?: React.ReactNode;
+};
+
+// --- DATA CONFIGURATION ---
+const menuData: Record<string, MenuItem[]> = {
+  Courses: [
+    {
+      label: "MBBS",
+      href: "/#mbbs",
+      icon: <FaUserDoctor className="text-blue-600" />,
+    },
+  ],
   Countries: [
     {
       label: "Russia",
@@ -29,8 +37,8 @@ const menuData: Record<
       icon: (
         <img
           src="/russialogo.png"
-          alt="Russia"
-          className="w-6 h-6 object-contain border rounded-full"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
         />
       ),
     },
@@ -40,8 +48,8 @@ const menuData: Record<
       icon: (
         <img
           src="/chinalogo.png"
-          alt="China"
-          className="w-6 h-6 object-contain border rounded-full"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
         />
       ),
     },
@@ -51,31 +59,25 @@ const menuData: Record<
       icon: (
         <img
           src="/Uzbekistanlogo.png"
-          alt="Uzbekistan"
-          className="w-6 h-6 object-contain border rounded-full"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
         />
       ),
     },
   ],
   Universities: [
     {
-      label: "MBBS University in Russia",
+      label: "Russia Universities",
       href: "/universities/russiauniversities",
       icon: (
         <img
           src="/russialogo.png"
-          alt="MBBS University in Russia"
-          className="w-6 h-6 object-cover  border rounded-full"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
         />
       ),
     },
   ],
-};
-
-const popoverWidths: Record<string, string> = {
-  Courses: "w-40",
-  Countries: "w-56",
-  Universities: "w-72",
 };
 
 const navLinks = [
@@ -87,43 +89,46 @@ const navLinks = [
   { name: "Contact Us", href: "/contact" },
 ];
 
-function HoverPopover({ label, href }: any) {
+// --- DESKTOP HOVER POPOVER ---
+function HoverPopover({ label }: { label: string }) {
   const [open, setOpen] = useState(false);
-  const timer = useRef<any>(null);
+  const timer = useRef<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
+
+  const handleEnter = () => {
+    if (timer.current) clearTimeout(timer.current);
+    setOpen(true);
+  };
+
+  const handleLeave = () => {
+    timer.current = setTimeout(() => setOpen(false), 150);
+  };
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <li
-          onMouseEnter={() => {
-            if (timer.current) clearTimeout(timer.current);
-            setOpen(true);
-          }}
-          onMouseLeave={() => {
-            timer.current = setTimeout(() => setOpen(false), 150);
-          }}
-          className="list-none"
+          onMouseEnter={handleEnter}
+          onMouseLeave={handleLeave}
+          className="list-none outline-none"
         >
-          <Link href={href} className="flex items-center gap-1">
+          <button
+            className={`flex items-center gap-1 font-medium transition-colors hover:text-[#1e4e96] ${open ? "text-[#1e4e96]" : "text-gray-700"}`}
+          >
             {label}
-            <ChevronDown className={`w-4 h-4 ${open ? "rotate-180" : ""}`} />
-          </Link>
+            <ChevronDown
+              className={`w-4 h-4 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+            />
+          </button>
         </li>
       </PopoverTrigger>
 
       <PopoverContent
-        onMouseEnter={() => {
-          if (timer.current) clearTimeout(timer.current);
-          setOpen(true);
-        }}
-        onMouseLeave={() => {
-          timer.current = setTimeout(() => setOpen(false), 150);
-        }}
-        className={`${popoverWidths[label] || "w-48"} p-0 gap-0 rounded-none`}
-        side="bottom"
+        onMouseEnter={handleEnter}
+        onMouseLeave={handleLeave}
+        className="w-56 p-1 bg-white shadow-xl border-slate-100 rounded-xl"
+        sideOffset={10}
         align="start"
-        sideOffset={6}
       >
         {menuData[label]?.map((item) => {
           const isActive = pathname === item.href;
@@ -131,14 +136,14 @@ function HoverPopover({ label, href }: any) {
             <Link
               key={item.href}
               href={item.href}
-              className={`flex items-center px-4 gap-2 py-1.5 hover:bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] hover:text-white ${
+              className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-all ${
                 isActive
-                  ? "bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] text-white font-semibold"
-                  : ""
+                  ? "bg-blue-50 text-[#1e4e96]"
+                  : "hover:bg-slate-50 text-gray-600"
               }`}
             >
-              {item.icon && <span>{item.icon}</span>}
-              {item.label}
+              <span className="shrink-0">{item.icon}</span>
+              <span className="text-sm font-semibold">{item.label}</span>
             </Link>
           );
         })}
@@ -147,90 +152,138 @@ function HoverPopover({ label, href }: any) {
   );
 }
 
+// --- MAIN NAVBAR ---
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const pathname = usePathname();
+
+  const toggleMobileMenu = useCallback(() => setMenuOpen((prev) => !prev), []);
 
   return (
-    <header className="bg-white shadow-sm">
-      {/* TOP ROW */}
-      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-slate-100 shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 md:h-20">
         {/* LOGO */}
-        <Link href="/" className="flex-shrink-0 flex items-center group">
+        <Link
+          href="/"
+          className="flex-shrink-0 transition-transform active:scale-95"
+        >
           <img
             src="/Elogo.png"
             alt="Topson Education"
-            className="h-9 w-auto sm:h-10 md:h-12 lg:h-14 transition-all duration-300 object-contain group-hover:scale-105"
+            className="h-10 md:h-14 w-auto object-contain"
           />
         </Link>
 
-        {/* DESKTOP MENU */}
-        <ul className="hidden sm:flex flex-wrap gap-3 md:gap-5 lg:gap-8 text-xs md:text-sm lg:text-base">
-          {navLinks.map((link) =>
-            link.hasMenu ? (
-              <HoverPopover key={link.name} label={link.name} href="#" />
-            ) : (
-              <li key={link.name}>
-                <Link href={link.href}>{link.name}</Link>
-              </li>
-            ),
-          )}
-        </ul>
+        {/* DESKTOP NAVIGATION */}
+        <nav className="hidden lg:flex items-center">
+          <ul className="flex items-center gap-8">
+            {navLinks.map((link) =>
+              link.hasMenu ? (
+                <HoverPopover key={link.name} label={link.name} />
+              ) : (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className={`font-medium transition-colors hover:text-[#1e4e96] ${pathname === link.href ? "text-[#1e4e96]" : "text-gray-700"}`}
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ),
+            )}
+          </ul>
+        </nav>
 
-        {/* RIGHT SIDE */}
-        <div className="flex items-center gap-3">
-          {/* MOBILE MENU BUTTON */}
-          <button onClick={() => setMenuOpen(!menuOpen)} className="sm:hidden">
-            {menuOpen ? <X /> : <RiMenu2Fill  size={20}/>}
-          </button>
-
-          {/* BUTTON */}
+        {/* RIGHT ACTIONS */}
+        <div className="flex items-center gap-4">
           <Link
             href="/#apply"
-            className="hidden sm:flex items-center gap-2 bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] text-white px-7 py-2.5 rounded-full font-bold text-sm shadow-md hover:shadow-[#1e4e96]/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all"
+            className="hidden sm:flex items-center gap-2 bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all hover:shadow-lg hover:shadow-blue-900/20 active:scale-95"
           >
-            Register Now
+            Apply Now
             <Send size={14} className="rotate-45" />
           </Link>
+
+          {/* MOBILE TOGGLE */}
+          <button
+            onClick={toggleMobileMenu}
+            className="lg:hidden p-2 rounded-lg text-gray-600 hover:bg-slate-100 transition-colors"
+            aria-label="Toggle Menu"
+          >
+            {menuOpen ? <X size={24} /> : <RiMenu2Fill size={24} />}
+          </button>
         </div>
       </div>
 
-      {/* MOBILE MENU */}
+      {/* MOBILE MENU DRAWER */}
       {menuOpen && (
-        <div className="md:hidden border-t">
-          {navLinks.map((link) => (
-            <div key={link.name}>
-              <div
-                onClick={() =>
-                  link.hasMenu
-                    ? setOpenDropdown(
-                        openDropdown === link.name ? null : link.name,
-                      )
-                    : setMenuOpen(false)
-                }
-                className={`flex justify-between px-4 py-3 ${
-                  link.hasMenu ? "bg-[#6f84b3] text-white" : "bg-gray-100"
-                }`}
-              >
-                {link.name}
-                {link.hasMenu && <ChevronDown />}
-              </div>
-
-              {openDropdown === link.name && (
-                <div className="bg-white">
-                  {menuData[link.name]?.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="block px-6 py-2"
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b shadow-2xl animate-in slide-in-from-top duration-300">
+          <nav className="flex flex-col py-2 max-h-[80vh] overflow-y-auto">
+            {navLinks.map((link) => (
+              <div key={link.name} className="flex flex-col">
+                <div
+                  onClick={() =>
+                    link.hasMenu
+                      ? setOpenDropdown(
+                          openDropdown === link.name ? null : link.name,
+                        )
+                      : setMenuOpen(false)
+                  }
+                  className={`flex items-center justify-between px-6 py-4 cursor-pointer transition-colors ${
+                    link.hasMenu ? "bg-slate-50/50" : "hover:bg-slate-50"
+                  }`}
+                >
+                  <span
+                    className={`font-bold ${link.hasMenu ? "text-[#0b1f4d]" : "text-gray-800"}`}
+                  >
+                    {link.hasMenu ? (
+                      link.name
+                    ) : (
+                      <Link href={link.href}>{link.name}</Link>
+                    )}
+                  </span>
+                  {link.hasMenu && (
+                    <ChevronDown
+                      className={`w-5 h-5 transition-transform ${openDropdown === link.name ? "rotate-180 text-[#1e4e96]" : "text-gray-400"}`}
+                    />
+                  )}
                 </div>
-              )}
+
+                {/* MOBILE DROPDOWN CONTENT */}
+                {link.hasMenu && openDropdown === link.name && (
+                  <div className="bg-slate-50/30 px-4 pb-2">
+                    {menuData[link.name]?.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setMenuOpen(false)}
+                        className="flex items-center gap-4 px-6 py-3 hover:bg-white rounded-xl transition-all"
+                      >
+                        <span className="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm">
+                          {item.icon}
+                        </span>
+                        <span className="text-gray-700 font-semibold text-sm">
+                          {item.label}
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+
+            {/* MOBILE APPLY BUTTON */}
+            <div className="p-6 mt-2">
+              <Link
+                href="/#apply"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center justify-center gap-2 bg-[#1e4e96] text-white w-full py-4 rounded-xl font-bold"
+              >
+                Register Now <Send size={16} className="rotate-45" />
+              </Link>
             </div>
-          ))}
+          </nav>
         </div>
       )}
     </header>

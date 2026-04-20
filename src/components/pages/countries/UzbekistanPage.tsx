@@ -231,7 +231,7 @@ const UzbekistanPage = () => {
       <InfoTable data={tableData} />;
       <InfoCards
         data={data}
-        sectionClass="w-full bg-white py-12 px-6 md:px-16 overflow-hidden"
+        sectionClass="w-full bg-white py-12 px-4 md:px-8 overflow-hidden"
       />
       <EligibilitySection
         country="Uzbekistan"
