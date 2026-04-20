@@ -1,7 +1,8 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import React, { useState, useRef, useCallback } from "react";
+import React, { useState, useRef, useCallback, useEffect } from "react";
 import { ChevronDown, Send, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -93,6 +94,7 @@ const navLinks = [
 function HoverPopover({ label }: { label: string }) {
   const [open, setOpen] = useState(false);
   const timer = useRef<NodeJS.Timeout | null>(null);
+
   const pathname = usePathname();
 
   const handleEnter = () => {
@@ -156,9 +158,19 @@ function HoverPopover({ label }: { label: string }) {
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   const toggleMobileMenu = useCallback(() => setMenuOpen((prev) => !prev), []);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
+  if (!mounted) return null;
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-slate-100 shadow-sm">
