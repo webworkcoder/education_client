@@ -35,7 +35,7 @@ const SafetySection = ({
 }: Props) => {
   return (
     <section className="relative w-full bg-white py-12  overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         <div className="mb-16 md:mb-24">
           <motion.p
             initial={{ opacity: 0, y: 10 }}

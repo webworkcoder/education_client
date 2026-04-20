@@ -42,7 +42,7 @@ const LoanSection = ({
   };
 
   return (
-    <section className="w-full py-12  px-6 md:px-8 bg-white overflow-hidden">
+    <section className="w-full py-12  px-4 md:px-8 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

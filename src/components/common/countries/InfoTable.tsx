@@ -11,7 +11,7 @@ type Props = {
 
 const InfoTable = ({ data }: Props) => {
   return (
-    <section className="w-full bg-white py-12 px-6 md:px-8">
+    <section className="w-full bg-white py-12 px-4 md:px-8">
       <div className="max-w-7xl mx-auto border border-gray-300">
         <table className="w-full border-collapse table-fixed">
           <tbody>

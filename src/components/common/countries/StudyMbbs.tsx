@@ -10,10 +10,10 @@ type Props = {
 
 const CountryHero = ({ country }: Props) => {
   return (
-    <section className="w-full bg-[#f8faff] py-12 px-6 md:px-8 overflow-hidden">
+    <section className="w-full bg-[#f8faff] py-12 px-4 md:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
         {/* --- LEFT CONTENT: TEXT & ACTION --- */}
-        <div className="px-6 md:px-0">
+        <div className="px-0 md:px-0">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ const CountryHero = ({ country }: Props) => {
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="group w-full sm:w-auto bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-3 transition-all shadow-md hover:shadow-[#1e4e96]/30 hover:shadow-xl hover:-translate-y-0.5 cursor-pointer"
+            className="group w-full sm:w-auto bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] text-white px-8 py-3.5 rounded-full font-bold flex items-center justify-center gap-3 transition-all shadow-md hover:shadow-[#1e4e96]/30 hover:shadow-xl hover:-translate-y-0.5 cursor-pointer text-base"
           >
             <GraduationCap size={20} />
             Universities In {country.name}

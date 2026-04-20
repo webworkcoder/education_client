@@ -35,7 +35,7 @@ const HeroBaneer = ({ country, title }: Props) => {
       </div>
 
       {/* --- CONTENT AREA --- */}
-      <div className="relative z-20 max-w-7xl mx-auto w-full px-6 md:px-8">
+      <div className="relative z-20 max-w-7xl mx-auto w-full px-4 md:px-8">
         <div className="flex flex-col gap-4">
           {/* Badge - Animated */}
           <motion.div

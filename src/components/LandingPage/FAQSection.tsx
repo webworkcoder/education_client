@@ -32,7 +32,7 @@ const FAQSection = ({
   return (
     <section
       className={
-        faqClass || "bg-gray-100 py-10 lg:py-16 px-6 lg:px-8 overflow-x-hidden"
+        faqClass || "bg-gray-100 py-10 lg:py-16 px-4 lg:px-8 overflow-x-hidden"
       }
     >
       <div className="max-w-7xl grid lg:grid-cols-[1.2fr_2.5fr] gap-6 lg:gap-12 items-start">

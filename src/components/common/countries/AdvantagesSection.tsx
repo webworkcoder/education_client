@@ -35,7 +35,7 @@ const AdvantagesSection = ({ country, description, data }: Props) => {
   };
 
   return (
-    <section className="w-full py-12 px-6 md:px-8 bg-[#f8f9fa] overflow-hidden">
+    <section className="w-full py-12 px-4 md:px-8 bg-[#f8f9fa] overflow-hidden">
       <div className="">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
