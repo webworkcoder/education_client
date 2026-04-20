@@ -1,9 +1,7 @@
-import React from 'react'
+import UzbekistanUniversities from "@/components/pages/Universities/UzbekistanUniversities";
 
-const uzbekistanuniversities = () => {
-  return (
-    <div>uzbekistanuniversities</div>
-  )
-}
+const UzbekistanUniversitiesPage = () => {
+  return <UzbekistanUniversities />;
+};
 
-export default uzbekistanuniversities
+export default UzbekistanUniversitiesPage;
