@@ -78,6 +78,28 @@ const menuData: Record<string, MenuItem[]> = {
         />
       ),
     },
+    {
+      label: "Uzbekistan Universities",
+      href: "/universities/uzbekistanuniversities",
+      icon: (
+        <img
+          src="/uzbekistanlogo.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
+    {
+      label: "China Universities",
+      href: "/universities/chinauniversities",
+      icon: (
+        <img
+          src="/Chinalogo.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
   ],
 };
 
