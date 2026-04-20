@@ -2,7 +2,6 @@ import HeroBaneer from "@/components/common/countries/HeroBaneer";
 import UniversityCard from "@/components/common/countries/UniversityCard";
 import { universities } from "@/data/universities";
 
-
 const country = {
   name: "Russia",
   slug: "russia",
@@ -16,7 +15,7 @@ const RussiaUniversities = () => {
   return (
     <section className="pb-15">
       <HeroBaneer country={country} />
-      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6 py-15">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 py-12 px-4 md:px-8">
         {universities.map((uni, index) => (
           <UniversityCard key={index} {...uni} />
         ))}

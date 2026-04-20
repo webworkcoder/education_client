@@ -1,5 +1,8 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const UniversityHeroCard = ({ university }: any) => {
   return (
     <div className="relative w-full h-[7rem] md:h-[31rem] overflow-hidden">
@@ -8,7 +11,7 @@ const UniversityHeroCard = ({ university }: any) => {
         alt="bg"
         className="absolute inset-0 w-full h-full object-cover"
       />
-
+     
       <div className="absolute inset-0 bg-[#1f3c88]/80"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto h-full flex items-center px-6 md:px-16 text-white">
@@ -22,7 +25,9 @@ const UniversityHeroCard = ({ university }: any) => {
               {university.title}
             </h1>
 
-            <p className="text-white/90 mb-4 text-base max-w-2xl">{university.desc}</p>
+            <p className="text-white/90 mb-4 text-base max-w-2xl">
+              {university.desc}
+            </p>
 
             <div className="flex gap-6 text-sm text-white/80">
               <span>By {university.author}</span>

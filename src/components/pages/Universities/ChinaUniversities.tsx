@@ -15,7 +15,7 @@ const ChinaUniversities = () => {
   return (
     <section className="pb-15">
       <HeroBaneer country={country} />
-      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6 py-15">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6 py-12 px-4 md:px-8">
         {chinaUniversities.map((uni, index) => (
           <UniversityCard key={index} {...uni} />
         ))}
