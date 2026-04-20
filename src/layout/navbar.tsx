@@ -126,7 +126,7 @@ function HoverPopover({ label }: { label: string }) {
       <PopoverContent
         onMouseEnter={handleEnter}
         onMouseLeave={handleLeave}
-        className="w-56 p-1 bg-white shadow-xl border-slate-100 rounded-xl"
+        className="w-56 p-0 rounded-none bg-white shadow-xl border-slate-100"
         sideOffset={10}
         align="start"
       >
@@ -136,10 +136,10 @@ function HoverPopover({ label }: { label: string }) {
             <Link
               key={item.href}
               href={item.href}
-              className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-all ${
+              className={`flex items-center gap-3 px-3 py-2  transition-all ${
                 isActive
-                  ? "bg-blue-50 text-[#1e4e96]"
-                  : "hover:bg-slate-50 text-gray-600"
+                  ? "bg-[#1e4e96] text-white"
+                  : "hover:bg-slate-200 text-gray-600"
               }`}
             >
               <span className="shrink-0">{item.icon}</span>
@@ -201,14 +201,14 @@ export const Navbar = () => {
             href="/#apply"
             className="hidden sm:flex items-center gap-2 bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all hover:shadow-lg hover:shadow-blue-900/20 active:scale-95"
           >
-            Apply Now
+            Register Now
             <Send size={14} className="rotate-45" />
           </Link>
 
           {/* MOBILE TOGGLE */}
           <button
             onClick={toggleMobileMenu}
-            className="lg:hidden p-2 rounded-lg text-gray-600 hover:bg-slate-100 transition-colors"
+            className="lg:hidden p-2  text-gray-600 hover:bg-slate-100 transition-colors"
             aria-label="Toggle Menu"
           >
             {menuOpen ? <X size={24} /> : <RiMenu2Fill size={24} />}
@@ -258,12 +258,12 @@ export const Navbar = () => {
                         key={item.href}
                         href={item.href}
                         onClick={() => setMenuOpen(false)}
-                        className="flex items-center gap-4 px-6 py-3 hover:bg-white rounded-xl transition-all"
+                        className="flex items-center gap-4 px-6 py-3 hover:bg-white transition-all"
                       >
                         <span className="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm">
                           {item.icon}
                         </span>
-                        <span className="text-gray-700 font-semibold text-sm">
+                        <span className="text-gray-700 font-normal text-sm">
                           {item.label}
                         </span>
                       </Link>
@@ -273,12 +273,11 @@ export const Navbar = () => {
               </div>
             ))}
 
-            {/* MOBILE APPLY BUTTON */}
             <div className="p-6 mt-2">
               <Link
                 href="/#apply"
                 onClick={() => setMenuOpen(false)}
-                className="flex items-center justify-center gap-2 bg-[#1e4e96] text-white w-full py-4 rounded-xl font-bold"
+                className="flex items-center justify-center gap-2 bg-[#1e4e96] text-white w-full py-3.5 shadow-md rounded-full font-bold"
               >
                 Register Now <Send size={16} className="rotate-45" />
               </Link>
