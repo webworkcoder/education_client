@@ -1,9 +1,7 @@
-import React from 'react'
+import ChinaUniversities from "@/components/pages/Universities/ChinaUniversities";
 
-const Chinauniversities = () => {
-  return (
-    <div>Chinauniversities</div>
-  )
-}
+const ChinaUniversitiesPage = () => {
+  return <ChinaUniversities />;
+};
 
-export default Chinauniversities
+export default ChinaUniversitiesPage;

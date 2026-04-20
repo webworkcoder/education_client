@@ -1,6 +1,8 @@
 import HeroBaneer from "@/components/common/countries/HeroBaneer";
 import UniversityCard from "@/components/common/countries/UniversityCard";
-import { universities } from "@/data/universities";
+import { uzbekistanUniversities } from "@/data/universities";
+
+
 
 
 const country = {
@@ -17,7 +19,7 @@ const UzbekistanUniversities = () => {
     <section className="pb-15">
       <HeroBaneer country={country} />
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6 py-15">
-        {universities.map((uni, index) => (
+        {uzbekistanUniversities.map((uni, index) => (
           <UniversityCard key={index} {...uni} />
         ))}
       </div>

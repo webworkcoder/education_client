@@ -237,3 +237,168 @@ export const universities = [
         image: "/russia.jpg",
     },
 ];
+
+export const uzbekistanUniversities = [
+    {
+        id: "uni-7",
+        slug: "andijan-state-medical-institute",
+        name: "Andijan State Medical Institute (ASMI), Uzbekistan",
+        location: "Uzbekistan",
+        image: "/uzbekistan.jpg",
+        logo: "/uzbekistan.jpg",
+        title: "Andijan State Medical Institute (ASMI), Uzbekistan",
+        desc: "One of the top medical universities in Uzbekistan established in 1955.",
+        author: "Atlas Mentor",
+        category: "University In Uzbekistan",
+        date: "January 25, 2025",
+        collegeimg: "/uzbekistan.jpg",
+
+        righttitle: "Atlas Mentor",
+        rightdescription: "Expert MBBS abroad guidance",
+        rightimage: "/uzbeklogo.png",
+
+        rightlist: ["MBBS In Uzbekistan", "MBBS In Russia"],
+
+        rightlistlink: [
+            {
+                label: "Tashkent Medical Academy",
+                slug: "tashkent-medical-academy",
+            },
+        ],
+
+        guidanceCard: {
+            image: "/uzbekistan.jpg",
+            title: "MBBS in Uzbekistan Guidance",
+            description: "Get expert help",
+            buttonText: "Request Guidance",
+        },
+
+        tags: [{ label: "Facebook", link: "#" }],
+
+        descriptionContent: {
+            placement: {
+                title: "Placement at ASMI",
+                paragraphs: ["Good clinical exposure"],
+            },
+            alumni: {
+                subheading: "Alumni",
+                paragraphs: ["Global placements"],
+            },
+            loan: {
+                title: "Loan",
+                intro: "Available",
+                eligibility: {
+                    subheading: "Eligibility",
+                    points: ["NEET"],
+                },
+                amount: { subheading: "Amount", text: "Covers fees" },
+                documents: {
+                    subheading: "Docs",
+                    list: [{ heading: "Passport:", child: "" }],
+                },
+                interest: { subheading: "Interest", text: "8–12%" },
+                collateral: { subheading: "Collateral", text: "Optional" },
+                processing: { subheading: "Processing", text: "Fast" },
+                assistance: { subheading: "Help", text: "We assist" },
+            },
+            faq: {
+                title: "FAQs",
+                text: "Contact us",
+            },
+        },
+
+        tableheder: "Quick Highlights",
+        tableData: [
+            { id: 1, slug: "population", label: "Population", value: "3.6 Cr" },
+        ],
+    },
+    { id: "uzb-2", slug: "fergana-medical-institute-of-public-health", name: "Fergana Medical Institute of Public Health, Uzbekistan", location: "Uzbekistan", image: "/uzbekistan.jpg", desc: "Fergana Medical Institute of Public Health provides excellent medical education in Uzbekistan with modern facilities and experienced faculty.", country: "Uzbekistan" },
+    { id: "uzb-3", slug: "samarkand-state-medical-institute", name: "Samarkand State Medical Institute, Uzbekistan", location: "Uzbekistan", image: "/uzbekistan.jpg", desc: "Samarkand State Medical Institute is a prestigious medical university in Uzbekistan known for its strong academic programs and international student community.", country: "Uzbekistan" },
+    { id: "uzb-4", slug: "tashkent-medical-academy", name: "Tashkent Medical Academy, Uzbekistan", location: "Uzbekistan", image: "/uzbekistan.jpg", desc: "Tashkent Medical Academy is the largest and most reputed medical institution in Uzbekistan, offering MBBS programs recognized by WHO and NMC.", country: "Uzbekistan" },
+    { id: "uzb-5", slug: "bukhara-state-medical-university", name: "Bukhara State Medical University, Uzbekistan", location: "Uzbekistan", image: "/uzbekistan.jpg", desc: "Bukhara State Medical University offers quality medical education in a historic city, with globally recognized MBBS degrees and affordable tuition.", country: "Uzbekistan" },
+    { id: "uzb-6", slug: "tashkent-pediatric-medical-institute", name: "Tashkent Pediatric Medical Institute, Uzbekistan", location: "Uzbekistan", image: "/uzbekistan.jpg", desc: "Tashkent Pediatric Medical Institute specializes in pediatric medicine and offers comprehensive MBBS programs with modern teaching hospitals.", country: "Uzbekistan" },
+];
+
+export const chinaUniversities = [
+    {
+        id: "uni-8",
+        slug: "china1-state-medical-institute",
+        name: "China Medical University, China",
+        location: "China",
+        image: "/china.jpg",
+        logo: "/china.jpg",
+        title: "China Medical University (CMU), China",
+        desc: "Top government medical university with global recognition.",
+        author: "Atlas Mentor",
+        category: "University In China",
+        date: "January 25, 2025",
+        collegeimg: "/china.jpg",
+
+        righttitle: "Atlas Mentor",
+        rightdescription: "MBBS abroad guidance",
+        rightimage: "/chinalogo.png",
+
+        rightlist: ["MBBS In China", "MBBS In Russia"],
+
+        rightlistlink: [
+            {
+                label: "Jilin University",
+                slug: "jilin-university",
+            },
+        ],
+
+        guidanceCard: {
+            image: "/china.jpg",
+            title: "MBBS in China Guidance",
+            description: "Expert help available",
+            buttonText: "Request Guidance",
+        },
+
+        tags: [{ label: "Facebook", link: "#" }],
+
+        descriptionContent: {
+            placement: {
+                title: "Placement",
+                paragraphs: ["Global opportunities"],
+            },
+            alumni: {
+                subheading: "Alumni",
+                paragraphs: ["Work worldwide"],
+            },
+            loan: {
+                title: "Loan",
+                intro: "Available",
+                eligibility: {
+                    subheading: "Eligibility",
+                    points: ["NEET"],
+                },
+                amount: { subheading: "Amount", text: "Covers cost" },
+                documents: {
+                    subheading: "Docs",
+                    list: [{ heading: "Passport:", child: "" }],
+                },
+                interest: { subheading: "Interest", text: "8–12%" },
+                collateral: { subheading: "Collateral", text: "Required" },
+                processing: { subheading: "Processing", text: "Fast" },
+                assistance: { subheading: "Help", text: "We assist" },
+            },
+            faq: {
+                title: "FAQs",
+                text: "Contact us",
+            },
+        },
+
+        tableheder: "Quick Highlights",
+        tableData: [
+            { id: 1, slug: "population", label: "Population", value: "1.4B+" },
+        ],
+    },
+    { id: "chn-2", slug: "jilin-university-china", name: "Jilin University, China", location: "China", image: "/chinalogo.png", desc: "Jilin University is a top-ranked comprehensive university in China with an excellent medical school, offering MBBS in English for international students.", country: "China" },
+    { id: "chn-3", slug: "harbin-medical-university", name: "Harbin Medical University, China", location: "China", image: "/chinalogo.png", desc: "Harbin Medical University is a renowned medical institution in China offering affordable MBBS programs with English-medium instruction and world-class facilities.", country: "China" },
+    { id: "chn-4", slug: "nanjing-medical-university", name: "Nanjing Medical University, China", location: "China", image: "/chinalogo.png", desc: "Nanjing Medical University is a leading medical university in China known for its research output and high-quality MBBS education for international students.", country: "China" },
+    { id: "chn-5", slug: "shenyang-medical-college", name: "Shenyang Medical College, China", location: "China", image: "/chinalogo.png", desc: "Shenyang Medical College offers cost-effective MBBS programs in China with modern infrastructure and experienced faculty for international students.", country: "China" },
+    { id: "chn-6", slug: "wuhan-university-school-of-medicine", name: "Wuhan University School of Medicine, China", location: "China", image: "/chinalogo.png", desc: "Wuhan University School of Medicine is a prestigious institution offering globally recognized MBBS degrees with state-of-the-art teaching hospitals.", country: "China" },
+];
+
+
+
