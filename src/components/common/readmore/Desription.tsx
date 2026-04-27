@@ -24,7 +24,7 @@ const Description = () => {
   }
 
   return (
-    <div className="p-4">
+    <div className="p-2">
       {/* Placement */}
       <Header title={content.placement.title} />
       {content.placement.paragraphs.map((para, i) => (

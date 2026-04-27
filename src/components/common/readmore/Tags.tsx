@@ -24,7 +24,7 @@ const Tags = ({ title = "Tags :", tags }: Props) => {
           <Link
             key={index}
             href={tag.link || "#"}
-            className="px-6 py-2 bg-gray-200 text-[#667cb0] font-bold hover:bg-[#667cb0] hover:text-white transition"
+            className="px-6 py-2 bg-gray-200 rounded-full text-[#667cb0] font-bold hover:bg-[#667cb0] hover:text-white transition"
           >
             {tag.label}
           </Link>

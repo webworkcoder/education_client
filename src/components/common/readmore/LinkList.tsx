@@ -25,7 +25,7 @@ const LinkList = ({ title = "Explore", items }: Props) => {
           <li key={index} className="pb-2">
             <Link
               href={`/country/${item.slug}`}
-              className="flex items-start text-base font-bold text-black hover:text-blue-600 hover:underline transition"
+              className="flex items-start text-base font-bold text-black hover:text-[#1e4e96] hover:underline transition"
             >
               {item.label}
             </Link>

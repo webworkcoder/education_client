@@ -18,15 +18,9 @@ const GuidanceCard = ({
 }: Props) => {
   return (
     <div className="w-full bg-white rounded-xl shadow-md border overflow-hidden">
-      
       {/* IMAGE */}
       <div className="w-full h-48 md:h-52 relative">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="object-cover"
-        />
+        <Image src={image} alt={title} fill className="object-cover" />
       </div>
 
       {/* CONTENT */}
@@ -41,7 +35,6 @@ const GuidanceCard = ({
 
         {/* FORM */}
         <div className="space-y-3">
-          
           {/* NAME + EMAIL */}
           <div className="flex flex-col sm:flex-row gap-3">
             <input
@@ -64,7 +57,7 @@ const GuidanceCard = ({
           />
 
           {/* BUTTON */}
-          <button className="w-full bg-[#5b6fa6] text-white py-2.5 rounded-md text-sm font-medium hover:bg-[#4a5d91] transition">
+          <button className="w-full bg-[#1e4e96] text-white py-2.5 rounded-full text-sm font-medium hover:bg-[#4a5d91] transition">
             {buttonText}
           </button>
         </div>

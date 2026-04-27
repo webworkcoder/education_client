@@ -18,30 +18,28 @@ const UniversityDetails = () => {
   const slug = Array.isArray(params?.slug) ? params.slug[0] : params?.slug;
   const university = universities.find((item) => item.slug === slug);
 
-
   const sidebarRef = useRef<HTMLDivElement | null>(null);
-const [isSticky, setIsSticky] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
-useEffect(() => {
-  const handleScroll = () => {
-    if (!sidebarRef.current) return;
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!sidebarRef.current) return;
 
-    const rect = sidebarRef.current.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
+      const rect = sidebarRef.current.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
 
-    // When bottom of sidebar reaches viewport bottom
-    if (rect.bottom <= windowHeight) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  };
+      // When bottom of sidebar reaches viewport bottom
+      if (rect.bottom <= windowHeight) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  
   if (!university) {
     return <div>University not found</div>;
   }
@@ -60,7 +58,7 @@ useEffect(() => {
           { label: university.title || "Unknown", href: "#/" },
         ]}
       />
-      <div className="flex flex-col lg:flex-row items-start gap-6 px-4 md:px-16 mt-10 pb-25">
+      <div className="flex flex-col lg:flex-row items-start gap-6 px-4 md:px-8 mt-10 pb-25">
         <div className="w-full lg:w-2/3 mt-4">
           <BannerImage image={university.collegeimg} />
           <Description />
