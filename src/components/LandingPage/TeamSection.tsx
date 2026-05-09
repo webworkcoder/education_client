@@ -66,7 +66,7 @@ const TeamSection = () => {
     <section className="bg-white py-20 px-4 lg:px-8 overflow-hidden relative">
       {/* Subtle background text for premium feel */}
       <div className="absolute top-10 left-10 text-[15rem] font-black text-slate-50 pointer-events-none select-none -z-10 opacity-50">
-        LEADERS
+        Leadership Team
       </div>
 
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start relative z-10">
@@ -89,16 +89,16 @@ const TeamSection = () => {
             transition={{ duration: 0.7 }}
             className="text-4xl md:text-5xl font-black text-[#0b2a5b] leading-[1.1] tracking-tighter"
           >
-            Guided by{" "}
+            Meet The Experts{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1e4e96] to-[#2d68b3]">
-              Visionaries
+              Guiding Your Journey
             </span>
           </motion.h2>
 
           <p className="text-slate-500 text-lg leading-relaxed max-w-sm mx-auto lg:mx-0">
-            Meet the dedicated minds behind{" "}
-            <span className="text-[#0b2a5b] font-bold">Topson Education</span>.
-            Led by industry experts committed to your global medical success.
+            Our experienced leadership team is committed to helping students
+            achieve their dream of studying MBBS abroad through trusted guidance
+            and dedicated support.
           </p>
 
           <div className="pt-6 hidden lg:block">
@@ -107,8 +107,8 @@ const TeamSection = () => {
 
           <div className="space-y-4 text-sm text-slate-400 font-medium">
             <p>
-              “Excellence in every endeavor.” —{" "}
-              <span className="text-[#0b2a5b]">Mr. Raj, CEO</span>
+              “Guiding students toward a successful medical future.” —{" "}
+              <span className="text-[#0b2a5b]">Topson Education</span>
             </p>
           </div>
         </div>

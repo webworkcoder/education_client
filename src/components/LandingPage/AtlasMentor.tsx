@@ -86,7 +86,7 @@ const AtlasMentor = () => {
           {/* Main Image Frame */}
           <div className="relative z-10 p-4 bg-white shadow-2xl rounded-[3rem] rotate-2 hover:rotate-0 transition-transform duration-700">
             <Image
-              src="/doctors.jpg"
+              src="/doc3.jpeg"
               alt="Medical Students"
               width={600}
               height={700}
@@ -95,7 +95,7 @@ const AtlasMentor = () => {
           </div>
 
           {/* Floating Experience Card */}
-          <div className="absolute -left-2 md:-left-12 bottom-20 z-20 bg-white/80 backdrop-blur-xl p-4 sm:p-6 rounded-3xl shadow-2xl border border-white/40 ">
+          <div className="absolute right-0 md:right-0 bottom-20 z-20 bg-white/80 backdrop-blur-xl p-4 sm:p-6 rounded-3xl shadow-2xl border border-white/40 ">
             <h5 className="text-4xl font-black text-[#0b2a5b]">10+</h5>
             <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
               Years of Student Guidance

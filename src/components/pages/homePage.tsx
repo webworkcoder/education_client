@@ -26,8 +26,8 @@ const HomePage = () => {
       <TeamSection />
       <SomeFromStudents />
       <FAQSection
-        title="FAQs About MBBS in Russia"
-        description="Get answers to common questions about studying MBBS abroad."
+        title="Frequently Asked Questions"
+        description="Find answers to common questions related to MBBS admissions abroad and student support services."
         data={faqs}
       />
       <Startjourny />

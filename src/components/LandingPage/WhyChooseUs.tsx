@@ -15,33 +15,33 @@ import WhyUsCard from "../common/WhyCard";
 const features = [
   {
     icon: <User className="w-7 h-7" />,
-    title: "One-On-One Counseling",
-    desc: "Receive personalized guidance from experienced mentors to ensure your application stands out.",
+    title: "Personalized Counseling",
+    desc: "Get expert one-to-one guidance to choose the right university and build a successful medical career abroad.",
   },
   {
     icon: <DollarSign className="w-7 h-7" />,
-    title: "Financial Aid Resources",
-    desc: "Access comprehensive resources and support to secure financial aid for your medical studies.",
+    title: "Affordable MBBS Guidance",
+    desc: "Explore budget-friendly medical universities with complete fee transparency and financial planning support.",
   },
   {
     icon: <FileText className="w-7 h-7" />,
-    title: "Application & Visa",
-    desc: "Expert assistance with your application process and visa requirements for a smooth journey.",
+    title: "Admission & Documentation",
+    desc: "Receive professional support for applications, documentation, and visa processing with a smooth workflow.",
   },
   {
     icon: <Globe className="w-7 h-7" />,
-    title: "Travel & Logistics",
-    desc: "We arrange your travel and accommodation, making your transition seamless and comfortable.",
+    title: "International Opportunities",
+    desc: "Access globally recognized universities offering quality education, modern infrastructure, and practical learning.",
   },
   {
     icon: <PhoneCall className="w-7 h-7" />,
-    title: "Transitions Support",
-    desc: "Get 360° support before departure and after arrival including settling assistance.",
+    title: "Complete Student Support",
+    desc: "From counseling to post-admission assistance, our team supports students throughout their study abroad journey.",
   },
   {
     icon: <BookOpenCheck className="w-7 h-7" />,
-    title: "Exam Prep Support",
-    desc: "Prepare for essential medical licensing exams using our elite online and offline resources.",
+    title: "Career-Focused Guidance",
+    desc: "We help students make informed academic decisions that support long-term growth in the medical field.",
   },
 ];
 
@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
           >
             <Sparkles size={14} className="text-[#1e4e96]" />
             <span className="text-[10px] font-bold text-[#1e4e96] uppercase tracking-[0.2em]">
-              Our Excellence
+              Why Students Trust Us
             </span>
           </motion.div>
 
@@ -88,8 +88,9 @@ const WhyChooseUs = () => {
             whileInView={{ opacity: 1 }}
             className="text-slate-500 text-lg max-w-2xl mx-auto"
           >
-            We don&#39;t just guide; we partner in your journey to becoming a global
-            medical professional.
+            We provide trusted guidance, transparent admission support, and
+            personalized assistance to help students achieve their dream of
+            studying MBBS abroad.
           </motion.p>
         </div>
 

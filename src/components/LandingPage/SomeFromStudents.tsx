@@ -27,7 +27,7 @@ const SomeFromStudents = () => {
         <div className="lg:max-w-5xl relative rounded-[2rem] overflow-hidden shadow-2xl min-h-[500px] flex items-center">
           {/* BACKGROUND IMAGE WITH PREMIUM OVERLAY */}
           <img
-            src="/doctors.jpg"
+            src="/doc2.jpeg"
             alt="student success"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -94,25 +94,26 @@ const SomeFromStudents = () => {
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 rounded-full mb-6">
             <Sparkles size={14} className="text-[#1e4e96]" />
             <span className="text-[10px] font-bold text-[#1e4e96] uppercase tracking-widest">
-              Student Stories
+              Student Experiences
             </span>
           </div>
 
           <h2 className="text-3xl md:text-4xl font-black text-[#0b2a5b] mb-6 leading-[1.2]">
-            Voices of Our{" "}
-            <span className="text-[#1e4e96]">Future Doctors.</span>
+            Stories From Our{" "}
+            <span className="text-[#1e4e96]">Successful Students.</span>
           </h2>
 
           <p className="text-slate-500 text-base mb-8 leading-relaxed">
-            Discover how Topson Education has empowered students to bridge the
-            gap between their dreams and global medical excellence.
+            Hear from students who successfully started their MBBS journey
+            abroad with the guidance, support, and expertise of Topson
+            Education.
           </p>
 
           <Link
             href="#whyus"
             className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] hover:shadow-[#1e4e96]/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 text-white px-8 py-4 rounded-full font-bold hover:bg-[#1e4e96] transition-all shadow-lg shadow-blue-900/20 w-full md:w-fit justify-center"
           >
-            Explore Success Stories
+            Read More Success Stories
             <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
           </Link>
         </motion.div>

@@ -1,22 +1,22 @@
 export const faqs = [
   {
-    qun: "What services does Atlas Mentor provide?",
-    ans: "Atlas Mentor offers personalized guidance for MBBS admissions abroad, including university selection, application support, visa assistance, and pre-departure preparations.",
+    qun: "What services does Topson Education provide?",
+    ans: "Topson Education offers complete guidance for MBBS abroad, including university selection, admission support, documentation, visa assistance, and post-admission counseling.",
   },
   {
-    qun: "How can Atlas Mentor help me with my MBBS application?",
-    ans: "We provide expert advice and support throughout the application process, ensuring your applications stand out and meet all requirements of your chosen universities.",
+    qun: "How can Topson Education help with MBBS admissions?",
+    ans: "Our experienced counselors guide students through every stage of the admission process, helping them choose the right university and complete applications smoothly.",
   },
   {
-    qun: "What countries does Atlas Mentor cover for MBBS studies?",
-    ans: "Atlas Mentor assists students in exploring opportunities in countries such as Russia, Vietnam, Moldova, Georgia, Kyrgyzstan, Kazakhstan, and Uzbekistan, among others.",
+    qun: "Which countries are available for MBBS abroad?",
+    ans: "We assist students with MBBS admissions in countries such as Russia, Georgia, Kazakhstan, Uzbekistan, Kyrgyzstan, and other globally recognized destinations.",
   },
   {
-    qun: "Does Atlas Mentor provide assistance with visa applications and travel arrangements?",
-    ans: "Yes, we offer comprehensive visa guidance and support with travel arrangements to facilitate a smooth transition to your chosen study destination.",
+    qun: "Do you provide visa and travel support?",
+    ans: "Yes, we provide complete visa guidance, documentation support, and travel assistance to ensure a hassle-free transition for students studying abroad.",
   },
   {
-    qun: "How do I get started with Atlas Mentor?",
-    ans: "Begin by contacting us for an initial consultation where we assess your goals and needs. From there, we tailor our services to best support your journey towards pursuing MBBS abroad.",
+    qun: "How can I begin my MBBS abroad journey?",
+    ans: "You can start by contacting our counseling team for a free consultation. We will understand your goals and guide you through the best available options.",
   },
 ];

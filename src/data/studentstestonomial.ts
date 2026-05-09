@@ -1,16 +1,16 @@
 export const testimonialsFromStudents = [
   {
-    text: "Thanks to Atlas Mentor, I secured admission to a top medical university in Kazakhstan. Their team’s knowledge and commitment ensured a smooth transition, and I'm excited for the opportunities ahead.",
+    text: "Topson Education guided me throughout the MBBS admission process with complete transparency and support. Their counseling helped me secure admission to a reputed university abroad with confidence.",
     name: "Karan",
     city: "Bangalore",
   },
   {
-    text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut hic vitae ratione ducimus doloribus. Placeat at sequi nulla facere laudantium dignissimos repellat quis.",
+    text: "I had a smooth experience with the entire admission and visa process. The team was always available to answer my questions and made my journey stress-free.",
     name: "Riya",
     city: "Delhi",
   },
   {
-    text: "Best consultancy ever. Helped me achieve my dream. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut hic vitae ratione ducimus doloribus. Placeat at sequi nulla facere laudantium dignissimos repellat quis.",
+    text: "Choosing Topson Education was one of the best decisions for my medical career. Their expert guidance and personalized support helped me achieve my dream of studying MBBS abroad.",
     name: "Amit",
     city: "Mumbai",
   },

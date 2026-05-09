@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
 import { motion } from "framer-motion";
 import { Send, Sparkles } from "lucide-react";
 
@@ -10,9 +9,9 @@ const StartJourney = () => {
     <section className="relative w-full py-20  overflow-hidden bg-[#0b2a5b]">
       {/* Background Image with Parallax-like Overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed scale-110"
+        className="absolute inset-0 bg-cover bg-center  bg-fixed scale-110"
         style={{
-          backgroundImage: "url('/doctors.jpg')",
+          backgroundImage: "url('/doc1.jpeg')",
         }}
       />
 
@@ -34,7 +33,7 @@ const StartJourney = () => {
           >
             <Sparkles size={14} className="text-sky-300" />
             <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-sky-100">
-              Limited Seats for 2026 Batch
+              Admissions Open for 2026 Session
             </span>
           </motion.div>
 
@@ -44,11 +43,11 @@ const StartJourney = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-4xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tighter"
           >
-            Start Your{" "}
+            Begin Your{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-white">
-              MBBS Journey
+              Medical Career
             </span>{" "}
-            Today!
+            Abroad
           </motion.h1>
 
           <motion.p
@@ -57,10 +56,11 @@ const StartJourney = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg md:text-xl text-slate-200 mb-8 leading-relaxed font-medium"
           >
-            Ready to pursue your dream of studying MBBS abroad?{" "}
-            <span className="text-white font-bold">Topson Education</span> is
-            here to guide you through every milestone, from university selection
-            to your first day on campus.
+            Take the first step toward your dream of studying MBBS abroad with
+            trusted guidance from{" "}
+            <span className="text-white font-bold">Topson Education</span>. From
+            university selection to admission and visa support, we are with you
+            at every stage of your journey.
           </motion.p>
 
           <motion.div
@@ -75,7 +75,7 @@ const StartJourney = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-r from-sky-100 to-white opacity-0 group-hover:opacity-100 transition-opacity" />
               <span className="relative z-10 uppercase tracking-wider">
-                Apply Now
+                Start Application
               </span>
               <Send
                 size={20}
@@ -88,7 +88,7 @@ const StartJourney = () => {
                 <div className="w-2 h-2 bg-sky-400 rounded-full animate-ping" />
               </div>
               <p className="text-sm font-bold uppercase tracking-widest">
-                Free Consultation Open
+                Free Career Counseling Available
               </p>
             </div>
           </motion.div>
