@@ -117,7 +117,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Floating Glass Cards - Hidden on Mobile to avoid edge clipping */}
-          <motion.div
+          {/* <motion.div
             animate={{ y: [0, -20, 0] }}
             transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
             className="absolute -top-6 left-4 lg:-top-10 lg:-left-10 hidden md:flex items-center gap-4 bg-white/80 backdrop-blur-xl p-3 rounded-[1rem] shadow-xl border border-white"
@@ -131,9 +131,9 @@ const Hero = () => {
               </p>
               <p className="text-xl font-black text-[#0b1f4d]">Top 1% Mentor</p>
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          <motion.div
+          {/* <motion.div
             animate={{ y: [0, 20, 0] }}
             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
             className="absolute -bottom-6 right-4 lg:-bottom-10 lg:right-3 hidden md:flex items-center gap-4 bg-white/80 backdrop-blur-xl p-4 rounded-[1rem] shadow-2xl border border-white"
@@ -155,7 +155,7 @@ const Hero = () => {
                 MCi/WHO Approved
               </p>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 

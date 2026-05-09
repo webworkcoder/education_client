@@ -10,219 +10,528 @@ import InfoCards from "@/components/common/InfoCards";
 import FAQSection from "@/components/LandingPage/FAQSection";
 import { faqs } from "@/data/faqs";
 
+// const tableData = [
+//   { label: "Population", value: "3,56,00,000 (as of Jul, 2024)" },
+//   {
+//     label: "Exchange Rate",
+//     value: "1 = 0.0066 Indian rupees (May, 2024)",
+//   },
+//   {
+//     label: "Climate",
+//     value: "Continental in the West and Rainy in the East",
+//   },
+//   { label: "Location", value: "Central Asia" },
+//   { label: "Capital", value: "Tashkent" },
+//   { label: "Currency", value: "Uzbekistan Som" },
+//   {
+//     label: "Travel time from Delhi",
+//     value: "3 hours and 5 minutes",
+//   },
+//   { label: "Time Difference", value: "-0.5 hours IST" },
+//   {
+//     label: "Number of International Students",
+//     value: "5,000+ in 2023",
+//   },
+//   {
+//     label: "Percentage of International Students",
+//     value: "4%",
+//   },
+//   {
+//     label: "Students studying in Uzbekistan from different countries",
+//     value: ["Ukraine", "Kazakhstan", "Russia", "Tajikistan", "India"],
+//   },
+//   {
+//     label: "Languages Spoken",
+//     value: "Uzbek, English, Russian, Tajik",
+//   },
+//   { label: "Academic Year", value: "September – June" },
+//   {
+//     label: "Duration of the Course",
+//     value: "6 years (5 years of classes and 1 year of internship)",
+//   },
+// ];
+
+// const data = [
+//   {
+//     title: "Affordable Education",
+//     desc: "MBBS in Uzbekistan costs INR 15–20 lakhs, making it a budget-friendly choice for Indian students.",
+//     dark: false,
+//   },
+//   {
+//     title: "Globally Recognized Universities",
+//     desc: "MCI & WHO-approved universities allow graduates to practice in India and abroad.",
+//     dark: false,
+//   },
+//   {
+//     title: "Safe & Student-Friendly",
+//     desc: "Uzbekistan has a low crime rate and a welcoming environment for Indian students.",
+//     dark: true,
+//   },
+// ];
+
+// const eligibilityData = [
+//   {
+//     title: "Academic Qualification",
+//     desc: "Must have completed 12th grade with at least 50% in Physics, Chemistry, and Biology.",
+//   },
+//   {
+//     title: "NEET Qualification",
+//     desc: "Qualifying NEET exam is mandatory for admission.",
+//   },
+//   {
+//     title: "Age Requirement",
+//     desc: "Must be at least 17 years old by December 31st of the admission year",
+//   },
+//   {
+//     title: "English Proficiency",
+//     desc: "Basic understanding of English is required as the medium of instruction is English.",
+//   },
+// ];
+
+// const universities = [
+//   {
+//     name: "Andijan State Medical Institute Ranking, Uzbekistan",
+//     location: "Uzbekistan",
+//     image: "/russia.jpg",
+//     slug: "andijan-state-medical-institute",
+//   },
+//   {
+//     name: "Fergana Medical Institute of Public Health, Uzbekistan",
+//     location: "Uzbekistan",
+//     image: "/russia.jpg",
+//     slug: "fergana-medical-institute",
+//   },
+//   {
+//     name: "Samarkand State Medical Institute, Uzbekistan",
+//     location: "Uzbekistan",
+//     image: "/russia.jpg",
+//     slug: "samarkand-state-medical-institute",
+//   },
+// ];
+
+// const safetyData = {
+//   description:
+//     "Yes, Uzbekistan is a safe country for Indian medical students. It has a low crime rate, a friendly local population, and strong government support for international students, ensuring a secure and comfortable study experience.",
+
+//   points: [
+//     {
+//       title: "Low Crime Rate",
+//       desc: "Uzbekistan ranks high in safety compared to other countries in the region.",
+//     },
+//     {
+//       title: "Friendly Locals",
+//       desc: "Uzbek people are welcoming, and Indian students are treated with respect.",
+//     },
+//     {
+//       title: "Large Indian Community ",
+//       desc: "Many Indian students study in Uzbekistan, creating a supportive environment.",
+//     },
+//     {
+//       title: "Government Support ",
+//       desc: "The Uzbek government ensures the safety and well-being of foreign students.",
+//     },
+//     {
+//       title: "Safe University Campuses",
+//       desc: "Medical universities have secure hostels and strict safety measures.",
+//     },
+//   ],
+
+//   footer:
+//     "By following basic safety precautions and carrying necessary ID documents, students can have a comfortable and secure stay.",
+// };
+
+// const advantagesData = {
+//   description: "description",
+//   points: [
+//     {
+//       title: "Affordable Tuition Fees",
+//       desc: "Lower tuition fees than Indian private medical colleges.",
+//     },
+//     {
+//       title: "Globally Recognized Degree",
+//       desc: "Approved by MCI, WHO, and other medical councils.",
+//     },
+//     {
+//       title: "No Donation or Capitation Fee",
+//       desc: "Unlike private medical colleges in India, admission is purely based on merit, with no extra donation required.",
+//     },
+//     {
+//       title: "English-Medium Instruction",
+//       desc: "No need to learn a new language.",
+//     },
+//     {
+//       title: "High-Quality Education & Modern Infrastructure",
+//       desc: "Universities have well-equipped labs, advanced hospitals, and experienced faculty for practical training.",
+//     },
+//     {
+//       title: "Simple Admission Process",
+//       desc: "No donation or entrance exam required apart from NEET.",
+//     },
+//     {
+//       title: "Safe & Student-Friendly Environment",
+//       desc: "Uzbekistan is a safe country with a welcoming atmosphere and a large community of international students.",
+//     },
+//     {
+//       title: "Opportunity for Part-Time Work",
+//       desc: "Some students can work part-time to gain practical experience and manage expenses.",
+//     },
+//     {
+//       title: "Cultural Similarities",
+//       desc: "Easy adaptation due to shared traditions with India.",
+//     },
+//     {
+//       title: "Budget Friendly Accommodation",
+//       desc: "MBBS in Uzbekistan is much cheaper than private medical colleges in India.",
+//     },
+//   ],
+// };
+
+// const country = {
+//   name: "Uzbekistan",
+//   slug: "uzbekistan",
+//   flag: "/uzbekistanflag.jpg",
+//   image: "/uzbekistanflag.jpg",
+//   description:
+//     "Uzbekistan has become a popular destination for Indian students seeking to pursue an MBBS degree abroad. With its well-developed medical education system, globally recognized universities, affordable tuition fees, and English-medium instruction, Uzbekistan offers an excellent opportunity for Indian students to fulfill their dream of becoming doctors.Russia is one of the best destinations for Indian students to study MBBS. With world-class medical universities, affordable fees, and globally recognized degrees, Russia offers an excellent opportunity for students who want to become doctors.",
+// };
+
+// const loanData = {
+//   description:
+//     "Indian students can apply for education loans to study MBBS in Uzbekistan. Banks and financial institutions offer loans based on eligibility criteria, including the student’s NEET score, university admission, and family income.",
+
+//   points: [
+//     {
+//       title: "NEET Qualification",
+//       desc: "A valid NEET score is required for loan approval.",
+//     },
+//     {
+//       title: "University Recognition",
+//       desc: "The university must be MCI-approved.",
+//     },
+//     {
+//       title: "Loan Amount",
+//       desc: "Depends on tuition fees, hostel charges, and living expenses.",
+//     },
+//     {
+//       title: "Required Documents",
+//       desc: "Admission letter, income proof, and collateral (if required).",
+//     },
+//     {
+//       title: "Repayment Flexibility",
+//       desc: "Loan repayment starts after course completion with a grace period.",
+//     },
+//   ],
+// };
+
 const tableData = [
-  { label: "Population", value: "3,56,00,000 (as of Jul, 2024)" },
   {
+    id: 1,
+    slug: "population",
+    label: "Population",
+    value: "36,000,000+",
+  },
+  {
+    id: 2,
+    slug: "exchange-rate",
     label: "Exchange Rate",
-    value: "1 = 0.0066 Indian rupees (May, 2024)",
+    value: "1 Uzbekistan Som = ₹0.0065 INR (Approx)",
   },
   {
+    id: 3,
+    slug: "climate",
     label: "Climate",
-    value: "Continental in the West and Rainy in the East",
-  },
-  { label: "Location", value: "Central Asia" },
-  { label: "Capital", value: "Tashkent" },
-  { label: "Currency", value: "Uzbekistan Som" },
-  {
-    label: "Travel time from Delhi",
-    value: "3 hours and 5 minutes",
-  },
-  { label: "Time Difference", value: "-0.5 hours IST" },
-  {
-    label: "Number of International Students",
-    value: "5,000+ in 2023",
+    value: "Continental Climate",
   },
   {
-    label: "Percentage of International Students",
-    value: "4%",
+    id: 4,
+    slug: "location",
+    label: "Location",
+    value: "Central Asia",
   },
   {
-    label: "Students studying in Uzbekistan from different countries",
-    value: ["Ukraine", "Kazakhstan", "Russia", "Tajikistan", "India"],
+    id: 5,
+    slug: "capital",
+    label: "Capital",
+    value: "Tashkent",
   },
   {
+    id: 6,
+    slug: "currency",
+    label: "Currency",
+    value: "Uzbekistani Som (UZS)",
+  },
+  {
+    id: 7,
+    slug: "travel-time",
+    label: "Travel Time from Delhi",
+    value: "3–4 Hours",
+  },
+  {
+    id: 8,
+    slug: "time-difference",
+    label: "Time Difference",
+    value: "-30 Minutes IST",
+  },
+  {
+    id: 9,
+    slug: "student-count",
+    label: "International Students",
+    value: "10,000+",
+  },
+  {
+    id: 10,
+    slug: "origin-countries",
+    label: "Students From Different Countries",
+    value: ["India", "Kazakhstan", "Russia", "Nepal", "Bangladesh"],
+  },
+  {
+    id: 11,
+    slug: "languages",
     label: "Languages Spoken",
-    value: "Uzbek, English, Russian, Tajik",
+    value: "Uzbek, Russian & English",
   },
-  { label: "Academic Year", value: "September – June" },
   {
-    label: "Duration of the Course",
-    value: "6 years (5 years of classes and 1 year of internship)",
+    id: 12,
+    slug: "academic-year",
+    label: "Academic Session",
+    value: "September – June",
+  },
+  {
+    id: 13,
+    slug: "course-duration",
+    label: "MBBS Course Duration",
+    value: "6 Years Including Internship",
   },
 ];
 
 const data = [
   {
-    title: "Affordable Education",
-    desc: "MBBS in Uzbekistan costs INR 15–20 lakhs, making it a budget-friendly choice for Indian students.",
+    id: "feat-1",
+    slug: "affordable-medical-study",
+    title: "Affordable Medical Education",
+    desc: "Uzbekistan offers low-cost MBBS programs with quality education, making it an ideal destination for Indian students.",
     dark: false,
   },
   {
-    title: "Globally Recognized Universities",
-    desc: "MCI & WHO-approved universities allow graduates to practice in India and abroad.",
+    id: "feat-2",
+    slug: "recognized-medical-universities",
+    title: "Recognized Medical Universities",
+    desc: "Medical universities in Uzbekistan are approved by WHO, NMC, and other international medical bodies.",
     dark: false,
   },
   {
+    id: "feat-3",
+    slug: "student-friendly-country",
     title: "Safe & Student-Friendly",
-    desc: "Uzbekistan has a low crime rate and a welcoming environment for Indian students.",
+    desc: "Uzbekistan provides a secure environment, modern hostels, and a welcoming atmosphere for international students.",
     dark: true,
   },
 ];
 
 const eligibilityData = [
   {
+    id: "elig-1",
+    slug: "academic-criteria",
     title: "Academic Qualification",
-    desc: "Must have completed 12th grade with at least 50% in Physics, Chemistry, and Biology.",
+    desc: "Students must complete 12th grade with at least 50% marks in Physics, Chemistry, and Biology.",
   },
   {
+    id: "elig-2",
+    slug: "neet-required",
     title: "NEET Qualification",
-    desc: "Qualifying NEET exam is mandatory for admission.",
+    desc: "NEET qualification is mandatory for Indian students applying for MBBS abroad.",
   },
   {
+    id: "elig-3",
+    slug: "minimum-age",
     title: "Age Requirement",
-    desc: "Must be at least 17 years old by December 31st of the admission year",
+    desc: "Students must be at least 17 years old during the admission year.",
   },
   {
+    id: "elig-4",
+    slug: "english-language",
     title: "English Proficiency",
-    desc: "Basic understanding of English is required as the medium of instruction is English.",
+    desc: "Basic English understanding is required since MBBS courses are taught in English.",
   },
 ];
 
 const universities = [
   {
-    name: "Andijan State Medical Institute Ranking, Uzbekistan",
+    name: "Andijan State Medical Institute, Uzbekistan",
     location: "Uzbekistan",
-    image: "/russia.jpg",
+    image: "/uzbekistan.jpg",
     slug: "andijan-state-medical-institute",
   },
   {
     name: "Fergana Medical Institute of Public Health, Uzbekistan",
     location: "Uzbekistan",
-    image: "/russia.jpg",
-    slug: "fergana-medical-institute",
+    image: "/uzbekistan.jpg",
+    slug: "fergana-medical-institute-of-public-health",
   },
   {
     name: "Samarkand State Medical Institute, Uzbekistan",
     location: "Uzbekistan",
-    image: "/russia.jpg",
+    image: "/uzbekistan.jpg",
     slug: "samarkand-state-medical-institute",
   },
 ];
 
 const safetyData = {
   description:
-    "Yes, Uzbekistan is a safe country for Indian medical students. It has a low crime rate, a friendly local population, and strong government support for international students, ensuring a secure and comfortable study experience.",
+    "Uzbekistan is considered one of the safest and most student-friendly countries in Central Asia for Indian medical students.",
 
   points: [
     {
+      id: "safe-1",
+      slug: "low-crime-rate",
       title: "Low Crime Rate",
-      desc: "Uzbekistan ranks high in safety compared to other countries in the region.",
+      desc: "Uzbekistan maintains a safe environment with strict law enforcement and secure public places.",
     },
     {
-      title: "Friendly Locals",
-      desc: "Uzbek people are welcoming, and Indian students are treated with respect.",
+      id: "safe-2",
+      slug: "friendly-local-community",
+      title: "Friendly Local Community",
+      desc: "Indian students receive warm hospitality and support from local residents.",
     },
     {
-      title: "Large Indian Community ",
-      desc: "Many Indian students study in Uzbekistan, creating a supportive environment.",
+      id: "safe-3",
+      slug: "international-student-support",
+      title: "International Student Support",
+      desc: "Universities provide dedicated support services for foreign students.",
     },
     {
-      title: "Government Support ",
-      desc: "The Uzbek government ensures the safety and well-being of foreign students.",
+      id: "safe-4",
+      slug: "secure-hostels",
+      title: "Secure Hostel Facilities",
+      desc: "Medical universities offer secure hostels equipped with modern amenities.",
     },
     {
-      title: "Safe University Campuses",
-      desc: "Medical universities have secure hostels and strict safety measures.",
+      id: "safe-5",
+      slug: "comfortable-lifestyle",
+      title: "Comfortable Student Lifestyle",
+      desc: "Affordable living costs and modern facilities make student life easier.",
     },
   ],
 
   footer:
-    "By following basic safety precautions and carrying necessary ID documents, students can have a comfortable and secure stay.",
+    "Students can enjoy a peaceful and comfortable academic journey in Uzbekistan by following university guidelines and standard safety precautions.",
 };
 
 const advantagesData = {
-  description: "description",
+  description:
+    "Uzbekistan has become a preferred destination for MBBS abroad because of affordable tuition fees, recognized universities, and quality education.",
+
   points: [
     {
+      id: "adv-1",
+      slug: "budget-friendly-fees",
       title: "Affordable Tuition Fees",
-      desc: "Lower tuition fees than Indian private medical colleges.",
+      desc: "MBBS in Uzbekistan is much more affordable compared to private colleges in India.",
     },
     {
+      id: "adv-2",
+      slug: "global-recognition",
       title: "Globally Recognized Degree",
-      desc: "Approved by MCI, WHO, and other medical councils.",
+      desc: "Degrees are recognized by WHO, NMC, and other international medical councils.",
     },
     {
-      title: "No Donation or Capitation Fee",
-      desc: "Unlike private medical colleges in India, admission is purely based on merit, with no extra donation required.",
+      id: "adv-3",
+      slug: "no-capitation",
+      title: "No Donation Required",
+      desc: "Students can secure admission without any capitation or donation fees.",
     },
     {
-      title: "English-Medium Instruction",
-      desc: "No need to learn a new language.",
+      id: "adv-4",
+      slug: "english-medium-program",
+      title: "English-Medium Education",
+      desc: "MBBS programs are available fully in English for international students.",
     },
     {
-      title: "High-Quality Education & Modern Infrastructure",
-      desc: "Universities have well-equipped labs, advanced hospitals, and experienced faculty for practical training.",
+      id: "adv-5",
+      slug: "modern-medical-training",
+      title: "Modern Medical Infrastructure",
+      desc: "Universities provide advanced laboratories, hospitals, and clinical exposure.",
     },
     {
+      id: "adv-6",
+      slug: "easy-admission",
       title: "Simple Admission Process",
-      desc: "No donation or entrance exam required apart from NEET.",
+      desc: "The admission process is straightforward with minimal documentation.",
     },
     {
-      title: "Safe & Student-Friendly Environment",
-      desc: "Uzbekistan is a safe country with a welcoming atmosphere and a large community of international students.",
+      id: "adv-7",
+      slug: "safe-country",
+      title: "Safe & Friendly Environment",
+      desc: "Uzbekistan is safe, peaceful, and suitable for international students.",
     },
     {
-      title: "Opportunity for Part-Time Work",
-      desc: "Some students can work part-time to gain practical experience and manage expenses.",
+      id: "adv-8",
+      slug: "part-time-opportunities",
+      title: "Practical Exposure",
+      desc: "Students gain practical experience through clinical training programs.",
     },
     {
+      id: "adv-9",
+      slug: "cultural-comfort",
       title: "Cultural Similarities",
-      desc: "Easy adaptation due to shared traditions with India.",
+      desc: "Indian students adapt easily because of cultural similarities and food availability.",
     },
     {
-      title: "Budget Friendly Accommodation",
-      desc: "MBBS in Uzbekistan is much cheaper than private medical colleges in India.",
+      id: "adv-10",
+      slug: "low-living-cost",
+      title: "Affordable Living Expenses",
+      desc: "Hostel and daily living expenses are economical for international students.",
     },
   ],
 };
 
 const country = {
+  id: "country-uzbekistan",
   name: "Uzbekistan",
   slug: "uzbekistan",
   flag: "/uzbekistanflag.jpg",
-  image: "/uzbekistanflag.jpg",
+  image: "/doc2.jpeg",
   description:
-    "Uzbekistan has become a popular destination for Indian students seeking to pursue an MBBS degree abroad. With its well-developed medical education system, globally recognized universities, affordable tuition fees, and English-medium instruction, Uzbekistan offers an excellent opportunity for Indian students to fulfill their dream of becoming doctors.Russia is one of the best destinations for Indian students to study MBBS. With world-class medical universities, affordable fees, and globally recognized degrees, Russia offers an excellent opportunity for students who want to become doctors.",
+    "Uzbekistan is rapidly becoming a top destination for Indian students pursuing MBBS abroad. With affordable tuition fees, globally recognized medical universities, English-medium education, and modern infrastructure, Uzbekistan offers an excellent opportunity for students aiming to build a successful medical career.",
 };
 
 const loanData = {
   description:
-    "Indian students can apply for education loans to study MBBS in Uzbekistan. Banks and financial institutions offer loans based on eligibility criteria, including the student’s NEET score, university admission, and family income.",
+    "Indian students can easily apply for education loans to study MBBS in Uzbekistan through government and private banks.",
 
   points: [
     {
+      id: "loan-1",
+      slug: "neet-score",
       title: "NEET Qualification",
-      desc: "A valid NEET score is required for loan approval.",
+      desc: "A valid NEET score is required for education loan approval.",
     },
     {
-      title: "University Recognition",
-      desc: "The university must be MCI-approved.",
+      id: "loan-2",
+      slug: "recognized-university",
+      title: "Recognized University",
+      desc: "The selected university should be approved by NMC and recognized internationally.",
     },
     {
-      title: "Loan Amount",
-      desc: "Depends on tuition fees, hostel charges, and living expenses.",
+      id: "loan-3",
+      slug: "loan-expenses",
+      title: "Expense Coverage",
+      desc: "Education loans cover tuition fees, hostel expenses, travel, and living costs.",
     },
     {
+      id: "loan-4",
+      slug: "documents-required",
       title: "Required Documents",
-      desc: "Admission letter, income proof, and collateral (if required).",
+      desc: "Admission letter, passport, NEET scorecard, and family income proof are required.",
     },
     {
-      title: "Repayment Flexibility",
-      desc: "Loan repayment starts after course completion with a grace period.",
+      id: "loan-5",
+      slug: "easy-repayment-plan",
+      title: "Flexible Repayment",
+      desc: "Students receive repayment flexibility with grace periods after course completion.",
     },
   ],
 };
-
 const UzbekistanPage = () => {
   return (
     <section className="pb-15">
