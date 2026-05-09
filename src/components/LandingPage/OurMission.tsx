@@ -6,17 +6,17 @@ import InfoCards from "../common/InfoCards";
 const data = [
   {
     title: "Our Vision",
-    desc: "To be the leading mentor for students seeking admission to top medical universities worldwide.",
+    desc: "To empower students with the right guidance and opportunities to pursue quality medical education at globally recognized universities.",
     dark: false,
   },
   {
     title: "Our Mission",
-    desc: "To guide aspiring medical professionals in achieving their dreams of studying MBBS abroad.",
+    desc: "To simplify the MBBS admission journey abroad through expert counseling, transparent processes, and complete student support.",
     dark: false,
   },
   {
     title: "Our Values",
-    desc: "Commitment to excellence, personalized support, and fostering confidence for a brighter future.",
+    desc: "Integrity, dedication, student-first guidance, and a commitment to helping future doctors achieve academic success with confidence.",
     dark: true,
   },
 ];

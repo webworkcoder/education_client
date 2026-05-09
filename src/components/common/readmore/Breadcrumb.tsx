@@ -53,7 +53,6 @@ const Breadcrumb = ({ items }: Props) => {
           ))}
         </nav>
 
-        {/* RIGHT SIDE: Dynamic Badge */}
         {items[1] && (
           <motion.div
             whileHover={{ scale: 1.02 }}

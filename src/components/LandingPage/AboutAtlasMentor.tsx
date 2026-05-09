@@ -7,12 +7,12 @@ import Link from "next/link";
 
 const AboutTopson = () => {
   const highlights = [
-    "Top Global Universities",
-    "NMC & WHO Recognized",
-    "Expert Career Counseling",
-    "Hassle-free Documentation",
-    "Post-Admission Support",
-    "Affordable Fee Structure",
+    "Globally Recognized Universities",
+    "NMC & WHO Approved Programs",
+    "Personalized Admission Guidance",
+    "Smooth Documentation Support",
+    "Complete Visa Assistance",
+    "Affordable MBBS Opportunities",
   ];
 
   return (
@@ -28,7 +28,7 @@ const AboutTopson = () => {
           {/* Main Image with decorative elements */}
           <div className="relative z-10 overflow-hidden  shadow-2xl">
             <img
-              src="/class-room.jpg"
+              src="/doc2.jpeg"
               alt="Medical Students Classroom"
               className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
             />
@@ -47,13 +47,14 @@ const AboutTopson = () => {
                 <span className="text-[#1e4e96] font-bold text-xl">10+</span>
               </div>
               <p className="font-bold text-slate-800 text-sm leading-tight">
-                Years of Excellence in <br />
-                Medical Education
+                Trusted Guidance For <br />
+                Future Medical Professionals
               </p>
             </div>
             <p className="text-slate-500 text-xs leading-relaxed">
-              We&#39;ve helped 2000+ students secure seats in prestigious
-              medical universities globally.
+              Supporting students with expert counseling, university selection,
+              and end-to-end admission assistance for international medical
+              education.
             </p>
           </motion.div>
 
@@ -72,7 +73,7 @@ const AboutTopson = () => {
           >
             <span className="w-1 h-1 bg-[#1e4e96] rounded-full animate-ping" />
             <span className="text-[#1e4e96] font-bold text-[10px] tracking-[0.2em] uppercase">
-              Discover Topson Education
+              About Topson Education
             </span>
           </motion.div>
 
@@ -84,18 +85,19 @@ const AboutTopson = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-[1.1]"
           >
-            Your Trusted Gateway To A <br />
+            Guiding Students Towards A <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1e4e96] to-[#2d68b3]">
-              Global Medical Career
+              Successful Global Medical Journey
             </span>
           </motion.h2>
 
           {/* DESCRIPTION */}
           <p className="text-slate-600 mb-8 text-lg leading-relaxed">
-            At Topson Education, we don&#39;t just provide admissions; we shape
-            futures. Navigating the path to an international MBBS degree can be
-            complex—our expert mentors simplify every step, from university
-            selection to visa processing.
+            Topson Education is dedicated to helping aspiring medical students
+            achieve their dream of studying MBBS abroad. From selecting the
+            right university to handling admissions, documentation, and visa
+            support, our experienced team ensures a smooth and transparent
+            journey at every stage.
           </p>
 
           {/* FEATURES GRID */}
@@ -125,7 +127,7 @@ const AboutTopson = () => {
               href="#apply"
               className="group flex items-center gap-2 bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] text-white px-8 py-4 hover:shadow-[#1e4e96]/30 hover:shadow-xl hover:-translate-y-0.5  font-bold shadow-lg shadow-blue-900/20  transition-all w-full sm:w-fit justify-center"
             >
-              Start Your Application
+              Apply For Admission
               <ArrowRight
                 size={18}
                 className="group-hover:translate-x-1 transition-transform"
@@ -136,7 +138,7 @@ const AboutTopson = () => {
               href="/about"
               className="flex items-center gap-2 bg-slate-50 text-slate-700 px-8 py-4 hover:shadow-[#1e4e96]/30 hover:shadow-xl hover:-translate-y-0.5 font-bold border border-slate-200 hover:bg-white hover:border-blue-300 transition-all w-full sm:w-fit justify-center"
             >
-              Learn More
+              Explore More
             </Link>
           </div>
         </div>

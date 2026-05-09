@@ -20,12 +20,12 @@ const AbroadLocations = () => {
             className="max-w-2xl"
           >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] font-bold tracking-[0.3em] text-xs uppercase mb-3 block">
-              Global Opportunities
+              Study MBBS Abroad
             </span>
             <h2 className="text-3xl md:text-5xl font-black text-[#0b2a5b] leading-tight">
-              Explore MBBS Worldwide <br />
+              Discover Global MBBS Opportunities <br />
               <span className="text-slate-400 italic font-light">
-                With Atlas Mentor
+                With Topson Education
               </span>
             </h2>
           </motion.div>
@@ -36,8 +36,9 @@ const AbroadLocations = () => {
             className="md:text-right"
           >
             <p className="text-slate-500 text-base max-w-sm md:ml-auto leading-relaxed">
-              Find the ideal medical pathway with personalized guidance tailored
-              for future doctors.
+              Explore internationally recognized medical universities and begin
+              your journey toward a successful medical career with expert
+              guidance and support.
             </p>
             <div className="w-20 h-1.5 bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] mt-4 md:ml-auto rounded-full" />
           </motion.div>

@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 const features = [
-  "Global University Tie-ups",
-  "Step-by-Step Visa Support",
-  "Post-Departure Assistance",
-  "Scholarship Guidance",
+  "International University Partnerships",
+  "Complete Admission Assistance",
+  "Visa & Documentation Support",
+  "Dedicated Student Guidance",
 ];
 
 const AtlasMentor = () => {
@@ -27,20 +27,20 @@ const AtlasMentor = () => {
             transition={{ duration: 0.6 }}
           >
             <h4 className="text-[#1e4e96] font-bold tracking-[0.4em] text-xs uppercase mb-4">
-              Elite Mentorship
+              Trusted MBBS Guidance
             </h4>
             <h2 className="text-4xl md:text-6xl font-black text-[#0b2a5b] leading-[1.1] tracking-tight">
-              Shaping Your Global <br />
+              Creating Pathways For <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] italic">
-                Medical Career.
+                Future Medical Leaders.
               </span>{" "}
             </h2>
           </motion.div>
 
           <p className="text-slate-500 text-lg leading-relaxed max-w-xl">
-            Topson Education provides a high-touch, personalized consulting
-            experience for students aiming for top-tier medical universities
-            worldwide.
+            Topson Education offers personalized counseling and complete
+            admission support for students planning to pursue MBBS abroad at
+            globally recognized medical universities.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -59,7 +59,7 @@ const AtlasMentor = () => {
 
           <div className="pt-6 flex flex-wrap gap-6 items-center">
             <button className="px-10 py-4 bg-[#0b2a5b] text-white rounded-full font-bold hover:bg-[#1e4e96] transition-all shadow-[0_20px_40px_rgba(11,42,91,0.2)] flex items-center gap-3">
-              Get Free Consultation <ArrowRight size={18} />
+              Book Free Counseling <ArrowRight size={18} />
             </button>
             <div className="flex -space-x-3">
               {[1, 2, 3, 4].map((i) => (
@@ -71,7 +71,7 @@ const AtlasMentor = () => {
                 </div>
               ))}
               <div className="pl-6 text-xs font-bold text-slate-400 self-center uppercase tracking-tighter">
-                Joined by 500+ Students
+                Trusted by 1000+ Students
               </div>
             </div>
           </div>
@@ -96,9 +96,9 @@ const AtlasMentor = () => {
 
           {/* Floating Experience Card */}
           <div className="absolute -left-2 md:-left-12 bottom-20 z-20 bg-white/80 backdrop-blur-xl p-4 sm:p-6 rounded-3xl shadow-2xl border border-white/40 ">
-            <h5 className="text-4xl font-black text-[#0b2a5b]">12+</h5>
+            <h5 className="text-4xl font-black text-[#0b2a5b]">10+</h5>
             <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
-              Years of Excellence
+              Years of Student Guidance
             </p>
           </div>
         </motion.div>

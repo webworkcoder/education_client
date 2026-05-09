@@ -11,12 +11,12 @@ import {
 import { useState } from "react";
 
 const choosen = [
-  "Top Universities",
-  "Expert Guidance",
-  "Personalized Support",
-  "Career Shaping",
-  "Confidence Building",
-  "Comprehensive Solutions",
+  "Globally Recognized Universities",
+  "Professional Admission Support",
+  "One-to-One Student Guidance",
+  "Smooth Visa Assistance",
+  "Transparent Admission Process",
+  "Complete Career Counseling",
 ];
 
 const options = ["MBBS In Georgia", "MBBS in Russia", "MBBS in Kazakhstan"];
@@ -110,9 +110,9 @@ const BookYourSeat = () => {
                 variants={itemVariants}
                 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-4 md:mb-6"
               >
-                Empowering <br className="hidden sm:block" />
+                Building <br className="hidden sm:block" />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-500">
-                  Future Doctors
+                  Future Medical Careers
                 </span>
               </motion.h2>
 
@@ -120,8 +120,9 @@ const BookYourSeat = () => {
                 variants={itemVariants}
                 className="text-blue-100/80 text-base md:text-lg mb-6 md:mb-8 leading-relaxed max-w-lg"
               >
-                Start your journey towards a bright medical future now. Our
-                expert team provides personalized support.
+                Take the first step toward your international MBBS journey with
+                trusted guidance, expert counseling, and complete admission
+                support from our experienced team.
               </motion.p>
 
               <motion.div
@@ -144,7 +145,7 @@ const BookYourSeat = () => {
                 variants={itemVariants}
                 className="group flex items-center gap-2 text-white font-semibold border-b-2 border-[#1e4e96] pb-1 hover:text-orange-400 transition-all cursor-pointer text-sm md:text-base"
               >
-                Learn about our process
+                Explore our admission process
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </motion.button>
             </motion.div>
@@ -154,7 +155,7 @@ const BookYourSeat = () => {
               <div className="max-w-lg mx-auto">
                 <div className="mb-6 md:mb-10">
                   <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">
-                    Book Your Counseling Seat
+                    Apply For MBBS Admission
                   </h3>
                   <div className="w-16 md:w-20 h-1.5 bg-gradient-to-br from-[#1e4e96] to-[#2d68b3] rounded-full" />
                 </div>
@@ -242,7 +243,7 @@ const BookYourSeat = () => {
                         name="preferredUniversity"
                         onChange={handleChange}
                         className="w-full border-b-2 border-slate-200 py-1.5 md:py-2 outline-none focus:border-[#0b2a5b] transition-colors text-slate-800 text-sm md:text-base"
-                        placeholder="If any..."
+                        placeholder="Preferred university (optional)"
                       />
                     </div>
                   </div>
@@ -254,7 +255,7 @@ const BookYourSeat = () => {
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-[10px] font-bold text-black uppercase mb-1 truncate">
-                          Upload Marksheets / Passport
+                          Upload Documents / Passport Copy
                         </p>
                         <input
                           type="file"
@@ -275,7 +276,7 @@ const BookYourSeat = () => {
                     type="submit"
                     className="w-full cursor-pointer bg-gradient-to-br from-[#1e4e96] to-[#2d68b3] text-white py-3 rounded-full font-bold text-sm md:text-base transition-all hover:shadow-xl active:scale-95"
                   >
-                    Send Application
+                    Submit Application
                   </button>
 
                   <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100">

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { motion } from "framer-motion";
@@ -32,7 +33,8 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-7xl font-black text-[#0b1f4d] leading-[1.1] lg:leading-[0.95] tracking-tighter"
           >
-            Design Your Career<br className=""/>
+            Design Your Career
+            <br className="" />
             <span className="relative">
               Medical Future
               <svg
@@ -58,9 +60,10 @@ const Hero = () => {
             transition={{ delay: 0.4 }}
             className="mt-8 lg:mt-10 text-base md:text-lg text-slate-500 max-w-lg leading-relaxed border-l-2 border-sky-200 pl-6"
           >
-            Expert MBBS consultancy that transforms aspirations into global
-            careers. Navigating your path to the world&rsquo;s elite medical
-            universities.
+            Transforming medical ambitions into successful global careers
+            through trusted MBBS guidance and personalized admission support.
+            Helping students secure opportunities at leading international
+            medical universities.
           </motion.p>
 
           <motion.div
@@ -105,7 +108,7 @@ const Hero = () => {
             className="relative w-full rounded-none lg:rounded-[3rem] overflow-hidden shadow-2xl aspect-video lg:aspect-auto"
           >
             <img
-              src="/heroimg.jpg"
+              src="/doc1.jpeg"
               className="w-full h-full object-cover"
               alt="Medical Students"
             />

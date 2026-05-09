@@ -11,52 +11,44 @@ export const abroadLocations: AbroadItem[] = [
     image: "/russia.jpg",
     country: "Russia",
     description:
-      "MBBS in Russia offers a unique opportunity to study medicine amidst prestigious medical universities known for their rich academic heritage and advanced research facilities.",
+      "Study MBBS in Russia at globally recognized medical universities offering quality education, modern infrastructure, and affordable tuition fees for international students.",
   },
   {
     title: "MBBS In Uzbekistan",
     image: "/uzbekistan.jpg",
     country: "Uzbekistan",
     description:
-      "Medical journey in Uzbekistan, where you can access affordable education in English, supported by modern facilities.",
+      "Pursue your medical education in Uzbekistan with English-medium programs, advanced learning facilities, and budget-friendly MBBS opportunities.",
   },
   {
     title: "MBBS In Georgia",
     image: "/georgia.jpg",
     country: "Georgia",
     description:
-      "MBBS in Georgia offers a unique opportunity to experience high-quality medical education amidst a vibrant student life.",
+      "Georgia provides internationally recognized MBBS programs with modern teaching methods, experienced faculty, and an excellent environment for global students.",
   },
 ];
+
 export const abroadLocations2: AbroadItem[] = [
   {
     title: "MBBS In Russia",
     image: "/russia.jpg",
     country: "Russia",
     description:
-      "MBBS in Russia offers a unique opportunity to study medicine amidst prestigious medical universities known for their rich academic heritage and advanced research facilities.",
+      "Build your medical career in Russia through internationally approved universities known for advanced education, practical training, and affordable study programs.",
   },
   {
     title: "MBBS In Uzbekistan",
     image: "/uzbekistan.jpg",
     country: "Uzbekistan",
     description:
-      "Medical journey in Uzbekistan, where you can access affordable education in English, supported by modern facilities.",
+      "Choose Uzbekistan for quality MBBS education with modern campuses, English-medium courses, and a student-friendly learning environment.",
   },
   {
     title: "MBBS In Georgia",
     image: "/georgia.jpg",
     country: "Georgia",
     description:
-      "MBBS in Georgia offers a unique opportunity to experience high-quality medical education amidst a vibrant student life.",
-  },
-  {
-    title: "MBBS In Georgia",
-    image: "/georgia.jpg",
-    country: "Georgia",
-    description:
-      "MBBS in Georgia offers a unique opportunity to experience high-quality medical education amidst a vibrant student life.",
+      "Study medicine in Georgia with globally recognized universities offering innovative teaching methods, experienced faculty, and excellent academic support.",
   },
 ];
-
-
