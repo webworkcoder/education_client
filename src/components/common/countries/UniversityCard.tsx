@@ -19,7 +19,7 @@ const UniversityCard = ({
   location,
   desc,
   slug,
-  country = "Russia",
+  country = "",
 }: Props) => {
   const pathname = usePathname();
 
@@ -38,9 +38,9 @@ const UniversityCard = ({
         />
 
         {/* COUNTRY BADGE */}
-        <span className="absolute top-3 left-3 bg-gray-700 text-white text-[11px] px-3 py-1 rounded-full">
+        {/* <span className="absolute top-3 left-3 bg-gray-700 text-white text-[11px] px-3 py-1 rounded-full">
           {country.toUpperCase()}
-        </span>
+        </span> */}
 
         {/* LOGO */}
         <div className="absolute -bottom-6 right-4 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md border">

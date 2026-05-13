@@ -28,9 +28,7 @@ export const uzbekistanUniversities = [
 
     rightlist: [
       "MBBS In Uzbekistan",
-      "MBBS In Russia",
-      "MBBS In Georgia",
-      "MBBS In Kazakhstan",
+      
       "MBBS In Kyrgyzstan",
     ],
 
@@ -308,9 +306,7 @@ export const uzbekistanUniversities = [
 
     rightlist: [
       "MBBS In Uzbekistan",
-      "MBBS In Russia",
-      "MBBS In Georgia",
-      "MBBS In Kazakhstan",
+    
       "MBBS In Kyrgyzstan",
     ],
 
@@ -400,8 +396,7 @@ export const uzbekistanUniversities = [
 
     rightlist: [
       "MBBS In Uzbekistan",
-      "MBBS In Russia",
-      "MBBS In Georgia",
+     
     ],
 
     rightlistlink: [
@@ -478,8 +473,7 @@ export const uzbekistanUniversities = [
 
     rightlist: [
       "MBBS In Uzbekistan",
-      "MBBS In Kazakhstan",
-      "MBBS In Russia",
+     
     ],
 
     guidanceCard: {
@@ -540,8 +534,7 @@ export const uzbekistanUniversities = [
 
     rightlist: [
       "MBBS In Uzbekistan",
-      "MBBS In Georgia",
-      "MBBS In Russia",
+  
     ],
 
     guidanceCard: {
@@ -609,10 +602,9 @@ export const kyrgyzstanUniversities = [
 
     rightlist: [
       "MBBS In Kyrgyzstan",
-      "MBBS In Russia",
-      "MBBS In Uzbekistan",
+      
       "MBBS In Kazakhstan",
-      "MBBS In Georgia",
+     
     ],
 
     rightlistlink: [

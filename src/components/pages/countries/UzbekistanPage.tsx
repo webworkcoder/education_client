@@ -4,7 +4,7 @@ import HeroBaneer from "@/components/common/countries/HeroBaneer";
 import InfoTable from "@/components/common/countries/InfoTable";
 import LoanSection from "@/components/common/countries/LoanSection";
 import SafetySection from "@/components/common/countries/SafetySection";
-import RussiaHero from "@/components/common/countries/StudyMbbs";
+import CountryHero from "@/components/common/countries/StudyMbbs";
 import UniversitiesSection from "@/components/common/countries/UniversitiesSection";
 import InfoCards from "@/components/common/InfoCards";
 import FAQSection from "@/components/LandingPage/FAQSection";
@@ -303,7 +303,7 @@ const UzbekistanPage = () => {
   return (
     <section className="pb-15">
       <HeroBaneer country={country} />
-      <RussiaHero country={country} />
+      <CountryHero country={country} />
       <InfoTable data={tableData} />;
       <InfoCards
         data={data}
@@ -327,12 +327,12 @@ const UzbekistanPage = () => {
         data={advantagesData.points}
       />
       <LoanSection
-        country="Russia"
+        country="Uzbekistan"
         description={loanData.description}
         points={loanData.points}
       />
       <FAQSection
-        title="FAQs About MBBS in Russia"
+        title="FAQs About MBBS in Uzbekistan"
         description="Get answers to common questions about studying MBBS abroad."
         data={faqs}
         faqClass="w-full bg-white py-12 px-6 md:px-16 overflow-hidden"

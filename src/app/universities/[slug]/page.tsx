@@ -80,7 +80,7 @@ const UniversityDetails = () => {
             }}
           />
           <LinkList
-            title="Universities In Russia"
+            
             items={university.rightlistlink ?? []}
           />
           {university.guidanceCard && (
