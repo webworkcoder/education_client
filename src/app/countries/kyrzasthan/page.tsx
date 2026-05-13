@@ -1,8 +1,7 @@
-import ChinaPage from "@/components/pages/countries/China";
-import React from "react";
+import KyrgyzstanPage from "@/components/pages/countries/Kyrgyzstan";
 
-const China = () => {
-  return <ChinaPage />;
+const Kyrgyzstan = () => {
+  return <KyrgyzstanPage />;
 };
 
-export default China;
+export default Kyrgyzstan;

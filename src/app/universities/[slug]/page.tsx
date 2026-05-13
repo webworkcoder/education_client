@@ -6,7 +6,7 @@ import GuidanceCard from "@/components/common/readmore/GuidanceCard";
 import LinkList from "@/components/common/readmore/LinkList";
 import InfoCard from "@/components/common/readmore/InfoCard";
 import UniversityHeroCard from "@/components/common/readmore/UniversityHeroCard";
-import { uzbekistanUniversities, chinaUniversities } from "@/data/universities";
+import { uzbekistanUniversities, kyrgyzstanUniversities } from "@/data/universities";
 import { useParams } from "next/navigation";
 import Description from "@/components/common/readmore/Desription";
 import CountryFaq from "@/components/common/readmore/CountryFaq";
@@ -16,7 +16,7 @@ import { useEffect, useRef, useState } from "react";
 const UniversityDetails = () => {
   const params = useParams();
   const slug = Array.isArray(params?.slug) ? params.slug[0] : params?.slug;
-  const allUniversities = [...uzbekistanUniversities, ...chinaUniversities];
+  const allUniversities = [...uzbekistanUniversities, ...kyrgyzstanUniversities];
 
   const university = allUniversities.find((item) => item.slug === slug);
 

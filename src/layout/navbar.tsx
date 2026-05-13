@@ -57,7 +57,7 @@ const menuData: Record<string, MenuItem[]> = {
   Universities: [
     {
       label: "Kyrzasthan Universities",
-      href: "/universities/kyrzasthanuniversities",
+      href: "/universities/kyrgyzstanuniversities",
       icon: (
         <img
           src="/kyrgyzflag.png"

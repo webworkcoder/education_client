@@ -4,13 +4,13 @@ import React from "react";
 import { Header, Paragraph, Points, SubHeading } from "./AllTags";
 import BannerImage from "./BannerImage";
 import { useParams } from "next/navigation";
-import { uzbekistanUniversities, chinaUniversities } from "@/data/universities";
+import { uzbekistanUniversities, kyrgyzstanUniversities } from "@/data/universities";
 import InfoTable from "../countries/InfoTable";
 
 const Description = () => {
   const params = useParams();
   const slug = Array.isArray(params?.slug) ? params.slug[0] : params?.slug;
-  const allUniversities = [...uzbekistanUniversities, ...chinaUniversities];
+  const allUniversities = [...uzbekistanUniversities, ...kyrgyzstanUniversities];
   const university = allUniversities.find((item) => item.slug === slug);
 
   if (!university) {
