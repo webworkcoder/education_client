@@ -158,16 +158,7 @@ const Footer: React.FC = () => {
               <span className="absolute -bottom-1 left-0 w-8 h-1 bg-gradient-to-br from-[#1e4e96] to-[#2d68b3] rounded-full"></span>
             </h3>
             <div className="grid grid-cols-2 gap-3">
-              {[
-                "Russia",
-                "Georgia",
-                "Uzbekistan",
-                "Kazakhstan",
-                "Kyrgyzstan",
-                "Egypt",
-                "Philippines",
-                "Moldova",
-              ].map((country) => (
+              {["Uzbekistan", "Kyrgyzstan"].map((country) => (
                 <Link
                   key={country}
                   href="#"

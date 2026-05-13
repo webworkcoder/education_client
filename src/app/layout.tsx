@@ -24,13 +24,13 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Topson Education provides expert guidance for MBBS abroad admissions in Russia, Uzbekistan, China, Georgia, Kazakhstan, Kyrgyzstan, and other countries. Get complete support for university selection, admission, visa, documentation, and education loans.",
+    "Topson Education provides expert guidance for MBBS abroad admissions in , Uzbekistan, China, Georgia, Kazakhstan, Kyrgyzstan, and other countries. Get complete support for university selection, admission, visa, documentation, and education loans.",
 
   keywords: [
     "Topson Education",
     "MBBS abroad",
     "Study MBBS abroad",
-    "MBBS in Russia",
+
     "MBBS in Uzbekistan",
     "MBBS in China",
     "MBBS in Kazakhstan",

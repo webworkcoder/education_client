@@ -100,62 +100,22 @@ const Hero = () => {
         </div>
 
         {/* --- RIGHT CONTENT: IMAGE SECTION (Mobile Full Width Fix) --- */}
-        <div className="relative w-full overflow-x-hidden lg:overflow-visible lg:px-8">
+        <div className="relative w-full px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="relative w-full rounded-none lg:rounded-[3rem] overflow-hidden shadow-2xl aspect-video lg:aspect-auto"
+            className="relative w-full rounded-none lg:rounded-[3rem] overflow-hidden rounded-3x shadow-2xl h-65 sm:h-95 md:h-125 lg:h-162
+    "
           >
             <img
               src="/doc1.jpeg"
-              className="w-full h-full object-cover"
               alt="Medical Students"
+              className="w-full h-full object-cover object-center"
             />
-            {/* Soft Gradient Mask on Image */}
+
             <div className="absolute inset-0 bg-gradient-to-tr from-[#0b1f4d]/40 to-transparent" />
           </motion.div>
-
-          {/* Floating Glass Cards - Hidden on Mobile to avoid edge clipping */}
-          {/* <motion.div
-            animate={{ y: [0, -20, 0] }}
-            transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-            className="absolute -top-6 left-4 lg:-top-10 lg:-left-10 hidden md:flex items-center gap-4 bg-white/80 backdrop-blur-xl p-3 rounded-[1rem] shadow-xl border border-white"
-          >
-            <div className="bg-sky-500 p-3 rounded-2xl text-white">
-              <Stethoscope size={24} />
-            </div>
-            <div>
-              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                Global Rank
-              </p>
-              <p className="text-xl font-black text-[#0b1f4d]">Top 1% Mentor</p>
-            </div>
-          </motion.div> */}
-
-          {/* <motion.div
-            animate={{ y: [0, 20, 0] }}
-            transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-            className="absolute -bottom-6 right-4 lg:-bottom-10 lg:right-3 hidden md:flex items-center gap-4 bg-white/80 backdrop-blur-xl p-4 rounded-[1rem] shadow-2xl border border-white"
-          >
-            <div className="flex flex-col">
-              <div className="flex gap-1 mb-2">
-                {[1, 2, 3, 4, 5].map((s) => (
-                  <Sparkles
-                    key={s}
-                    size={12}
-                    className="text-yellow-500 fill-yellow-500"
-                  />
-                ))}
-              </div>
-              <p className="text-sm font-black text-[#0b1f4d]">
-                Verified Success
-              </p>
-              <p className="text-[10px] font-bold text-slate-400 uppercase">
-                MCi/WHO Approved
-              </p>
-            </div>
-          </motion.div> */}
         </div>
       </div>
 

@@ -19,7 +19,7 @@ const choosen = [
   "Complete Career Counseling",
 ];
 
-const options = ["MBBS In Georgia", "MBBS in Russia", "MBBS in Kazakhstan"];
+const options = [ "MBBS in Kazakhstan","MBBS in Kyrgyzstan",];
 
 const containerVariants = {
   hidden: { opacity: 0 },
