@@ -4,14 +4,14 @@ import React from "react";
 import { Header, Paragraph, Points, SubHeading } from "./AllTags";
 import BannerImage from "./BannerImage";
 import { useParams } from "next/navigation";
-import { universities } from "@/data/universities";
+import { uzbekistanUniversities, chinaUniversities } from "@/data/universities";
 import InfoTable from "../countries/InfoTable";
 
 const Description = () => {
   const params = useParams();
   const slug = Array.isArray(params?.slug) ? params.slug[0] : params?.slug;
-
-  const university = universities.find((item) => item.slug === slug);
+  const allUniversities = [...uzbekistanUniversities, ...chinaUniversities];
+  const university = allUniversities.find((item) => item.slug === slug);
 
   if (!university) {
     return <div>University not found</div>;
