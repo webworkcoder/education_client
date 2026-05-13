@@ -8,6 +8,7 @@ import RussiaHero from "@/components/common/countries/StudyMbbs";
 import UniversitiesSection from "@/components/common/countries/UniversitiesSection";
 import InfoCards from "@/components/common/InfoCards";
 import FAQSection from "@/components/LandingPage/FAQSection";
+import { chinaUniversities } from "@/data/universities";
 
 const country = {
   name: "China",
@@ -102,44 +103,7 @@ const eligibilityData = [
   },
 ];
 
-const universities = [
-  {
-    name: "China Medical University",
-    location: "China",
-    image: "/russia.jpg",
-    slug: "china-medical-university",
-  },
-  {
-    name: "Jilin University Medical College",
-    location: "China",
-    image: "/russia.jpg",
-    slug: "jilin-university-medical-college",
-  },
-  {
-    name: "Dalian Medical University",
-    location: "China",
-    image: "/russia.jpg",
-    slug: "dalian-medical-university",
-  },
-  {
-    name: "Harbin Medical University",
-    location: "China",
-    image: "/russia.jpg",
-    slug: "harbin-medical-university",
-  },
-  {
-    name: "Nanjing Medical University",
-    location: "China",
-    image: "/russia.jpg",
-    slug: "nanjing-medical-university",
-  },
-  {
-    name: "Wuhan University School of Medicine",
-    location: "China",
-    image: "/russia.jpg",
-    slug: "wuhan-university-school-of-medicine",
-  },
-];
+
 
 const safetyData = {
   description:
@@ -285,7 +249,7 @@ const ChinaPage = () => {
         gridClassName="md:grid-cols-2"
         data={eligibilityData}
       />
-      <UniversitiesSection country="China" data={universities} />
+      <UniversitiesSection country="China" data={chinaUniversities} />
       <SafetySection
         country="China"
         description={safetyData.description}

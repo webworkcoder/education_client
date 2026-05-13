@@ -370,7 +370,7 @@ export const universities = [
 
 export const uzbekistanUniversities = [
   {
-    id: "uni-7",
+    id: "uni-1",
     slug: "andijan-state-medical-institute",
     name: "Andijan State Medical Institute (ASMI), Uzbekistan",
     location: "Uzbekistan",
@@ -704,7 +704,7 @@ export const uzbekistanUniversities = [
 
 export const chinaUniversities = [
   {
-    id: "uni-8",
+    id: "uni-1",
     slug: "china1-state-medical-institute",
     name: "China Medical University, China",
     location: "China",
