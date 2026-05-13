@@ -36,27 +36,40 @@ const AboutTopson = () => {
           </div>
 
           <motion.div
-            initial={{ y: 60, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="absolute -bottom-10 -right-2 md:-right-6 z-20 bg-white p-6 md:p-8 rounded-xl shadow-[0_20px_50px_rgba(30,78,150,0.15)] border-t-4 border-[#1e4e96] max-w-[280px] md:max-w-[340px]"
-          >
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center">
-                <span className="text-[#1e4e96] font-bold text-xl">10+</span>
-              </div>
-              <p className="font-bold text-slate-800 text-sm leading-tight">
-                Trusted Guidance For <br />
-                Future Medical Professionals
-              </p>
-            </div>
-            <p className="text-slate-500 text-xs leading-relaxed">
-              Supporting students with expert counseling, university selection,
-              and end-to-end admission assistance for international medical
-              education.
-            </p>
-          </motion.div>
+  initial={{ y: 60, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  transition={{ duration: 0.8, delay: 0.4 }}
+  viewport={{ once: true }}
+  className="
+    relative lg:absolute
+    mt-6 lg:mt-0
+    lg:-bottom-10 lg:-right-6
+    z-20 bg-white
+    p-5 md:p-6 lg:p-8
+    rounded-xl
+    shadow-[0_20px_50px_rgba(30,78,150,0.15)]
+    border-t-4 border-[#1e4e96]
+    w-full lg:w-auto
+    max-w-full lg:max-w-85
+  "
+>
+  <div className="flex items-center gap-3 mb-3">
+    <div className="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center shrink-0">
+      <span className="text-[#1e4e96] font-bold text-xl">10+</span>
+    </div>
+
+    <p className="font-bold text-slate-800 text-sm leading-tight">
+      Trusted Guidance For <br />
+      Future Medical Professionals
+    </p>
+  </div>
+
+  <p className="text-slate-500 text-xs leading-relaxed">
+    Supporting students with expert counseling, university
+    selection, and end-to-end admission assistance for
+    international medical education.
+  </p>
+</motion.div>
 
           <div className="absolute -top-10 -left-10 w-64 h-64 bg-blue-50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse" />
         </motion.div>
