@@ -22,7 +22,6 @@ type MenuItem = {
   icon?: React.ReactNode;
 };
 
-// --- DATA CONFIGURATION ---
 const menuData: Record<string, MenuItem[]> = {
   Courses: [
     {
@@ -33,22 +32,11 @@ const menuData: Record<string, MenuItem[]> = {
   ],
   Countries: [
     {
-      label: "Russia",
-      href: "/countries/russia",
+      label: "Kyrzasthan ",
+      href: "/countries/kyrzasthan",
       icon: (
         <img
-          src="/russialogo.png"
-          alt=""
-          className="w-5 h-5 rounded-full border object-cover"
-        />
-      ),
-    },
-    {
-      label: "China",
-      href: "/countries/china",
-      icon: (
-        <img
-          src="/chinalogo.png"
+          src="/kyrgyzflag.png"
           alt=""
           className="w-5 h-5 rounded-full border object-cover"
         />
@@ -68,11 +56,11 @@ const menuData: Record<string, MenuItem[]> = {
   ],
   Universities: [
     {
-      label: "Russia Universities",
-      href: "/universities/russiauniversities",
+      label: "Kyrzasthan Universities",
+      href: "/universities/kyrzasthanuniversities",
       icon: (
         <img
-          src="/russialogo.png"
+          src="/kyrgyzflag.png"
           alt=""
           className="w-5 h-5 rounded-full border object-cover"
         />
@@ -84,17 +72,6 @@ const menuData: Record<string, MenuItem[]> = {
       icon: (
         <img
           src="/uzbekistanlogo.png"
-          alt=""
-          className="w-5 h-5 rounded-full border object-cover"
-        />
-      ),
-    },
-    {
-      label: "China Universities",
-      href: "/universities/chinauniversities",
-      icon: (
-        <img
-          src="/Chinalogo.png"
           alt=""
           className="w-5 h-5 rounded-full border object-cover"
         />
