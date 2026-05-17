@@ -172,7 +172,7 @@ const BookYourSeat = () => {
                       <input
                         name="fullName"
                         onChange={handleChange}
-                        className="w-full border-b-2 border-slate-200 py-1.5 md:py-2 outline-none focus:border-[#0b2a5b] transition-colors text-slate-800 placeholder:text-slate-300 text-sm md:text-base"
+                        className="w-full border-b-2 border-slate-200 py-1.5 md:py-2 outline-none focus:border-[#0b2a5b] transition-colors text-slate-800 text-sm md:text-base"
                         placeholder="Enter your full name"
                       />
                     </div>

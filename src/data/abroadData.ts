@@ -7,48 +7,41 @@ export type AbroadItem = {
 
 export const abroadLocations: AbroadItem[] = [
   {
-    title: "MBBS In Russia",
-    image: "/russia.jpg",
-    country: "Russia",
-    description:
-      "Study MBBS in Russia at globally recognized medical universities offering quality education, modern infrastructure, and affordable tuition fees for international students.",
-  },
-  {
-    title: "MBBS In Uzbekistan",
-    image: "/uzbekistan.jpg",
+    title: "Tashkent State Medical University",
+    image: "/college/tashkent.jpg",
     country: "Uzbekistan",
     description:
-      "Pursue your medical education in Uzbekistan with English-medium programs, advanced learning facilities, and budget-friendly MBBS opportunities.",
+      "Study MBBS at Tashkent State Medical University with modern medical training, experienced faculty, advanced laboratories, and an affordable fee structure for international students.",
   },
   {
-    title: "MBBS In Georgia",
-    image: "/georgia.jpg",
-    country: "Georgia",
+    title: "Samarkand State Medical University",
+    image: "/college/samarkand.jpg",
+    country: "Uzbekistan",
     description:
-      "Georgia provides internationally recognized MBBS programs with modern teaching methods, experienced faculty, and an excellent environment for global students.",
+      "Samarkand State Medical University offers globally recognized MBBS programs with English-medium education, practical clinical exposure, and a student-friendly campus environment.",
+  },
+  {
+    title: "Bukhara State Medical University",
+    image: "/college/bukhara.avif",
+    country: "Uzbekistan",
+    description:
+      "Pursue medical education at Bukhara State Medical University with quality academics, modern infrastructure, skilled professors, and affordable living expenses in Uzbekistan.",
   },
 ];
 
 export const abroadLocations2: AbroadItem[] = [
   {
-    title: "MBBS In Russia",
-    image: "/russia.jpg",
-    country: "Russia",
-    description:
-      "Build your medical career in Russia through internationally approved universities known for advanced education, practical training, and affordable study programs.",
-  },
-  {
-    title: "MBBS In Uzbekistan",
-    image: "/uzbekistan.jpg",
+    title: "Andijan State Medical University",
+    image: "/college/andijan.avif",
     country: "Uzbekistan",
     description:
-      "Choose Uzbekistan for quality MBBS education with modern campuses, English-medium courses, and a student-friendly learning environment.",
+      "Andijan State Medical University provides quality MBBS education with advanced medical facilities, practical hospital training, and internationally accepted degree programs.",
   },
   {
-    title: "MBBS In Georgia",
-    image: "/georgia.jpg",
-    country: "Georgia",
+    title: "Fergana State Medical University",
+    image: "/college/fergana.jpeg",
+    country: "Uzbekistan",
     description:
-      "Study medicine in Georgia with globally recognized universities offering innovative teaching methods, experienced faculty, and excellent academic support.",
+      "Study MBBS in Uzbekistan at Fergana State Medical University with affordable tuition fees, modern classrooms, experienced faculty, and a supportive learning atmosphere.",
   },
 ];

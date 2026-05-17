@@ -61,7 +61,7 @@ const AtlasMentor = () => {
             <button className="px-10 py-4 bg-[#0b2a5b] text-white rounded-full font-bold hover:bg-[#1e4e96] transition-all shadow-[0_20px_40px_rgba(11,42,91,0.2)] flex items-center gap-3">
               Book Free Counseling <ArrowRight size={18} />
             </button>
-            <div className="flex -space-x-3">
+            {/* <div className="flex -space-x-3">
               {[1, 2, 3, 4].map((i) => (
                 <div
                   key={i}
@@ -73,7 +73,7 @@ const AtlasMentor = () => {
               <div className="pl-6 text-xs font-bold text-slate-400 self-center uppercase tracking-tighter">
                 Trusted by 1000+ Students
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -84,13 +84,13 @@ const AtlasMentor = () => {
           className="relative flex-1"
         >
           {/* Main Image Frame */}
-          <div className="relative z-10 p-4 bg-white shadow-2xl rounded-[3rem] rotate-2 hover:rotate-0 transition-transform duration-700">
+          <div className="relative z-10 shadow-2xl p-2 rotate-2 hover:rotate-0 transition-transform duration-700">
             <Image
               src="/doc3.jpeg"
               alt="Medical Students"
               width={600}
               height={700}
-              className="rounded-[2.5rem] object-cover w-full h-[500px]"
+              className="rounded-[2.5rem] object-contain w-full h-[500px]"
             />
           </div>
 
