@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { Mail, Phone, MapPin } from "lucide-react";
-
+import { useState } from "react";
+import { Mail, Phone, MapPin, Loader2 } from "lucide-react";
 
 const contactData = [
   {
@@ -23,7 +25,6 @@ const contactData = [
     icon: Mail,
   },
 ];
-
 
 const InfoCard = ({ title, desc, icon: Icon }: any) => {
   return (
@@ -47,6 +48,47 @@ const InfoCard = ({ title, desc, icon: Icon }: any) => {
 };
 
 const ContactPage = () => {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    const formData = new FormData(e.currentTarget);
+
+    const payload = {
+      name: formData.get("name"),
+      phone: formData.get("phone"),
+      email: formData.get("email"),
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        alert("Message sent successfully");
+
+        e.currentTarget.reset();
+      } else {
+        alert(data.message || "Something went wrong");
+      }
+    } catch (error) {
+      console.log(error);
+      alert("Failed to send message");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className="pb-20">
       {/* HERO */}
@@ -56,6 +98,7 @@ const ContactPage = () => {
             className="absolute right-10 top-1/2 -translate-y-1/2 text-white/20"
             size={200}
           />
+
           <Phone
             className="absolute left-1/3 top-1/2 -translate-y-1/2 text-white/20"
             size={240}
@@ -68,14 +111,16 @@ const ContactPage = () => {
 
             <div className="flex items-center gap-2 text-sm border border-white/30 rounded-md w-fit backdrop-blur-sm bg-white/10">
               <span className="px-3 py-1">Home</span>
+
               <span className="opacity-70">›</span>
+
               <span className="px-3 py-1">Contact Us</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* CARDS */}
+      {/* INFO CARDS */}
       <div className="w-full bg-[#f5f7fb] py-12 px-6 md:px-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           {contactData.map((item) => (
@@ -89,70 +134,94 @@ const ContactPage = () => {
         </div>
       </div>
 
-      {/* CONTACT FORM SECTION */}
-      <div className="w-full bg-[#f5f7fb] py-16 px-6 md:px-16 ">
+      {/* CONTACT SECTION */}
+      <div className="w-full bg-[#f5f7fb] py-16 px-6 md:px-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          {/* LEFT: FORM */}
-          <div className="relative bg-white p-8 md:p-10 border border-gray-200">
-            {/* LEFT BORDER ACCENT */}
-            <div className="absolute left-0 bottom-0 w-2 h-full bg-[#1f3c88]"></div>
-            <div className="absolute left-0 bottom-0 w-full h-2 bg-[#1f3c88]"></div>
+          {/* LEFT SIDE */}
+          <div className="relative bg-white p-8 md:p-10 border border-gray-200 overflow-hidden rounded-md">
+            {/* DESIGN */}
+            <div className="absolute left-0 bottom-0 w-2 h-full bg-[#1f3c88]" />
 
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Feel free to contact atlas mentor team
+            <div className="absolute left-0 bottom-0 w-full h-2 bg-[#1f3c88]" />
+
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#1f2937]">
+              Feel free to contact Topson Education team
             </h2>
 
             <p className="text-gray-600 mb-6 text-sm leading-relaxed">
               If you need assistance or have any questions, please feel free to
-              reach out to the Atlas Mentor team. They are available to provide
+              reach out to the Topson Education team. They are available to provide
               support and guidance.
             </p>
 
             {/* FORM */}
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              {/* NAME */}
               <div>
                 <label className="text-sm text-gray-700">Name</label>
+
                 <input
+                  name="name"
                   type="text"
-                  placeholder="Name"
-                  className="w-full mt-1 border border-gray-300 px-4 py-2 outline-none focus:ring-2 focus:ring-[#6a7fb0]"
+                  required
+                  placeholder="Enter your name"
+                  className="w-full mt-1 border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-[#6a7fb0]"
                 />
               </div>
 
+              {/* PHONE */}
               <div>
                 <label className="text-sm text-gray-700">Phone</label>
+
                 <input
+                  name="phone"
                   type="text"
-                  placeholder="Phone"
-                  className="w-full mt-1 border border-gray-300 px-4 py-2 outline-none focus:ring-2 focus:ring-[#6a7fb0]"
+                  required
+                  placeholder="Enter your phone number"
+                  className="w-full mt-1 border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-[#6a7fb0]"
                 />
               </div>
 
+              {/* EMAIL */}
               <div>
                 <label className="text-sm text-gray-700">Email</label>
+
                 <input
+                  name="email"
                   type="email"
-                  placeholder="Email"
-                  className="w-full mt-1 border border-gray-300 px-4 py-2 outline-none focus:ring-2 focus:ring-[#6a7fb0]"
+                  required
+                  placeholder="Enter your email"
+                  className="w-full mt-1 border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-[#6a7fb0]"
                 />
               </div>
 
+              {/* BUTTON */}
               <button
                 type="submit"
-                className="mt-3 bg-[#6a7fb0] text-white px-6 py-2 font-medium hover:bg-[#5a6fa0] transition flex items-center gap-2"
+                disabled={loading}
+                className="mt-3 bg-[#6a7fb0] hover:bg-[#5a6fa0] disabled:opacity-70 text-white px-6 py-3 rounded-md font-medium transition flex items-center gap-2"
               >
-                Request Contact Me
-                <span>›</span>
+                {loading ? (
+                  <>
+                    <Loader2 className="animate-spin w-4 h-4" />
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    Request Contact Me
+                    <span>›</span>
+                  </>
+                )}
               </button>
             </form>
           </div>
 
-          {/* RIGHT: IMAGE */}
+          {/* RIGHT IMAGE */}
           <div className="w-full h-full">
             <img
               src="/doctors.jpg"
               alt="doctor"
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-cover rounded-xl shadow-md"
             />
           </div>
         </div>
