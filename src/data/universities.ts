@@ -476,17 +476,7 @@ export const uzbekistanUniversities = [
     date: "January 25, 2025",
 
     collegeimg: "/college/andijan.avif",
-    collegeShowPics: [
-      "/college/tashkent1.jpg",
-      "/college/tashkent2.jpg",
-      "/college/tashkent3.jpg",
-      "/college/tashkent4.jpg",
-      "/college/tashkent5.jpg",
-      "/college/tashkent6.jpg",
-      "/college/tashkent7.jpg",
-      "/college/tashkent8.jpg",
-      "/college/tashkent9.jpg",
-    ],
+    collegeShowPics: "/college/andijan.avif",
 
     righttitle: "Topson Education",
 

@@ -9,7 +9,8 @@ interface BannerProps {
 }
 
 const BannerImage = ({ image, alt = "University Banner" }: BannerProps) => {
-  const images = Array.isArray(image) ? image : [image, image, image, image, image];
+  const images = Array.isArray(image) ? image : [image];
+  const isSingle = images.length === 1;
   return (
     <div className="w-full px-4 py-4">
       <motion.div
@@ -18,12 +19,11 @@ const BannerImage = ({ image, alt = "University Banner" }: BannerProps) => {
         transition={{ duration: 0.6 }}
         className="relative w-full"
       >
-        {/* Banner Image with subtle hover scale effect */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full h-full p-4">
+        <div className={isSingle ? "w-full p-4" : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full h-full p-4"}>
           {images.map((img, index) => (
             <div
               key={index}
-              className="relative w-full h-[180px] sm:h-[220px] md:h-[300px] rounded-xl overflow-hidden"
+              className={`relative w-full rounded-xl overflow-hidden ${isSingle ? "h-75 sm:h-100 md:h-125" : "h-45 sm:h-55 md:h-75"}`}
             >
               <Image
                 src={img}
@@ -31,7 +31,7 @@ const BannerImage = ({ image, alt = "University Banner" }: BannerProps) => {
                 fill
                 className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
                 priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes={isSingle ? "100vw" : "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"}
               />
             </div>
           ))}
