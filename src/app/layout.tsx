@@ -4,6 +4,7 @@ import "./globals.css";
 import Topbar from "@/layout/topbar";
 import { Navbar } from "@/layout/navbar";
 import Footer from "@/layout/footer";
+import PageLoader from "@/components/common/PageLoader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -117,6 +118,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-white text-slate-900">
+        <PageLoader />
         <Topbar />
         <Navbar />
 
