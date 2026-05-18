@@ -18,7 +18,17 @@ export const uzbekistanUniversities = [
     date: "January 25, 2025",
 
     collegeimg: "/college/tashkent.jpg",
-    collegeShowPics: "/college/tashkent.jpg",
+    collegeShowPics: [
+      "/collegegroups/Tashkent/Tashkent1.jpeg",
+      "/collegegroups/Tashkent/Tashkent2.jpeg",
+      "/collegegroups/Tashkent/Tashkent3.jpeg",
+      "/collegegroups/Tashkent/Tashkent4.jpeg",
+      "/collegegroups/Tashkent/Tashkent5.jpeg",
+      "/collegegroups/Tashkent/Tashkent6.jpeg",
+      "/collegegroups/Tashkent/Tashkent7.jpeg",
+      "/collegegroups/Tashkent/Tashkent8.jpeg",
+      "/collegegroups/Tashkent/Tashkent9.jpeg",
+    ],
 
     righttitle: "Topson Education",
 
@@ -390,7 +400,7 @@ export const uzbekistanUniversities = [
       "/collegegroups/Bukhara/Bukhara5.jpeg",
       "/collegegroups/Bukhara/Bukhara6.jpeg",
       "/collegegroups/Bukhara/Bukhara7.jpeg",
-     
+
     ],
 
     righttitle: "Topson Education",
