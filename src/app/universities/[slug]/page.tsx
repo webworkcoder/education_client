@@ -62,7 +62,7 @@ const UniversityDetails = () => {
       />
       <div className="flex flex-col lg:flex-row items-start gap-6 px-4 md:px-8 mt-10 pb-25">
         <div className="w-full lg:w-2/3 mt-4">
-          <BannerImage image={university.collegeimg} />
+          <BannerImage image={university.collegeShowPics} />
           <Description />
           <CountryFaq />
           {university.tags && <Tags tags={university.tags} />}

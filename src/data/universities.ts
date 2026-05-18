@@ -18,6 +18,7 @@ export const uzbekistanUniversities = [
     date: "January 25, 2025",
 
     collegeimg: "/college/tashkent.jpg",
+    collegeShowPics: "/college/tashkent.jpg",
 
     righttitle: "Topson Education",
 
@@ -284,6 +285,17 @@ export const uzbekistanUniversities = [
     date: "January 25, 2025",
 
     collegeimg: "/college/samarkand.jpg",
+    collegeShowPics: [
+      "/collegegroups/Samarkand/samarkand1.jpeg",
+      "/collegegroups/Samarkand/samarkand2.jpeg",
+      "/collegegroups/Samarkand/samarkand3.jpeg",
+      "/collegegroups/Samarkand/samarkand4.jpeg",
+      "/collegegroups/Samarkand/samarkand5.jpeg",
+      "/collegegroups/Samarkand/samarkand6.jpeg",
+      "/collegegroups/Samarkand/samarkand7.jpeg",
+      "/collegegroups/Samarkand/samarkand8.jpeg",
+      "/collegegroups/Samarkand/samarkand9.jpeg",
+    ],
 
     righttitle: "Topson Education",
 
@@ -370,6 +382,17 @@ export const uzbekistanUniversities = [
     date: "January 25, 2025",
 
     collegeimg: "/college/bukhara.avif",
+    collegeShowPics: [
+      "/college/tashkent1.jpg",
+      "/college/tashkent2.jpg",
+      "/college/tashkent3.jpg",
+      "/college/tashkent4.jpg",
+      "/college/tashkent5.jpg",
+      "/college/tashkent6.jpg",
+      "/college/tashkent7.jpg",
+      "/college/tashkent8.jpg",
+      "/college/tashkent9.jpg",
+    ],
 
     righttitle: "Topson Education",
 
@@ -444,6 +467,17 @@ export const uzbekistanUniversities = [
     date: "January 25, 2025",
 
     collegeimg: "/college/andijan.avif",
+    collegeShowPics: [
+      "/college/tashkent1.jpg",
+      "/college/tashkent2.jpg",
+      "/college/tashkent3.jpg",
+      "/college/tashkent4.jpg",
+      "/college/tashkent5.jpg",
+      "/college/tashkent6.jpg",
+      "/college/tashkent7.jpg",
+      "/college/tashkent8.jpg",
+      "/college/tashkent9.jpg",
+    ],
 
     righttitle: "Topson Education",
 
@@ -502,6 +536,17 @@ export const uzbekistanUniversities = [
     date: "January 25, 2025",
 
     collegeimg: "/college/fergana.jpeg",
+    collegeShowPics: [
+      "/college/tashkent1.jpg",
+      "/college/tashkent2.jpg",
+      "/college/tashkent3.jpg",
+      "/college/tashkent4.jpg",
+      "/college/tashkent5.jpg",
+      "/college/tashkent6.jpg",
+      "/college/tashkent7.jpg",
+      "/college/tashkent8.jpg",
+      "/college/tashkent9.jpg",
+    ],
 
     righttitle: "Topson Education",
 
@@ -567,6 +612,17 @@ export const kyrgyzstanUniversities = [
     date: "January 25, 2025",
 
     collegeimg: "/university/kgma.jpg",
+    collegeShowPics: [
+      "/college/tashkent1.jpg",
+      "/college/tashkent2.jpg",
+      "/college/tashkent3.jpg",
+      "/college/tashkent4.jpg",
+      "/college/tashkent5.jpg",
+      "/college/tashkent6.jpg",
+      "/college/tashkent7.jpg",
+      "/college/tashkent8.jpg",
+      "/college/tashkent9.jpg",
+    ],
 
     righttitle: "Topson Education",
 
@@ -839,6 +895,17 @@ export const kyrgyzstanUniversities = [
     date: "January 25, 2025",
 
     collegeimg: "/ism-campus.jpg",
+    collegeShowPics: [
+      "/college/tashkent1.jpg",
+      "/college/tashkent2.jpg",
+      "/college/tashkent3.jpg",
+      "/college/tashkent4.jpg",
+      "/college/tashkent5.jpg",
+      "/college/tashkent6.jpg",
+      "/college/tashkent7.jpg",
+      "/college/tashkent8.jpg",
+      "/college/tashkent9.jpg",
+    ],
 
     righttitle: "Topson Education",
 
@@ -959,6 +1026,17 @@ export const kyrgyzstanUniversities = [
     date: "January 25, 2025",
 
     collegeimg: "/university/OSH.jpg",
+    collegeShowPics: [
+      "/college/tashkent1.jpg",
+      "/college/tashkent2.jpg",
+      "/college/tashkent3.jpg",
+      "/college/tashkent4.jpg",
+      "/college/tashkent5.jpg",
+      "/college/tashkent6.jpg",
+      "/college/tashkent7.jpg",
+      "/college/tashkent8.jpg",
+      "/college/tashkent9.jpg",
+    ],
 
     righttitle: "Topson Education",
 
@@ -1046,6 +1124,17 @@ export const kyrgyzstanUniversities = [
     date: "January 25, 2025",
 
     collegeimg: "/university/jalal.jpg",
+    collegeShowPics: [
+      "/college/tashkent1.jpg",
+      "/college/tashkent2.jpg",
+      "/college/tashkent3.jpg",
+      "/college/tashkent4.jpg",
+      "/college/tashkent5.jpg",
+      "/college/tashkent6.jpg",
+      "/college/tashkent7.jpg",
+      "/college/tashkent8.jpg",
+      "/college/tashkent9.jpg",
+    ],
 
     righttitle: "Topson Education",
 
@@ -1126,6 +1215,17 @@ export const kyrgyzstanUniversities = [
     date: "January 25, 2025",
 
     collegeimg: "/university/asian.jpg",
+    collegeShowPics: [
+      "/college/tashkent1.jpg",
+      "/college/tashkent2.jpg",
+      "/college/tashkent3.jpg",
+      "/college/tashkent4.jpg",
+      "/college/tashkent5.jpg",
+      "/college/tashkent6.jpg",
+      "/college/tashkent7.jpg",
+      "/college/tashkent8.jpg",
+      "/college/tashkent9.jpg",
+    ],
 
     righttitle: "Topson Education",
 
