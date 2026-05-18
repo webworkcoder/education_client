@@ -383,15 +383,14 @@ export const uzbekistanUniversities = [
 
     collegeimg: "/college/bukhara.avif",
     collegeShowPics: [
-      "/college/tashkent1.jpg",
-      "/college/tashkent2.jpg",
-      "/college/tashkent3.jpg",
-      "/college/tashkent4.jpg",
-      "/college/tashkent5.jpg",
-      "/college/tashkent6.jpg",
-      "/college/tashkent7.jpg",
-      "/college/tashkent8.jpg",
-      "/college/tashkent9.jpg",
+      "/collegegroups/Bukhara/Bukhara1.jpeg",
+      "/collegegroups/Bukhara/Bukhara2.jpeg",
+      "/collegegroups/Bukhara/Bukhara3.jpeg",
+      "/collegegroups/Bukhara/Bukhara4.jpeg",
+      "/collegegroups/Bukhara/Bukhara5.jpeg",
+      "/collegegroups/Bukhara/Bukhara6.jpeg",
+      "/collegegroups/Bukhara/Bukhara7.jpeg",
+     
     ],
 
     righttitle: "Topson Education",
