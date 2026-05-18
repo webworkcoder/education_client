@@ -4,8 +4,8 @@ export const uzbekistanUniversities = [
     slug: "tashkent-state-medical-university",
     name: "Tashkent State Medical University, Uzbekistan",
     location: "Uzbekistan",
-    image: "/uzbekistan.jpg",
-    logo: "/uzbekistan.jpg",
+    image: "/college/tashkent.jpg",
+    logo: "/college/tashkent.jpg",
 
     title: "Tashkent State Medical University, Uzbekistan",
 
@@ -17,20 +17,16 @@ export const uzbekistanUniversities = [
 
     date: "January 25, 2025",
 
-    collegeimg: "/uzbekistan.jpg",
+    collegeimg: "/college/tashkent.jpg",
 
     righttitle: "Topson Education",
 
     rightdescription:
       "Trusted MBBS abroad consultancy providing complete admission guidance, visa support, and counseling for international medical education.",
 
-    rightimage: "/uzbeklogo.png",
+    rightimage: "/college/tashkent.jpg",
 
-    rightlist: [
-      "MBBS In Uzbekistan",
-      
-      "MBBS In Kyrgyzstan",
-    ],
+    rightlist: ["MBBS In Uzbekistan", "MBBS In Kyrgyzstan"],
 
     rightlistlink: [
       {
@@ -56,7 +52,7 @@ export const uzbekistanUniversities = [
     ],
 
     guidanceCard: {
-      image: "/uzbekistan.jpg",
+      image: "/college/tashkent.jpg",
 
       title: "Expert Guidance For MBBS In Uzbekistan",
 
@@ -76,8 +72,7 @@ export const uzbekistanUniversities = [
 
     descriptionContent: {
       placement: {
-        title:
-          "Career Opportunities at Tashkent State Medical University",
+        title: "Career Opportunities at Tashkent State Medical University",
 
         paragraphs: [
           "Tashkent State Medical University provides high-quality medical education with strong practical exposure and modern clinical training for international students.",
@@ -179,8 +174,7 @@ export const uzbekistanUniversities = [
       },
 
       faq: {
-        title:
-          "FAQs on Tashkent State Medical University, Uzbekistan",
+        title: "FAQs on Tashkent State Medical University, Uzbekistan",
 
         text: "Find answers to common questions related to MBBS admissions, eligibility, fees, accommodation, and student life at Tashkent State Medical University.",
       },
@@ -248,13 +242,7 @@ export const uzbekistanUniversities = [
         id: 10,
         slug: "origin-countries",
         label: "Students From Countries",
-        value: [
-          "India",
-          "Kazakhstan",
-          "Kyrgyzstan",
-          "Bangladesh",
-          "Nepal",
-        ],
+        value: ["India", "Kazakhstan", "Kyrgyzstan", "Bangladesh", "Nepal"],
       },
       {
         id: 11,
@@ -282,8 +270,8 @@ export const uzbekistanUniversities = [
     slug: "samarkand-state-medical-institute",
     name: "Samarkand State Medical Institute, Uzbekistan",
     location: "Uzbekistan",
-    image: "/uzbekistan.jpg",
-    logo: "/uzbekistan.jpg",
+    image: "/college/samarkand.jpg",
+    logo: "/college/samarkand.jpg",
 
     title: "Samarkand State Medical Institute, Uzbekistan",
 
@@ -295,20 +283,16 @@ export const uzbekistanUniversities = [
 
     date: "January 25, 2025",
 
-    collegeimg: "/uzbekistan.jpg",
+    collegeimg: "/college/samarkand.jpg",
 
     righttitle: "Topson Education",
 
     rightdescription:
       "Trusted MBBS abroad consultancy providing complete admission guidance, visa support, and counseling for international medical education.",
 
-    rightimage: "/uzbeklogo.png",
+    rightimage: "/college/samarkand.jpg",
 
-    rightlist: [
-      "MBBS In Uzbekistan",
-    
-      "MBBS In Kyrgyzstan",
-    ],
+    rightlist: ["MBBS In Uzbekistan", "MBBS In Kyrgyzstan"],
 
     rightlistlink: [
       {
@@ -330,7 +314,7 @@ export const uzbekistanUniversities = [
     ],
 
     guidanceCard: {
-      image: "/uzbekistan.jpg",
+      image: "/college/samarkand.jpg",
 
       title: "Expert Guidance For MBBS In Uzbekistan",
 
@@ -372,8 +356,8 @@ export const uzbekistanUniversities = [
     slug: "bukhara-state-medical-university",
     name: "Bukhara State Medical University, Uzbekistan",
     location: "Uzbekistan",
-    image: "/uzbekistan.jpg",
-    logo: "/uzbekistan.jpg",
+    image: "/college/bukhara.avif",
+    logo: "/college/bukhara.avif",
 
     title: "Bukhara State Medical University, Uzbekistan",
 
@@ -385,19 +369,16 @@ export const uzbekistanUniversities = [
 
     date: "January 25, 2025",
 
-    collegeimg: "/uzbekistan.jpg",
+    collegeimg: "/college/bukhara.avif",
 
     righttitle: "Topson Education",
 
     rightdescription:
       "Trusted MBBS abroad consultancy providing complete admission guidance and visa assistance for students pursuing MBBS abroad.",
 
-    rightimage: "/uzbeklogo.png",
+    rightimage: "/college/bukhara.avif",
 
-    rightlist: [
-      "MBBS In Uzbekistan",
-     
-    ],
+    rightlist: ["MBBS In Kyrgyzstan", "MBBS In Uzbekistan"],
 
     rightlistlink: [
       {
@@ -415,7 +396,7 @@ export const uzbekistanUniversities = [
     ],
 
     guidanceCard: {
-      image: "/uzbekistan.jpg",
+      image: "/college/bukhara.avif",
 
       title: "Expert Guidance For MBBS In Uzbekistan",
 
@@ -449,8 +430,8 @@ export const uzbekistanUniversities = [
     slug: "andijan-state-medical-university",
     name: "Andijan State Medical University, Uzbekistan",
     location: "Uzbekistan",
-    image: "/uzbekistan.jpg",
-    logo: "/uzbekistan.jpg",
+    image: "/college/andijan.avif",
+    logo: "/college/andijan.avif",
 
     title: "Andijan State Medical University, Uzbekistan",
 
@@ -462,22 +443,19 @@ export const uzbekistanUniversities = [
 
     date: "January 25, 2025",
 
-    collegeimg: "/uzbekistan.jpg",
+    collegeimg: "/college/andijan.avif",
 
     righttitle: "Topson Education",
 
     rightdescription:
       "Trusted MBBS abroad consultancy helping students with admission guidance and visa support.",
 
-    rightimage: "/uzbeklogo.png",
+    rightimage: "/college/andijan.avif",
 
-    rightlist: [
-      "MBBS In Uzbekistan",
-     
-    ],
+    rightlist: ["MBBS In Kyrgyzstan", "MBBS In Uzbekistan"],
 
     guidanceCard: {
-      image: "/uzbekistan.jpg",
+      image: "/college/andijan.avif",
 
       title: "Expert Guidance For MBBS In Uzbekistan",
 
@@ -510,8 +488,8 @@ export const uzbekistanUniversities = [
     slug: "fergana-state-medical-university",
     name: "Fergana State Medical University, Uzbekistan",
     location: "Uzbekistan",
-    image: "/uzbekistan.jpg",
-    logo: "/uzbekistan.jpg",
+    image: "/college/fergana.jpeg",
+    logo: "/college/fergana.jpeg",
 
     title: "Fergana State Medical University, Uzbekistan",
 
@@ -523,22 +501,19 @@ export const uzbekistanUniversities = [
 
     date: "January 25, 2025",
 
-    collegeimg: "/uzbekistan.jpg",
+    collegeimg: "/college/fergana.jpeg",
 
     righttitle: "Topson Education",
 
     rightdescription:
       "Trusted MBBS abroad consultancy offering complete support for admissions and documentation.",
 
-    rightimage: "/uzbeklogo.png",
+    rightimage: "/college/fergana.jpeg",
 
-    rightlist: [
-      "MBBS In Uzbekistan",
-  
-    ],
+    rightlist: ["MBBS In Kyrgyzstan", "MBBS In Uzbekistan"],
 
     guidanceCard: {
-      image: "/uzbekistan.jpg",
+      image: "/college/fergana.jpeg",
 
       title: "Expert Guidance For MBBS In Uzbekistan",
 
@@ -577,9 +552,9 @@ export const kyrgyzstanUniversities = [
 
     location: "Bishkek, Kyrgyzstan",
 
-    image: "/kgma-banner.jpg",
+    image: "/university/kgma.jpg",
 
-    logo: "/kgma-logo.jpg",
+    logo: "/university/kgma.jpg",
 
     title: "Kyrgyz State Medical Academy (KSMA), Kyrgyzstan",
 
@@ -591,21 +566,16 @@ export const kyrgyzstanUniversities = [
 
     date: "January 25, 2025",
 
-    collegeimg: "/kgma-campus.jpg",
+    collegeimg: "/university/kgma.jpg",
 
     righttitle: "Topson Education",
 
     rightdescription:
       "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, and personalized counseling for medical aspirants.",
 
-    rightimage: "/kyrgyzstan-logo.png",
+    rightimage: "/university/kgma.jpg",
 
-    rightlist: [
-      "MBBS In Kyrgyzstan",
-      
-      "MBBS In Kazakhstan",
-     
-    ],
+    rightlist: ["MBBS In Kyrgyzstan", "MBBS In Uzbekistan"],
 
     rightlistlink: [
       {
@@ -651,8 +621,7 @@ export const kyrgyzstanUniversities = [
 
     descriptionContent: {
       placement: {
-        title:
-          "Career Opportunities at Kyrgyz State Medical Academy (KSMA)",
+        title: "Career Opportunities at Kyrgyz State Medical Academy (KSMA)",
 
         paragraphs: [
           "Kyrgyz State Medical Academy provides quality medical education with advanced clinical exposure and modern teaching methodologies for international students.",
@@ -694,8 +663,7 @@ export const kyrgyzstanUniversities = [
         amount: {
           subheading: "Loan Coverage",
 
-          text:
-            "Education loans may include tuition fees, hostel expenses, travel expenses, insurance, and other academic costs.",
+          text: "Education loans may include tuition fees, hostel expenses, travel expenses, insurance, and other academic costs.",
         },
 
         documents: {
@@ -732,38 +700,32 @@ export const kyrgyzstanUniversities = [
         interest: {
           subheading: "Interest & Repayment",
 
-          text:
-            "Interest rates and repayment terms depend on the selected bank or financial institution.",
+          text: "Interest rates and repayment terms depend on the selected bank or financial institution.",
         },
 
         collateral: {
           subheading: "Collateral",
 
-          text:
-            "Collateral requirements vary depending on loan amount and lender policies.",
+          text: "Collateral requirements vary depending on loan amount and lender policies.",
         },
 
         processing: {
           subheading: "Loan Processing",
 
-          text:
-            "Students should complete all required documentation early for faster education loan approval.",
+          text: "Students should complete all required documentation early for faster education loan approval.",
         },
 
         assistance: {
           subheading: "Admission Assistance",
 
-          text:
-            "Topson Education provides complete support for MBBS admissions and education loan guidance.",
+          text: "Topson Education provides complete support for MBBS admissions and education loan guidance.",
         },
       },
 
       faq: {
-        title:
-          "FAQs on Kyrgyz State Medical Academy (KSMA), Kyrgyzstan",
+        title: "FAQs on Kyrgyz State Medical Academy (KSMA), Kyrgyzstan",
 
-        text:
-          "Find answers to common questions related to MBBS admissions, fees, eligibility, accommodation, and student life at KSMA.",
+        text: "Find answers to common questions related to MBBS admissions, fees, eligibility, accommodation, and student life at KSMA.",
       },
     },
 
@@ -829,13 +791,7 @@ export const kyrgyzstanUniversities = [
         id: 10,
         slug: "origin-countries",
         label: "Students From Countries",
-        value: [
-          "India",
-          "Pakistan",
-          "Bangladesh",
-          "Nepal",
-          "Sri Lanka",
-        ],
+        value: ["India", "Pakistan", "Bangladesh", "Nepal", "Sri Lanka"],
       },
       {
         id: 11,
@@ -868,9 +824,9 @@ export const kyrgyzstanUniversities = [
 
     location: "Bishkek, Kyrgyzstan",
 
-    image: "/ism-banner.jpg",
+    image: "/university/ISM.jpg",
 
-    logo: "/ism-logo.jpg",
+    logo: "/university/ISM.jpg",
 
     title: "International School of Medicine (ISM), Kyrgyzstan",
 
@@ -891,13 +847,7 @@ export const kyrgyzstanUniversities = [
 
     rightimage: "/kyrgyzstan-logo.png",
 
-    rightlist: [
-      "MBBS In Kyrgyzstan",
-      "MBBS In Russia",
-      "MBBS In Uzbekistan",
-      "MBBS In Kazakhstan",
-      "MBBS In Georgia",
-    ],
+    rightlist: ["MBBS In Kyrgyzstan", "MBBS In Uzbekistan"],
 
     rightlistlink: [
       {
@@ -994,9 +944,9 @@ export const kyrgyzstanUniversities = [
 
     location: "Osh, Kyrgyzstan",
 
-    image: "/osh-banner.jpg",
+    image: "/university/OSH.jpg",
 
-    logo: "/osh-logo.jpg",
+    logo: "/university/OSH.jpg",
 
     title: "Osh State Medical University, Kyrgyzstan",
 
@@ -1008,22 +958,16 @@ export const kyrgyzstanUniversities = [
 
     date: "January 25, 2025",
 
-    collegeimg: "/osh-campus.jpg",
+    collegeimg: "/university/OSH.jpg",
 
     righttitle: "Topson Education",
 
     rightdescription:
       "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, and personalized counseling for medical aspirants.",
 
-    rightimage: "/kyrgyzstan-logo.png",
+    rightimage: "/university/OSH.jpg",
 
-    rightlist: [
-      "MBBS In Kyrgyzstan",
-      "MBBS In Russia",
-      "MBBS In Uzbekistan",
-      "MBBS In Kazakhstan",
-      "MBBS In Georgia",
-    ],
+    rightlist: ["MBBS In Kyrgyzstan", "MBBS In Uzbekistan"],
 
     tags: [
       { label: "Facebook", link: "#" },
@@ -1087,9 +1031,9 @@ export const kyrgyzstanUniversities = [
 
     location: "Jalal-Abad, Kyrgyzstan",
 
-    image: "/jalalabad-banner.jpg",
+    image: "/university/jalal.jpg",
 
-    logo: "/jalalabad-logo.jpg",
+    logo: "/university/jalal.jpg",
 
     title: "Jalal-Abad State Medical University, Kyrgyzstan",
 
@@ -1101,22 +1045,16 @@ export const kyrgyzstanUniversities = [
 
     date: "January 25, 2025",
 
-    collegeimg: "/jalalabad-campus.jpg",
+    collegeimg: "/university/jalal.jpg",
 
     righttitle: "Topson Education",
 
     rightdescription:
       "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, and personalized counseling for medical aspirants.",
 
-    rightimage: "/kyrgyzstan-logo.png",
+    rightimage: "/university/jalal.jpg",
 
-    rightlist: [
-      "MBBS In Kyrgyzstan",
-      "MBBS In Russia",
-      "MBBS In Uzbekistan",
-      "MBBS In Kazakhstan",
-      "MBBS In Georgia",
-    ],
+    rightlist: ["MBBS In Kyrgyzstan", "MBBS In Uzbekistan"],
 
     tags: [
       { label: "Facebook", link: "#" },
@@ -1173,9 +1111,9 @@ export const kyrgyzstanUniversities = [
 
     location: "Kant, Kyrgyzstan",
 
-    image: "/ami-banner.jpg",
+    image: "/university/asian.jpg",
 
-    logo: "/ami-logo.jpg",
+    logo: "/university/asian.jpg",
 
     title: "Asian Medical Institute, Kyrgyzstan",
 
@@ -1187,22 +1125,16 @@ export const kyrgyzstanUniversities = [
 
     date: "January 25, 2025",
 
-    collegeimg: "/ami-campus.jpg",
+    collegeimg: "/university/asian.jpg",
 
     righttitle: "Topson Education",
 
     rightdescription:
       "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, and personalized counseling for medical aspirants.",
 
-    rightimage: "/kyrgyzstan-logo.png",
+    rightimage: "/university/asian.jpg",
 
-    rightlist: [
-      "MBBS In Kyrgyzstan",
-      "MBBS In Russia",
-      "MBBS In Uzbekistan",
-      "MBBS In Kazakhstan",
-      "MBBS In Georgia",
-    ],
+    rightlist: ["MBBS In Kyrgyzstan", "MBBS In Uzbekistan"],
 
     tags: [
       { label: "Facebook", link: "#" },
@@ -1212,8 +1144,7 @@ export const kyrgyzstanUniversities = [
       { label: "Email", link: "#" },
     ],
 
-    tableheder:
-      "Quick Highlights About Asian Medical Institute, Kyrgyzstan",
+    tableheder: "Quick Highlights About Asian Medical Institute, Kyrgyzstan",
 
     tableData: [
       {
@@ -1247,5 +1178,5 @@ export const kyrgyzstanUniversities = [
         value: "3000+",
       },
     ],
-  }
+  },
 ];

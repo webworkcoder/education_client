@@ -13,7 +13,7 @@ import { kyrgyzstanUniversities } from "@/data/universities";
 const country = {
   name: "Kyrgyzstan",
   slug: "kyrgyzstan",
-  flag: "/kyrgyzstanflag.jpg",
+  flag: "/kyrgyzstanflag",
   image: "/doc2.jpeg",
   description:
     "Kyrgyzstan is one of the most popular destinations for MBBS abroad due to its affordable tuition fees, globally recognized universities, experienced faculty, and quality medical education. Medical universities in Kyrgyzstan provide excellent clinical exposure, modern infrastructure, and internationally accepted MBBS degrees for Indian students.",

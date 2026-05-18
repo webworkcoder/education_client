@@ -43,9 +43,9 @@ const UniversityCard = ({
         </span> */}
 
         {/* LOGO */}
-        <div className="absolute -bottom-6 right-4 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md border">
+        {/* <div className="absolute -bottom-6 right-4 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md border">
           <Image src="/logo.png" alt="logo" width={30} height={30} />
-        </div>
+        </div> */}
       </div>
 
       {/* CONTENT */}
