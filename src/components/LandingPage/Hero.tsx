@@ -4,6 +4,12 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowUpRight, Sparkles, Stethoscope, CircleDot } from "lucide-react";
+const avtarcolleges = [
+  "university/asian.jpg",
+  "university/ISM.jpg",
+  "university/jalal.jpg",
+  "university/kgma.jpg",
+];
 
 const Hero = () => {
   return (
@@ -84,16 +90,16 @@ const Hero = () => {
             </Link>
 
             <div className="flex -space-x-3 items-center ml-0 sm:ml-4 justify-center">
-              {[1, 2, 3, 4].map((i) => (
+              {avtarcolleges.map((src, i) => (
                 <div
                   key={i}
                   className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden"
                 >
-                  <img src={`https://i.pravatar.cc/150?u=${i}`} alt="student" />
+                  <img src={src} alt={`College ${i + 1}`} className="object-cover object-center"/>
                 </div>
               ))}
               <p className="ml-6 text-sm font-bold text-[#0b1f4d]">
-                <span className="text-sky-500">+1.2k</span> Students
+                <span className="text-sky-500">More</span> Students
               </p>
             </div>
           </motion.div>
