@@ -95,7 +95,7 @@ const Hero = () => {
                   key={i}
                   className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden"
                 >
-                  <img src={src} alt={`College ${i + 1}`} className="object-cover object-center"/>
+                  <img src={src} alt={`College ${i + 1}`} className="w-full h-full object-cover object-center"/>
                 </div>
               ))}
               <p className="ml-6 text-sm font-bold text-[#0b1f4d]">

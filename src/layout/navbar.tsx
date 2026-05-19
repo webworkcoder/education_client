@@ -177,13 +177,16 @@ export const Navbar = () => {
         {/* LOGO */}
         <Link
           href="/"
-          className="flex-shrink-0 transition-transform active:scale-95"
+          className="flex-shrink-0 flex items-center gap-2 transition-transform active:scale-95"
         >
           <img
             src="/eLogo.png"
             alt="Topson Education"
             className="h-10 md:h-14 w-auto object-contain"
           />
+          <span className="block md:hidden text-sm font-bold text-[#0b2a5b]">
+            Topson Education
+          </span>
         </Link>
 
         {/* DESKTOP NAVIGATION */}
