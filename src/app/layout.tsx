@@ -5,6 +5,7 @@ import Topbar from "@/layout/topbar";
 import { Navbar } from "@/layout/navbar";
 import Footer from "@/layout/footer";
 import PageLoader from "@/components/common/PageLoader";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -122,7 +123,10 @@ export default function RootLayout({
         <Topbar />
         <Navbar />
 
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          {children}
+          <Toaster position="top-right" richColors />
+        </main>
 
         <Footer />
       </body>

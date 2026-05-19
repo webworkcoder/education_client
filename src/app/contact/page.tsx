@@ -4,6 +4,8 @@
 
 import { useState } from "react";
 import { Mail, Phone, MapPin, Loader2 } from "lucide-react";
+import Link from "next/link";
+import { toast } from "sonner";
 
 const contactData = [
   {
@@ -72,18 +74,30 @@ const ContactPage = () => {
         body: JSON.stringify(payload),
       });
 
+      if (!res.ok) {
+        const data = await res.json();
+        toast.error("Failed to send message", {
+          description:
+            data.message || "Something went wrong. Please try again.",
+        });
+        return;
+      }
+
       const data = await res.json();
 
       if (data.success) {
-        alert("Message sent successfully");
-
+        toast.success("Message sent successfully!", {
+          description: "We'll get back to you as soon as possible.",
+        });
         e.currentTarget.reset();
       } else {
-        alert(data.message || "Something went wrong");
+        toast.error("Failed to send message", {
+          description:
+            data.message || "Something went wrong. Please try again.",
+        });
       }
     } catch (error) {
       console.log(error);
-      alert("Failed to send message");
     } finally {
       setLoading(false);
     }
@@ -110,7 +124,9 @@ const ContactPage = () => {
             <h1 className="text-3xl md:text-4xl font-bold mb-3">Contact Us</h1>
 
             <div className="flex items-center gap-2 text-sm border border-white/30 rounded-md w-fit backdrop-blur-sm bg-white/10">
-              <span className="px-3 py-1">Home</span>
+              <Link href={"/"}>
+                <span className="px-3 py-1">Home</span>
+              </Link>
 
               <span className="opacity-70">›</span>
 
@@ -141,7 +157,6 @@ const ContactPage = () => {
           <div className="relative bg-white p-8 md:p-10 border border-gray-200 overflow-hidden rounded-md">
             {/* DESIGN */}
             <div className="absolute left-0 bottom-0 w-2 h-full bg-[#1f3c88]" />
-
             <div className="absolute left-0 bottom-0 w-full h-2 bg-[#1f3c88]" />
 
             <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#1f2937]">
@@ -150,16 +165,14 @@ const ContactPage = () => {
 
             <p className="text-gray-600 mb-6 text-sm leading-relaxed">
               If you need assistance or have any questions, please feel free to
-              reach out to the Topson Education team. They are available to provide
-              support and guidance.
+              reach out to the Topson Education team. They are available to
+              provide support and guidance.
             </p>
 
             {/* FORM */}
             <form className="space-y-4" onSubmit={handleSubmit}>
-              {/* NAME */}
               <div>
                 <label className="text-sm text-gray-700">Name</label>
-
                 <input
                   name="name"
                   type="text"
@@ -169,10 +182,8 @@ const ContactPage = () => {
                 />
               </div>
 
-              {/* PHONE */}
               <div>
                 <label className="text-sm text-gray-700">Phone</label>
-
                 <input
                   name="phone"
                   type="text"
@@ -182,10 +193,8 @@ const ContactPage = () => {
                 />
               </div>
 
-              {/* EMAIL */}
               <div>
                 <label className="text-sm text-gray-700">Email</label>
-
                 <input
                   name="email"
                   type="email"
@@ -195,11 +204,10 @@ const ContactPage = () => {
                 />
               </div>
 
-              {/* BUTTON */}
               <button
                 type="submit"
                 disabled={loading}
-                className="mt-3 bg-[#6a7fb0] hover:bg-[#5a6fa0] disabled:opacity-70 text-white px-6 py-3 rounded-md font-medium transition flex items-center gap-2"
+                className="mt-3 bg-[#6a7fb0] hover:bg-[#5a6fa0] disabled:opacity-70 text-white px-6 py-3 rounded-md font-medium transition flex items-center gap-2 cursor-pointer"
               >
                 {loading ? (
                   <>

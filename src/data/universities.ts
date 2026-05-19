@@ -400,7 +400,6 @@ export const uzbekistanUniversities = [
       "/collegegroups/Bukhara/Bukhara5.jpeg",
       "/collegegroups/Bukhara/Bukhara6.jpeg",
       "/collegegroups/Bukhara/Bukhara7.jpeg",
-
     ],
 
     righttitle: "Topson Education",
@@ -536,15 +535,9 @@ export const uzbekistanUniversities = [
 
     collegeimg: "/college/fergana.jpeg",
     collegeShowPics: [
-      "/college/tashkent1.jpg",
-      "/college/tashkent2.jpg",
-      "/college/tashkent3.jpg",
-      "/college/tashkent4.jpg",
-      "/college/tashkent5.jpg",
-      "/college/tashkent6.jpg",
-      "/college/tashkent7.jpg",
-      "/college/tashkent8.jpg",
-      "/college/tashkent9.jpg",
+      "/collegegroups/Samarkand/samarkand3.jpeg",
+      "/collegegroups/Samarkand/samarkand4.jpeg",
+      "/collegegroups/Samarkand/samarkand5.jpeg",
     ],
 
     righttitle: "Topson Education",
@@ -612,17 +605,10 @@ export const kyrgyzstanUniversities = [
 
     collegeimg: "/university/kgma.jpg",
     collegeShowPics: [
-      "/college/tashkent1.jpg",
-      "/college/tashkent2.jpg",
-      "/college/tashkent3.jpg",
-      "/college/tashkent4.jpg",
-      "/college/tashkent5.jpg",
-      "/college/tashkent6.jpg",
-      "/college/tashkent7.jpg",
-      "/college/tashkent8.jpg",
-      "/college/tashkent9.jpg",
+      "/collegegroups/Samarkand/samarkand3.jpeg",
+      "/collegegroups/Samarkand/samarkand4.jpeg",
+      "/collegegroups/Samarkand/samarkand5.jpeg",
     ],
-
     righttitle: "Topson Education",
 
     rightdescription:
@@ -895,15 +881,9 @@ export const kyrgyzstanUniversities = [
 
     collegeimg: "/ism-campus.jpg",
     collegeShowPics: [
-      "/college/tashkent1.jpg",
-      "/college/tashkent2.jpg",
-      "/college/tashkent3.jpg",
-      "/college/tashkent4.jpg",
-      "/college/tashkent5.jpg",
-      "/college/tashkent6.jpg",
-      "/college/tashkent7.jpg",
-      "/college/tashkent8.jpg",
-      "/college/tashkent9.jpg",
+      "/collegegroups/Samarkand/samarkand3.jpeg",
+      "/collegegroups/Samarkand/samarkand4.jpeg",
+      "/collegegroups/Samarkand/samarkand5.jpeg",
     ],
 
     righttitle: "Topson Education",
@@ -911,7 +891,7 @@ export const kyrgyzstanUniversities = [
     rightdescription:
       "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, and personalized counseling for medical aspirants.",
 
-    rightimage: "/kyrgyzstan-logo.png",
+    rightimage: "/university/ISM.jpg",
 
     rightlist: ["MBBS In Kyrgyzstan", "MBBS In Uzbekistan"],
 
@@ -1026,15 +1006,9 @@ export const kyrgyzstanUniversities = [
 
     collegeimg: "/university/OSH.jpg",
     collegeShowPics: [
-      "/college/tashkent1.jpg",
-      "/college/tashkent2.jpg",
-      "/college/tashkent3.jpg",
-      "/college/tashkent4.jpg",
-      "/college/tashkent5.jpg",
-      "/college/tashkent6.jpg",
-      "/college/tashkent7.jpg",
-      "/college/tashkent8.jpg",
-      "/college/tashkent9.jpg",
+      "/collegegroups/Samarkand/samarkand3.jpeg",
+      "/collegegroups/Samarkand/samarkand4.jpeg",
+      "/collegegroups/Samarkand/samarkand5.jpeg",
     ],
 
     righttitle: "Topson Education",
@@ -1124,15 +1098,9 @@ export const kyrgyzstanUniversities = [
 
     collegeimg: "/university/jalal.jpg",
     collegeShowPics: [
-      "/college/tashkent1.jpg",
-      "/college/tashkent2.jpg",
-      "/college/tashkent3.jpg",
-      "/college/tashkent4.jpg",
-      "/college/tashkent5.jpg",
-      "/college/tashkent6.jpg",
-      "/college/tashkent7.jpg",
-      "/college/tashkent8.jpg",
-      "/college/tashkent9.jpg",
+      "/collegegroups/Samarkand/samarkand3.jpeg",
+      "/collegegroups/Samarkand/samarkand4.jpeg",
+      "/collegegroups/Samarkand/samarkand5.jpeg",
     ],
 
     righttitle: "Topson Education",
@@ -1215,15 +1183,9 @@ export const kyrgyzstanUniversities = [
 
     collegeimg: "/university/asian.jpg",
     collegeShowPics: [
-      "/college/tashkent1.jpg",
-      "/college/tashkent2.jpg",
-      "/college/tashkent3.jpg",
-      "/college/tashkent4.jpg",
-      "/college/tashkent5.jpg",
-      "/college/tashkent6.jpg",
-      "/college/tashkent7.jpg",
-      "/college/tashkent8.jpg",
-      "/college/tashkent9.jpg",
+      "/collegegroups/Samarkand/samarkand3.jpeg",
+      "/collegegroups/Samarkand/samarkand4.jpeg",
+      "/collegegroups/Samarkand/samarkand5.jpeg",
     ],
 
     righttitle: "Topson Education",
