@@ -222,6 +222,18 @@ const Footer: React.FC = () => {
             ))}
           </div>
         </div>
+        <div className="text-center mt-4 text-gray-500  text-sm transition-colors">
+          Designed & Developed by{" "}
+          <span className=" font-semibold">
+            <Link
+              href="https://www.axvionel.com/"
+              target="_blank"
+              className="hover:underline hover:text-gray-300 transition-colors"
+            >
+              Axvionel Digital Pvt Ltd
+            </Link>
+          </span>
+        </div>
       </div>
     </footer>
   );
