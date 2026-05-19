@@ -1,10 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 import AbroadCard from "../common/AbroadCard";
 import { abroadLocations, abroadLocations2 } from "@/data/abroadData";
 
 const AbroadLocations = () => {
+  const router = useRouter();
   const allLocations = [...abroadLocations, ...abroadLocations2];
 
   return (
@@ -53,6 +55,7 @@ const AbroadLocations = () => {
               image={item.image}
               country={item.country}
               description={item.description}
+              onClick={() => router.push("/universities/uzbekistanuniversities")}
             />
           ))}
         </div>

@@ -71,7 +71,7 @@ const menuData: Record<string, MenuItem[]> = {
       href: "/universities/uzbekistanuniversities",
       icon: (
         <img
-          src="/uzbekistanlogo.png"
+          src="/Uzbekistanlogo.png"
           alt=""
           className="w-5 h-5 rounded-full border object-cover"
         />
