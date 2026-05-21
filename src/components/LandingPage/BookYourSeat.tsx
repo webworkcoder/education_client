@@ -7,6 +7,8 @@ import {
   FileUp,
   ArrowRight,
   GraduationCap,
+  Loader2,
+  CheckCircle2,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -46,6 +48,9 @@ const BookYourSeat = () => {
     preferredUniversity: "",
   });
   const [file, setFile] = useState<File | null>(null);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
@@ -66,9 +71,29 @@ const BookYourSeat = () => {
     }
   };
 
-  const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form Data:", { ...form, file });
+    setSubmitError(null);
+    setSubmitting(true);
+    try {
+      const payload = new FormData();
+      payload.append("fullName", form.fullName);
+      payload.append("mobileNumber", form.mobileNumber);
+      payload.append("emailAddress", form.emailAddress);
+      payload.append("preferredCountry", form.preferredCountry);
+      payload.append("preferredUniversity", form.preferredUniversity);
+      if (file) payload.append("file", file);
+
+      const res = await fetch("/api/apply", { method: "POST", body: payload });
+      const data = await res.json();
+
+      if (!res.ok || !data.success) throw new Error(data.message || "Submission failed.");
+      setSubmitted(true);
+    } catch (err: unknown) {
+      setSubmitError(err instanceof Error ? err.message : "Something went wrong.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -160,6 +185,22 @@ const BookYourSeat = () => {
                   <div className="w-16 md:w-20 h-1.5 bg-gradient-to-br from-[#1e4e96] to-[#2d68b3] rounded-full" />
                 </div>
 
+                {submitted ? (
+                  <div className="flex flex-col items-center justify-center gap-4 py-16 text-center">
+                    <CheckCircle2 className="w-16 h-16 text-green-500" />
+                    <h4 className="text-xl font-bold text-slate-800">Application Submitted!</h4>
+                    <p className="text-slate-500 text-sm max-w-xs">
+                      Thank you! We have received your application and will get in touch with you shortly.
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => { setSubmitted(false); setForm({ fullName: "", mobileNumber: "", emailAddress: "", preferredCountry: "MBBS In Georgia", preferredUniversity: "" }); setFile(null); }}
+                      className="mt-2 text-sm font-semibold text-[#0b2a5b] underline underline-offset-2"
+                    >
+                      Submit another application
+                    </button>
+                  </div>
+                ) : (
                 <form
                   onSubmit={handleSubmit}
                   className="space-y-4 md:space-y-6"
@@ -272,11 +313,23 @@ const BookYourSeat = () => {
                     )}
                   </div>
 
+                  {submitError && (
+                    <p className="text-red-500 text-sm font-semibold text-center">{submitError}</p>
+                  )}
+
                   <button
                     type="submit"
-                    className="w-full cursor-pointer bg-gradient-to-br from-[#1e4e96] to-[#2d68b3] text-white py-3 rounded-full font-bold text-sm md:text-base transition-all hover:shadow-xl active:scale-95"
+                    disabled={submitting}
+                    className="w-full cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 bg-gradient-to-br from-[#1e4e96] to-[#2d68b3] text-white py-3 rounded-full font-bold text-sm md:text-base transition-all hover:shadow-xl active:scale-95"
                   >
-                    Submit Application
+                    {submitting ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        Submitting…
+                      </>
+                    ) : (
+                      "Submit Application"
+                    )}
                   </button>
 
                   <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100">
@@ -294,6 +347,7 @@ const BookYourSeat = () => {
                     </div>
                   </div>
                 </form>
+                )}
               </div>
             </div>
           </div>

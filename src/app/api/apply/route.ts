@@ -1,0 +1,180 @@
+import { NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+export async function POST(req: NextRequest) {
+  try {
+    const formData = await req.formData();
+
+    const fullName = formData.get("fullName")?.toString().trim();
+    const mobileNumber = formData.get("mobileNumber")?.toString().trim();
+    const emailAddress = formData.get("emailAddress")?.toString().trim();
+    const preferredCountry = formData.get("preferredCountry")?.toString().trim();
+    const preferredUniversity = formData.get("preferredUniversity")?.toString().trim() || "Not specified";
+    const file = formData.get("file");
+
+    if (!fullName || !mobileNumber || !emailAddress) {
+      return NextResponse.json(
+        { success: false, message: "Full name, mobile number and email are required." },
+        { status: 400 },
+      );
+    }
+
+    const attachments: { filename: string; content: Buffer }[] = [];
+
+    if (file instanceof File && file.size > 0) {
+      const buffer = Buffer.from(await file.arrayBuffer());
+      attachments.push({ filename: file.name, content: buffer });
+    }
+
+    await resend.emails.send({
+      from: "Topson Education <onboarding@resend.dev>",
+      to: ["webwork106@gmail.com"],
+      subject: `New MBBS Application — ${fullName}`,
+      attachments,
+      html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @media only screen and (max-width: 600px) {
+      .email-wrapper { padding: 20px 12px !important; }
+      .email-card   { border-radius: 12px !important; }
+      .header       { padding: 24px 20px !important; }
+      .banner       { padding: 10px 20px !important; }
+      .body         { padding: 24px 20px !important; }
+      .footer       { padding: 16px 20px !important; }
+      .footer-left  { display: block !important; width: 100% !important; text-align: left !important; padding-bottom: 6px !important; }
+      .footer-right { display: block !important; width: 100% !important; text-align: left !important; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0;">
+<div class="email-wrapper" style="font-family:Arial,sans-serif; background:#eef2f7; padding:48px 20px; min-height:100vh;">
+  <div class="email-card" style="max-width:640px; margin:auto; background:#ffffff; border-radius:16px; overflow:hidden; border:1px solid #dde3ed;">
+
+    <!-- HEADER -->
+    <div class="header" style="background:#0f172a; padding:36px 40px;">
+      <h1 style="margin:0; color:#ffffff; font-size:20px; font-weight:700; letter-spacing:0.3px;">Topson Education</h1>
+      <p style="margin:4px 0 0; color:#94a3b8; font-size:13px;">New MBBS Admission Application</p>
+    </div>
+
+    <!-- BANNER -->
+    <div class="banner" style="background:#0b2a5b; padding:10px 40px; font-size:12px; font-weight:600; color:#ffffff; letter-spacing:1.5px; text-transform:uppercase;">
+      Action Required — New Application
+    </div>
+
+    <!-- BODY -->
+    <div class="body" style="padding:40px;">
+      <p style="margin:0 0 28px; font-size:15px; color:#475569; line-height:1.7;">
+        A prospective student has submitted an MBBS admission application through the Topson Education website.
+        Please review the details below and follow up at the earliest convenience.
+      </p>
+
+      <table style="width:100%; border-collapse:separate; border-spacing:0 12px; margin-bottom:20px;">
+
+        <tr><td style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:16px 20px;">
+          <table style="width:100%; border-collapse:collapse;"><tr>
+            <td style="width:52px; vertical-align:middle;">
+              <div style="width:36px;height:36px;border-radius:8px;background:#eff6ff;text-align:center;line-height:36px;font-size:18px;">👤</div>
+            </td>
+            <td style="vertical-align:middle;">
+              <p style="margin:0;font-size:11px;color:#94a3b8;letter-spacing:0.8px;text-transform:uppercase;font-weight:600;">Full Name</p>
+              <p style="margin:4px 0 0;font-size:15px;color:#0f172a;font-weight:600;word-break:break-word;">${fullName}</p>
+            </td>
+          </tr></table>
+        </td></tr>
+
+        <tr><td style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:16px 20px;">
+          <table style="width:100%; border-collapse:collapse;"><tr>
+            <td style="width:52px; vertical-align:middle;">
+              <div style="width:36px;height:36px;border-radius:8px;background:#f0fdf4;text-align:center;line-height:36px;font-size:18px;">📞</div>
+            </td>
+            <td style="vertical-align:middle;">
+              <p style="margin:0;font-size:11px;color:#94a3b8;letter-spacing:0.8px;text-transform:uppercase;font-weight:600;">Mobile Number</p>
+              <p style="margin:4px 0 0;font-size:15px;color:#0f172a;font-weight:600;word-break:break-all;">${mobileNumber}</p>
+            </td>
+          </tr></table>
+        </td></tr>
+
+        <tr><td style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:16px 20px;">
+          <table style="width:100%; border-collapse:collapse;"><tr>
+            <td style="width:52px; vertical-align:middle;">
+              <div style="width:36px;height:36px;border-radius:8px;background:#fef3c7;text-align:center;line-height:36px;font-size:18px;">✉️</div>
+            </td>
+            <td style="vertical-align:middle;">
+              <p style="margin:0;font-size:11px;color:#94a3b8;letter-spacing:0.8px;text-transform:uppercase;font-weight:600;">Email Address</p>
+              <p style="margin:4px 0 0;font-size:15px;color:#0f172a;font-weight:600;word-break:break-all;">${emailAddress}</p>
+            </td>
+          </tr></table>
+        </td></tr>
+
+        <tr><td style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:16px 20px;">
+          <table style="width:100%; border-collapse:collapse;"><tr>
+            <td style="width:52px; vertical-align:middle;">
+              <div style="width:36px;height:36px;border-radius:8px;background:#ede9fe;text-align:center;line-height:36px;font-size:18px;">🌍</div>
+            </td>
+            <td style="vertical-align:middle;">
+              <p style="margin:0;font-size:11px;color:#94a3b8;letter-spacing:0.8px;text-transform:uppercase;font-weight:600;">Preferred Country</p>
+              <p style="margin:4px 0 0;font-size:15px;color:#0f172a;font-weight:600;">${preferredCountry}</p>
+            </td>
+          </tr></table>
+        </td></tr>
+
+        <tr><td style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:16px 20px;">
+          <table style="width:100%; border-collapse:collapse;"><tr>
+            <td style="width:52px; vertical-align:middle;">
+              <div style="width:36px;height:36px;border-radius:8px;background:#ecfdf5;text-align:center;line-height:36px;font-size:18px;">🎓</div>
+            </td>
+            <td style="vertical-align:middle;">
+              <p style="margin:0;font-size:11px;color:#94a3b8;letter-spacing:0.8px;text-transform:uppercase;font-weight:600;">Preferred University</p>
+              <p style="margin:4px 0 0;font-size:15px;color:#0f172a;font-weight:600;">${preferredUniversity}</p>
+            </td>
+          </tr></table>
+        </td></tr>
+
+        ${attachments.length > 0 ? `
+        <tr><td style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:16px 20px;">
+          <table style="width:100%; border-collapse:collapse;"><tr>
+            <td style="width:52px; vertical-align:middle;">
+              <div style="width:36px;height:36px;border-radius:8px;background:#fff7ed;text-align:center;line-height:36px;font-size:18px;">📎</div>
+            </td>
+            <td style="vertical-align:middle;">
+              <p style="margin:0;font-size:11px;color:#94a3b8;letter-spacing:0.8px;text-transform:uppercase;font-weight:600;">Attached Document</p>
+              <p style="margin:4px 0 0;font-size:15px;color:#0f172a;font-weight:600;">${file instanceof File ? file.name : ""}</p>
+            </td>
+          </tr></table>
+        </td></tr>` : ""}
+
+      </table>
+
+      <a href="mailto:${emailAddress}" style="display:block;text-align:center;background:#0f172a;color:#ffffff;text-decoration:none;padding:14px 28px;border-radius:10px;font-size:14px;font-weight:600;letter-spacing:0.4px;margin-bottom:8px;">
+        Reply to ${fullName} &rarr;
+      </a>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer" style="background:#f1f5f9; border-top:1px solid #e2e8f0; padding:20px 40px;">
+      <table style="width:100%; border-collapse:collapse;"><tr>
+        <td class="footer-left" style="font-size:12px;color:#94a3b8;">© 2026 Topson Education</td>
+        <td class="footer-right" style="font-size:12px;color:#94a3b8;text-align:right;">Automated notification — do not reply</td>
+      </tr></table>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>`,
+    });
+
+    return NextResponse.json({ success: true, message: "Application submitted successfully." });
+  } catch (error) {
+    console.error("APPLY_SUBMIT_ERROR:", error);
+    return NextResponse.json(
+      { success: false, message: "Something went wrong. Please try again." },
+      { status: 500 },
+    );
+  }
+}
