@@ -4,6 +4,7 @@ import OurMission from "../LandingPage/OurMission";
 import BookYourSeat from "../LandingPage/BookYourSeat";
 import AbroadLocations from "../LandingPage/AbroadLocations";
 import Testimonials from "../LandingPage/Testimonials";
+import Blogs from "../LandingPage/Blogs";
 import AtlasMentor from "../LandingPage/AtlasMentor";
 import WhyChooseUs from "../LandingPage/WhyChooseUs";
 import TeamSection from "../LandingPage/TeamSection";
@@ -21,6 +22,7 @@ const HomePage = () => {
       <BookYourSeat />
       <AbroadLocations />
       <Testimonials />
+      <Blogs />
       <AtlasMentor />
       <WhyChooseUs />
       <TeamSection />
