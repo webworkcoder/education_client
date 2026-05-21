@@ -4,6 +4,7 @@
 import { motion } from "framer-motion";
 import VideoCards from "../common/VideoCards";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 type TestimonialType = {
   title: string;
@@ -17,7 +18,8 @@ const Testimonials = () => {
   const fetchVideo = async () => {
     try {
       const res = await fetch(
-        "https://education-admin-two.vercel.app/api/testimonials",
+        // "https://education-admin-two.vercel.app/api/testimonials",
+        "http://localhost:3001/api/testimonials",
       );
       const data = await res.json();
       setTestimonials(data.data || []);
@@ -29,6 +31,8 @@ const Testimonials = () => {
   useEffect(() => {
     fetchVideo();
   }, []);
+
+  const visibleTestimonials = testimonials.slice(0, 1);
 
   return (
     <section className="px-4 md:px-10 bg-[#f8fafc] overflow-hidden">
@@ -50,7 +54,7 @@ const Testimonials = () => {
         </motion.div>
 
         <div className="space-y-24">
-          {testimonials.map((item, index) => (
+          {visibleTestimonials.map((item, index) => (
             <div key={index} className="relative">
               {/* Category Info */}
               <div className="mb-10 flex flex-col items-center text-center">
@@ -79,6 +83,17 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
+
+        {testimonials.length > 1 && (
+          <div className="flex justify-center mt-12">
+            <Link
+              href="/testimonials"
+              className="px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-full transition-colors duration-200"
+            >
+              View More
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );
