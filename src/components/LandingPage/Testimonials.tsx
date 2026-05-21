@@ -18,8 +18,7 @@ const Testimonials = () => {
   const fetchVideo = async () => {
     try {
       const res = await fetch(
-        // "https://education-admin-two.vercel.app/api/testimonials",
-        "http://localhost:3001/api/testimonials",
+        "https://education-admin-two.vercel.app/api/testimonials",
       );
       const data = await res.json();
       setTestimonials(data.data || []);

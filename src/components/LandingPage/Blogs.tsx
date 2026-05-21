@@ -21,8 +21,8 @@ const Blogs = () => {
     const fetchBlogs = async () => {
       try {
         const res = await fetch(
-          // "https://education-admin-two.vercel.app/api/blog",
-          "http://localhost:3001/api/blog",
+          "https://education-admin-two.vercel.app/api/blog",
+         
         );
         const data = await res.json();
         setBlogs(data.data || []);
