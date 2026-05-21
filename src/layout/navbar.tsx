@@ -86,6 +86,7 @@ const navLinks = [
   { name: "Courses", href: "#", hasMenu: true },
   { name: "Countries", href: "#", hasMenu: true },
   { name: "Universities", href: "#", hasMenu: true },
+  { name: "Blog", href: "/blog",},
   { name: "Contact Us", href: "/contact" },
 ];
 

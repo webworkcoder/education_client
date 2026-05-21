@@ -26,10 +26,10 @@ const TeamSection = () => {
           transition: { duration: 0.6, ease: "easeOut" },
         },
       }}
-      className="group relative bg-white shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex-1 overflow-hidden"
+      className="group relative   transition-all duration-500  flex-1 overflow-hidden"
     >
       {/* Image Wrapper */}
-      <div className="relative h-auto w-full  overflow-hidden">
+      <div className="relative h-80 w-full overflow-hidden">
         <img
           src={image}
           alt={name}
