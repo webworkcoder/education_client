@@ -23,14 +23,32 @@ export async function POST(req: NextRequest) {
       from: "Topson Education <onboarding@resend.dev>",
       to: ["webwork106@gmail.com"],
       subject: `New Contact Request - ${name}`,
-      html: `
-<div style="
+      html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @media only screen and (max-width: 600px) {
+      .email-wrapper { padding: 20px 12px !important; }
+      .email-card { border-radius: 12px !important; }
+      .header { padding: 24px 20px !important; }
+      .banner { padding: 10px 20px !important; }
+      .body { padding: 24px 20px !important; }
+      .footer { padding: 16px 20px !important; }
+      .footer-left { display: block !important; width: 100% !important; text-align: left !important; padding-bottom: 6px !important; }
+      .footer-right { display: block !important; width: 100% !important; text-align: left !important; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0;">
+<div class="email-wrapper" style="
   font-family: Arial, sans-serif;
   background: #eef2f7;
   padding: 48px 20px;
   min-height: 100vh;
 ">
-  <div style="
+  <div class="email-card" style="
     max-width: 640px;
     margin: auto;
     background: #ffffff;
@@ -40,24 +58,22 @@ export async function POST(req: NextRequest) {
   ">
 
     <!-- HEADER -->
-    <div style="
+    <div class="header" style="
       background: #0f172a;
       padding: 36px 40px;
     ">
-      <div style="display: flex; align-items: center; gap: 16px;">
-        <div>
-          <h1 style="margin:0; color:#ffffff; font-size:20px; font-weight:700; letter-spacing:0.3px;">
-            Topson Education
-          </h1>
-          <p style="margin:4px 0 0; color:#94a3b8; font-size:13px;">
-            New Contact Form Submission
-          </p>
-        </div>
+      <div>
+        <h1 style="margin:0; color:#ffffff; font-size:20px; font-weight:700; letter-spacing:0.3px;">
+          Topson Education
+        </h1>
+        <p style="margin:4px 0 0; color:#94a3b8; font-size:13px;">
+          New Contact Form Submission
+        </p>
       </div>
     </div>
 
     <!-- BANNER STRIP -->
-    <div style="
+    <div class="banner" style="
       background: #3b82f6;
       padding: 10px 40px;
       font-size: 12px;
@@ -70,7 +86,7 @@ export async function POST(req: NextRequest) {
     </div>
 
     <!-- BODY -->
-    <div style="padding: 40px;">
+    <div class="body" style="padding: 40px;">
 
       <p style="
         margin: 0 0 28px;
@@ -105,7 +121,7 @@ export async function POST(req: NextRequest) {
                 </td>
                 <td style="vertical-align: middle;">
                   <p style="margin:0; font-size:11px; color:#94a3b8; letter-spacing:0.8px; text-transform:uppercase; font-weight:600;">Full Name</p>
-                  <p style="margin:4px 0 0; font-size:15px; color:#0f172a; font-weight:600;">${name}</p>
+                  <p style="margin:4px 0 0; font-size:15px; color:#0f172a; font-weight:600; word-break:break-word;">${name}</p>
                 </td>
               </tr>
             </table>
@@ -133,7 +149,7 @@ export async function POST(req: NextRequest) {
                 </td>
                 <td style="vertical-align: middle;">
                   <p style="margin:0; font-size:11px; color:#94a3b8; letter-spacing:0.8px; text-transform:uppercase; font-weight:600;">Phone Number</p>
-                  <p style="margin:4px 0 0; font-size:15px; color:#0f172a; font-weight:600;">${phone}</p>
+                  <p style="margin:4px 0 0; font-size:15px; color:#0f172a; font-weight:600; word-break:break-all;">${phone}</p>
                 </td>
               </tr>
             </table>
@@ -161,7 +177,7 @@ export async function POST(req: NextRequest) {
                 </td>
                 <td style="vertical-align: middle;">
                   <p style="margin:0; font-size:11px; color:#94a3b8; letter-spacing:0.8px; text-transform:uppercase; font-weight:600;">Email Address</p>
-                  <p style="margin:4px 0 0; font-size:15px; color:#0f172a; font-weight:600;">${email}</p>
+                  <p style="margin:4px 0 0; font-size:15px; color:#0f172a; font-weight:600; word-break:break-all;">${email}</p>
                 </td>
               </tr>
             </table>
@@ -189,22 +205,23 @@ export async function POST(req: NextRequest) {
     </div>
 
     <!-- FOOTER -->
-    <div style="
+    <div class="footer" style="
       background: #f1f5f9;
       border-top: 1px solid #e2e8f0;
       padding: 20px 40px;
     ">
       <table style="width: 100%; border-collapse: collapse;">
         <tr>
-          <td style="font-size:12px; color:#94a3b8;">© 2026 Topson Education</td>
-          <td style="font-size:12px; color:#94a3b8; text-align:right;">Automated notification — do not reply</td>
+          <td class="footer-left" style="font-size:12px; color:#94a3b8;">© 2026 Topson Education</td>
+          <td class="footer-right" style="font-size:12px; color:#94a3b8; text-align:right;">Automated notification — do not reply</td>
         </tr>
       </table>
     </div>
 
   </div>
 </div>
-      `,
+</body>
+</html>`,
     });
 
     return NextResponse.json({
