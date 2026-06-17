@@ -26,10 +26,11 @@ const BlogDetailPage = () => {
     const fetchBlog = async () => {
       try {
         const res = await fetch(
-          // `https://education-admin-two.vercel.app/api/blog/${slug}`,
-          `http://localhost:3001/api/blog/${slug}`,
+          `https://education-admin-two.vercel.app/api/blog/${slug}`,
+          // `http://localhost:3001/api/blog/${slug}`,
         );
         const data = await res.json();
+        console.log("data single blog -> ", data);
         if (data.success) setBlog(data.data);
       } catch (error) {
         console.error("Fetch error:", error);
