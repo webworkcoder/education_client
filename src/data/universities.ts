@@ -1241,3 +1241,2109 @@ export const kyrgyzstanUniversities = [
     ],
   },
 ];
+
+
+export const russiaUniversities = [
+  {
+    id: "uni-1",
+
+    slug: "perm-state-medical-university",
+
+    name: "Perm State Medical University (PSMU), Russia",
+
+    location: "Perm, Russia",
+
+    image: "/collegegroups/Russia/Permuniversity.jpg",
+
+    logo: "/collegegroups/Russia/Permuniversity.jpg",
+
+    title: "Perm State Medical University (PSMU), Russia",
+
+    desc: "Perm State Medical University is one of the oldest and most prestigious government medical universities in Russia. Founded in 1916, the university offers globally recognized MBBS education with modern laboratories, experienced faculty, advanced clinical training, and affordable tuition fees for international students.",
+
+    author: "Topson Education",
+
+    category: "University In Russia",
+
+    date: "January 25, 2025",
+
+    collegeimg: "/collegegroups/Russia/Permuniversity.jpg",
+
+    collegeShowPics: [
+      "/collegegroups/Perm/perm1.jpg",
+      "/collegegroups/Perm/perm2.jpg",
+      "/collegegroups/Perm/perm3.jpg",
+    ],
+
+    righttitle: "Topson Education",
+
+    rightdescription:
+      "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, university selection, and personalized counseling for medical aspirants.",
+
+    rightimage: "/collegegroups/Russia/Permuniversity.jpg",
+
+    rightlist: ["MBBS In Russia", "MBBS Abroad"],
+
+    rightlistlink: [
+      {
+        label: "Orenburg State Medical University",
+        slug: "orenburg-state-medical-university",
+      },
+      {
+        label: "Mari State University",
+        slug: "mari-state-university",
+      },
+      {
+        label: "Tver State Medical University",
+        slug: "tver-state-medical-university",
+      },
+      {
+        label: "Pskov State University",
+        slug: "pskov-state-university",
+      },
+      {
+        label: "Astrakhan State Medical University",
+        slug: "astrakhan-state-medical-university",
+      },
+    ],
+
+    guidanceCard: {
+      image: "/russia-guidance.jpg",
+
+      title: "Expert Guidance For MBBS In Russia",
+
+      description:
+        "Get complete support for MBBS admissions in Russia including university selection, documentation, visa processing, education loan guidance, and student counseling.",
+
+      buttonText: "Get Free Counseling",
+    },
+
+    tags: [
+      { label: "Facebook", link: "#" },
+      { label: "Twitter", link: "#" },
+      { label: "LinkedIn", link: "#" },
+      { label: "WhatsApp", link: "#" },
+      { label: "Email", link: "#" },
+    ],
+
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Perm State Medical University",
+
+        paragraphs: [
+          "Perm State Medical University is one of Russia's leading government medical institutions offering high-quality medical education and extensive clinical exposure.",
+
+          "Students receive practical training in affiliated hospitals, medical centers, and research facilities equipped with modern technologies.",
+
+          "Graduates are eligible to appear for licensing examinations such as FMGE/NExT, USMLE, PLAB, AMC, and other international medical licensing exams according to country regulations.",
+
+          "The university also provides opportunities for postgraduate education, specialization programs, medical research, and international collaborations.",
+        ],
+      },
+
+      alumni: {
+        subheading: "Student Success & Alumni",
+
+        paragraphs: [
+          "Graduates of Perm State Medical University are successfully practicing medicine in Russia, India, Europe, the Middle East, and several other countries.",
+
+          "The university focuses on building strong clinical skills, professional ethics, research capabilities, and global medical competence.",
+        ],
+      },
+
+      loan: {
+        title: "Education Loan Support For Indian Students",
+
+        intro:
+          "Students planning to pursue MBBS at Perm State Medical University can apply for education loans through leading Indian banks and financial institutions.",
+
+        eligibility: {
+          subheading: "Eligibility",
+
+          points: [
+            "Admission confirmation from Perm State Medical University.",
+            "Valid NEET qualification for Indian students.",
+            "Academic and financial documents as required by the lender.",
+          ],
+        },
+
+        amount: {
+          subheading: "Loan Coverage",
+
+          text:
+            "Education loans may cover tuition fees, hostel charges, travel expenses, insurance, visa costs, and other academic expenses.",
+        },
+
+        documents: {
+          subheading: "Documents Required",
+
+          list: [
+            {
+              heading: "NEET Scorecard:",
+              child: "(mandatory for Indian students).",
+            },
+            {
+              heading: "Admission Letter:",
+              child: "Issued by the university.",
+            },
+            {
+              heading: "Passport:",
+              child: "",
+            },
+            {
+              heading: "Academic Certificates:",
+              child: "10th & 12th mark sheets.",
+            },
+            {
+              heading: "Bank Statements:",
+              child: "Of sponsor or co-applicant.",
+            },
+            {
+              heading: "Income Proof:",
+              child: "",
+            },
+          ],
+        },
+
+        interest: {
+          subheading: "Interest & Repayment",
+
+          text:
+            "Interest rates and repayment schedules vary depending on the selected bank or financial institution.",
+        },
+
+        collateral: {
+          subheading: "Collateral",
+
+          text:
+            "Collateral requirements depend on the loan amount and lender policies.",
+        },
+
+        processing: {
+          subheading: "Loan Processing",
+
+          text:
+            "Students are advised to complete documentation early for faster loan approval.",
+        },
+
+        assistance: {
+          subheading: "Admission Assistance",
+
+          text:
+            "Topson Education provides complete admission guidance and education loan assistance for MBBS aspirants.",
+        },
+      },
+
+      faq: {
+        title: "FAQs on Perm State Medical University, Russia",
+
+        text:
+          "Find answers to common questions related to MBBS admissions, fees, eligibility, hostel facilities, student life, and career opportunities at Perm State Medical University.",
+      },
+    },
+
+    tableheder:
+      "Quick Highlights About Perm State Medical University, Russia",
+
+    tableData: [
+      {
+        id: 1,
+        slug: "population",
+        label: "Population",
+        value: "146 Million+",
+      },
+      {
+        id: 2,
+        slug: "exchange-rate",
+        label: "Exchange Rate",
+        value: "1 Russian Ruble ≈ 0.012 USD",
+      },
+      {
+        id: 3,
+        slug: "climate",
+        label: "Climate",
+        value: "Continental Climate",
+      },
+      {
+        id: 4,
+        slug: "location",
+        label: "Location",
+        value: "Perm, Western Russia",
+      },
+      {
+        id: 5,
+        slug: "capital",
+        label: "Capital",
+        value: "Moscow",
+      },
+      {
+        id: 6,
+        slug: "currency",
+        label: "Currency",
+        value: "Russian Ruble (RUB)",
+      },
+      {
+        id: 7,
+        slug: "travel-time",
+        label: "Travel Time From Delhi",
+        value: "Approx. 6–8 Hours",
+      },
+      {
+        id: 8,
+        slug: "time-difference",
+        label: "Time Difference",
+        value: "+2:30 Hours IST",
+      },
+      {
+        id: 9,
+        slug: "student-count",
+        label: "International Students",
+        value: "3000+",
+      },
+      {
+        id: 10,
+        slug: "origin-countries",
+        label: "Students From Countries",
+        value: [
+          "India",
+          "Nepal",
+          "Bangladesh",
+          "Pakistan",
+          "Sri Lanka",
+        ],
+      },
+      {
+        id: 11,
+        slug: "languages",
+        label: "Languages Spoken",
+        value: "Russian, English",
+      },
+      {
+        id: 12,
+        slug: "academic-year",
+        label: "Academic Session",
+        value: "September – June",
+      },
+      {
+        id: 13,
+        slug: "course-duration",
+        label: "Course Duration",
+        value: "6 Years Including Internship",
+      },
+      {
+        id: 14,
+        slug: "established",
+        label: "Established",
+        value: "1916",
+      },
+      {
+        id: 15,
+        slug: "recognition",
+        label: "Recognitions",
+        value: "NMC, WHO, ECFMG, FAIMER, WDOMS",
+      },
+    ],
+  },
+  {
+    id: "uni-2",
+
+    slug: "orenburg-state-medical-university",
+
+    name: "Orenburg State Medical University (OrSMU), Russia",
+
+    location: "Orenburg, Russia",
+
+    image: "/collegegroups/Russia/Orenburg.webp",
+
+    logo: "/collegegroups/Russia/Orenburg.webp",
+
+    title: "Orenburg State Medical University (OrSMU), Russia",
+
+    desc: "Orenburg State Medical University is one of the leading government medical universities in Russia, recognized for its high academic standards, affordable tuition fees, modern infrastructure, and extensive clinical training opportunities. The university attracts thousands of international students, particularly from India, for its globally recognized MBBS program.",
+
+    author: "Topson Education",
+
+    category: "University In Russia",
+
+    date: "January 25, 2025",
+
+    collegeimg: "/collegegroups/Russia/Orenburg.webp",
+
+    collegeShowPics: [
+      "/collegegroups/Orenburg/orenburg1.jpg",
+      "/collegegroups/Orenburg/orenburg2.jpg",
+      "/collegegroups/Orenburg/orenburg3.jpg",
+    ],
+
+    righttitle: "Topson Education",
+
+    rightdescription:
+      "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, university selection, and personalized counseling for medical aspirants.",
+
+    rightimage: "/collegegroups/Russia/Orenburg.webp",
+
+    rightlist: ["MBBS In Russia", "MBBS Abroad"],
+
+    rightlistlink: [
+      {
+        label: "Perm State Medical University",
+        slug: "perm-state-medical-university",
+      },
+      {
+        label: "Mari State University",
+        slug: "mari-state-university",
+      },
+      {
+        label: "Tver State Medical University",
+        slug: "tver-state-medical-university",
+      },
+      {
+        label: "Pskov State University",
+        slug: "pskov-state-university",
+      },
+      {
+        label: "Astrakhan State Medical University",
+        slug: "astrakhan-state-medical-university",
+      },
+    ],
+
+    guidanceCard: {
+      image: "/russia-guidance.jpg",
+
+      title: "Expert Guidance For MBBS In Russia",
+
+      description:
+        "Get complete support for MBBS admissions in Russia including university selection, documentation, visa processing, education loan guidance, and student counseling.",
+
+      buttonText: "Get Free Counseling",
+    },
+
+    tags: [
+      { label: "Facebook", link: "#" },
+      { label: "Twitter", link: "#" },
+      { label: "LinkedIn", link: "#" },
+      { label: "WhatsApp", link: "#" },
+      { label: "Email", link: "#" },
+    ],
+
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Orenburg State Medical University",
+
+        paragraphs: [
+          "Orenburg State Medical University provides globally recognized medical education with a strong focus on practical learning and clinical exposure.",
+
+          "Students receive hands-on training in affiliated hospitals, medical centers, and research facilities equipped with modern healthcare technologies.",
+
+          "Graduates are eligible to appear for licensing examinations such as FMGE/NExT, USMLE, PLAB, AMC, and other international medical licensing examinations according to country-specific regulations.",
+
+          "The university also offers opportunities for postgraduate studies, specialization programs, research activities, and international collaborations.",
+        ],
+      },
+
+      alumni: {
+        subheading: "Student Success & Alumni",
+
+        paragraphs: [
+          "Graduates of Orenburg State Medical University are working successfully in hospitals, clinics, and healthcare institutions across the world.",
+
+          "The university focuses on developing strong academic foundations, clinical expertise, communication skills, and professional medical ethics.",
+        ],
+      },
+
+      loan: {
+        title: "Education Loan Support For Indian Students",
+
+        intro:
+          "Students planning to pursue MBBS at Orenburg State Medical University can apply for education loans through various public and private sector banks.",
+
+        eligibility: {
+          subheading: "Eligibility",
+
+          points: [
+            "Admission confirmation from Orenburg State Medical University.",
+            "Valid NEET qualification for Indian students.",
+            "Required academic and financial documents.",
+          ],
+        },
+
+        amount: {
+          subheading: "Loan Coverage",
+
+          text:
+            "Education loans may cover tuition fees, hostel accommodation, travel expenses, visa charges, insurance, and other educational expenses.",
+        },
+
+        documents: {
+          subheading: "Documents Required",
+
+          list: [
+            {
+              heading: "NEET Scorecard:",
+              child: "(mandatory for Indian students).",
+            },
+            {
+              heading: "Admission Letter:",
+              child: "Issued by the university.",
+            },
+            {
+              heading: "Passport:",
+              child: "",
+            },
+            {
+              heading: "Academic Certificates:",
+              child: "10th & 12th mark sheets.",
+            },
+            {
+              heading: "Bank Statements:",
+              child: "Of sponsor or co-applicant.",
+            },
+            {
+              heading: "Income Proof:",
+              child: "",
+            },
+          ],
+        },
+
+        interest: {
+          subheading: "Interest & Repayment",
+
+          text:
+            "Interest rates and repayment terms vary according to the bank and selected loan scheme.",
+        },
+
+        collateral: {
+          subheading: "Collateral",
+
+          text:
+            "Collateral requirements depend upon the loan amount and lender policies.",
+        },
+
+        processing: {
+          subheading: "Loan Processing",
+
+          text:
+            "Students should prepare all necessary documents in advance for faster loan approval.",
+        },
+
+        assistance: {
+          subheading: "Admission Assistance",
+
+          text:
+            "Topson Education provides complete admission support, documentation assistance, and education loan guidance.",
+        },
+      },
+
+      faq: {
+        title: "FAQs on Orenburg State Medical University, Russia",
+
+        text:
+          "Find answers to common questions related to MBBS admissions, eligibility, tuition fees, hostel facilities, student life, and career opportunities at Orenburg State Medical University.",
+      },
+    },
+
+    tableheder:
+      "Quick Highlights About Orenburg State Medical University, Russia",
+
+    tableData: [
+      {
+        id: 1,
+        slug: "population",
+        label: "Population",
+        value: "146 Million+",
+      },
+      {
+        id: 2,
+        slug: "exchange-rate",
+        label: "Exchange Rate",
+        value: "1 Russian Ruble ≈ 0.012 USD",
+      },
+      {
+        id: 3,
+        slug: "climate",
+        label: "Climate",
+        value: "Continental Climate",
+      },
+      {
+        id: 4,
+        slug: "location",
+        label: "Location",
+        value: "Orenburg, Russia",
+      },
+      {
+        id: 5,
+        slug: "capital",
+        label: "Capital",
+        value: "Moscow",
+      },
+      {
+        id: 6,
+        slug: "currency",
+        label: "Currency",
+        value: "Russian Ruble (RUB)",
+      },
+      {
+        id: 7,
+        slug: "travel-time",
+        label: "Travel Time From Delhi",
+        value: "Approx. 5–7 Hours",
+      },
+      {
+        id: 8,
+        slug: "time-difference",
+        label: "Time Difference",
+        value: "+30 Minutes IST",
+      },
+      {
+        id: 9,
+        slug: "student-count",
+        label: "International Students",
+        value: "1500+",
+      },
+      {
+        id: 10,
+        slug: "origin-countries",
+        label: "Students From Countries",
+        value: [
+          "India",
+          "Nepal",
+          "Bangladesh",
+          "Pakistan",
+          "Sri Lanka",
+        ],
+      },
+      {
+        id: 11,
+        slug: "languages",
+        label: "Languages Spoken",
+        value: "Russian, English",
+      },
+      {
+        id: 12,
+        slug: "academic-year",
+        label: "Academic Session",
+        value: "September – June",
+      },
+      {
+        id: 13,
+        slug: "course-duration",
+        label: "Course Duration",
+        value: "6 Years Including Internship",
+      },
+      {
+        id: 14,
+        slug: "established",
+        label: "Established",
+        value: "1944",
+      },
+      {
+        id: 15,
+        slug: "recognition",
+        label: "Recognitions",
+        value: "NMC, WHO, ECFMG, FAIMER, WDOMS",
+      },
+    ],
+  }
+  ,
+  {
+    id: "uni-3",
+
+    slug: "mari-state-university",
+
+    name: "Mari State University (MarSU), Russia",
+
+    location: "Yoshkar-Ola, Russia",
+
+    image: "/collegegroups/Russia/MariState.jpg",
+
+    logo: "/collegegroups/Russia/MariState.jpg",
+
+    title: "Mari State University (MarSU), Russia",
+
+    desc: "Mari State University is one of the most popular government universities in Russia for MBBS studies. Established in 1972, the university offers affordable medical education, modern infrastructure, advanced laboratories, clinical training, and internationally recognized medical degrees for students from around the world.",
+
+    author: "Topson Education",
+
+    category: "University In Russia",
+
+    date: "January 25, 2025",
+
+    collegeimg: "/collegegroups/Russia/MariState.jpg",
+
+    collegeShowPics: [
+      "/collegegroups/Mari/mari1.jpg",
+      "/collegegroups/Mari/mari2.jpg",
+      "/collegegroups/Mari/mari3.jpg",
+    ],
+
+    righttitle: "Topson Education",
+
+    rightdescription:
+      "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, university selection, and personalized counseling for medical aspirants.",
+
+    rightimage: "/collegegroups/Russia/MariState.jpg",
+
+    rightlist: ["MBBS In Russia", "MBBS Abroad"],
+
+    rightlistlink: [
+      {
+        label: "Perm State Medical University",
+        slug: "perm-state-medical-university",
+      },
+      {
+        label: "Orenburg State Medical University",
+        slug: "orenburg-state-medical-university",
+      },
+      {
+        label: "Tver State Medical University",
+        slug: "tver-state-medical-university",
+      },
+      {
+        label: "Pskov State University",
+        slug: "pskov-state-university",
+      },
+      {
+        label: "Astrakhan State Medical University",
+        slug: "astrakhan-state-medical-university",
+      },
+    ],
+
+    guidanceCard: {
+      image: "/russia-guidance.jpg",
+
+      title: "Expert Guidance For MBBS In Russia",
+
+      description:
+        "Get complete support for MBBS admissions in Russia including university selection, documentation, visa processing, education loan guidance, and student counseling.",
+
+      buttonText: "Get Free Counseling",
+    },
+
+    tags: [
+      { label: "Facebook", link: "#" },
+      { label: "Twitter", link: "#" },
+      { label: "LinkedIn", link: "#" },
+      { label: "WhatsApp", link: "#" },
+      { label: "Email", link: "#" },
+    ],
+
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Mari State University",
+
+        paragraphs: [
+          "Mari State University provides internationally recognized medical education with strong academic foundations and practical clinical exposure.",
+
+          "Students gain hands-on training through affiliated hospitals, medical centers, research laboratories, and simulation facilities.",
+
+          "Graduates are eligible to appear for FMGE/NExT, USMLE, PLAB, AMC, and various international medical licensing examinations according to country-specific regulations.",
+
+          "The university also encourages students to participate in scientific research, postgraduate studies, and international exchange programs.",
+        ],
+      },
+
+      alumni: {
+        subheading: "Student Success & Alumni",
+
+        paragraphs: [
+          "Mari State University graduates are successfully working as doctors, healthcare professionals, researchers, and specialists in many countries worldwide.",
+
+          "The university focuses on developing professional skills, clinical competence, research capabilities, and ethical medical practices.",
+        ],
+      },
+
+      loan: {
+        title: "Education Loan Support For Indian Students",
+
+        intro:
+          "Students planning to pursue MBBS at Mari State University can apply for education loans through various public and private sector financial institutions.",
+
+        eligibility: {
+          subheading: "Eligibility",
+
+          points: [
+            "Admission confirmation from Mari State University.",
+            "Valid NEET qualification for Indian students.",
+            "Academic and financial documents as required by the lender.",
+          ],
+        },
+
+        amount: {
+          subheading: "Loan Coverage",
+
+          text:
+            "Education loans may cover tuition fees, hostel accommodation, visa expenses, travel costs, insurance, and other educational expenses.",
+        },
+
+        documents: {
+          subheading: "Documents Required",
+
+          list: [
+            {
+              heading: "NEET Scorecard:",
+              child: "(mandatory for Indian students).",
+            },
+            {
+              heading: "Admission Letter:",
+              child: "Issued by the university.",
+            },
+            {
+              heading: "Passport:",
+              child: "",
+            },
+            {
+              heading: "Academic Certificates:",
+              child: "10th & 12th mark sheets.",
+            },
+            {
+              heading: "Bank Statements:",
+              child: "Of sponsor or co-applicant.",
+            },
+            {
+              heading: "Income Proof:",
+              child: "",
+            },
+          ],
+        },
+
+        interest: {
+          subheading: "Interest & Repayment",
+
+          text:
+            "Interest rates and repayment schedules vary according to the selected bank and loan scheme.",
+        },
+
+        collateral: {
+          subheading: "Collateral",
+
+          text:
+            "Collateral requirements depend on the loan amount and lender policies.",
+        },
+
+        processing: {
+          subheading: "Loan Processing",
+
+          text:
+            "Students are advised to complete all required documentation well in advance for faster approval.",
+        },
+
+        assistance: {
+          subheading: "Admission Assistance",
+
+          text:
+            "Topson Education provides complete admission guidance, visa support, and education loan assistance.",
+        },
+      },
+
+      faq: {
+        title: "FAQs on Mari State University, Russia",
+
+        text:
+          "Find answers to common questions related to MBBS admissions, fees, eligibility, hostel facilities, student life, and career opportunities at Mari State University.",
+      },
+    },
+
+    tableheder:
+      "Quick Highlights About Mari State University, Russia",
+
+    tableData: [
+      {
+        id: 1,
+        slug: "population",
+        label: "Population",
+        value: "146 Million+",
+      },
+      {
+        id: 2,
+        slug: "exchange-rate",
+        label: "Exchange Rate",
+        value: "1 Russian Ruble ≈ 0.012 USD",
+      },
+      {
+        id: 3,
+        slug: "climate",
+        label: "Climate",
+        value: "Continental Climate",
+      },
+      {
+        id: 4,
+        slug: "location",
+        label: "Location",
+        value: "Yoshkar-Ola, Russia",
+      },
+      {
+        id: 5,
+        slug: "capital",
+        label: "Capital",
+        value: "Moscow",
+      },
+      {
+        id: 6,
+        slug: "currency",
+        label: "Currency",
+        value: "Russian Ruble (RUB)",
+      },
+      {
+        id: 7,
+        slug: "travel-time",
+        label: "Travel Time From Delhi",
+        value: "Approx. 6–8 Hours",
+      },
+      {
+        id: 8,
+        slug: "time-difference",
+        label: "Time Difference",
+        value: "+2:30 Hours IST",
+      },
+      {
+        id: 9,
+        slug: "student-count",
+        label: "International Students",
+        value: "2000+",
+      },
+      {
+        id: 10,
+        slug: "origin-countries",
+        label: "Students From Countries",
+        value: [
+          "India",
+          "Nepal",
+          "Bangladesh",
+          "Pakistan",
+          "Sri Lanka",
+        ],
+      },
+      {
+        id: 11,
+        slug: "languages",
+        label: "Languages Spoken",
+        value: "Russian, English",
+      },
+      {
+        id: 12,
+        slug: "academic-year",
+        label: "Academic Session",
+        value: "September – June",
+      },
+      {
+        id: 13,
+        slug: "course-duration",
+        label: "Course Duration",
+        value: "6 Years Including Internship",
+      },
+      {
+        id: 14,
+        slug: "established",
+        label: "Established",
+        value: "1972",
+      },
+      {
+        id: 15,
+        slug: "recognition",
+        label: "Recognitions",
+        value: "NMC, WHO, ECFMG, FAIMER, WDOMS",
+      },
+    ],
+  },
+  {
+    id: "uni-4",
+
+    slug: "kalmyk-state-university",
+
+    name: "Kalmyk State University (KalmSU), Russia",
+
+    location: "Elista, Russia",
+
+    image: "/collegegroups/Russia/Kalmyk.jpg",
+
+    logo: "/collegegroups/Russia/Kalmyk.jpg",
+
+    title: "Kalmyk State University (KalmSU), Russia",
+
+    desc: "Kalmyk State University is a renowned government university in Russia offering quality medical education at an affordable cost. The university is known for its modern academic infrastructure, experienced faculty, international student community, and globally recognized medical programs that prepare students for successful medical careers worldwide.",
+
+    author: "Topson Education",
+
+    category: "University In Russia",
+
+    date: "January 25, 2025",
+
+    collegeimg: "/collegegroups/Russia/Kalmyk.jpg",
+
+    collegeShowPics: [
+      "/collegegroups/Kalmyk/kalmyk1.jpg",
+      "/collegegroups/Kalmyk/kalmyk2.jpg",
+      "/collegegroups/Kalmyk/kalmyk3.jpg",
+    ],
+
+    righttitle: "Topson Education",
+
+    rightdescription:
+      "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, university selection, and personalized counseling for medical aspirants.",
+
+    rightimage: "/collegegroups/Russia/Kalmyk.jpg",
+
+    rightlist: ["MBBS In Russia", "MBBS Abroad"],
+
+    rightlistlink: [
+      {
+        label: "Perm State Medical University",
+        slug: "perm-state-medical-university",
+      },
+      {
+        label: "Orenburg State Medical University",
+        slug: "orenburg-state-medical-university",
+      },
+      {
+        label: "Mari State University",
+        slug: "mari-state-university",
+      },
+      {
+        label: "Tver State Medical University",
+        slug: "tver-state-medical-university",
+      },
+      {
+        label: "Astrakhan State Medical University",
+        slug: "astrakhan-state-medical-university",
+      },
+    ],
+
+    guidanceCard: {
+      image: "/russia-guidance.jpg",
+
+      title: "Expert Guidance For MBBS In Russia",
+
+      description:
+        "Get complete support for MBBS admissions in Russia including university selection, documentation, visa processing, education loan guidance, and student counseling.",
+
+      buttonText: "Get Free Counseling",
+    },
+
+    tags: [
+      { label: "Facebook", link: "#" },
+      { label: "Twitter", link: "#" },
+      { label: "LinkedIn", link: "#" },
+      { label: "WhatsApp", link: "#" },
+      { label: "Email", link: "#" },
+    ],
+
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Kalmyk State University",
+
+        paragraphs: [
+          "Kalmyk State University provides globally recognized medical education with a strong emphasis on academic excellence and practical clinical training.",
+
+          "Students gain valuable hands-on experience through affiliated hospitals, laboratories, and healthcare institutions equipped with modern medical technologies.",
+
+          "Graduates are eligible to appear for FMGE/NExT, USMLE, PLAB, AMC, and other international medical licensing examinations as per country-specific regulations.",
+
+          "The university also supports research activities, postgraduate studies, specialization programs, and international academic collaborations.",
+        ],
+      },
+
+      alumni: {
+        subheading: "Student Success & Alumni",
+
+        paragraphs: [
+          "Graduates of Kalmyk State University are successfully working in hospitals, clinics, research institutes, and healthcare organizations across various countries.",
+
+          "The university focuses on building strong clinical skills, research aptitude, leadership qualities, and professional medical ethics.",
+        ],
+      },
+
+      loan: {
+        title: "Education Loan Support For Indian Students",
+
+        intro:
+          "Students planning to study MBBS at Kalmyk State University can apply for education loans through public and private sector banks as well as financial institutions.",
+
+        eligibility: {
+          subheading: "Eligibility",
+
+          points: [
+            "Admission confirmation from Kalmyk State University.",
+            "Valid NEET qualification for Indian students.",
+            "Required academic and financial documents.",
+          ],
+        },
+
+        amount: {
+          subheading: "Loan Coverage",
+
+          text:
+            "Education loans may cover tuition fees, hostel accommodation, visa expenses, travel expenses, insurance, and other educational costs.",
+        },
+
+        documents: {
+          subheading: "Documents Required",
+
+          list: [
+            {
+              heading: "NEET Scorecard:",
+              child: "(mandatory for Indian students).",
+            },
+            {
+              heading: "Admission Letter:",
+              child: "Issued by the university.",
+            },
+            {
+              heading: "Passport:",
+              child: "",
+            },
+            {
+              heading: "Academic Certificates:",
+              child: "10th & 12th mark sheets.",
+            },
+            {
+              heading: "Bank Statements:",
+              child: "Of sponsor or co-applicant.",
+            },
+            {
+              heading: "Income Proof:",
+              child: "",
+            },
+          ],
+        },
+
+        interest: {
+          subheading: "Interest & Repayment",
+
+          text:
+            "Interest rates and repayment terms vary according to the selected lender and loan plan.",
+        },
+
+        collateral: {
+          subheading: "Collateral",
+
+          text:
+            "Collateral requirements depend on the sanctioned loan amount and bank policies.",
+        },
+
+        processing: {
+          subheading: "Loan Processing",
+
+          text:
+            "Students are advised to complete all necessary documentation early for faster loan approval.",
+        },
+
+        assistance: {
+          subheading: "Admission Assistance",
+
+          text:
+            "Topson Education provides complete admission guidance, documentation support, visa assistance, and education loan counseling.",
+        },
+      },
+
+      faq: {
+        title: "FAQs on Kalmyk State University, Russia",
+
+        text:
+          "Find answers to common questions related to MBBS admissions, fees, eligibility, hostel facilities, student life, and career opportunities at Kalmyk State University.",
+      },
+    },
+
+    tableheder:
+      "Quick Highlights About Kalmyk State University, Russia",
+
+    tableData: [
+      {
+        id: 1,
+        slug: "population",
+        label: "Population",
+        value: "146 Million+",
+      },
+      {
+        id: 2,
+        slug: "exchange-rate",
+        label: "Exchange Rate",
+        value: "1 Russian Ruble ≈ 0.012 USD",
+      },
+      {
+        id: 3,
+        slug: "climate",
+        label: "Climate",
+        value: "Continental Climate",
+      },
+      {
+        id: 4,
+        slug: "location",
+        label: "Location",
+        value: "Elista, Russia",
+      },
+      {
+        id: 5,
+        slug: "capital",
+        label: "Capital",
+        value: "Moscow",
+      },
+      {
+        id: 6,
+        slug: "currency",
+        label: "Currency",
+        value: "Russian Ruble (RUB)",
+      },
+      {
+        id: 7,
+        slug: "travel-time",
+        label: "Travel Time From Delhi",
+        value: "Approx. 6–8 Hours",
+      },
+      {
+        id: 8,
+        slug: "time-difference",
+        label: "Time Difference",
+        value: "+2:30 Hours IST",
+      },
+      {
+        id: 9,
+        slug: "student-count",
+        label: "International Students",
+        value: "1000+",
+      },
+      {
+        id: 10,
+        slug: "origin-countries",
+        label: "Students From Countries",
+        value: [
+          "India",
+          "Nepal",
+          "Bangladesh",
+          "Pakistan",
+          "Sri Lanka",
+        ],
+      },
+      {
+        id: 11,
+        slug: "languages",
+        label: "Languages Spoken",
+        value: "Russian, English",
+      },
+      {
+        id: 12,
+        slug: "academic-year",
+        label: "Academic Session",
+        value: "September – June",
+      },
+      {
+        id: 13,
+        slug: "course-duration",
+        label: "Course Duration",
+        value: "6 Years Including Internship",
+      },
+      {
+        id: 14,
+        slug: "established",
+        label: "Established",
+        value: "1970",
+      },
+      {
+        id: 15,
+        slug: "recognition",
+        label: "Recognitions",
+        value: "NMC, WHO, ECFMG, FAIMER, WDOMS",
+      },
+    ],
+  }
+  ,
+  {
+    id: "uni-5",
+
+    slug: "tver-state-medical-university",
+
+    name: "Tver State Medical University (TSMU), Russia",
+
+    location: "Tver, Russia",
+
+    image: "/collegegroups/Russia/TverState.png",
+
+    logo: "/collegegroups/Russia/TverState.png",
+
+    title: "Tver State Medical University (TSMU), Russia",
+
+    desc: "Tver State Medical University is one of the oldest and most prestigious government medical universities in Russia. Established in 1936, the university is recognized for its high-quality medical education, experienced faculty, modern clinical training facilities, and globally accepted medical degree programs. It attracts international students from many countries, especially India, for its affordable and recognized MBBS program.",
+
+    author: "Topson Education",
+
+    category: "University In Russia",
+
+    date: "January 25, 2025",
+
+    collegeimg: "/collegegroups/Russia/TverState.png",
+
+    collegeShowPics: [
+      "/collegegroups/Tver/tver1.jpg",
+      "/collegegroups/Tver/tver2.jpg",
+      "/collegegroups/Tver/tver3.jpg",
+    ],
+
+    righttitle: "Topson Education",
+
+    rightdescription:
+      "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, university selection, and personalized counseling for medical aspirants.",
+
+    rightimage: "/collegegroups/Russia/TverState.png",
+
+    rightlist: ["MBBS In Russia", "MBBS Abroad"],
+
+    rightlistlink: [
+      {
+        label: "Perm State Medical University",
+        slug: "perm-state-medical-university",
+      },
+      {
+        label: "Orenburg State Medical University",
+        slug: "orenburg-state-medical-university",
+      },
+      {
+        label: "Mari State University",
+        slug: "mari-state-university",
+      },
+      {
+        label: "Kalmyk State University",
+        slug: "kalmyk-state-university",
+      },
+      {
+        label: "Astrakhan State Medical University",
+        slug: "astrakhan-state-medical-university",
+      },
+    ],
+
+    guidanceCard: {
+      image: "/russia-guidance.jpg",
+
+      title: "Expert Guidance For MBBS In Russia",
+
+      description:
+        "Get complete support for MBBS admissions in Russia including university selection, documentation, visa processing, education loan guidance, and student counseling.",
+
+      buttonText: "Get Free Counseling",
+    },
+
+    tags: [
+      { label: "Facebook", link: "#" },
+      { label: "Twitter", link: "#" },
+      { label: "LinkedIn", link: "#" },
+      { label: "WhatsApp", link: "#" },
+      { label: "Email", link: "#" },
+    ],
+
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Tver State Medical University",
+
+        paragraphs: [
+          "Tver State Medical University provides internationally recognized medical education with a strong focus on clinical practice, research, and academic excellence.",
+
+          "Students receive practical training through affiliated hospitals, simulation centers, research laboratories, and healthcare institutions equipped with modern technologies.",
+
+          "Graduates are eligible to appear for FMGE/NExT, USMLE, PLAB, AMC, and various international medical licensing examinations according to country-specific regulations.",
+
+          "The university also offers opportunities for postgraduate studies, specialization programs, scientific research, and international collaborations.",
+        ],
+      },
+
+      alumni: {
+        subheading: "Student Success & Alumni",
+
+        paragraphs: [
+          "Tver State Medical University graduates are successfully practicing medicine in India, Russia, Europe, the Middle East, and several other countries.",
+
+          "The university focuses on developing clinical competence, leadership qualities, communication skills, and professional medical ethics among students.",
+        ],
+      },
+
+      loan: {
+        title: "Education Loan Support For Indian Students",
+
+        intro:
+          "Students planning to study MBBS at Tver State Medical University can apply for education loans through public and private sector banks as well as financial institutions.",
+
+        eligibility: {
+          subheading: "Eligibility",
+
+          points: [
+            "Admission confirmation from Tver State Medical University.",
+            "Valid NEET qualification for Indian students.",
+            "Required academic and financial documents.",
+          ],
+        },
+
+        amount: {
+          subheading: "Loan Coverage",
+
+          text:
+            "Education loans may cover tuition fees, hostel accommodation, travel expenses, insurance, visa charges, and other academic expenses.",
+        },
+
+        documents: {
+          subheading: "Documents Required",
+
+          list: [
+            {
+              heading: "NEET Scorecard:",
+              child: "(mandatory for Indian students).",
+            },
+            {
+              heading: "Admission Letter:",
+              child: "Issued by the university.",
+            },
+            {
+              heading: "Passport:",
+              child: "",
+            },
+            {
+              heading: "Academic Certificates:",
+              child: "10th & 12th mark sheets.",
+            },
+            {
+              heading: "Bank Statements:",
+              child: "Of sponsor or co-applicant.",
+            },
+            {
+              heading: "Income Proof:",
+              child: "",
+            },
+          ],
+        },
+
+        interest: {
+          subheading: "Interest & Repayment",
+
+          text:
+            "Interest rates and repayment terms vary according to the selected lender and loan plan.",
+        },
+
+        collateral: {
+          subheading: "Collateral",
+
+          text:
+            "Collateral requirements depend upon the loan amount and bank policies.",
+        },
+
+        processing: {
+          subheading: "Loan Processing",
+
+          text:
+            "Students are advised to complete all required documentation early for faster loan approval.",
+        },
+
+        assistance: {
+          subheading: "Admission Assistance",
+
+          text:
+            "Topson Education provides complete admission support, visa guidance, documentation assistance, and education loan counseling.",
+        },
+      },
+
+      faq: {
+        title: "FAQs on Tver State Medical University, Russia",
+
+        text:
+          "Find answers to common questions related to MBBS admissions, eligibility, fees, hostel facilities, student life, and career opportunities at Tver State Medical University.",
+      },
+    },
+
+    tableheder:
+      "Quick Highlights About Tver State Medical University, Russia",
+
+    tableData: [
+      {
+        id: 1,
+        slug: "population",
+        label: "Population",
+        value: "146 Million+",
+      },
+      {
+        id: 2,
+        slug: "exchange-rate",
+        label: "Exchange Rate",
+        value: "1 Russian Ruble ≈ 0.012 USD",
+      },
+      {
+        id: 3,
+        slug: "climate",
+        label: "Climate",
+        value: "Continental Climate",
+      },
+      {
+        id: 4,
+        slug: "location",
+        label: "Location",
+        value: "Tver, Russia",
+      },
+      {
+        id: 5,
+        slug: "capital",
+        label: "Capital",
+        value: "Moscow",
+      },
+      {
+        id: 6,
+        slug: "currency",
+        label: "Currency",
+        value: "Russian Ruble (RUB)",
+      },
+      {
+        id: 7,
+        slug: "travel-time",
+        label: "Travel Time From Delhi",
+        value: "Approx. 7–8 Hours",
+      },
+      {
+        id: 8,
+        slug: "time-difference",
+        label: "Time Difference",
+        value: "+2:30 Hours IST",
+      },
+      {
+        id: 9,
+        slug: "student-count",
+        label: "International Students",
+        value: "2500+",
+      },
+      {
+        id: 10,
+        slug: "origin-countries",
+        label: "Students From Countries",
+        value: [
+          "India",
+          "Nepal",
+          "Bangladesh",
+          "Sri Lanka",
+          "Egypt"
+        ],
+      },
+      {
+        id: 11,
+        slug: "languages",
+        label: "Languages Spoken",
+        value: "Russian, English",
+      },
+      {
+        id: 12,
+        slug: "academic-year",
+        label: "Academic Session",
+        value: "September – June",
+      },
+      {
+        id: 13,
+        slug: "course-duration",
+        label: "Course Duration",
+        value: "6 Years Including Internship",
+      },
+      {
+        id: 14,
+        slug: "established",
+        label: "Established",
+        value: "1936",
+      },
+      {
+        id: 15,
+        slug: "recognition",
+        label: "Recognitions",
+        value: "NMC, WHO, ECFMG, FAIMER, WDOMS",
+      },
+    ],
+  },
+  {
+    id: "uni-6",
+
+    slug: "pskov-state-university",
+
+    name: "Pskov State University (PskovSU), Russia",
+
+    location: "Pskov, Russia",
+
+    image: "/collegegroups/Russia/PskovState.jpg",
+
+    logo: "/collegegroups/Russia/PskovState.jpg",
+
+    title: "Pskov State University (PskovSU), Russia",
+
+    desc: "Pskov State University is a leading public university in Russia offering high-quality medical education with modern infrastructure, advanced laboratories, experienced faculty, and extensive clinical exposure. The university has become a preferred destination for international students seeking affordable and globally recognized MBBS education in Russia.",
+
+    author: "Topson Education",
+
+    category: "University In Russia",
+
+    date: "January 25, 2025",
+
+    collegeimg: "/collegegroups/Russia/PskovState.jpg",
+
+    collegeShowPics: [
+      "/collegegroups/Pskov/pskov1.jpg",
+      "/collegegroups/Pskov/pskov2.jpg",
+      "/collegegroups/Pskov/pskov3.jpg",
+    ],
+
+    righttitle: "Topson Education",
+
+    rightdescription:
+      "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, university selection, and personalized counseling for medical aspirants.",
+
+    rightimage: "/collegegroups/Russia/PskovState.jpg",
+
+    rightlist: ["MBBS In Russia", "MBBS Abroad"],
+
+    rightlistlink: [
+      {
+        label: "Perm State Medical University",
+        slug: "perm-state-medical-university",
+      },
+      {
+        label: "Orenburg State Medical University",
+        slug: "orenburg-state-medical-university",
+      },
+      {
+        label: "Mari State University",
+        slug: "mari-state-university",
+      },
+      {
+        label: "Kalmyk State University",
+        slug: "kalmyk-state-university",
+      },
+      {
+        label: "Tver State Medical University",
+        slug: "tver-state-medical-university",
+      },
+    ],
+
+    guidanceCard: {
+      image: "/russia-guidance.jpg",
+
+      title: "Expert Guidance For MBBS In Russia",
+
+      description:
+        "Get complete support for MBBS admissions in Russia including university selection, documentation, visa processing, education loan guidance, and student counseling.",
+
+      buttonText: "Get Free Counseling",
+    },
+
+    tags: [
+      { label: "Facebook", link: "#" },
+      { label: "Twitter", link: "#" },
+      { label: "LinkedIn", link: "#" },
+      { label: "WhatsApp", link: "#" },
+      { label: "Email", link: "#" },
+    ],
+
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Pskov State University",
+
+        paragraphs: [
+          "Pskov State University offers internationally recognized medical education with a strong focus on practical clinical training and academic excellence.",
+
+          "Students receive hands-on experience through affiliated hospitals, simulation centers, research laboratories, and healthcare institutions equipped with modern medical technologies.",
+
+          "Graduates are eligible to appear for FMGE/NExT, USMLE, PLAB, AMC, and various international medical licensing examinations according to country-specific regulations.",
+
+          "The university encourages participation in scientific research, postgraduate education, international conferences, and exchange programs.",
+        ],
+      },
+
+      alumni: {
+        subheading: "Student Success & Alumni",
+
+        paragraphs: [
+          "Graduates of Pskov State University are successfully working in hospitals, healthcare organizations, and research institutions across multiple countries.",
+
+          "The university focuses on developing strong clinical knowledge, professional ethics, communication skills, and research capabilities.",
+        ],
+      },
+
+      loan: {
+        title: "Education Loan Support For Indian Students",
+
+        intro:
+          "Students planning to pursue MBBS at Pskov State University can apply for education loans through public and private sector banks as well as financial institutions.",
+
+        eligibility: {
+          subheading: "Eligibility",
+
+          points: [
+            "Admission confirmation from Pskov State University.",
+            "Valid NEET qualification for Indian students.",
+            "Required academic and financial documents.",
+          ],
+        },
+
+        amount: {
+          subheading: "Loan Coverage",
+
+          text:
+            "Education loans may cover tuition fees, hostel accommodation, visa expenses, travel expenses, insurance, and other educational costs.",
+        },
+
+        documents: {
+          subheading: "Documents Required",
+
+          list: [
+            {
+              heading: "NEET Scorecard:",
+              child: "(mandatory for Indian students).",
+            },
+            {
+              heading: "Admission Letter:",
+              child: "Issued by the university.",
+            },
+            {
+              heading: "Passport:",
+              child: "",
+            },
+            {
+              heading: "Academic Certificates:",
+              child: "10th & 12th mark sheets.",
+            },
+            {
+              heading: "Bank Statements:",
+              child: "Of sponsor or co-applicant.",
+            },
+            {
+              heading: "Income Proof:",
+              child: "",
+            },
+          ],
+        },
+
+        interest: {
+          subheading: "Interest & Repayment",
+
+          text:
+            "Interest rates and repayment schedules vary according to the selected lender and loan scheme.",
+        },
+
+        collateral: {
+          subheading: "Collateral",
+
+          text:
+            "Collateral requirements depend upon the loan amount and bank policies.",
+        },
+
+        processing: {
+          subheading: "Loan Processing",
+
+          text:
+            "Students should complete all required documentation early for faster loan approval.",
+        },
+
+        assistance: {
+          subheading: "Admission Assistance",
+
+          text:
+            "Topson Education provides complete admission guidance, visa support, documentation assistance, and education loan counseling.",
+        },
+      },
+
+      faq: {
+        title: "FAQs on Pskov State University, Russia",
+
+        text:
+          "Find answers to common questions related to MBBS admissions, eligibility, fees, hostel facilities, student life, and career opportunities at Pskov State University.",
+      },
+    },
+
+    tableheder:
+      "Quick Highlights About Pskov State University, Russia",
+
+    tableData: [
+      {
+        id: 1,
+        slug: "population",
+        label: "Population",
+        value: "146 Million+",
+      },
+      {
+        id: 2,
+        slug: "exchange-rate",
+        label: "Exchange Rate",
+        value: "1 Russian Ruble ≈ 0.012 USD",
+      },
+      {
+        id: 3,
+        slug: "climate",
+        label: "Climate",
+        value: "Continental Climate",
+      },
+      {
+        id: 4,
+        slug: "location",
+        label: "Location",
+        value: "Pskov, Russia",
+      },
+      {
+        id: 5,
+        slug: "capital",
+        label: "Capital",
+        value: "Moscow",
+      },
+      {
+        id: 6,
+        slug: "currency",
+        label: "Currency",
+        value: "Russian Ruble (RUB)",
+      },
+      {
+        id: 7,
+        slug: "travel-time",
+        label: "Travel Time From Delhi",
+        value: "Approx. 7–8 Hours",
+      },
+      {
+        id: 8,
+        slug: "time-difference",
+        label: "Time Difference",
+        value: "+2:30 Hours IST",
+      },
+      {
+        id: 9,
+        slug: "student-count",
+        label: "International Students",
+        value: "1000+",
+      },
+      {
+        id: 10,
+        slug: "origin-countries",
+        label: "Students From Countries",
+        value: [
+          "India",
+          "Nepal",
+          "Bangladesh",
+          "Sri Lanka",
+          "Uzbekistan",
+        ],
+      },
+      {
+        id: 11,
+        slug: "languages",
+        label: "Languages Spoken",
+        value: "Russian, English",
+      },
+      {
+        id: 12,
+        slug: "academic-year",
+        label: "Academic Session",
+        value: "September – June",
+      },
+      {
+        id: 13,
+        slug: "course-duration",
+        label: "Course Duration",
+        value: "6 Years Including Internship",
+      },
+      {
+        id: 14,
+        slug: "established",
+        label: "Established",
+        value: "2010",
+      },
+      {
+        id: 15,
+        slug: "recognition",
+        label: "Recognitions",
+        value: "NMC, WHO, ECFMG, FAIMER, WDOMS",
+      },
+    ],
+  },
+  {
+    id: "uni-7",
+
+    slug: "astrakhan-state-medical-university",
+
+    name: "Astrakhan State Medical University (ASMU), Russia",
+
+    location: "Astrakhan, Russia",
+
+    image: "/collegegroups/Russia/AstrakhanState.jpg",
+
+    logo: "/collegegroups/Russia/AstrakhanState.jpg",
+
+    title: "Astrakhan State Medical University (ASMU), Russia",
+
+    desc: "Astrakhan State Medical University is one of the leading government medical universities in Russia. Established in 1918, the university is well-known for its high-quality medical education, modern teaching methods, advanced clinical training facilities, and globally recognized medical degrees. It has become a preferred destination for international students seeking affordable MBBS education in Russia.",
+
+    author: "Topson Education",
+
+    category: "University In Russia",
+
+    date: "January 25, 2025",
+
+    collegeimg: "/collegegroups/Russia/AstrakhanState.jpg",
+
+    collegeShowPics: [
+      "/collegegroups/Astrakhan/astrakhan1.jpg",
+      "/collegegroups/Astrakhan/astrakhan2.jpg",
+      "/collegegroups/Astrakhan/astrakhan3.jpg",
+    ],
+
+    righttitle: "Topson Education",
+
+    rightdescription:
+      "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, university selection, and personalized counseling for medical aspirants.",
+
+    rightimage: "/collegegroups/Russia/AstrakhanState.jpg",
+
+    rightlist: ["MBBS In Russia", "MBBS Abroad"],
+
+    rightlistlink: [
+      {
+        label: "Perm State Medical University",
+        slug: "perm-state-medical-university",
+      },
+      {
+        label: "Orenburg State Medical University",
+        slug: "orenburg-state-medical-university",
+      },
+      {
+        label: "Mari State University",
+        slug: "mari-state-university",
+      },
+      {
+        label: "Kalmyk State University",
+        slug: "kalmyk-state-university",
+      },
+      {
+        label: "Tver State Medical University",
+        slug: "tver-state-medical-university",
+      },
+    ],
+
+    guidanceCard: {
+      image: "/russia-guidance.jpg",
+
+      title: "Expert Guidance For MBBS In Russia",
+
+      description:
+        "Get complete support for MBBS admissions in Russia including university selection, documentation, visa processing, education loan guidance, and student counseling.",
+
+      buttonText: "Get Free Counseling",
+    },
+
+    tags: [
+      { label: "Facebook", link: "#" },
+      { label: "Twitter", link: "#" },
+      { label: "LinkedIn", link: "#" },
+      { label: "WhatsApp", link: "#" },
+      { label: "Email", link: "#" },
+    ],
+
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Astrakhan State Medical University",
+
+        paragraphs: [
+          "Astrakhan State Medical University provides internationally recognized medical education with strong emphasis on practical training, research, and academic excellence.",
+
+          "Students gain hands-on experience through affiliated hospitals, clinical centers, laboratories, and simulation facilities equipped with modern medical technologies.",
+
+          "Graduates are eligible to appear for FMGE/NExT, USMLE, PLAB, AMC, and other international medical licensing examinations according to country-specific regulations.",
+
+          "The university also offers opportunities for postgraduate education, specialization programs, scientific research, and international collaborations.",
+        ],
+      },
+
+      alumni: {
+        subheading: "Student Success & Alumni",
+
+        paragraphs: [
+          "Astrakhan State Medical University graduates are successfully practicing medicine in India, Russia, Europe, the Middle East, and many other countries.",
+
+          "The university focuses on developing clinical competence, leadership qualities, communication skills, and professional medical ethics among students.",
+        ],
+      },
+
+      loan: {
+        title: "Education Loan Support For Indian Students",
+
+        intro:
+          "Students planning to study MBBS at Astrakhan State Medical University can apply for education loans through public and private sector banks as well as financial institutions.",
+
+        eligibility: {
+          subheading: "Eligibility",
+
+          points: [
+            "Admission confirmation from Astrakhan State Medical University.",
+            "Valid NEET qualification for Indian students.",
+            "Required academic and financial documents.",
+          ],
+        },
+
+        amount: {
+          subheading: "Loan Coverage",
+
+          text:
+            "Education loans may cover tuition fees, hostel accommodation, travel expenses, insurance, visa charges, and other academic expenses.",
+        },
+
+        documents: {
+          subheading: "Documents Required",
+
+          list: [
+            {
+              heading: "NEET Scorecard:",
+              child: "(mandatory for Indian students).",
+            },
+            {
+              heading: "Admission Letter:",
+              child: "Issued by the university.",
+            },
+            {
+              heading: "Passport:",
+              child: "",
+            },
+            {
+              heading: "Academic Certificates:",
+              child: "10th & 12th mark sheets.",
+            },
+            {
+              heading: "Bank Statements:",
+              child: "Of sponsor or co-applicant.",
+            },
+            {
+              heading: "Income Proof:",
+              child: "",
+            },
+          ],
+        },
+
+        interest: {
+          subheading: "Interest & Repayment",
+
+          text:
+            "Interest rates and repayment terms vary according to the selected lender and loan plan.",
+        },
+
+        collateral: {
+          subheading: "Collateral",
+
+          text:
+            "Collateral requirements depend upon the loan amount and bank policies.",
+        },
+
+        processing: {
+          subheading: "Loan Processing",
+
+          text:
+            "Students are advised to complete all required documentation early for faster loan approval.",
+        },
+
+        assistance: {
+          subheading: "Admission Assistance",
+
+          text:
+            "Topson Education provides complete admission support, visa guidance, documentation assistance, and education loan counseling.",
+        },
+      },
+
+      faq: {
+        title: "FAQs on Astrakhan State Medical University, Russia",
+
+        text:
+          "Find answers to common questions related to MBBS admissions, eligibility, fees, hostel facilities, student life, and career opportunities at Astrakhan State Medical University.",
+      },
+    },
+
+    tableheder:
+      "Quick Highlights About Astrakhan State Medical University, Russia",
+
+    tableData: [
+      {
+        id: 1,
+        slug: "population",
+        label: "Population",
+        value: "146 Million+",
+      },
+      {
+        id: 2,
+        slug: "exchange-rate",
+        label: "Exchange Rate",
+        value: "1 Russian Ruble ≈ 0.012 USD",
+      },
+      {
+        id: 3,
+        slug: "climate",
+        label: "Climate",
+        value: "Continental Climate",
+      },
+      {
+        id: 4,
+        slug: "location",
+        label: "Location",
+        value: "Astrakhan, Southern Russia",
+      },
+      {
+        id: 5,
+        slug: "capital",
+        label: "Capital",
+        value: "Moscow",
+      },
+      {
+        id: 6,
+        slug: "currency",
+        label: "Currency",
+        value: "Russian Ruble (RUB)",
+      },
+      {
+        id: 7,
+        slug: "travel-time",
+        label: "Travel Time From Delhi",
+        value: "Approx. 5–7 Hours",
+      },
+      {
+        id: 8,
+        slug: "time-difference",
+        label: "Time Difference",
+        value: "+2:30 Hours IST",
+      },
+      {
+        id: 9,
+        slug: "student-count",
+        label: "International Students",
+        value: "3000+",
+      },
+      {
+        id: 10,
+        slug: "origin-countries",
+        label: "Students From Countries",
+        value: [
+          "India",
+          "Nepal",
+          "Bangladesh",
+          "Sri Lanka",
+          "Egypt",
+        ],
+      },
+      {
+        id: 11,
+        slug: "languages",
+        label: "Languages Spoken",
+        value: "Russian, English",
+      },
+      {
+        id: 12,
+        slug: "academic-year",
+        label: "Academic Session",
+        value: "September – June",
+      },
+      {
+        id: 13,
+        slug: "course-duration",
+        label: "Course Duration",
+        value: "6 Years Including Internship",
+      },
+      {
+        id: 14,
+        slug: "established",
+        label: "Established",
+        value: "1918",
+      },
+      {
+        id: 15,
+        slug: "recognition",
+        label: "Recognitions",
+        value: "NMC, WHO, ECFMG, FAIMER, WDOMS",
+      },
+    ],
+  }
+]

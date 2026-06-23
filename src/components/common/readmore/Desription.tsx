@@ -4,13 +4,21 @@ import React from "react";
 import { Header, Paragraph, Points, SubHeading } from "./AllTags";
 import BannerImage from "./BannerImage";
 import { useParams } from "next/navigation";
-import { uzbekistanUniversities, kyrgyzstanUniversities } from "@/data/universities";
+import {
+  uzbekistanUniversities,
+  kyrgyzstanUniversities,
+  russiaUniversities,
+} from "@/data/universities";
 import InfoTable from "../countries/InfoTable";
 
 const Description = () => {
   const params = useParams();
   const slug = Array.isArray(params?.slug) ? params.slug[0] : params?.slug;
-  const allUniversities = [...uzbekistanUniversities, ...kyrgyzstanUniversities];
+  const allUniversities = [
+    ...uzbekistanUniversities,
+    ...kyrgyzstanUniversities,
+    ...russiaUniversities,
+  ];
   const university = allUniversities.find((item) => item.slug === slug);
 
   if (!university) {
@@ -31,7 +39,7 @@ const Description = () => {
         <Paragraph key={i} para={para} />
       ))}
 
-      {/* Alumni */}
+      {/* Alumni */}relative mb-6 mt-8 group
       <SubHeading subheading={content.alumni.subheading} />
       {content.alumni.paragraphs.map((para, i) => (
         <Paragraph key={i} para={para} />
