@@ -642,7 +642,7 @@ export const kyrgyzstanUniversities = [
     ],
 
     guidanceCard: {
-      image: "/kyrgyzstan-guidance.jpg",
+      image: "/university/kgma.jpg",
 
       title: "Expert Guidance For MBBS In Kyrgyzstan",
 
@@ -919,7 +919,7 @@ export const kyrgyzstanUniversities = [
     ],
 
     guidanceCard: {
-      image: "/ism-guidance.jpg",
+      image: "/university/ISM.jpg",
 
       title: "Expert Guidance For MBBS In Kyrgyzstan",
 
@@ -1308,7 +1308,7 @@ export const russiaUniversities = [
     ],
 
     guidanceCard: {
-      image: "/russia-guidance.jpg",
+      image: "/collegegroups/Russia/Permuniversity.jpg",
 
       title: "Expert Guidance For MBBS In Russia",
 
@@ -1608,7 +1608,7 @@ export const russiaUniversities = [
     ],
 
     guidanceCard: {
-      image: "/russia-guidance.jpg",
+      image: "/collegegroups/Russia/Orenburg.webp",
 
       title: "Expert Guidance For MBBS In Russia",
 
@@ -1909,7 +1909,7 @@ export const russiaUniversities = [
     ],
 
     guidanceCard: {
-      image: "/russia-guidance.jpg",
+      image: "/collegegroups/Russia/MariState.jpg",
 
       title: "Expert Guidance For MBBS In Russia",
 
@@ -2209,7 +2209,7 @@ export const russiaUniversities = [
     ],
 
     guidanceCard: {
-      image: "/russia-guidance.jpg",
+      image: "/collegegroups/Russia/Kalmyk.jpg",
 
       title: "Expert Guidance For MBBS In Russia",
 
@@ -2510,7 +2510,7 @@ export const russiaUniversities = [
     ],
 
     guidanceCard: {
-      image: "/russia-guidance.jpg",
+      image: "/collegegroups/Russia/TverState.png",
 
       title: "Expert Guidance For MBBS In Russia",
 
@@ -2810,7 +2810,7 @@ export const russiaUniversities = [
     ],
 
     guidanceCard: {
-      image: "/russia-guidance.jpg",
+      image: "/collegegroups/Russia/PskovState.jpg",
 
       title: "Expert Guidance For MBBS In Russia",
 
@@ -3110,7 +3110,7 @@ export const russiaUniversities = [
     ],
 
     guidanceCard: {
-      image: "/russia-guidance.jpg",
+      image: "/collegegroups/Russia/AstrakhanState.jpg",
 
       title: "Expert Guidance For MBBS In Russia",
 
@@ -3346,4 +3346,549 @@ export const russiaUniversities = [
       },
     ],
   }
-]
+];
+
+export const nepalUniversities = [
+  {
+    id: "uni-1",
+
+    slug: "nepal-national-medical-college",
+
+    name: "Nepal National Medical College (NNMC), Birgunj, Nepal",
+
+    location: "Birgunj, Nepal",
+
+    image: "/collegegroups/Nepal/nnmc.jpg",
+
+    logo: "/collegegroups/Nepal/nnmc.jpg",
+
+    title: "Nepal National Medical College (NNMC), Birgunj, Nepal",
+
+    desc: "Nepal National Medical College (NNMC) is one of the leading private medical colleges in Nepal, situated in Birgunj. Affiliated with Tribhuvan University, NNMC offers a globally recognized MBBS program with modern infrastructure, experienced faculty, and excellent clinical training facilities for Indian and international students.",
+
+    author: "Topson Education",
+
+    category: "University In Nepal",
+
+    date: "January 25, 2025",
+
+    collegeimg: "/collegegroups/Nepal/nnmc.jpg",
+
+    collegeShowPics: [
+      "/collegegroups/Nepal/nepal1.jpg",
+      "/collegegroups/Nepal/nepal2.jpg",
+      "/collegegroups/Nepal/nepal3.jpg",
+    ],
+
+    righttitle: "Topson Education",
+
+    rightdescription:
+      "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, university selection, and personalized counseling for medical aspirants.",
+
+    rightimage: "/collegegroups/Nepal/nnmc.jpg",
+
+    rightlist: ["MBBS In Nepal", "MBBS Abroad"],
+
+    rightlistlink: [
+      {
+        label: "Manipal Medical College Nepal",
+        slug: "manipal-medical-college-nepal",
+      },
+    ],
+
+    guidanceCard: {
+      image: "/collegegroups/Nepal/nnmc.jpg",
+
+      title: "Expert Guidance For MBBS In Nepal",
+
+      description:
+        "Get complete support for MBBS admissions in Nepal including university selection, documentation, visa processing, education loan guidance, and student counseling.",
+
+      buttonText: "Get Free Counseling",
+    },
+
+    tags: [
+      { label: "Facebook", link: "#" },
+      { label: "Twitter", link: "#" },
+      { label: "LinkedIn", link: "#" },
+      { label: "WhatsApp", link: "#" },
+      { label: "Email", link: "#" },
+    ],
+
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Nepal National Medical College",
+
+        paragraphs: [
+          "Nepal National Medical College (NNMC) provides high-quality medical education with a strong focus on clinical training, research, and academic excellence.",
+
+          "Students receive practical training through the affiliated NNMC Teaching Hospital in Birgunj, equipped with modern healthcare technologies and experienced medical professionals.",
+
+          "Graduates from NNMC are eligible to appear for licensing examinations such as FMGE/NExT (India), USMLE, PLAB, and other international medical licensing exams based on country regulations.",
+
+          "The college also provides opportunities for postgraduate education, specialization programs, medical research, and international collaborations.",
+        ],
+      },
+
+      alumni: {
+        subheading: "Student Success & Alumni",
+
+        paragraphs: [
+          "NNMC graduates are successfully practicing medicine in India, Nepal, and several other countries across the world.",
+
+          "The college focuses on developing strong clinical competence, professional ethics, research skills, and leadership qualities among students.",
+        ],
+      },
+
+      loan: {
+        title: "Education Loan Support For Indian Students",
+
+        intro:
+          "Students planning to study MBBS at Nepal National Medical College can apply for education loans through leading Indian banks and financial institutions.",
+
+        eligibility: {
+          subheading: "Eligibility",
+
+          points: [
+            "Admission confirmation from Nepal National Medical College.",
+            "Valid NEET qualification for Indian students.",
+            "Academic and financial documents as required by the lender.",
+          ],
+        },
+
+        amount: {
+          subheading: "Loan Coverage",
+
+          text: "Education loans may cover tuition fees, hostel accommodation, travel expenses, insurance, and other academic expenses.",
+        },
+
+        documents: {
+          subheading: "Documents Required",
+
+          list: [
+            {
+              heading: "NEET Scorecard:",
+              child: "(mandatory for Indian students).",
+            },
+            {
+              heading: "Admission Letter:",
+              child: "Issued by the college.",
+            },
+            {
+              heading: "Passport:",
+              child: "",
+            },
+            {
+              heading: "Academic Certificates:",
+              child: "10th & 12th mark sheets.",
+            },
+            {
+              heading: "Bank Statements:",
+              child: "Of sponsor or co-applicant.",
+            },
+            {
+              heading: "Income Proof:",
+              child: "",
+            },
+          ],
+        },
+
+        interest: {
+          subheading: "Interest & Repayment",
+
+          text: "Interest rates and repayment schedules vary depending on the selected bank or financial institution.",
+        },
+
+        collateral: {
+          subheading: "Collateral",
+
+          text: "Collateral requirements depend on the loan amount and lender policies.",
+        },
+
+        processing: {
+          subheading: "Loan Processing",
+
+          text: "Students are advised to complete documentation early for faster loan approval.",
+        },
+
+        assistance: {
+          subheading: "Admission Assistance",
+
+          text: "Topson Education provides complete admission guidance and education loan assistance for MBBS aspirants.",
+        },
+      },
+
+      faq: {
+        title: "FAQs on Nepal National Medical College (NNMC), Birgunj",
+
+        text: "Find answers to common questions related to MBBS admissions, fees, eligibility, hostel facilities, student life, and career opportunities at Nepal National Medical College.",
+      },
+    },
+
+    tableheder: "Quick Highlights About Nepal National Medical College (NNMC), Birgunj",
+
+    tableData: [
+      {
+        id: 1,
+        slug: "population",
+        label: "Population",
+        value: "30 Million+",
+      },
+      {
+        id: 2,
+        slug: "exchange-rate",
+        label: "Exchange Rate",
+        value: "1 Nepalese Rupee ≈ ₹0.62 INR",
+      },
+      {
+        id: 3,
+        slug: "climate",
+        label: "Climate",
+        value: "Subtropical to Alpine",
+      },
+      {
+        id: 4,
+        slug: "location",
+        label: "Location",
+        value: "Birgunj, Madhesh Province, Nepal",
+      },
+      {
+        id: 5,
+        slug: "capital",
+        label: "Capital",
+        value: "Kathmandu",
+      },
+      {
+        id: 6,
+        slug: "currency",
+        label: "Currency",
+        value: "Nepalese Rupee (NPR)",
+      },
+      {
+        id: 7,
+        slug: "travel-time",
+        label: "Travel Time From Delhi",
+        value: "Approx. 8–10 Hours (By Road)",
+      },
+      {
+        id: 8,
+        slug: "time-difference",
+        label: "Time Difference",
+        value: "+15 Minutes IST",
+      },
+      {
+        id: 9,
+        slug: "student-count",
+        label: "International Students",
+        value: "500+",
+      },
+      {
+        id: 10,
+        slug: "origin-countries",
+        label: "Students From Countries",
+        value: ["India", "Bangladesh", "Sri Lanka", "Nepal", "Bhutan"],
+      },
+      {
+        id: 11,
+        slug: "languages",
+        label: "Languages Spoken",
+        value: "Nepali, Hindi, English",
+      },
+      {
+        id: 12,
+        slug: "academic-year",
+        label: "Academic Session",
+        value: "August – June",
+      },
+      {
+        id: 13,
+        slug: "course-duration",
+        label: "Course Duration",
+        value: "5.5 Years Including Internship",
+      },
+      {
+        id: 14,
+        slug: "established",
+        label: "Established",
+        value: "1996",
+      },
+      {
+        id: 15,
+        slug: "recognition",
+        label: "Recognitions",
+        value: "NMC, WHO, Tribhuvan University",
+      },
+    ],
+  },
+  {
+    id: "uni-2",
+
+    slug: "manipal-medical-college-nepal",
+
+    name: "Manipal College of Medical Sciences (MCOMS), Pokhara, Nepal",
+
+    location: "Pokhara, Nepal",
+
+    image: "/collegegroups/Nepal/manipall.webp",
+
+    logo: "/collegegroups/Nepal/manipall.webp",
+
+    title: "Manipal College of Medical Sciences (MCOMS), Pokhara, Nepal",
+
+    desc: "Manipal College of Medical Sciences (MCOMS) is one of the most prestigious private medical colleges in Nepal, located in Pokhara. Affiliated with Kathmandu University, MCOMS is part of the renowned Manipal Education group and offers a globally recognized MBBS program with world-class infrastructure, experienced faculty, and extensive clinical training.",
+
+    author: "Topson Education",
+
+    category: "University In Nepal",
+
+    date: "January 25, 2025",
+
+    collegeimg: "/collegegroups/Nepal/manipall.webp",
+
+    collegeShowPics: [
+      "/collegegroups/Manipal/manipal1.jpg",
+      "/collegegroups/Manipal/manipal2.jpg",
+      "/collegegroups/Manipal/manipal3.jpg",
+    ],
+
+    righttitle: "Topson Education",
+
+    rightdescription:
+      "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, university selection, and personalized counseling for medical aspirants.",
+
+    rightimage: "/collegegroups/Nepal/manipall.webp",
+
+    rightlist: ["MBBS In Nepal", "MBBS Abroad"],
+
+    rightlistlink: [
+      {
+        label: "Nepal National Medical College",
+        slug: "nepal-national-medical-college",
+      },
+    ],
+
+    guidanceCard: {
+      image: "/collegegroups/Nepal/manipall.webp",
+
+      title: "Expert Guidance For MBBS In Nepal",
+
+      description:
+        "Get complete support for MBBS admissions in Nepal including university selection, documentation, visa processing, education loan guidance, and student counseling.",
+
+      buttonText: "Get Free Counseling",
+    },
+
+    tags: [
+      { label: "Facebook", link: "#" },
+      { label: "Twitter", link: "#" },
+      { label: "LinkedIn", link: "#" },
+      { label: "WhatsApp", link: "#" },
+      { label: "Email", link: "#" },
+    ],
+
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Manipal College of Medical Sciences Nepal",
+
+        paragraphs: [
+          "Manipal College of Medical Sciences (MCOMS) offers internationally recognized medical education backed by the global reputation of the Manipal Education Group.",
+
+          "Students receive comprehensive clinical training through the affiliated Manipal Teaching Hospital in Pokhara, one of the largest hospitals in Nepal with modern medical facilities.",
+
+          "Graduates from MCOMS are eligible to appear for FMGE/NExT (India), USMLE, PLAB, AMC, and other international medical licensing examinations according to country-specific regulations.",
+
+          "The college encourages students to participate in research programs, postgraduate studies, specialization, and international medical exchange collaborations.",
+        ],
+      },
+
+      alumni: {
+        subheading: "Student Success & Alumni",
+
+        paragraphs: [
+          "MCOMS graduates are successfully working as doctors, specialists, and researchers in India, Nepal, the Middle East, USA, UK, and many other countries.",
+
+          "The college focuses on developing strong clinical skills, research aptitude, communication abilities, and professional medical ethics among students.",
+        ],
+      },
+
+      loan: {
+        title: "Education Loan Support For Indian Students",
+
+        intro:
+          "Students planning to study MBBS at Manipal College of Medical Sciences, Nepal can apply for education loans through public and private sector banks.",
+
+        eligibility: {
+          subheading: "Eligibility",
+
+          points: [
+            "Admission confirmation from Manipal College of Medical Sciences, Nepal.",
+            "Valid NEET qualification for Indian students.",
+            "Required academic and financial documents.",
+          ],
+        },
+
+        amount: {
+          subheading: "Loan Coverage",
+
+          text: "Education loans may cover tuition fees, hostel accommodation, travel expenses, insurance, and other educational costs.",
+        },
+
+        documents: {
+          subheading: "Documents Required",
+
+          list: [
+            {
+              heading: "NEET Scorecard:",
+              child: "(mandatory for Indian students).",
+            },
+            {
+              heading: "Admission Letter:",
+              child: "Issued by the college.",
+            },
+            {
+              heading: "Passport:",
+              child: "",
+            },
+            {
+              heading: "Academic Certificates:",
+              child: "10th & 12th mark sheets.",
+            },
+            {
+              heading: "Bank Statements:",
+              child: "Of sponsor or co-applicant.",
+            },
+            {
+              heading: "Income Proof:",
+              child: "",
+            },
+          ],
+        },
+
+        interest: {
+          subheading: "Interest & Repayment",
+
+          text: "Interest rates and repayment terms vary according to the selected bank and loan scheme.",
+        },
+
+        collateral: {
+          subheading: "Collateral",
+
+          text: "Collateral requirements depend on the loan amount and lender policies.",
+        },
+
+        processing: {
+          subheading: "Loan Processing",
+
+          text: "Students should complete all required documentation early for faster loan approval.",
+        },
+
+        assistance: {
+          subheading: "Admission Assistance",
+
+          text: "Topson Education provides complete admission support, visa guidance, documentation assistance, and education loan counseling.",
+        },
+      },
+
+      faq: {
+        title: "FAQs on Manipal College of Medical Sciences (MCOMS), Pokhara, Nepal",
+
+        text: "Find answers to common questions related to MBBS admissions, fees, eligibility, hostel facilities, student life, and career opportunities at Manipal College of Medical Sciences Nepal.",
+      },
+    },
+
+    tableheder: "Quick Highlights About Manipal College of Medical Sciences (MCOMS), Pokhara",
+
+    tableData: [
+      {
+        id: 1,
+        slug: "population",
+        label: "Population",
+        value: "30 Million+",
+      },
+      {
+        id: 2,
+        slug: "exchange-rate",
+        label: "Exchange Rate",
+        value: "1 Nepalese Rupee ≈ ₹0.62 INR",
+      },
+      {
+        id: 3,
+        slug: "climate",
+        label: "Climate",
+        value: "Subtropical to Alpine",
+      },
+      {
+        id: 4,
+        slug: "location",
+        label: "Location",
+        value: "Pokhara, Gandaki Province, Nepal",
+      },
+      {
+        id: 5,
+        slug: "capital",
+        label: "Capital",
+        value: "Kathmandu",
+      },
+      {
+        id: 6,
+        slug: "currency",
+        label: "Currency",
+        value: "Nepalese Rupee (NPR)",
+      },
+      {
+        id: 7,
+        slug: "travel-time",
+        label: "Travel Time From Delhi",
+        value: "Approx. 10–12 Hours (By Road)",
+      },
+      {
+        id: 8,
+        slug: "time-difference",
+        label: "Time Difference",
+        value: "+15 Minutes IST",
+      },
+      {
+        id: 9,
+        slug: "student-count",
+        label: "International Students",
+        value: "1000+",
+      },
+      {
+        id: 10,
+        slug: "origin-countries",
+        label: "Students From Countries",
+        value: ["India", "Bangladesh", "Sri Lanka", "Bhutan", "Maldives"],
+      },
+      {
+        id: 11,
+        slug: "languages",
+        label: "Languages Spoken",
+        value: "Nepali, Hindi, English",
+      },
+      {
+        id: 12,
+        slug: "academic-year",
+        label: "Academic Session",
+        value: "August – June",
+      },
+      {
+        id: 13,
+        slug: "course-duration",
+        label: "Course Duration",
+        value: "5.5 Years Including Internship",
+      },
+      {
+        id: 14,
+        slug: "established",
+        label: "Established",
+        value: "1994",
+      },
+      {
+        id: 15,
+        slug: "recognition",
+        label: "Recognitions",
+        value: "NMC, WHO, Kathmandu University, FAIMER",
+      },
+    ],
+  },
+];

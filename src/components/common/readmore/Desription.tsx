@@ -8,6 +8,7 @@ import {
   uzbekistanUniversities,
   kyrgyzstanUniversities,
   russiaUniversities,
+  nepalUniversities,
 } from "@/data/universities";
 import InfoTable from "../countries/InfoTable";
 
@@ -18,6 +19,7 @@ const Description = () => {
     ...uzbekistanUniversities,
     ...kyrgyzstanUniversities,
     ...russiaUniversities,
+    ...nepalUniversities,
   ];
   const university = allUniversities.find((item) => item.slug === slug);
 
