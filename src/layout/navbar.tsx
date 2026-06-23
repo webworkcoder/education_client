@@ -75,6 +75,17 @@ const menuData: Record<string, MenuItem[]> = {
         />
       ),
     },
+    {
+      label: "Bangladesh",
+      href: "/countries/bangladesh",
+      icon: (
+        <img
+          src="/flags/bangladesh.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
   ],
   Universities: [
     {
@@ -116,6 +127,17 @@ const menuData: Record<string, MenuItem[]> = {
       icon: (
         <img
           src="/flags/nepal.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
+    {
+      label: "Bangladesh Universities",
+      href: "/universities/bangladeshuniversities",
+      icon: (
+        <img
+          src="/flags/bangladesh.png"
           alt=""
           className="w-5 h-5 rounded-full border object-cover"
         />
