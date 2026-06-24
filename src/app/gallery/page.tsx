@@ -1,11 +1,5 @@
-import React from 'react'
+import GalleryPage from "@/components/pages/GalleryPage";
 
-const page = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+export default function Page() {
+  return <GalleryPage />;
 }
-
-export default page
