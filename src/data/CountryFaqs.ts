@@ -11,7 +11,7 @@ export const CountryFaqs = [
   },
   {
     question: "Does Kuban State Medical University Have Programs In English?",
-    answer:
+    answer: 
       "Yes, KSMU offers MBBS programs in English for international students.",
   },
   {
