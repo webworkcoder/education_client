@@ -83,7 +83,7 @@ const TeamSection = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="absolute inset-0 w-full h-full object-fit object-top transition-transform duration-700 group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 />
                 {/* Overlay with socials */}
                 <div className="absolute inset-0 bg-[#0b2a5b]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
@@ -123,7 +123,7 @@ const TeamSection = () => {
           transition={{ delay: 0.5 }}
           className="text-center text-slate-400 text-sm font-medium mt-12"
         >
-          "Guiding students toward a successful medical future." —{" "}
+          "Guiding students toward a successful medical future.&#34; —{" "}
           <span className="text-[#0b2a5b] font-bold">Topson Education</span>
         </motion.p>
       </div>

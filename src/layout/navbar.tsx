@@ -275,7 +275,7 @@ export const Navbar = () => {
             className="h-10 md:h-14 w-auto object-contain"
           />
           <span className="block md:hidden text-sm font-bold text-[#0b2a5b]">
-            Topson Education
+            Topson Medical Education
           </span>
         </Link>
 
