@@ -4,13 +4,28 @@ import React from "react";
 import { Header, Paragraph, Points, SubHeading } from "./AllTags";
 import BannerImage from "./BannerImage";
 import { useParams } from "next/navigation";
-import { uzbekistanUniversities, kyrgyzstanUniversities } from "@/data/universities";
+import {
+  uzbekistanUniversities,
+  kyrgyzstanUniversities,
+  russiaUniversities,
+  nepalUniversities,
+  bangladeshUniversities,
+  georgiaUniversities,
+} from "@/data/universities";
 import InfoTable from "../countries/InfoTable";
+import FeeTable from "../countries/FeeTable";
 
 const Description = () => {
   const params = useParams();
   const slug = Array.isArray(params?.slug) ? params.slug[0] : params?.slug;
-  const allUniversities = [...uzbekistanUniversities, ...kyrgyzstanUniversities];
+  const allUniversities = [
+    ...uzbekistanUniversities,
+    ...kyrgyzstanUniversities,
+    ...russiaUniversities,
+    ...nepalUniversities,
+    ...bangladeshUniversities,
+    ...georgiaUniversities,
+  ];
   const university = allUniversities.find((item) => item.slug === slug);
 
   if (!university) {
@@ -31,13 +46,17 @@ const Description = () => {
         <Paragraph key={i} para={para} />
       ))}
 
-      {/* Alumni */}
+      {/* Alumni */}relative mb-6 mt-8 group
       <SubHeading subheading={content.alumni.subheading} />
       {content.alumni.paragraphs.map((para, i) => (
         <Paragraph key={i} para={para} />
       ))}
       <Header title={university.tableheder} />
       <InfoTable data={university.tableData} />
+      {"feeTable" in university && (
+       
+        <FeeTable {...(university as any).feeTable} />
+      )}
 
       {/* Loan */}
       <Header title={content.loan.title} />

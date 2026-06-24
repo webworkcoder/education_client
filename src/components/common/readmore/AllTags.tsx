@@ -24,7 +24,7 @@ type ParagraphProps = {
 
 export const Paragraph = ({ para }: ParagraphProps) => {
   return (
-    <p className="text-[15px] md:text-base text-gray-600 mb-5 leading-0.5 font-medium opacity-90">
+    <p className="text-[15px] md:text-base text-gray-600 mb-5 leading-relaxed font-medium opacity-90">
       {para}
     </p>
   );

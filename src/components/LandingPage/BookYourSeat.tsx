@@ -332,20 +332,7 @@ const BookYourSeat = () => {
                     )}
                   </button>
 
-                  <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100">
-                    <div className="flex items-center gap-2">
-                      <ShieldCheck className="w-4 h-4 text-green-500" />
-                      <span className="text-[9px] md:text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
-                        Verified by Razorpay
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-lg">
-                      <div className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
-                      <span className="text-[10px] md:text-xs font-bold text-[#0b2a5b]">
-                        Fee Payment via Razorpay
-                      </span>
-                    </div>
-                  </div>
+                
                 </form>
                 )}
               </div>

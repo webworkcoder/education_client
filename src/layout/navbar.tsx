@@ -32,6 +32,17 @@ const menuData: Record<string, MenuItem[]> = {
   ],
   Countries: [
     {
+      label: "Rusia ",
+      href: "/countries/russia",
+      icon: (
+        <img
+          src="/flags/russia.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
+    {
       label: "Kyrzasthan ",
       href: "/countries/kyrzasthan",
       icon: (
@@ -53,8 +64,52 @@ const menuData: Record<string, MenuItem[]> = {
         />
       ),
     },
+    {
+      label: "Nepal",
+      href: "/countries/nepal",
+      icon: (
+        <img
+          src="/flags/nepal.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
+    {
+      label: "Bangladesh",
+      href: "/countries/bangladesh",
+      icon: (
+        <img
+          src="/flags/bangladesh.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
+    {
+      label: "Georgia",
+      href: "/countries/georgia",
+      icon: (
+        <img
+          src="/flags/georgia.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
   ],
   Universities: [
+    {
+      label: "Russia Universities",
+      href: "/universities/russiauniversities",
+      icon: (
+        <img
+          src="/flags/russia.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
     {
       label: "Kyrzasthan Universities",
       href: "/universities/kyrgyzstanuniversities",
@@ -77,6 +132,39 @@ const menuData: Record<string, MenuItem[]> = {
         />
       ),
     },
+    {
+      label: "Nepal Universities",
+      href: "/universities/nepaluniversities",
+      icon: (
+        <img
+          src="/flags/nepal.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
+    {
+      label: "Bangladesh Universities",
+      href: "/universities/bangladeshuniversities",
+      icon: (
+        <img
+          src="/flags/bangladesh.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
+    {
+      label: "Georgia Universities",
+      href: "/universities/georgiauniversities",
+      icon: (
+        <img
+          src="/flags/georgia.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
   ],
 };
 
@@ -86,8 +174,9 @@ const navLinks = [
   { name: "Courses", href: "#", hasMenu: true },
   { name: "Countries", href: "#", hasMenu: true },
   { name: "Universities", href: "#", hasMenu: true },
-  { name: "Blog", href: "/blog",},
+  { name: "Blog", href: "/blog" },
   { name: "Contact Us", href: "/contact" },
+  { name: "Gallery", href: "/gallery" },
 ];
 
 // --- DESKTOP HOVER POPOVER ---
