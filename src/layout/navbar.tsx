@@ -86,6 +86,17 @@ const menuData: Record<string, MenuItem[]> = {
         />
       ),
     },
+    {
+      label: "Georgia",
+      href: "/countries/georgia",
+      icon: (
+        <img
+          src="/flags/georgia.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
   ],
   Universities: [
     {
@@ -138,6 +149,17 @@ const menuData: Record<string, MenuItem[]> = {
       icon: (
         <img
           src="/flags/bangladesh.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
+    {
+      label: "Georgia Universities",
+      href: "/universities/georgiauniversities",
+      icon: (
+        <img
+          src="/flags/georgia.png"
           alt=""
           className="w-5 h-5 rounded-full border object-cover"
         />
