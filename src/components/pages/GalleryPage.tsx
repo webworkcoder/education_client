@@ -14,9 +14,27 @@ type GalleryItem = {
 const galleryItems: GalleryItem[] = [
   // Team
   { src: "/founder/ceo.jpeg", title: "CEO & Founder", category: "Team" },
-  // { src: "/founder/team_head.jpeg", title: "Dr Madhurendar Kumar – Team Head Bihar", category: "Team" },
-  // { src: "/founder/uttrakhand_head.jpeg", title: "Dr Anshu Tiwari – Team Head Uttrakhand", category: "Team" },
   { src: "/founder/director.jpeg", title: "Dr Masroor – Director Management", category: "Team" },
+  // Others
+  { src: "/images/1.jpeg", title: "groups", category: "Others" },
+  { src: "/images/2.jpg", title: "groups", category: "Others" },
+  { src: "/images/3.jpg", title: "groups", category: "Others" },
+  { src: "/images/4.jpg", title: "groups", category: "Others" },
+  { src: "/images/5.jpeg", title: "groups", category: "Others" },
+  { src: "/images/8.jpg", title: "groups", category: "Others" },
+  { src: "/images/9.jpg", title: "groups", category: "Others" },
+  { src: "/images/10.jpg", title: "groups", category: "Others" },
+  { src: "/images/11.jpg", title: "groups", category: "Others" },
+  { src: "/images/13.jpg", title: "groups", category: "Others" },
+  { src: "/images/14.jpg", title: "groups", category: "Others" },
+  { src: "/images/15.jpg", title: "groups", category: "Others" },
+  { src: "/images/16.jpg", title: "groups", category: "Others" },
+  { src: "/images/17.jpg", title: "groups", category: "Others" },
+  { src: "/images/18.jpg", title: "groups", category: "Others" },
+  { src: "/images/19.jpg", title: "groups", category: "Others" },
+  { src: "/images/20.jpg", title: "groups", category: "Others" },
+  { src: "/images/21.jpg", title: "groups", category: "Others" },
+  { src: "/images/22.jpg", title: "groups", category: "Others" },
 
   // Russia
   { src: "/collegegroups/Russia/Permuniversity.jpg", title: "Perm State Medical University", category: "Russia" },
@@ -44,15 +62,18 @@ const galleryItems: GalleryItem[] = [
   { src: "/collegegroups/Georgia/NewVision.jpg", title: "New Vision University", category: "Georgia" },
 
   // Uzbekistan
+  { src: "/college/samarkand.jpg", title: "Karshi State Medical University", category: "Uzbekistan" },
   { src: "/collegegroups/Tashkent/Tashkent1.jpeg", title: "Tashkent Medical Academy", category: "Uzbekistan" },
   { src: "/collegegroups/Tashkent/Tashkent2.jpeg", title: "Tashkent Medical Academy", category: "Uzbekistan" },
   { src: "/collegegroups/Tashkent/Tashkent3.jpeg", title: "Tashkent Medical Academy", category: "Uzbekistan" },
   { src: "/collegegroups/Samarkand/samarkand1.jpeg", title: "Samarkand State Medical University", category: "Uzbekistan" },
   { src: "/collegegroups/Samarkand/samarkand2.jpeg", title: "Samarkand State Medical University", category: "Uzbekistan" },
   { src: "/collegegroups/Samarkand/samarkand3.jpeg", title: "Samarkand State Medical University", category: "Uzbekistan" },
+ 
+
 ];
 
-const categories = ["All", "Team", "Russia", "Nepal", "Bangladesh", "Georgia", "Uzbekistan"];
+const categories = ["All", "Team", "Russia", "Nepal", "Bangladesh", "Georgia", "Uzbekistan","Others"];
 
 const GalleryPage = () => {
   const [active, setActive] = useState("All");
@@ -147,16 +168,18 @@ const GalleryPage = () => {
                   alt={item.title}
                   className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0b2a5b]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
-                  <div>
-                    <span className="text-[10px] font-bold text-blue-200 uppercase tracking-widest">
-                      {item.category}
-                    </span>
-                    <p className="text-white text-sm font-semibold leading-tight">
-                      {item.title}
-                    </p>
+                {item.category !== "Others" && (
+                  <div className="absolute inset-0 bg-linear-to-t from-[#0b2a5b]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                    <div>
+                      <span className="text-[10px] font-bold text-blue-200 uppercase tracking-widest">
+                        {item.category}
+                      </span>
+                      <p className="text-white text-sm font-semibold leading-tight">
+                        {item.title}
+                      </p>
+                    </div>
                   </div>
-                </div>
+                )}
               </motion.div>
             ))}
           </AnimatePresence>

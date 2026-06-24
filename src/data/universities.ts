@@ -577,6 +577,154 @@ export const uzbekistanUniversities = [
       },
     ],
   },
+  {
+    id: "uni-6",
+    slug: "karshi-state-medical-university",
+    name: "Karshi State Medical University, Uzbekistan",
+    location: "Karshi, Uzbekistan",
+    image: "/college/karshi.jpg",
+    logo: "/college/karshi.jpg",
+
+    title: "Karshi State Medical University, Uzbekistan",
+
+    desc: "Karshi State Medical University (also known as Karshi State University Faculty of Medicine) is one of the recognized government medical institutions in Uzbekistan offering affordable MBBS education to international students with quality clinical training and experienced faculty.",
+
+    author: "Topson Education",
+
+    category: "University In Uzbekistan",
+
+    date: "January 25, 2025",
+
+    collegeimg: "/college/karshi.jpg",
+
+    collegeShowPics: [
+      "/collegegroups/Samarkand/samarkand1.jpeg",
+      "/collegegroups/Samarkand/samarkand2.jpeg",
+      "/collegegroups/Samarkand/samarkand3.jpeg",
+    ],
+
+    righttitle: "Topson Education",
+
+    rightdescription:
+      "Trusted MBBS abroad consultancy offering expert admission guidance, visa assistance, university selection, and personalized counseling for medical aspirants.",
+
+    rightimage: "/college/karshi.jpg",
+
+    rightlist: ["MBBS In Uzbekistan", "MBBS Abroad"],
+
+    rightlistlink: [
+      { label: "Tashkent State Medical University", slug: "tashkent-state-medical-university" },
+      { label: "Samarkand State Medical Institute", slug: "samarkand-state-medical-institute" },
+      { label: "Andijan State Medical Institute", slug: "andijan-state-medical-institute" },
+      { label: "Bukhara State Medical University", slug: "bukhara-state-medical-university" },
+    ],
+
+    guidanceCard: {
+      image: "/college/karshi.jpg",
+      title: "Expert Guidance For MBBS In Uzbekistan",
+      description:
+        "Get complete support for MBBS admissions in Uzbekistan including university selection, documentation, visa processing, and student counseling.",
+      buttonText: "Get Free Counseling",
+    },
+
+    tags: [
+      { label: "Facebook", link: "#" },
+      { label: "Twitter", link: "#" },
+      { label: "LinkedIn", link: "#" },
+      { label: "WhatsApp", link: "#" },
+      { label: "Email", link: "#" },
+    ],
+
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Karshi State Medical University",
+        paragraphs: [
+          "Karshi State Medical University offers a globally recognized MBBS program with strong emphasis on clinical training and practical medical education.",
+          "Students gain hands-on experience in affiliated hospitals and healthcare centers equipped with modern medical facilities.",
+          "Graduates are eligible to appear for international licensing examinations including FMGE/NExT, USMLE, PLAB, AMC, and other equivalent exams as per country requirements.",
+          "The university also provides opportunities for postgraduate education, specialization, and medical research.",
+        ],
+      },
+
+      alumni: {
+        subheading: "Student Success & Alumni",
+        paragraphs: [
+          "Alumni of Karshi State Medical University are practicing medicine across India, Uzbekistan, and other parts of the world.",
+          "The university's curriculum is designed to build clinical skills, professional ethics, and global medical competence.",
+        ],
+      },
+
+      loan: {
+        title: "Education Loan Support For Indian Students",
+        intro:
+          "Students planning to pursue MBBS at Karshi State Medical University can apply for education loans through leading Indian banks and financial institutions.",
+        eligibility: {
+          subheading: "Eligibility",
+          points: [
+            "Admission confirmation from Karshi State Medical University.",
+            "Valid NEET qualification for Indian students.",
+            "Academic and financial documents as required by the lender.",
+          ],
+        },
+        amount: {
+          subheading: "Loan Coverage",
+          text: "Education loans may cover tuition fees, hostel charges, travel expenses, insurance, visa costs, and other academic expenses.",
+        },
+        documents: {
+          subheading: "Documents Required",
+          list: [
+            { heading: "NEET Scorecard:", child: "(mandatory for Indian students)." },
+            { heading: "Admission Letter:", child: "Issued by the university." },
+            { heading: "Passport:", child: "" },
+            { heading: "Academic Certificates:", child: "10th & 12th mark sheets." },
+            { heading: "Bank Statements:", child: "Of sponsor or co-applicant." },
+            { heading: "Income Proof:", child: "" },
+          ],
+        },
+        interest: {
+          subheading: "Interest & Repayment",
+          text: "Interest rates and repayment schedules vary depending on the selected bank or financial institution.",
+        },
+        collateral: {
+          subheading: "Collateral",
+          text: "Collateral requirements depend on the loan amount and lender policies.",
+        },
+        processing: {
+          subheading: "Loan Processing",
+          text: "Students are advised to complete documentation early for faster loan approval.",
+        },
+        assistance: {
+          subheading: "Admission Assistance",
+          text: "Topson Education provides complete admission guidance and education loan assistance for MBBS aspirants.",
+        },
+      },
+
+      faq: {
+        title: "FAQs on Karshi State Medical University, Uzbekistan",
+        text: "Find answers to common questions related to MBBS admissions, fees, eligibility, hostel facilities, student life, and career opportunities at Karshi State Medical University.",
+      },
+    },
+
+    tableheder: "Quick Highlights About Karshi State Medical University, Uzbekistan",
+
+    tableData: [
+      { id: 1, slug: "population", label: "Population", value: "36 Million+" },
+      { id: 2, slug: "exchange-rate", label: "Exchange Rate", value: "1 UZS ≈ 0.000079 USD" },
+      { id: 3, slug: "climate", label: "Climate", value: "Continental Climate" },
+      { id: 4, slug: "location", label: "Location", value: "Karshi, Kashkadarya Region, Uzbekistan" },
+      { id: 5, slug: "capital", label: "Capital", value: "Tashkent" },
+      { id: 6, slug: "currency", label: "Currency", value: "Uzbekistani Som (UZS)" },
+      { id: 7, slug: "travel-time", label: "Travel Time From Delhi", value: "Approx. 4–5 Hours" },
+      { id: 8, slug: "time-difference", label: "Time Difference", value: "+2:30 Hours IST" },
+      { id: 9, slug: "student-count", label: "International Students", value: "1000+" },
+      { id: 10, slug: "origin-countries", label: "Students From Countries", value: ["India", "Nepal", "Bangladesh", "Pakistan"] },
+      { id: 11, slug: "languages", label: "Languages Spoken", value: "Uzbek, Russian, English" },
+      { id: 12, slug: "academic-year", label: "Academic Session", value: "September – June" },
+      { id: 13, slug: "course-duration", label: "Course Duration", value: "6 Years Including Internship" },
+      { id: 14, slug: "established", label: "Established", value: "1992" },
+      { id: 15, slug: "recognition", label: "Recognitions", value: "NMC, WHO, FAIMER, WDOMS" },
+    ],
+  },
 ];
 
 export const kyrgyzstanUniversities = [
