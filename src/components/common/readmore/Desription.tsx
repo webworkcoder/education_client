@@ -13,6 +13,7 @@ import {
   georgiaUniversities,
 } from "@/data/universities";
 import InfoTable from "../countries/InfoTable";
+import FeeTable from "../countries/FeeTable";
 
 const Description = () => {
   const params = useParams();
@@ -52,6 +53,10 @@ const Description = () => {
       ))}
       <Header title={university.tableheder} />
       <InfoTable data={university.tableData} />
+      {"feeTable" in university && (
+       
+        <FeeTable {...(university as any).feeTable} />
+      )}
 
       {/* Loan */}
       <Header title={content.loan.title} />

@@ -1442,6 +1442,73 @@ export const russiaUniversities = [
       },
     },
 
+    feeTable: {
+      title: "Perm State Medical University – Fee Structure (Year-wise)",
+      headers: ["", "1st Year", "2nd Year", "3rd Year", "4th Year", "5th Year", "6th Year"],
+      rows: [
+        {
+          label: "Tuition Fee",
+          values: ["6,500 $", "6,500 $", "6,500 $", "6,500 $", "6,500 $", "6,500 $"],
+        },
+        {
+          label: "Hostel Fee",
+          values: [
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+          ],
+        },
+        {
+          label: "Medical Insurance",
+          values: [
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+          ],
+        },
+        {
+          label: "Visa Extension, Biometric, Narcotics, HIV, Syphilis, Document Translation & Notary",
+          values: [
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+          ],
+        },
+        {
+          label: "Mess Fee",
+          values: ["1,500 $", "Optional", "Optional", "Optional", "Optional", "Optional"],
+        },
+        {
+          label: "Administrative Charge",
+          values: ["1,500 $", "-", "-", "-", "-", "-"],
+        },
+        {
+          label: "Total Fee",
+          values: [
+            "9,500 $ + 15,000 ₽",
+            "6,500 $ + 15,000 ₽",
+            "6,500 $ + 15,000 ₽",
+            "6,500 $ + 15,000 ₽",
+            "6,500 $ + 15,000 ₽",
+            "6,500 $ + 15,000 ₽",
+          ],
+          isTotal: true,
+        },
+      ],
+      footnotes: [
+        { text: "Grand Total Fee – 42,000 $ + 90,000 ₽", style: "blue" },
+      ],
+    },
+
     tableheder:
       "Quick Highlights About Perm State Medical University, Russia",
 
@@ -1740,6 +1807,73 @@ export const russiaUniversities = [
         text:
           "Find answers to common questions related to MBBS admissions, eligibility, tuition fees, hostel facilities, student life, and career opportunities at Orenburg State Medical University.",
       },
+    },
+
+    feeTable: {
+      title: "Orenburg State Medical University – Fee Structure (Year-wise)",
+      headers: ["", "1st Year", "2nd Year", "3rd Year", "4th Year", "5th Year", "6th Year"],
+      rows: [
+        {
+          label: "Tuition Fee",
+          values: ["6,500 $", "6,500 $", "6,500 $", "6,500 $", "6,500 $", "6,500 $"],
+        },
+        {
+          label: "Hostel Fee",
+          values: [
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+          ],
+        },
+        {
+          label: "Medical Insurance",
+          values: [
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+          ],
+        },
+        {
+          label: "Visa Extension, Biometric, Narcotics, HIV, Syphilis, Document Translation & Notary",
+          values: [
+            "16,000 ₽ Approx",
+            "16,000 ₽ Approx",
+            "16,000 ₽ Approx",
+            "16,000 ₽ Approx",
+            "16,000 ₽ Approx",
+            "16,000 ₽ Approx",
+          ],
+        },
+        {
+          label: "Mess Fee",
+          values: ["1,500 $", "Optional", "Optional", "Optional", "Optional", "Optional"],
+        },
+        {
+          label: "Administrative Charge",
+          values: ["1,500 $", "-", "-", "-", "-", "-"],
+        },
+        {
+          label: "Total Fee",
+          values: [
+            "9,500 $ + 16,000 ₽",
+            "6,500 $ + 16,000 ₽",
+            "6,500 $ + 16,000 ₽",
+            "6,500 $ + 16,000 ₽",
+            "6,500 $ + 16,000 ₽",
+            "6,500 $ + 16,000 ₽",
+          ],
+          isTotal: true,
+        },
+      ],
+      footnotes: [
+        { text: "Grand Total Fee – 42,000 $ + 96,000 ₽", style: "blue" },
+      ],
     },
 
     tableheder:
@@ -2043,6 +2177,73 @@ export const russiaUniversities = [
       },
     },
 
+    feeTable: {
+      title: "Mari State University – Fees Structure 2026-27",
+      headers: ["", "1st Year", "2nd Year", "3rd Year", "4th Year", "5th Year", "6th Year"],
+      rows: [
+        {
+          label: "Tuition Fee",
+          values: ["6,500 $", "5,500 $", "5,500 $", "5,500 $", "5,500 $", "5,500 $"],
+        },
+        {
+          label: "Hostel Fee*",
+          values: [
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+          ],
+        },
+        {
+          label: "Medical Insurance",
+          values: [
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+          ],
+        },
+        {
+          label: "Visa Extension, Biometric, Narcotics, HIV, Syphilis, Document Translation & Notary",
+          values: [
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+          ],
+        },
+        {
+          label: "Mess Fee",
+          values: ["1,500 $", "Optional", "Optional", "Optional", "Optional", "Optional"],
+        },
+        {
+          label: "Administrative Charge",
+          values: ["1,500 $", "-", "-", "-", "-", "-"],
+        },
+        {
+          label: "Total Fee",
+          values: [
+            "9,500 $ + 15,000 ₽",
+            "5,500 $ + 15,000 ₽",
+            "5,500 $ + 15,000 ₽",
+            "5,500 $ + 15,000 ₽",
+            "5,500 $ + 15,000 ₽",
+            "5,500 $ + 15,000 ₽",
+          ],
+          isTotal: true,
+        },
+      ],
+      footnotes: [
+        { text: "Grand Total Fee – 37,000 $ + 90,000 ₽", style: "blue" },
+      ],
+    },
+
     tableheder:
       "Quick Highlights About Mari State University, Russia",
 
@@ -2341,6 +2542,73 @@ export const russiaUniversities = [
         text:
           "Find answers to common questions related to MBBS admissions, fees, eligibility, hostel facilities, student life, and career opportunities at Kalmyk State University.",
       },
+    },
+
+    feeTable: {
+      title: "Kalmyk State University – Fee Structure (Year-wise)",
+      headers: ["", "1st Year", "2nd Year", "3rd Year", "4th Year", "5th Year", "6th Year"],
+      rows: [
+        {
+          label: "Tuition Fee",
+          values: ["5,000 $", "3,500 $", "3,500 $", "3,500 $", "3,500 $", "3,500 $"],
+        },
+        {
+          label: "Hostel Fee",
+          values: [
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+          ],
+        },
+        {
+          label: "Medical Insurance",
+          values: [
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+          ],
+        },
+        {
+          label: "Visa Extension, Biometric, Narcotics, HIV, Syphilis, Document Translation & Notary",
+          values: [
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+            "15,000 ₽ Approx",
+          ],
+        },
+        {
+          label: "Mess Fee",
+          values: ["1,500 $", "Optional", "Optional", "Optional", "Optional", "Optional"],
+        },
+        {
+          label: "Administrative Charge",
+          values: ["1,500 $", "-", "-", "-", "-", "-"],
+        },
+        {
+          label: "Total Fee",
+          values: [
+            "8,000 $ + 15,000 ₽",
+            "3,500 $ + 15,000 ₽",
+            "3,500 $ + 15,000 ₽",
+            "3,500 $ + 15,000 ₽",
+            "3,500 $ + 15,000 ₽",
+            "3,500 $ + 15,000 ₽",
+          ],
+          isTotal: true,
+        },
+      ],
+      footnotes: [
+        { text: "Grand Total Fee – 25,500 $ + 90,000 ₽", style: "blue" },
+      ],
     },
 
     tableheder:
@@ -2644,6 +2912,60 @@ export const russiaUniversities = [
       },
     },
 
+    feeTable: {
+      title: "Tver State Medical University – Fee Structure (Year-wise)",
+      headers: ["", "1st Year", "2nd Year", "3rd Year", "4th Year", "5th Year", "6th Year"],
+      rows: [
+        {
+          label: "Tuition Fee",
+          values: ["4,30,000* Rub", "4,30,000* Rub", "4,30,000* Rub", "4,30,000* Rub", "4,30,000* Rub", "4,30,000* Rub"],
+        },
+        {
+          label: "Hostel Fee#",
+          values: ["66,000* Rub", "66,000* Rub", "66,000* Rub", "66,000* Rub", "66,000* Rub", "66,000* Rub"],
+        },
+        {
+          label: "Medical Insurance",
+          values: ["10,000* Rub", "10,000* Rub", "10,000* Rub", "10,000* Rub", "10,000* Rub", "10,000* Rub"],
+        },
+        {
+          label: "Visa Extension, Biometric, Medical Checkup",
+          values: [
+            "15,000* ₽ Approx",
+            "15,000* ₽ Approx",
+            "15,000* ₽ Approx",
+            "15,000* ₽ Approx",
+            "15,000* ₽ Approx",
+            "15,000* ₽ Approx",
+          ],
+        },
+        {
+          label: "Administrative Charge",
+          values: ["1,500 $", "-", "-", "-", "-", "-"],
+        },
+        {
+          label: "Mess Fee",
+          values: ["1,500 $", "", "", "", "", ""],
+        },
+        {
+          label: "Total Fee",
+          values: [
+            "3,000 $ + 5,21,000 ₽",
+            "5,21,000 ₽",
+            "5,21,000 ₽",
+            "5,21,000 ₽",
+            "5,21,000 ₽",
+            "5,21,000 ₽",
+          ],
+          isTotal: true,
+        },
+      ],
+      footnotes: [
+        { text: "PRIVATE HOSTEL FEE : 1500 $ PER YEAR", style: "salmon" },
+        { text: "Grand Total Fee – 3,000 $ + 31,26,000* ₽", style: "blue" },
+      ],
+    },
+
     tableheder:
       "Quick Highlights About Tver State Medical University, Russia",
 
@@ -2942,6 +3264,73 @@ export const russiaUniversities = [
         text:
           "Find answers to common questions related to MBBS admissions, eligibility, fees, hostel facilities, student life, and career opportunities at Pskov State University.",
       },
+    },
+
+    feeTable: {
+      title: "Pskov State University – Fee Structure (Year-wise)",
+      headers: ["", "1st Year", "2nd Year", "3rd Year", "4th Year", "5th Year", "6th Year"],
+      rows: [
+        {
+          label: "Tuition Fee",
+          values: ["4,500 $", "4,500 $", "4,500 $", "4,500 $", "4,500 $", "4,500 $"],
+        },
+        {
+          label: "Hostel Fee",
+          values: [
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+          ],
+        },
+        {
+          label: "Medical Insurance",
+          values: [
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+            "Included in tuition fee",
+          ],
+        },
+        {
+          label: "Visa Extension, Biometric, Narcotics, HIV, Syphilis, Document Translation & Notary",
+          values: [
+            "10,000 ₽ Approx",
+            "10,000 ₽ Approx",
+            "10,000 ₽ Approx",
+            "10,000 ₽ Approx",
+            "10,000 ₽ Approx",
+            "10,000 ₽ Approx",
+          ],
+        },
+        {
+          label: "Mess Fee",
+          values: ["1,500 $", "Optional", "Optional", "Optional", "Optional", "Optional"],
+        },
+        {
+          label: "Administrative Charge",
+          values: ["1,500 $", "-", "-", "-", "-", "-"],
+        },
+        {
+          label: "Total Fee",
+          values: [
+            "7,500 $ + 10,000 ₽",
+            "4,500 $ + 10,000 ₽",
+            "4,500 $ + 10,000 ₽",
+            "4,500 $ + 10,000 ₽",
+            "4,500 $ + 10,000 ₽",
+            "4,500 $ + 10,000 ₽",
+          ],
+          isTotal: true,
+        },
+      ],
+      footnotes: [
+        { text: "Grand Total Fee – 30,000 $ + 60,000 ₽", style: "blue" },
+      ],
     },
 
     tableheder:

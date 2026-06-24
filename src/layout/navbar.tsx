@@ -176,6 +176,7 @@ const navLinks = [
   { name: "Universities", href: "#", hasMenu: true },
   { name: "Blog", href: "/blog" },
   { name: "Contact Us", href: "/contact" },
+  { name: "Gallery", href: "/gallery" },
 ];
 
 // --- DESKTOP HOVER POPOVER ---
