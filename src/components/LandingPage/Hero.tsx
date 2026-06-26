@@ -1,9 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { ArrowUpRight, Sparkles, Stethoscope, CircleDot } from "lucide-react";
+import { useState, useEffect } from "react";
+
+const slideImages = [
+  "/doc1.jpeg",
+  "/doc2.jpeg",
+  "/images/1.jpeg",
+  "/images/2.jpg",
+  "/images/3.jpg",
+];
 const avtarcolleges = [
   "university/asian.jpg",
   "university/ISM.jpg",
@@ -12,6 +21,15 @@ const avtarcolleges = [
 ];
 
 const Hero = () => {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slideImages.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center bg-[#fcfdfe] pt-10 lg:pt-0 overflow-hidden">
       {/* --- ABSTRACT BACKGROUND ELEMENTS --- */}
@@ -95,7 +113,11 @@ const Hero = () => {
                   key={i}
                   className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden"
                 >
-                  <img src={src} alt={`College ${i + 1}`} className="w-full h-full object-cover object-center"/>
+                  <img
+                    src={src}
+                    alt={`College ${i + 1}`}
+                    className="w-full h-full object-cover object-center"
+                  />
                 </div>
               ))}
               <p className="ml-6 text-sm font-bold text-[#0b1f4d]">
@@ -111,14 +133,34 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="relative w-full rounded-none lg:rounded-[3rem] overflow-hidden rounded-3x shadow-2xl h-65 sm:h-95 md:h-125 lg:h-162
+            className="relative w-full   overflow-hidden rounded-3xl shadow-2xl h-65 sm:h-95 md:h-125
     "
           >
-            <img
-              src="/doc1.jpeg"
-              alt="Medical Students"
-              className="w-full h-full object-cover object-center"
-            />
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={current}
+                src={slideImages[current]}
+                alt="Medical Students"
+                className="w-full h-full object-cover object-center absolute inset-0"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.8 }}
+              />
+            </AnimatePresence>
+
+            {/* Dot indicators */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+              {slideImages.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrent(i)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    i === current ? "bg-white w-5" : "bg-white/50"
+                  }`}
+                />
+              ))}
+            </div>
 
             <div className="absolute inset-0 bg-gradient-to-tr from-[#0b1f4d]/40 to-transparent" />
           </motion.div>
