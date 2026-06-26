@@ -22,7 +22,7 @@ const AbroadLocations = () => {
             className="max-w-2xl"
           >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] font-bold tracking-[0.3em] text-xs uppercase mb-3 block">
-              Collage in Uzbekistan
+              College in Uzbekistan
             </span>
             <h2 className="text-3xl md:text-5xl font-black text-[#0b2a5b] leading-tight">
               Discover Global MBBS Opportunities <br />

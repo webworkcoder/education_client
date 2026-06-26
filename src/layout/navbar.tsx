@@ -32,7 +32,7 @@ const menuData: Record<string, MenuItem[]> = {
   ],
   Countries: [
     {
-      label: "Rusia ",
+      label: "Russia",
       href: "/countries/russia",
       icon: (
         <img
@@ -43,7 +43,7 @@ const menuData: Record<string, MenuItem[]> = {
       ),
     },
     {
-      label: "Kyrzasthan ",
+      label: "Kyrgyzstan",
       href: "/countries/kyrzasthan",
       icon: (
         <img
@@ -122,7 +122,7 @@ const menuData: Record<string, MenuItem[]> = {
       ),
     },
     {
-      label: "Kyrzasthan Universities",
+      label: "Kyrgyzstan Universities",
       href: "/universities/kyrgyzstanuniversities",
       icon: (
         <img
