@@ -6,6 +6,7 @@ import { Navbar } from "@/layout/navbar";
 import Footer from "@/layout/footer";
 import PageLoader from "@/components/common/PageLoader";
 import { Toaster } from "sonner";
+import { BsWhatsapp } from "react-icons/bs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -129,6 +130,18 @@ export default function RootLayout({
         </main>
 
         <Footer />
+
+        {/* WhatsApp Floating Button */}
+        <a
+          href="https://wa.me/919122029154"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat on WhatsApp"
+          className="fixed right-0 bottom-0 -translate-y-1/2 z-50 flex items-center gap-2 bg-green-700 p-4 rounded-full"
+        >
+         <BsWhatsapp className="w-5 h-5 text-white"/>
+         
+        </a>
       </body>
     </html>
   );
