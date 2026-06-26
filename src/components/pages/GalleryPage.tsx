@@ -14,7 +14,7 @@ type GalleryItem = {
 const galleryItems: GalleryItem[] = [
   // Team
   { src: "/founder/ceo.jpeg", title: "CEO & Founder", category: "Team" },
-  { src: "/founder/director.jpeg", title: "Dr Masroor – Director Management", category: "Team" },
+  { src: "/founder/director.jpeg", title: "Dr Saddam – Director and Co-Founder", category: "Team" },
   // Others
   { src: "/images/1.jpeg", title: "groups", category: "Others" },
   { src: "/images/2.jpg", title: "groups", category: "Others" },

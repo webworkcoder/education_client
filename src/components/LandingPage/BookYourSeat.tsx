@@ -21,7 +21,15 @@ const choosen = [
   "Complete Career Counseling",
 ];
 
-const options = [ "MBBS in Kazakhstan","MBBS in Kyrgyzstan",];
+const options = [
+  "MBBS in Russia",
+  "MBBS in Kyrgyzstan",
+  "MBBS in Uzbekistan",
+  "MBBS in Nepal",
+  "MBBS in Bangladesh",
+  "MBBS in Georgia",
+  "MBBS in Bosnia",
+];
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -61,6 +69,12 @@ const BookYourSeat = () => {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selected = e.target.files?.[0];
     if (!selected) return;
+    if (selected.type !== "application/pdf") {
+      setFileError("Only PDF files are allowed.");
+      e.target.value = "";
+      setFile(null);
+      return;
+    }
     if (selected.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
       setFileError(`File size must be under ${MAX_FILE_SIZE_MB}MB.`);
       e.target.value = "";
@@ -289,15 +303,16 @@ const BookYourSeat = () => {
                     </div>
                   </div>
 
-                  <div className="bg-slate-50 p-3 md:p-4 rounded-xl border border-dashed border-slate-300">
+                  <div className={`bg-slate-50 p-3 md:p-4 rounded-xl border border-dashed transition-colors ${fileError ? "border-red-400" : file ? "border-green-400" : "border-slate-300"}`}>
                     <div className="flex items-center gap-3 md:gap-4">
-                      <div className="p-2 bg-white rounded-lg shadow-sm shrink-0">
-                        <FileUp className="w-5 h-5 md:w-6 md:h-6 text-slate-400" />
+                      <div className={`p-2 rounded-lg shadow-sm shrink-0 ${file ? "bg-red-50" : "bg-white"}`}>
+                        <FileUp className={`w-5 h-5 md:w-6 md:h-6 ${file ? "text-red-500" : "text-slate-400"}`} />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className="text-[10px] font-bold text-black uppercase mb-1 truncate">
+                        <p className="text-[10px] font-bold text-black uppercase mb-1">
                           Upload Documents / Passport Copy
                         </p>
+                        <p className="text-[9px] text-slate-400 mb-1">PDF only · Max {MAX_FILE_SIZE_MB}MB</p>
                         <input
                           type="file"
                           accept=".pdf"
@@ -306,9 +321,26 @@ const BookYourSeat = () => {
                         />
                       </div>
                     </div>
+                    {file && !fileError && (
+                      <div className="mt-2 flex items-center gap-2 bg-red-50 border border-red-200 rounded-lg px-3 py-2">
+                        <span className="text-red-600 font-bold text-[10px] bg-red-100 px-1.5 py-0.5 rounded">PDF</span>
+                        <span className="text-slate-700 text-[11px] font-medium truncate flex-1">{file.name}</span>
+                        <span className="text-slate-400 text-[10px] shrink-0">
+                          {(file.size / 1024).toFixed(1)} KB
+                        </span>
+                        <button
+                          type="button"
+                          onClick={() => setFile(null)}
+                          className="text-slate-400 hover:text-red-500 transition-colors shrink-0 ml-1"
+                          aria-label="Remove file"
+                        >
+                          ✕
+                        </button>
+                      </div>
+                    )}
                     {fileError && (
-                      <p className="text-red-500 text-[10px] mt-1 font-bold">
-                        {fileError}
+                      <p className="text-red-500 text-[10px] mt-2 font-bold flex items-center gap-1">
+                        ⚠ {fileError}
                       </p>
                     )}
                   </div>
