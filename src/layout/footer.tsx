@@ -132,42 +132,52 @@ const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-3">
               {[
-                "About Company",
-                "MBBS Countries",
-                "Partner Universities",
-                "Admission Process",
-                "Success Stories",
+                { label: "Home", href: "/" },
+                { label: "Courses", href: "/courses" },
+                { label: "Gallery", href: "/gallery" },
+                { label: "Blog", href: "/blog" },
+                { label: "Contact Us", href: "/contact" },
               ].map((item) => (
-                <li key={item}>
+                <li key={item.label}>
                   <Link
-                    href="#"
+                    href={item.href}
                     className="text-gray-400 text-sm hover:text-blue-400 hover:translate-x-1 transition-all flex items-center gap-2"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-blue-900"></span>
-                    {item}
+                    {item.label}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* 3. Global Locations */}
+          {/* 3. Study Abroad */}
           <div>
             <h3 className="text-lg font-bold mb-6 text-white relative inline-block">
               Study Abroad
               <span className="absolute -bottom-1 left-0 w-8 h-1 bg-gradient-to-br from-[#1e4e96] to-[#2d68b3] rounded-full"></span>
             </h3>
-            <div className="grid grid-cols-2 gap-3">
-              {["Uzbekistan", "Kyrgyzstan"].map((country) => (
-                <Link
-                  key={country}
-                  href="#"
-                  className="text-gray-400 text-sm hover:text-blue-400 transition-colors"
-                >
-                  {country}
-                </Link>
+            <ul className="space-y-3">
+              {[
+                { label: "Uzbekistan", href: "/universities/uzbekistanuniversities" },
+                { label: "Kyrgyzstan", href: "/universities/kyrgyzstanuniversities" },
+                { label: "Russia", href: "/universities/russiauniversities" },
+                { label: "Nepal", href: "/universities/nepaluniversities" },
+                { label: "Bangladesh", href: "/universities/bangladeshuniversities" },
+                { label: "Georgia", href: "/universities/georgiauniversities" },
+                { label: "Bosnia", href: "/universities/bosniauniversities" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="text-gray-400 text-sm hover:text-blue-400 hover:translate-x-1 transition-all flex items-center gap-2"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-900"></span>
+                    {item.label}
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
 
           {/* 4. Contact Info */}
