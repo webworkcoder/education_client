@@ -179,22 +179,19 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex gap-3 text-sm text-gray-400">
                 <MapPin className="text-blue-500 shrink-0" size={18} />
-                <span>Delhi, Chhattisgarh, Jaipur, Chandigarh, Patna</span>
+                <span>Noida , Uttar Pradesh</span>
               </li>
               <li className="flex gap-3 text-sm text-gray-400 group">
                 <Mail className="text-blue-500 shrink-0" size={18} />
                 <span className="group-hover:text-blue-400 transition-colors">
-                  info@topsoneducation.com
+                  info@topsonedu.com
                 </span>
               </li>
               <li className="flex gap-3 text-sm text-gray-400 group">
                 <Phone className="text-blue-500 shrink-0" size={18} />
                 <div className="flex flex-col">
                   <span className="group-hover:text-blue-400 transition-colors">
-                    +91 92205 82597
-                  </span>
-                  <span className="group-hover:text-blue-400 transition-colors">
-                    +91 82268 88163
+                    +91 91220 29154
                   </span>
                 </div>
               </li>

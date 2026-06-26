@@ -4,10 +4,9 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { Mail, Phone } from "lucide-react";
 
 const Topbar = () => {
-  const email = process.env.NEXT_PUBLIC_EMAIL || "example@email.com";
-  const phone = process.env.NEXT_PUBLIC_PHONE || "9220582597";
-  const phone2 = process.env.NEXT_PUBLIC_PHONETWO || "7859033144";
-  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP || "9220582597";
+  const email ="info@topsonedu.com";
+  const phone = "+91 91220 29154";
+  const whatsapp = "+91 91220 29154";
 
   return (
     <section className="bg-gradient-to-r from-[#1e4e96] to-[#2d68b3] text-white text-xs md:text-sm py-2 border-b border-white/10">
@@ -21,12 +20,6 @@ const Topbar = () => {
               <span>{phone}</span>
             </div>
 
-            <span className="opacity-70 hidden sm:flex">|</span>
-
-            <div className="flex items-center gap-2">
-              <Phone className="w-3 h-3" />
-              <span>{phone2}</span>
-            </div>
           </div>
 
           {/*  DESKTOP  FULL INFO */}
@@ -48,8 +41,6 @@ const Topbar = () => {
               <Phone className="w-4 h-4" />
               <span>{phone}</span>
 
-              <Phone className="w-4 h-4 sm:hidden" />
-              <span>{phone2}</span>
             </Link>
 
             {/* Email */}

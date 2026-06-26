@@ -23,7 +23,7 @@ const contactData = [
   {
     id: 3,
     title: "Email Address",
-    desc: ["info@atlasmentor.com"],
+    desc: ["info@topsonedu.com"],
     icon: Mail,
   },
 ];
