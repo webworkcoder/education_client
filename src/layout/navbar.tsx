@@ -97,6 +97,17 @@ const menuData: Record<string, MenuItem[]> = {
         />
       ),
     },
+    {
+      label: "Bosnia",
+      href: "/countries/bosnia",
+      icon: (
+        <img
+          src="/flags/bosnia.jpg"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
   ],
   Universities: [
     {
@@ -160,6 +171,17 @@ const menuData: Record<string, MenuItem[]> = {
       icon: (
         <img
           src="/flags/georgia.png"
+          alt=""
+          className="w-5 h-5 rounded-full border object-cover"
+        />
+      ),
+    },
+    {
+      label: "Bosnia Universities",
+      href: "/universities/bosniauniversities",
+      icon: (
+        <img
+          src="/flags/bosnia.jpg"
           alt=""
           className="w-5 h-5 rounded-full border object-cover"
         />
