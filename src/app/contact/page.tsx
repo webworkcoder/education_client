@@ -11,19 +11,19 @@ const contactData = [
   {
     id: 1,
     title: "Our Offices",
-    desc: ["Patna, Delhi, Chandigarh,", "Chhattisgarh, Jaipur"],
+    desc: ["Noida , Uttar Pradesh"],
     icon: MapPin,
   },
   {
     id: 2,
     title: "Phone Number",
-    desc: ["+91 9220582597", "+91 7859033144", "+91 8226888163"],
+    desc: ["+91 91220 29154"],
     icon: Phone,
   },
   {
     id: 3,
     title: "Email Address",
-    desc: ["info@atlasmentor.com", "jitesh.gupta@atlasmentor.com"],
+    desc: ["info@atlasmentor.com"],
     icon: Mail,
   },
 ];

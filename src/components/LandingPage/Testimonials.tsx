@@ -14,6 +14,7 @@ type TestimonialType = {
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState<TestimonialType[]>([]);
+  const [loading, setLoading] = useState(true);
 
   const fetchVideo = async () => {
     try {
@@ -24,6 +25,8 @@ const Testimonials = () => {
       setTestimonials(data.data || []);
     } catch (error) {
       console.error("Fetch error:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -32,6 +35,8 @@ const Testimonials = () => {
   }, []);
 
   const visibleTestimonials = testimonials.slice(0, 1);
+
+  if (!loading && testimonials.length === 0) return null;
 
   return (
     <section className="px-4 md:px-10 bg-[#f8fafc] overflow-hidden">

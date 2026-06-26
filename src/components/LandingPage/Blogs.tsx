@@ -16,24 +16,28 @@ type BlogType = {
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState<BlogType[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
         const res = await fetch(
           "https://education-admin-two.vercel.app/api/blog",
-         
         );
         const data = await res.json();
         setBlogs(data.data || []);
       } catch (error) {
         console.error("Fetch error:", error);
+      } finally {
+        setLoading(false);
       }
     };
     fetchBlogs();
   }, []);
 
   const visibleBlogs = blogs.slice(0, 3);
+
+  if (!loading && blogs.length === 0) return null;
 
   return (
     <section className="px-4 md:px-10 py-20 bg-white overflow-hidden">
