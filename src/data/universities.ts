@@ -354,6 +354,72 @@ export const uzbekistanUniversities = [
       { label: "Email", link: "#" },
     ],
 
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Samarkand State Medical Institute",
+        paragraphs: [
+          "Samarkand State Medical Institute is one of the oldest and most prestigious medical universities in Uzbekistan, offering high-quality MBBS education with advanced clinical training.",
+          "Students receive hands-on medical training through affiliated hospitals and modern healthcare facilities equipped with the latest technologies.",
+          "Graduates are eligible to appear for international licensing examinations including FMGE/NExT, USMLE, PLAB, AMC, and other equivalent exams as per country requirements.",
+          "The university also provides opportunities for postgraduate studies, research programs, and international academic collaborations.",
+        ],
+      },
+      alumni: {
+        subheading: "Student Success & Alumni",
+        paragraphs: [
+          "Graduates of Samarkand State Medical Institute are successfully working in hospitals, clinics, and healthcare institutions across India, Uzbekistan, and many other countries.",
+          "The university focuses on developing strong clinical skills, research aptitude, and professional medical ethics among students.",
+        ],
+      },
+      loan: {
+        title: "Education Loan Support For Indian Students",
+        intro: "Students planning to study MBBS at Samarkand State Medical Institute can apply for education loans through public and private financial institutions in India.",
+        eligibility: {
+          subheading: "Eligibility",
+          points: [
+            "Admission confirmation from Samarkand State Medical Institute.",
+            "Valid NEET qualification for Indian students.",
+            "Required academic and financial documents.",
+          ],
+        },
+        amount: {
+          subheading: "Loan Coverage",
+          text: "Education loans may cover tuition fees, hostel expenses, travel costs, insurance, and other academic-related expenses.",
+        },
+        documents: {
+          subheading: "Documents Required",
+          list: [
+            { heading: "NEET Scorecard:", child: "(required for Indian students)." },
+            { heading: "Admission Letter:", child: "" },
+            { heading: "Passport:", child: "" },
+            { heading: "Academic Certificates:", child: "10th & 12th mark sheets." },
+            { heading: "Bank Statements:", child: "Of sponsor or co-applicant." },
+            { heading: "Income Proof:", child: "" },
+          ],
+        },
+        interest: {
+          subheading: "Interest & Repayment",
+          text: "Interest rates and repayment terms vary according to bank policies and approved loan amount.",
+        },
+        collateral: {
+          subheading: "Collateral",
+          text: "Collateral requirements depend on the selected lender and education loan amount.",
+        },
+        processing: {
+          subheading: "Loan Processing",
+          text: "Students should complete documentation and apply early for smooth loan approval and processing.",
+        },
+        assistance: {
+          subheading: "Admission Assistance",
+          text: "Topson Education provides complete support for MBBS admissions and education loan guidance.",
+        },
+      },
+      faq: {
+        title: "FAQs on Samarkand State Medical Institute, Uzbekistan",
+        text: "Find answers to common questions related to MBBS admissions, eligibility, fees, accommodation, and student life at Samarkand State Medical Institute.",
+      },
+    },
+
     tableheder:
       "Quick Highlights About Samarkand State Medical Institute, Uzbekistan",
 
@@ -443,6 +509,72 @@ export const uzbekistanUniversities = [
       { label: "LinkedIn", link: "#" },
     ],
 
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Bukhara State Medical University",
+        paragraphs: [
+          "Bukhara State Medical University offers globally recognized MBBS education with modern infrastructure, experienced faculty, and strong clinical training for international students.",
+          "Students gain practical exposure through affiliated teaching hospitals and healthcare centers equipped with modern medical technologies.",
+          "Graduates are eligible to appear for FMGE/NExT, USMLE, PLAB, AMC, and other international medical licensing examinations according to country-specific regulations.",
+          "The university also offers opportunities for postgraduate studies, specialization, and medical research.",
+        ],
+      },
+      alumni: {
+        subheading: "Student Success & Alumni",
+        paragraphs: [
+          "Alumni of Bukhara State Medical University are successfully practicing medicine in India, Uzbekistan, and across the world.",
+          "The university's curriculum is designed to build strong clinical competence, professional ethics, and global medical readiness.",
+        ],
+      },
+      loan: {
+        title: "Education Loan Support For Indian Students",
+        intro: "Students planning to study MBBS at Bukhara State Medical University can apply for education loans through public and private financial institutions in India.",
+        eligibility: {
+          subheading: "Eligibility",
+          points: [
+            "Admission confirmation from Bukhara State Medical University.",
+            "Valid NEET qualification for Indian students.",
+            "Required academic and financial documents.",
+          ],
+        },
+        amount: {
+          subheading: "Loan Coverage",
+          text: "Education loans may cover tuition fees, hostel expenses, travel costs, insurance, and other academic-related expenses.",
+        },
+        documents: {
+          subheading: "Documents Required",
+          list: [
+            { heading: "NEET Scorecard:", child: "(required for Indian students)." },
+            { heading: "Admission Letter:", child: "" },
+            { heading: "Passport:", child: "" },
+            { heading: "Academic Certificates:", child: "10th & 12th mark sheets." },
+            { heading: "Bank Statements:", child: "Of sponsor or co-applicant." },
+            { heading: "Income Proof:", child: "" },
+          ],
+        },
+        interest: {
+          subheading: "Interest & Repayment",
+          text: "Interest rates and repayment terms vary according to bank policies and approved loan amount.",
+        },
+        collateral: {
+          subheading: "Collateral",
+          text: "Collateral requirements depend on the selected lender and education loan amount.",
+        },
+        processing: {
+          subheading: "Loan Processing",
+          text: "Students should complete documentation and apply early for smooth loan approval and processing.",
+        },
+        assistance: {
+          subheading: "Admission Assistance",
+          text: "Topson Education provides complete support for MBBS admissions and education loan guidance.",
+        },
+      },
+      faq: {
+        title: "FAQs on Bukhara State Medical University, Uzbekistan",
+        text: "Find answers to common questions related to MBBS admissions, eligibility, fees, accommodation, and student life at Bukhara State Medical University.",
+      },
+    },
+
     tableheder:
       "Quick Highlights About Bukhara State Medical University, Uzbekistan",
 
@@ -501,6 +633,72 @@ export const uzbekistanUniversities = [
       { label: "Facebook", link: "#" },
       { label: "WhatsApp", link: "#" },
     ],
+
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Andijan State Medical University",
+        paragraphs: [
+          "Andijan State Medical University provides high-quality MBBS education with modern medical facilities, experienced faculty, and strong practical clinical exposure for international students.",
+          "Students receive comprehensive training in affiliated hospitals and simulation centers equipped with modern healthcare technologies.",
+          "Graduates are eligible to appear for FMGE/NExT, USMLE, PLAB, AMC, and other international medical licensing examinations according to country-specific regulations.",
+          "The university also supports postgraduate studies, specialization programs, and medical research activities.",
+        ],
+      },
+      alumni: {
+        subheading: "Student Success & Alumni",
+        paragraphs: [
+          "Graduates of Andijan State Medical University are successfully working as doctors and healthcare professionals in India, Uzbekistan, and several other countries.",
+          "The university focuses on building strong clinical knowledge, research capabilities, and professional medical ethics among students.",
+        ],
+      },
+      loan: {
+        title: "Education Loan Support For Indian Students",
+        intro: "Students planning to study MBBS at Andijan State Medical University can apply for education loans through public and private financial institutions in India.",
+        eligibility: {
+          subheading: "Eligibility",
+          points: [
+            "Admission confirmation from Andijan State Medical University.",
+            "Valid NEET qualification for Indian students.",
+            "Required academic and financial documents.",
+          ],
+        },
+        amount: {
+          subheading: "Loan Coverage",
+          text: "Education loans may cover tuition fees, hostel expenses, travel costs, insurance, and other academic-related expenses.",
+        },
+        documents: {
+          subheading: "Documents Required",
+          list: [
+            { heading: "NEET Scorecard:", child: "(required for Indian students)." },
+            { heading: "Admission Letter:", child: "" },
+            { heading: "Passport:", child: "" },
+            { heading: "Academic Certificates:", child: "10th & 12th mark sheets." },
+            { heading: "Bank Statements:", child: "Of sponsor or co-applicant." },
+            { heading: "Income Proof:", child: "" },
+          ],
+        },
+        interest: {
+          subheading: "Interest & Repayment",
+          text: "Interest rates and repayment terms vary according to bank policies and approved loan amount.",
+        },
+        collateral: {
+          subheading: "Collateral",
+          text: "Collateral requirements depend on the selected lender and education loan amount.",
+        },
+        processing: {
+          subheading: "Loan Processing",
+          text: "Students should complete documentation and apply early for smooth loan approval and processing.",
+        },
+        assistance: {
+          subheading: "Admission Assistance",
+          text: "Topson Education provides complete support for MBBS admissions and education loan guidance.",
+        },
+      },
+      faq: {
+        title: "FAQs on Andijan State Medical University, Uzbekistan",
+        text: "Find answers to common questions related to MBBS admissions, eligibility, fees, accommodation, and student life at Andijan State Medical University.",
+      },
+    },
 
     tableheder:
       "Quick Highlights About Andijan State Medical University, Uzbekistan",
@@ -564,6 +762,72 @@ export const uzbekistanUniversities = [
       { label: "Facebook", link: "#" },
       { label: "Twitter", link: "#" },
     ],
+
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Fergana State Medical University",
+        paragraphs: [
+          "Fergana State Medical University is known for affordable MBBS education, experienced faculty, and quality practical medical training for international students.",
+          "Students gain clinical experience through affiliated teaching hospitals and healthcare centers with modern medical infrastructure.",
+          "Graduates are eligible to appear for FMGE/NExT, USMLE, PLAB, AMC, and other international medical licensing examinations according to country-specific regulations.",
+          "The university also offers opportunities for postgraduate studies, specialization, and medical research.",
+        ],
+      },
+      alumni: {
+        subheading: "Student Success & Alumni",
+        paragraphs: [
+          "Graduates of Fergana State Medical University are successfully practicing medicine in India, Uzbekistan, and across various countries worldwide.",
+          "The university's academic environment helps students develop strong clinical expertise, professional ethics, and global medical competence.",
+        ],
+      },
+      loan: {
+        title: "Education Loan Support For Indian Students",
+        intro: "Students planning to study MBBS at Fergana State Medical University can apply for education loans through public and private financial institutions in India.",
+        eligibility: {
+          subheading: "Eligibility",
+          points: [
+            "Admission confirmation from Fergana State Medical University.",
+            "Valid NEET qualification for Indian students.",
+            "Required academic and financial documents.",
+          ],
+        },
+        amount: {
+          subheading: "Loan Coverage",
+          text: "Education loans may cover tuition fees, hostel expenses, travel costs, insurance, and other academic-related expenses.",
+        },
+        documents: {
+          subheading: "Documents Required",
+          list: [
+            { heading: "NEET Scorecard:", child: "(required for Indian students)." },
+            { heading: "Admission Letter:", child: "" },
+            { heading: "Passport:", child: "" },
+            { heading: "Academic Certificates:", child: "10th & 12th mark sheets." },
+            { heading: "Bank Statements:", child: "Of sponsor or co-applicant." },
+            { heading: "Income Proof:", child: "" },
+          ],
+        },
+        interest: {
+          subheading: "Interest & Repayment",
+          text: "Interest rates and repayment terms vary according to bank policies and approved loan amount.",
+        },
+        collateral: {
+          subheading: "Collateral",
+          text: "Collateral requirements depend on the selected lender and education loan amount.",
+        },
+        processing: {
+          subheading: "Loan Processing",
+          text: "Students should complete documentation and apply early for smooth loan approval and processing.",
+        },
+        assistance: {
+          subheading: "Admission Assistance",
+          text: "Topson Education provides complete support for MBBS admissions and education loan guidance.",
+        },
+      },
+      faq: {
+        title: "FAQs on Fergana State Medical University, Uzbekistan",
+        text: "Find answers to common questions related to MBBS admissions, eligibility, fees, accommodation, and student life at Fergana State Medical University.",
+      },
+    },
 
     tableheder:
       "Quick Highlights About Fergana State Medical University, Uzbekistan",
@@ -1085,6 +1349,72 @@ export const kyrgyzstanUniversities = [
       { label: "Email", link: "#" },
     ],
 
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at International School of Medicine (ISM)",
+        paragraphs: [
+          "International School of Medicine is a globally recognized medical university in Kyrgyzstan offering affordable MBBS education with modern infrastructure and strong international exposure.",
+          "Students receive clinical training through affiliated hospitals and simulation labs equipped with advanced medical technologies and experienced faculty.",
+          "Graduates are eligible to appear for FMGE/NExT, USMLE, PLAB, AMC, and other international medical licensing examinations according to country-specific regulations.",
+          "The university also encourages participation in research programs, postgraduate studies, and international medical exchange collaborations.",
+        ],
+      },
+      alumni: {
+        subheading: "Student Success & Alumni",
+        paragraphs: [
+          "ISM graduates are successfully working as doctors and healthcare professionals in India, Kyrgyzstan, and many other countries.",
+          "The university focuses on developing strong clinical competence, academic excellence, and professional medical ethics among students.",
+        ],
+      },
+      loan: {
+        title: "Education Loan Support For Indian Students",
+        intro: "Students planning to study MBBS at International School of Medicine can apply for education loans through public and private financial institutions in India.",
+        eligibility: {
+          subheading: "Eligibility",
+          points: [
+            "Admission confirmation from International School of Medicine.",
+            "Valid NEET qualification for Indian students.",
+            "Required academic and financial documents.",
+          ],
+        },
+        amount: {
+          subheading: "Loan Coverage",
+          text: "Education loans may cover tuition fees, hostel expenses, travel costs, insurance, and other academic-related expenses.",
+        },
+        documents: {
+          subheading: "Documents Required",
+          list: [
+            { heading: "NEET Scorecard:", child: "(required for Indian students)." },
+            { heading: "Admission Letter:", child: "" },
+            { heading: "Passport:", child: "" },
+            { heading: "Academic Certificates:", child: "10th & 12th mark sheets." },
+            { heading: "Bank Statements:", child: "Of sponsor or co-applicant." },
+            { heading: "Income Proof:", child: "" },
+          ],
+        },
+        interest: {
+          subheading: "Interest & Repayment",
+          text: "Interest rates and repayment terms vary according to bank policies and approved loan amount.",
+        },
+        collateral: {
+          subheading: "Collateral",
+          text: "Collateral requirements depend on the selected lender and education loan amount.",
+        },
+        processing: {
+          subheading: "Loan Processing",
+          text: "Students should complete documentation and apply early for smooth loan approval and processing.",
+        },
+        assistance: {
+          subheading: "Admission Assistance",
+          text: "Topson Education provides complete support for MBBS admissions and education loan guidance.",
+        },
+      },
+      faq: {
+        title: "FAQs on International School of Medicine (ISM), Kyrgyzstan",
+        text: "Find answers to common questions related to MBBS admissions, eligibility, fees, accommodation, and student life at International School of Medicine.",
+      },
+    },
+
     tableheder:
       "Quick Highlights About International School of Medicine (ISM), Kyrgyzstan",
 
@@ -1175,6 +1505,72 @@ export const kyrgyzstanUniversities = [
       { label: "WhatsApp", link: "#" },
       { label: "Email", link: "#" },
     ],
+
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Osh State Medical University",
+        paragraphs: [
+          "Osh State Medical University is one of the most popular medical universities in Kyrgyzstan, offering affordable MBBS education with experienced faculty and quality medical training.",
+          "Students gain hands-on clinical experience through affiliated hospitals and healthcare institutions equipped with modern facilities.",
+          "Graduates are eligible to appear for FMGE/NExT, USMLE, PLAB, AMC, and other international medical licensing examinations according to country-specific regulations.",
+          "The university supports postgraduate studies, research activities, and international academic collaborations for medical students.",
+        ],
+      },
+      alumni: {
+        subheading: "Student Success & Alumni",
+        paragraphs: [
+          "Graduates of Osh State Medical University are successfully practicing medicine in India, Kyrgyzstan, and several other countries.",
+          "The university focuses on developing strong clinical knowledge, professional ethics, and global medical competence among students.",
+        ],
+      },
+      loan: {
+        title: "Education Loan Support For Indian Students",
+        intro: "Students planning to study MBBS at Osh State Medical University can apply for education loans through public and private financial institutions in India.",
+        eligibility: {
+          subheading: "Eligibility",
+          points: [
+            "Admission confirmation from Osh State Medical University.",
+            "Valid NEET qualification for Indian students.",
+            "Required academic and financial documents.",
+          ],
+        },
+        amount: {
+          subheading: "Loan Coverage",
+          text: "Education loans may cover tuition fees, hostel expenses, travel costs, insurance, and other academic-related expenses.",
+        },
+        documents: {
+          subheading: "Documents Required",
+          list: [
+            { heading: "NEET Scorecard:", child: "(required for Indian students)." },
+            { heading: "Admission Letter:", child: "" },
+            { heading: "Passport:", child: "" },
+            { heading: "Academic Certificates:", child: "10th & 12th mark sheets." },
+            { heading: "Bank Statements:", child: "Of sponsor or co-applicant." },
+            { heading: "Income Proof:", child: "" },
+          ],
+        },
+        interest: {
+          subheading: "Interest & Repayment",
+          text: "Interest rates and repayment terms vary according to bank policies and approved loan amount.",
+        },
+        collateral: {
+          subheading: "Collateral",
+          text: "Collateral requirements depend on the selected lender and education loan amount.",
+        },
+        processing: {
+          subheading: "Loan Processing",
+          text: "Students should complete documentation and apply early for smooth loan approval and processing.",
+        },
+        assistance: {
+          subheading: "Admission Assistance",
+          text: "Topson Education provides complete support for MBBS admissions and education loan guidance.",
+        },
+      },
+      faq: {
+        title: "FAQs on Osh State Medical University, Kyrgyzstan",
+        text: "Find answers to common questions related to MBBS admissions, eligibility, fees, accommodation, and student life at Osh State Medical University.",
+      },
+    },
 
     tableheder:
       "Quick Highlights About Osh State Medical University, Kyrgyzstan",
@@ -1268,6 +1664,72 @@ export const kyrgyzstanUniversities = [
       { label: "Email", link: "#" },
     ],
 
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Jalal-Abad State Medical University",
+        paragraphs: [
+          "Jalal-Abad State Medical University offers affordable MBBS education with modern facilities, experienced faculty, and quality clinical training for international students in Kyrgyzstan.",
+          "Students receive practical medical training through affiliated hospitals and healthcare institutions equipped with modern technologies.",
+          "Graduates are eligible to appear for FMGE/NExT, USMLE, PLAB, AMC, and other international medical licensing examinations according to country-specific regulations.",
+          "The university also provides opportunities for postgraduate studies, specialization, and medical research programs.",
+        ],
+      },
+      alumni: {
+        subheading: "Student Success & Alumni",
+        paragraphs: [
+          "Graduates of Jalal-Abad State Medical University are successfully working in hospitals and healthcare institutions in India, Kyrgyzstan, and many other countries.",
+          "The university's curriculum builds strong clinical skills, professional ethics, and global medical readiness among students.",
+        ],
+      },
+      loan: {
+        title: "Education Loan Support For Indian Students",
+        intro: "Students planning to study MBBS at Jalal-Abad State Medical University can apply for education loans through public and private financial institutions in India.",
+        eligibility: {
+          subheading: "Eligibility",
+          points: [
+            "Admission confirmation from Jalal-Abad State Medical University.",
+            "Valid NEET qualification for Indian students.",
+            "Required academic and financial documents.",
+          ],
+        },
+        amount: {
+          subheading: "Loan Coverage",
+          text: "Education loans may cover tuition fees, hostel expenses, travel costs, insurance, and other academic-related expenses.",
+        },
+        documents: {
+          subheading: "Documents Required",
+          list: [
+            { heading: "NEET Scorecard:", child: "(required for Indian students)." },
+            { heading: "Admission Letter:", child: "" },
+            { heading: "Passport:", child: "" },
+            { heading: "Academic Certificates:", child: "10th & 12th mark sheets." },
+            { heading: "Bank Statements:", child: "Of sponsor or co-applicant." },
+            { heading: "Income Proof:", child: "" },
+          ],
+        },
+        interest: {
+          subheading: "Interest & Repayment",
+          text: "Interest rates and repayment terms vary according to bank policies and approved loan amount.",
+        },
+        collateral: {
+          subheading: "Collateral",
+          text: "Collateral requirements depend on the selected lender and education loan amount.",
+        },
+        processing: {
+          subheading: "Loan Processing",
+          text: "Students should complete documentation and apply early for smooth loan approval and processing.",
+        },
+        assistance: {
+          subheading: "Admission Assistance",
+          text: "Topson Education provides complete support for MBBS admissions and education loan guidance.",
+        },
+      },
+      faq: {
+        title: "FAQs on Jalal-Abad State Medical University, Kyrgyzstan",
+        text: "Find answers to common questions related to MBBS admissions, eligibility, fees, accommodation, and student life at Jalal-Abad State Medical University.",
+      },
+    },
+
     tableheder:
       "Quick Highlights About Jalal-Abad State Medical University, Kyrgyzstan",
 
@@ -1352,6 +1814,72 @@ export const kyrgyzstanUniversities = [
       { label: "WhatsApp", link: "#" },
       { label: "Email", link: "#" },
     ],
+
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at Asian Medical Institute",
+        paragraphs: [
+          "Asian Medical Institute is a well-known medical university in Kyrgyzstan offering affordable MBBS programs, modern medical education, and excellent academic support for international students.",
+          "Students receive practical training through affiliated hospitals and clinical centers equipped with modern healthcare technologies and experienced medical professionals.",
+          "Graduates are eligible to appear for FMGE/NExT, USMLE, PLAB, AMC, and other international medical licensing examinations according to country-specific regulations.",
+          "The university also supports postgraduate studies, research activities, and international academic exchange programs.",
+        ],
+      },
+      alumni: {
+        subheading: "Student Success & Alumni",
+        paragraphs: [
+          "Asian Medical Institute graduates are successfully practicing medicine in India, Kyrgyzstan, and several countries worldwide.",
+          "The university focuses on developing strong clinical skills, academic excellence, and professional ethics among its students.",
+        ],
+      },
+      loan: {
+        title: "Education Loan Support For Indian Students",
+        intro: "Students planning to study MBBS at Asian Medical Institute can apply for education loans through public and private financial institutions in India.",
+        eligibility: {
+          subheading: "Eligibility",
+          points: [
+            "Admission confirmation from Asian Medical Institute.",
+            "Valid NEET qualification for Indian students.",
+            "Required academic and financial documents.",
+          ],
+        },
+        amount: {
+          subheading: "Loan Coverage",
+          text: "Education loans may cover tuition fees, hostel expenses, travel costs, insurance, and other academic-related expenses.",
+        },
+        documents: {
+          subheading: "Documents Required",
+          list: [
+            { heading: "NEET Scorecard:", child: "(required for Indian students)." },
+            { heading: "Admission Letter:", child: "" },
+            { heading: "Passport:", child: "" },
+            { heading: "Academic Certificates:", child: "10th & 12th mark sheets." },
+            { heading: "Bank Statements:", child: "Of sponsor or co-applicant." },
+            { heading: "Income Proof:", child: "" },
+          ],
+        },
+        interest: {
+          subheading: "Interest & Repayment",
+          text: "Interest rates and repayment terms vary according to bank policies and approved loan amount.",
+        },
+        collateral: {
+          subheading: "Collateral",
+          text: "Collateral requirements depend on the selected lender and education loan amount.",
+        },
+        processing: {
+          subheading: "Loan Processing",
+          text: "Students should complete documentation and apply early for smooth loan approval and processing.",
+        },
+        assistance: {
+          subheading: "Admission Assistance",
+          text: "Topson Education provides complete support for MBBS admissions and education loan guidance.",
+        },
+      },
+      faq: {
+        title: "FAQs on Asian Medical Institute, Kyrgyzstan",
+        text: "Find answers to common questions related to MBBS admissions, eligibility, fees, accommodation, and student life at Asian Medical Institute.",
+      },
+    },
 
     tableheder: "Quick Highlights About Asian Medical Institute, Kyrgyzstan",
 
@@ -5746,6 +6274,72 @@ export const bosniaUniversities = [
       { label: "WhatsApp", link: "#" },
       { label: "Email", link: "#" },
     ],
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at University of Mostar",
+        paragraphs: [
+          "University of Mostar is one of the leading public universities in Bosnia and Herzegovina, offering quality programs in medicine, engineering, economics, and humanities.",
+          "Students benefit from modern academic facilities, experienced professors, and practical training through affiliated hospitals and research institutions.",
+          "Graduates are eligible to pursue postgraduate studies and professional careers across Bosnia, Europe, and internationally.",
+          "The university maintains strong partnerships with regional employers and healthcare institutions to support student placement and career development.",
+        ],
+      },
+      alumni: {
+        subheading: "Student Success & Alumni",
+        paragraphs: [
+          "Graduates of University of Mostar are working in hospitals, academic institutions, and public organizations across Bosnia and internationally.",
+          "The university's curriculum emphasizes strong academic foundations, clinical skills, and practical readiness for global job markets.",
+        ],
+      },
+      loan: {
+        title: "Education Loan Support For Indian Students",
+        intro: "Students planning to study in Bosnia can apply for education loans through public and private financial institutions in India.",
+        eligibility: {
+          subheading: "Eligibility",
+          points: [
+            "Admission confirmation from University of Mostar.",
+            "Valid NEET qualification for Indian students (for medical programs).",
+            "Required academic and financial documents.",
+          ],
+        },
+        amount: {
+          subheading: "Loan Coverage",
+          text: "Education loans may cover tuition fees, hostel expenses, travel costs, insurance, and other academic-related expenses.",
+        },
+        documents: {
+          subheading: "Documents Required",
+          list: [
+            { heading: "NEET Scorecard:", child: "(required for Indian students pursuing medical programs)." },
+            { heading: "Admission Letter:", child: "" },
+            { heading: "Passport:", child: "" },
+            { heading: "Academic Certificates:", child: "10th & 12th mark sheets." },
+            { heading: "Bank Statements:", child: "Of sponsor or co-applicant." },
+            { heading: "Income Proof:", child: "" },
+          ],
+        },
+        interest: {
+          subheading: "Interest & Repayment",
+          text: "Interest rates and repayment terms vary according to bank policies and approved loan amount.",
+        },
+        collateral: {
+          subheading: "Collateral",
+          text: "Collateral requirements depend on the selected lender and education loan amount.",
+        },
+        processing: {
+          subheading: "Loan Processing",
+          text: "Students should complete documentation and apply early for smooth loan approval and processing.",
+        },
+        assistance: {
+          subheading: "Admission Assistance",
+          text: "Topson Education provides complete support for admissions and education loan guidance.",
+        },
+      },
+      faq: {
+        title: "FAQs on University of Mostar, Bosnia",
+        text: "Find answers to common questions related to admissions, eligibility, fees, accommodation, and student life at University of Mostar.",
+      },
+    },
+
     tableheder: "Quick Highlights About University of Mostar, Bosnia",
     tableData: [
       { id: 1, slug: "population", label: "Population", value: "3.2 Million+" },
@@ -5801,6 +6395,72 @@ export const bosniaUniversities = [
       { label: "WhatsApp", link: "#" },
       { label: "Email", link: "#" },
     ],
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at University of Sarajevo",
+        paragraphs: [
+          "University of Sarajevo is the oldest and largest university in Bosnia and Herzegovina, offering a wide range of programs including medicine, dentistry, law, and science.",
+          "Students benefit from strong international partnerships, modern facilities, and practical training through affiliated teaching hospitals and research centers.",
+          "Graduates are eligible to pursue postgraduate studies and professional careers across Bosnia, Europe, and beyond.",
+          "The university maintains active collaborations with European and international universities to support academic excellence and student exchange.",
+        ],
+      },
+      alumni: {
+        subheading: "Student Success & Alumni",
+        paragraphs: [
+          "University of Sarajevo alumni are successfully working in hospitals, research institutes, law firms, and public institutions across Bosnia and internationally.",
+          "The university's strong academic reputation and diverse programs help graduates build competitive careers in various professional fields.",
+        ],
+      },
+      loan: {
+        title: "Education Loan Support For Indian Students",
+        intro: "Students planning to study in Bosnia can apply for education loans through public and private financial institutions in India.",
+        eligibility: {
+          subheading: "Eligibility",
+          points: [
+            "Admission confirmation from University of Sarajevo.",
+            "Valid NEET qualification for Indian students (for medical programs).",
+            "Required academic and financial documents.",
+          ],
+        },
+        amount: {
+          subheading: "Loan Coverage",
+          text: "Education loans may cover tuition fees, hostel expenses, travel costs, insurance, and other academic-related expenses.",
+        },
+        documents: {
+          subheading: "Documents Required",
+          list: [
+            { heading: "NEET Scorecard:", child: "(required for Indian students pursuing medical programs)." },
+            { heading: "Admission Letter:", child: "" },
+            { heading: "Passport:", child: "" },
+            { heading: "Academic Certificates:", child: "10th & 12th mark sheets." },
+            { heading: "Bank Statements:", child: "Of sponsor or co-applicant." },
+            { heading: "Income Proof:", child: "" },
+          ],
+        },
+        interest: {
+          subheading: "Interest & Repayment",
+          text: "Interest rates and repayment terms vary according to bank policies and approved loan amount.",
+        },
+        collateral: {
+          subheading: "Collateral",
+          text: "Collateral requirements depend on the selected lender and education loan amount.",
+        },
+        processing: {
+          subheading: "Loan Processing",
+          text: "Students should complete documentation and apply early for smooth loan approval and processing.",
+        },
+        assistance: {
+          subheading: "Admission Assistance",
+          text: "Topson Education provides complete support for admissions and education loan guidance.",
+        },
+      },
+      faq: {
+        title: "FAQs on University of Sarajevo, Bosnia",
+        text: "Find answers to common questions related to admissions, eligibility, fees, accommodation, and student life at University of Sarajevo.",
+      },
+    },
+
     tableheder: "Quick Highlights About University of Sarajevo, Bosnia",
     tableData: [
       { id: 1, slug: "population", label: "Population", value: "3.2 Million+" },
@@ -5855,6 +6515,72 @@ export const bosniaUniversities = [
       { label: "LinkedIn", link: "#" },
       { label: "WhatsApp", link: "#" },
     ],
+    descriptionContent: {
+      placement: {
+        title: "Career Opportunities at University of Banja Luka",
+        paragraphs: [
+          "University of Banja Luka is a prominent public university in the Republika Srpska entity of Bosnia and Herzegovina, offering programs in medicine, technical sciences, economics, and natural sciences.",
+          "Students benefit from modern academic facilities, experienced faculty, and practical training through affiliated hospitals and research institutions.",
+          "Graduates are eligible to pursue postgraduate studies and professional careers across Bosnia, Europe, and internationally.",
+          "The university maintains a strong focus on research, innovation, and academic excellence to prepare students for competitive global careers.",
+        ],
+      },
+      alumni: {
+        subheading: "Student Success & Alumni",
+        paragraphs: [
+          "University of Banja Luka graduates are working in hospitals, academic institutions, engineering firms, and public organizations across Bosnia and internationally.",
+          "The university's emphasis on practical skills and academic rigor helps students build strong professional foundations.",
+        ],
+      },
+      loan: {
+        title: "Education Loan Support For Indian Students",
+        intro: "Students planning to study in Bosnia can apply for education loans through public and private financial institutions in India.",
+        eligibility: {
+          subheading: "Eligibility",
+          points: [
+            "Admission confirmation from University of Banja Luka.",
+            "Valid NEET qualification for Indian students (for medical programs).",
+            "Required academic and financial documents.",
+          ],
+        },
+        amount: {
+          subheading: "Loan Coverage",
+          text: "Education loans may cover tuition fees, hostel expenses, travel costs, insurance, and other academic-related expenses.",
+        },
+        documents: {
+          subheading: "Documents Required",
+          list: [
+            { heading: "NEET Scorecard:", child: "(required for Indian students pursuing medical programs)." },
+            { heading: "Admission Letter:", child: "" },
+            { heading: "Passport:", child: "" },
+            { heading: "Academic Certificates:", child: "10th & 12th mark sheets." },
+            { heading: "Bank Statements:", child: "Of sponsor or co-applicant." },
+            { heading: "Income Proof:", child: "" },
+          ],
+        },
+        interest: {
+          subheading: "Interest & Repayment",
+          text: "Interest rates and repayment terms vary according to bank policies and approved loan amount.",
+        },
+        collateral: {
+          subheading: "Collateral",
+          text: "Collateral requirements depend on the selected lender and education loan amount.",
+        },
+        processing: {
+          subheading: "Loan Processing",
+          text: "Students should complete documentation and apply early for smooth loan approval and processing.",
+        },
+        assistance: {
+          subheading: "Admission Assistance",
+          text: "Topson Education provides complete support for admissions and education loan guidance.",
+        },
+      },
+      faq: {
+        title: "FAQs on University of Banja Luka, Bosnia",
+        text: "Find answers to common questions related to admissions, eligibility, fees, accommodation, and student life at University of Banja Luka.",
+      },
+    },
+
     tableheder: "Quick Highlights About University of Banja Luka, Bosnia",
     tableData: [
       { id: 1, slug: "population", label: "Population", value: "3.2 Million+" },
