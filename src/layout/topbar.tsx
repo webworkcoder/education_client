@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { Mail, Phone } from "lucide-react";
 
 const Topbar = () => {
-  const email ="info@topsonedu.com";
+  const email = "info@topsonedu.com";
   const phone = "+91 91220 29154";
   const whatsapp = "+91 91220 29154";
 
@@ -19,7 +19,13 @@ const Topbar = () => {
               <Phone className="w-3 h-3" />
               <span>{phone}</span>
             </div>
-
+            <Link
+              href={`mailto:${email}`}
+              className="flex items-center gap-1.5 hover:text-yellow-200 transition"
+            >
+              <Mail className="w-3 h-3" />
+              <span>{email}</span>
+            </Link>
           </div>
 
           {/*  DESKTOP  FULL INFO */}
@@ -40,7 +46,6 @@ const Topbar = () => {
             >
               <Phone className="w-4 h-4" />
               <span>{phone}</span>
-
             </Link>
 
             {/* Email */}

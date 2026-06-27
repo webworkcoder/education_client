@@ -137,7 +137,7 @@ export default function RootLayout({
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat on WhatsApp"
-          className="fixed right-0 bottom-0 -translate-y-1/2 z-50 flex items-center gap-2 bg-green-700 p-4 rounded-full"
+          className="fixed right-5 bottom-0 -translate-y-1/2 z-50 flex items-center gap-2 bg-green-700 p-4 rounded-full"
         >
          <BsWhatsapp className="w-5 h-5 text-white"/>
          
